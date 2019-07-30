@@ -12,17 +12,23 @@ const Container = styled.div`
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
 `;
+const Section = styled.section`
+  padding: 0rem 2rem;
+  background-color: ${props => props.theme.primaryColor};
+`;
 
 const IndexLayout = ({ children }) => (
-  <div>
+  <div className="">
     <Helmet>
       <title>{config.siteName}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta description={config.description} />
     </Helmet>
-    <Header />
-    <Container>{children}</Container>
+    <Section className="section">
+      <Header />
+      <Container>{children}</Container>
+    </Section>
   </div>
 );
 

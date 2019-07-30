@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import styled from 'styled-components';
 
 import config from '../utils/config';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 
+const Container = styled.div``;
 export default class IndexPage extends React.Component {
   render() {
     return (
@@ -14,10 +16,7 @@ export default class IndexPage extends React.Component {
           description="Welcome to GatsbyJs v1"
           url={`${config.siteUrl}`}
         />
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <Link to="/contact">Contact</Link>
+        <Container>dwed</Container>
       </Layout>
     );
   }
