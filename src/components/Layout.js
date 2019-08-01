@@ -9,6 +9,7 @@ import Header from './Header';
 const Container = styled.div`
 
 `;
+
 const Section = styled.section`
   padding: 0rem 2rem;
 `;

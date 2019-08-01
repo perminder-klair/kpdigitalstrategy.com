@@ -1,5 +1,5 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react';
-import styled from 'styled-components';
 
 import config from '../utils/config';
 import Seo from '../components/Seo';
