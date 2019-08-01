@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Card from './Card';
 
 const Container = styled.div`
-  background-color: ${props => props.theme.backgroundDark}
+  background-color: ${props => props.theme.backgroundDark};
 `;
 const CardsContent = () => (
   <Container className="has-text-centered-mobile">

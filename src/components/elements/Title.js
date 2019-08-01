@@ -7,8 +7,8 @@ const Container = styled.h2`
   font-size: 1.15rem;
 `;
 
-const Title = ({ children }) => (
-  <Container className="has-text-weight-semibold">
+const Title = ({ children, ...props }) => (
+  <Container className="has-text-weight-semibold" {...props}>
     {children}
   </Container>
 );

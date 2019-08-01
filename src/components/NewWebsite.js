@@ -4,7 +4,6 @@ import React from 'react';
 import Typing from 'react-typing-animation';
 import styled from 'styled-components';
 import Button from './elements/Button';
-import PropTypes from 'prop-types';
 
 const Container = styled.div`
   .title {

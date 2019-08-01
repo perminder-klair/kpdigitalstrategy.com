@@ -6,8 +6,8 @@ const Container = styled.h2`
   color: ${props => props.theme.primaryColor};
 `;
 
-const Heading = ({ children }) => (
-  <Container className="is-size-4 has-text-weight-semibold ">
+const Heading = ({ children, ...props }) => (
+  <Container className="is-size-4 has-text-weight-semibold" {...props}>
     {children}
   </Container>
 );
