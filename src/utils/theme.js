@@ -14,6 +14,8 @@ export default theme;
 export const GlobalStyle = createGlobalStyle`
  body {
     height: 100vh;
-    background: red!important;
+  }
+  .columns {
+  margin-top: 0px!important;
   }
 `;

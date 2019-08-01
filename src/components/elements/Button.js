@@ -10,9 +10,6 @@ const Container = styled.button`
     background-color: transparent;
     border: ${props => (props.borderWhite ? '#fff' : props.theme.primaryColor)};
     :hover {
-      border-color: ${props =>
-        props.paddingless ? '#transparent' : props.theme.primaryColor};
-      color: ${props => props.theme.primaryColor};
       background: transparent;
     }
   }
