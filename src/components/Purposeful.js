@@ -11,6 +11,10 @@ const Container = styled.div`
   .ContantBox {
     margin-top: 4rem;
     padding: 1rem 7rem;
+    @media screen and (max-width: 600px) {
+      margin-left: 0rem;
+      padding: 0rem 0rem;
+    }
   }
   .TitleWrapper {
     margin-top: 1rem;
@@ -20,6 +24,9 @@ const Container = styled.div`
   }
   .ButtonWrapper {
     margin: 0rem 7rem;
+    @media screen and (max-width: 600px) {
+      margin: 0rem 0rem;
+    }
   }
 `;
 
