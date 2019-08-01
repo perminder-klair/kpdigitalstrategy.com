@@ -3,7 +3,8 @@
 import React from 'react';
 import Typing from 'react-typing-animation';
 import styled from 'styled-components';
-import Heading from './elements/Heading';
+import Button from './elements/Button';
+import PropTypes from 'prop-types';
 
 const Container = styled.div`
   .title {
@@ -19,9 +20,6 @@ const Container = styled.div`
       margin-left: 0rem;
       padding: 0rem 0rem;
     }
-  }
-  .columns {
-    padding-bottom: 13rem;
   }
   .description {
     margin-top: 4rem;
@@ -73,6 +71,10 @@ const Container = styled.div`
   }
 `;
 
+const ButtonWrapper = styled.div`
+  margin: 1rem 3rem;
+`;
+
 const NewWebSite = () => (
   <Container className="has-background-black">
     <div className="columns">
@@ -97,10 +99,10 @@ const NewWebSite = () => (
             </span>
           </Typing>{' '}
           <div>
-            <h4 className="description is-size-5 has-text-weight-bold">
+            <p className="description is-size-5 has-text-weight-bold">
               We align design, marketing and sales to make it easier than ever
               to reach new business heights.
-            </h4>
+            </p>
           </div>
         </div>
       </div>
@@ -120,6 +122,11 @@ const NewWebSite = () => (
               layout. The point of using Lorem Ipsum is that it has a
               more-or-less normal distribution of letters, as opposed to
             </p>
+            <ButtonWrapper>
+              <Button borderRed className="has-text-black has-text-weight-bold">
+                Read More
+              </Button>
+            </ButtonWrapper>
           </div>
         </div>
       </div>
