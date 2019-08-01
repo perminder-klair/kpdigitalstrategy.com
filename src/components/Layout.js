@@ -7,12 +7,20 @@ import config from '../utils/config';
 import Header from './Header';
 
 const Container = styled.div`
+<<<<<<< HEAD
   margin: 0 auto;
   padding-top: 0;
+=======
+
+>>>>>>> 1a74f2dd04909e1e0f59a760714719e91bd02c87
 `;
+
 const Section = styled.section`
   padding: 0rem 2rem;
+<<<<<<< HEAD
   background-color: ${props => props.theme.bodyBackground};
+=======
+>>>>>>> 1a74f2dd04909e1e0f59a760714719e91bd02c87
 `;
 
 const IndexLayout = ({ children }) => (
@@ -23,7 +31,7 @@ const IndexLayout = ({ children }) => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta description={config.description} />
     </Helmet>
-    <Section className="section">
+    <Section className="section has-background-black">
       <Header />
       <Container>{children}</Container>
     </Section>
