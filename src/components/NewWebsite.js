@@ -3,6 +3,7 @@
 import React from 'react';
 import Typing from 'react-typing-animation';
 import styled from 'styled-components';
+import Heading from './elements/Heading';
 
 const Container = styled.div`
   .title {
@@ -22,10 +23,6 @@ const Container = styled.div`
   .columns {
     padding-bottom: 13rem;
   }
-  .LeftBox {
-    flex-direction: row;
-    display: flex;
-  }
   .description {
     margin-top: 4rem;
     color: ${props => props.theme.primaryColor};
@@ -34,6 +31,10 @@ const Container = styled.div`
     margin: 0rem -28rem;
     transform: rotate(-90deg);
     display: flex;
+    @media screen and (max-width: 600px) {
+      margin: 0rem 0rem;
+      transform: rotate(0deg);
+    }
   }
   .icon {
     margin: 0rem 0.25rem;
@@ -43,6 +44,32 @@ const Container = styled.div`
   }
   .IconBox {
     margin: 0rem 0.25rem;
+    display: flex;
+  }
+  .Latetstudy {
+  }
+  .ContantBox {
+    display: flex;
+    margin: 15rem 3rem;
+    @media screen and (max-width: 600px) {
+      margin: 0rem 0rem;
+    }
+  }
+  .RotatatText {
+    transform: rotate(-90deg);
+    margin: 6rem -7rem;
+    display: flex;
+  }
+  .ContantText {
+    background-color: ${props => props.theme.SecondaryColor};
+    padding: 1rem 1.25rem;
+  }
+  .View {
+    padding: 0.25rem 3rem;
+    margin-top: 1rem;
+  }
+  .para {
+    padding: 0.25rem 3rem;
   }
 `;
 
@@ -77,7 +104,25 @@ const NewWebSite = () => (
           </div>
         </div>
       </div>
-      <div className="column">Second column</div>
+      <div className="column">
+        <div className="ContantBox">
+          <div className="ContantText">
+            <h4 className="RotatatText is-size-7 has-text-white has-text-weight-medium is-uppercase">
+              epic risk managemant rebrand
+            </h4>
+          </div>
+          <div className="Latetstudy has-background-white is">
+            <h2 className="View has-text-black is-size-4 has-text-weight-bold">
+              View Our Latest case study{' '}
+            </h2>
+            <p className="para has-text-black is-size-6 has-text-weight-normal">
+              Porjects exption able content of a page when looking at its
+              layout. The point of using Lorem Ipsum is that it has a
+              more-or-less normal distribution of letters, as opposed to
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </Container>
 );
