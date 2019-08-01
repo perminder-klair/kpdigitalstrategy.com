@@ -7,7 +7,6 @@ import config from '../utils/config';
 import Header from './Header';
 
 const Container = styled.div`
-
 `;
 
 const Section = styled.section`
