@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const Container = styled.button`
   &&& {
-    color: ${props => (props.secondary ? props.theme.SecondaryColor : '#000')};
+    color: ${props =>
+      props.secondary ? props.theme.SecondaryColor : '#ffffff'};
     padding: 0.5rem 1.25rem;
     border-radius: 0;
     background-color: transparent;
@@ -17,11 +18,12 @@ const Container = styled.button`
   }
 `;
 
-const Button = ({ children, isLarge }) => (
+const Button = ({ children, isLarge, ...props }) => (
   <Container
     type="submit"
     className={`buttonis-size-7 has-text-weight-semibold 
-    ${isLarge ? 'is-large is-fullwidth' : ''}`}>
+    ${isLarge ? 'is-large is-fullwidth' : ''}`}
+    {...props}>
     {children}
   </Container>
 );

@@ -9,8 +9,7 @@ const CardsContent = () => (<Container className="has-text-centered-mobile">
 
     <div className="column">
       <Card title="rtgrt" subtitle="thtrdrt" />
-      < />div>
-
+   
     </div>
   </Container>
   );

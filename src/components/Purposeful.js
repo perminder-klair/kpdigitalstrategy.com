@@ -5,6 +5,7 @@ import Image from '../../static/images/sideimage.jpg';
 import Heading from './elements/Heading';
 import Title from './elements/Title';
 import Subtitle from './elements/Subtitle';
+import Button from './elements/Button';
 
 const Container = styled.div`
   .ContantBox {
@@ -16,6 +17,9 @@ const Container = styled.div`
   }
   .SubitleWrapper {
     padding: 1rem 0rem;
+  }
+  .ButtonWrapper {
+    margin: 0rem 7rem;
   }
 `;
 
@@ -56,6 +60,11 @@ const Purposeful = () => (
               brand's potential
             </Subtitle>
           </div>
+        </div>
+        <div className="ButtonWrapper">
+          <Button borderRed secondary>
+            View Our Portfolio
+          </Button>
         </div>
       </div>
 
