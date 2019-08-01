@@ -1,15 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
 const Container = styled.button`
   &&& {
-    color: ${props => (props.secondary ? props.theme.primaryColor : '#fff')};
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-bottom: ${props => (props.paddingless ? '0px' : '2rem')};
+    color: ${props => (props.secondary ? props.theme.SecondaryColor : '#fff')};
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    padding-top: 0.4em;
+    padding-bottom: 2em;
+    border-radius: 0;
     background-color: transparent;
-    border: ${props => (props.borderWhite ? '#fff' : props.theme.primaryColor)};
+    border: 2px solid
+      ${props =>
+        props.borderWhite ? props.theme.SecondaryColor : '#fff'}!important;
     :hover {
       background: transparent;
     }
@@ -17,7 +20,10 @@ const Container = styled.button`
 `;
 
 const Button = ({ children, ...otherProps }) => (
-  <Container type="submit" className="button" {...otherProps}>
+  <Container
+    type="submit"
+    className="button is-large is-size-7 has-text-weight-semibold"
+    {...otherProps}>
     {children}
   </Container>
 );
