@@ -4,7 +4,8 @@ import styled from 'styled-components';
 const Container = styled.button`
   &&& {
     color: ${props => (props.secondary ? props.theme.SecondaryColor : '#fff')};
-    padding: 0.5rem 2.5rem;
+    padding: ${props =>
+      props.isMedium ? '0.5rem 1rem 1.65rem 1rem' : '0.5rem 2.5rem'};
     border-radius: 0;
     background-color: transparent;
     font-weight: 600;

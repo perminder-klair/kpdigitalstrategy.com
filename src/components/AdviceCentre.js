@@ -20,11 +20,11 @@ const AdviceCentre = () => (
       <h1 className="title has-text-weight-bold has-text-black is-size-4">
         Not sure where to begin ?
       </h1>
-      <Subtitle size={4}>
+      <Subtitle size={6}>
         For help of enything you need to know about design and marketing
       </Subtitle>
       <ButtonWrapper>
-        <Button>visit our advice centre</Button>
+        <Button isMedium>visit our advice centre</Button>
       </ButtonWrapper>
     </div>
   </Container>
