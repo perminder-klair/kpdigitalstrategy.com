@@ -21,8 +21,8 @@ export default class IndexPage extends React.Component {
         />
         <AdviceLine />
         <NewWebSite />
-        <Purposeful />
         <News />
+        <Purposeful />
         <BookFreeCall />
         <CardsContent />
       </Layout>

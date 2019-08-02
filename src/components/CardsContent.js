@@ -8,14 +8,14 @@ const Container = styled.div`
 const CardsContent = () => (
   <Container className="has-text-centered-mobile">
     <div className="columns">
-      <div className="column">
+      <div className="column is-2">
         <Card icon="fas fa-adjust" title="rtgrt" subtitle="thtrdrt" />
       </div>
-      <div className="column">
-        <Card title="rtgrt" subtitle="thtrdrt" />
+      <div className="column is-2">
+        <Card icon="fas fa-adjust" title="rtgrt" subtitle="thtrdrt" />
       </div>
-      <div className="column">
-        <Card title="rtgrt" subtitle="thtrdrt" />
+      <div className="column is-2">
+        <Card icon="fas fa-adjust" title="rtgrt" subtitle="thtrdrt" />
       </div>
     </div>
   </Container>

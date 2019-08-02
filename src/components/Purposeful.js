@@ -9,7 +9,6 @@ import Button from './elements/Button';
 
 const Container = styled.div`
   .ContantBox {
-    margin-top: 4rem;
     padding: 1rem 7rem;
     @media screen and (max-width: 600px) {
       margin-left: 0rem;
@@ -27,6 +26,9 @@ const Container = styled.div`
     @media screen and (max-width: 600px) {
       margin: 0rem 0rem;
     }
+  }
+  .column {
+    align-self: center;
   }
 `;
 

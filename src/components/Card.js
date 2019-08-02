@@ -5,14 +5,17 @@ import Title from './elements/Title';
 import Subtitle from './elements/Subtitle';
 
 const Container = styled.div`
-  .card {
+  .cards {
     background: transparent;
-}
+  }
+  i {
+    font-size: 5rem !important;
+  }
 `;
 const Card = ({ title, subtitle, button, icon }) => (
   <Container>
-    <div className="card">
-      <div className="card-image has-text-centered">
+    <div className="cards">
+      <div className="card-icon has-text-centered">
         <i className={icon}></i>
       </div>
       <div className="media-content has-text-centered">

@@ -3,17 +3,19 @@ import styled from 'styled-components';
 
 const Container = styled.button`
   &&& {
-    color: ${props =>
-      props.secondary ? props.theme.SecondaryColor : '#ffffff'};
-    padding: 0.5rem 1.25rem;
+    color: ${props => (props.secondary ? props.theme.SecondaryColor : '#fff')};
+    padding: 0.5rem 2.5rem;
     border-radius: 0;
     background-color: transparent;
     font-weight: 600;
     border: 2px solid
       ${props =>
-        props.borderRed ? props.theme.SecondaryColor : '#fffff'}!important;
+        props.borderRed ? props.theme.SecondaryColor : '#fff'}!important;
     :hover {
       background: transparent;
+      border: 2px solid
+        ${props =>
+          props.borderRed ? props.theme.SecondaryColor : '#fff'}!important;
     }
   }
 `;
@@ -21,8 +23,8 @@ const Container = styled.button`
 const Button = ({ children, isLarge, ...props }) => (
   <Container
     type="submit"
-    className={`buttonis-size-7 has-text-weight-semibold 
-    ${isLarge ? 'is-large is-fullwidth' : ''}`}
+    className={`button is-size-7 has-text-weight-semibold 
+    ${isLarge ? 'is-large' : ''}`}
     {...props}>
     {children}
   </Container>
