@@ -6,8 +6,8 @@ const Container = styled.h2`
   color: ${props => props.theme.primaryColor};
 `;
 
-const Subtitle = ({ children }) => (
-  <Container className="has-text-weight-semibold is-size-7">
+const Subtitle = ({ children, size }) => (
+  <Container className={`has-text-weight-semibold is-size-${size}`}>
     {children}
   </Container>
 );

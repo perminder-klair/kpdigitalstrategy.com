@@ -47,7 +47,7 @@ const Purposeful = () => (
             </Title>
           </div>
           <div className="SubitleWrapper">
-            <Subtitle>
+            <Subtitle size={7}>
               We are experiences team of designers and marketeers whoare ready
               to create brand identities,devise informed marketing strategues,
               create competlling email nirture track campaigns ,and develop
@@ -55,7 +55,7 @@ const Purposeful = () => (
             </Subtitle>
           </div>
           <div className="SubitleWrapper">
-            <Subtitle>
+            <Subtitle size={7}>
               We are unfraid of data & analytics our results are transparent.We
               are passionate problem solvers who define objetives pinpoint
               challenges and above all else are on your side celebrating yout
@@ -63,7 +63,7 @@ const Purposeful = () => (
             </Subtitle>
           </div>
           <div className="SubitleWrapper">
-            <Subtitle>
+            <Subtitle size={7}>
               No matter the size of your projects, or if you are just starting
               out,KP digital Strategy has everthing you need to unlock your
               brand's potential

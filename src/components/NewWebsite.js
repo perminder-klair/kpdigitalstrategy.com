@@ -36,8 +36,8 @@ const Container = styled.div`
   .icon {
     margin: 0rem 0.25rem;
     font-size: 23px;
-    color: black;
-    background-color: ${props => props.theme.SecondaryColor};
+    color: ${props => props.theme.SecondaryColor};
+    background-color: transparent;
   }
   .IconBox {
     margin: 0rem 0.25rem;
@@ -80,7 +80,7 @@ const NewWebSite = () => (
       <div className="column is-1">
         <div className="RotateBox">
           <div className="IconBox">
-            <i className="icon fab fa-facebook-square" />
+            <i className="icon fab fab fa-linkedin" />
             <i className="icon fab fa-twitter-square" />
             <i className="icon fab fa-instagram" />
           </div>
