@@ -17,8 +17,8 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <Seo
-          title="Home"
-          description="Welcome to GatsbyJs v1"
+          title="kpdigitalstrategy"
+          description="Welcome to GatsbyJs v2"
           url={`${config.siteUrl}`}
         />
         <AdviceLine />

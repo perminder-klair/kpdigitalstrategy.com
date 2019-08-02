@@ -1,8 +1,8 @@
-# Kickoff GatsbyJs
+# kpdigitalstrategy
 
 A starting point using ReactJs, bundled with awesome GatsbyJs v2.
 
-[Demo](https://kickoff-gatsbyjs.netlify.com/)
+[Demo](https://kpdigitalstrategy.netlify.com/)
 
 ## Stack
 
@@ -38,4 +38,5 @@ yarn start
 yarn run build
 yarn serve
 ```
+
 # kpdigitalstrategy.com

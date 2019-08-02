@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import styled from 'styled-components';
+import DesktopBurger from './DesktopBurger';
 
 const Container = styled.nav`
   background-color: ${props => props.theme.bodyBackground};
@@ -81,6 +82,7 @@ export default class Header extends React.Component {
             </div>
           </div>
         </div>
+        <DesktopBurger />
       </Container>
     );
   }
