@@ -10,8 +10,8 @@ const Container = styled.div`
   }
 `;
 const CardsContent = () => (
-  <Container className="has-text-centered-mobile">
-    <div className="section">
+  <Container className="has-text-centered-mobile section">
+    <div className="container">
       <div className="columns">
         <div className="column is-2">
           <Card

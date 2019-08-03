@@ -13,6 +13,7 @@ import OurServices from '../components/OurServices';
 import AdviceCentre from '../components/AdviceCentre';
 import AskedQuestions from '../components/AskedQuestions';
 import OurDesign from '../components/OurDesign';
+import MeetTeam from '../components/MeetTeam';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -29,6 +30,7 @@ export default class IndexPage extends React.Component {
         <Purposeful />
         <BookFreeCall />
         <CardsContent />
+        <MeetTeam />
         <OurDesign />
         <AskedQuestions />
         <AdviceCentre />
