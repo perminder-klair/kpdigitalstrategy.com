@@ -10,7 +10,7 @@ const Container = styled.nav`
     color: ${props => props.theme.primaryColor};
   }
   .navbar-start {
-    background-color: transparent;
+    background-color: red;
   }
 `;
 
@@ -55,10 +55,18 @@ export default class DesktopBurger extends React.Component {
         </div>
         <div
           id="navbarBasicExample"
-          className={View ? 'navbar-menu is-active' : 'navbar-menu '}>
-          <div className="navbar-start is-hidden">
-            <a className="navbar-item has-text-white">Home</a>
-            <a className="navbar-item has-text-white">About</a>
+          className={View ? 'navbar-menu is-active' : 'navbar-menu'}>
+          <div className={View ? 'navbar-start ' : 'navbar-start is-hidden'}>
+            <aside className="menu">
+              <ul className="menu-list is-size-6">
+                <a to="/">
+                  <li>Sign up for free</li>
+                </a>
+                <a to="/">
+                  <li>Subscribe</li>
+                </a>
+              </ul>
+            </aside>
           </div>
         </div>
       </Container>
