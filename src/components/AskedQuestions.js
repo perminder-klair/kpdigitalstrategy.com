@@ -2,12 +2,19 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import styled from 'styled-components';
+import CardQuestions from './CardQuestions';
+import { Button } from './elements';
 
 const Container = styled.div`
   .title {
     padding-bottom: 1rem;
   }
-
+  .CardWrapper {
+    margin: 2rem 0rem;
+  }
+  .ButtonWrapper {
+    margin: 4rem 0rem;
+  }
 `;
 
 const AskedQuestions = () => (
@@ -16,6 +23,20 @@ const AskedQuestions = () => (
       <h2 className="title has-text-centered has-text-weight-medium has-text-white is-size-3">
         Frequently Asked Questions
       </h2>
+      <div className="CardWrapper">
+        <CardQuestions Questions="What information do i need to supply to you to start my project ?" />
+      </div>
+      <div className="CardWrapper">
+        <CardQuestions Questions="What information do i need to supply to you to start my project ?" />
+      </div>
+      <div className="CardWrapper">
+        <CardQuestions Questions="What information do i need to supply to you to start my project ?" />
+      </div>
+    </div>
+    <div className="ButtonWrapper has-text-centered">
+      <Button borderRed secondary isMedium>
+        View All Questions
+      </Button>
     </div>
   </Container>
 );
