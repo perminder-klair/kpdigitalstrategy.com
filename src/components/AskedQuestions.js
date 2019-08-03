@@ -6,15 +6,13 @@ import CardQuestions from './CardQuestions';
 import { Button, Heading } from './elements';
 
 const Container = styled.div`
-  .title {
-    padding-bottom: 2rem;
-  }
   .CardWrapper {
     margin: 2rem 0rem;
   }
   .ButtonWrapper {
     margin: 4rem 0rem;
   }
+
 `;
 
 const AskedQuestions = () => (

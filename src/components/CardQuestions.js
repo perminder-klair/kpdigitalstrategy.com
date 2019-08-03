@@ -17,7 +17,7 @@ const TitleWrapper = styled.div`
 const CardQuestions = ({ Questions }) => (
   <Container className="container">
     <div className="columns">
-      <div className="column is-7">
+      <div className="column is-four-fifths">
         <TitleWrapper>
           <Title>{Questions}</Title>
         </TitleWrapper>
