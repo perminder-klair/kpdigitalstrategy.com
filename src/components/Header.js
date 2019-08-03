@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import DesktopBurger from './DesktopBurger';
 
 const Container = styled.nav`
-  background-color: ${props => props.theme.bodyBackground};
+  background-color: ${props => props.theme.blackDark};
   .button {
     background-color: transparent;
     @media screen and (max-width: 600px) {

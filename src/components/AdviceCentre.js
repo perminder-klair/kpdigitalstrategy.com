@@ -3,7 +3,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Subtitle, Button } from './elements';
+import { Subtitle, Button, Title, Heading } from './elements';
 
 const Container = styled.div`
   background-color: ${props => props.theme.SecondaryColor};
@@ -17,14 +17,12 @@ const ButtonWrapper = styled.div`
 const AdviceCentre = () => (
   <Container className="section">
     <div className=" has-text-centered">
-      <h1 className="title has-text-weight-bold has-text-black is-size-4">
-        Not sure where to begin ?
-      </h1>
-      <Subtitle size={6}>
+      <Heading black>Not sure where to begin ?</Heading>
+      <Title>
         For help of enything you need to know about design and marketing
-      </Subtitle>
+      </Title>
       <ButtonWrapper>
-        <Button isMedium>visit our advice centre</Button>
+        <Button >visit our advice centre</Button>
       </ButtonWrapper>
     </div>
   </Container>

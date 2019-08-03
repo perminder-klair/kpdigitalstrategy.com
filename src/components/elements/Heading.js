@@ -2,12 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.h2`
-  margin-bottom: 0px;
-  color: ${props => props.theme.primaryColor};
+  color: ${props => (props.black ? props.theme.blackDark : '#ffffff')};
 `;
 
 const Heading = ({ children, ...props }) => (
-  <Container className="is-size-4 has-text-weight-semibold" {...props}>
+  <Container className="is-size-4 title has-text-weight-bold" {...props}>
     {children}
   </Container>
 );

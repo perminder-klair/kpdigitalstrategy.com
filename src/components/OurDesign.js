@@ -6,24 +6,25 @@ import { Button, Title, Subtitle } from './elements';
 
 const Container = styled.div`
   padding-bottom: 1rem;
-  background-color: ${props => props.theme.SecondaryColor};
-  .HeadingWrapper {
-    background-color: ${props => props.theme.bodyBackground};
-  }
   .columns {
     margin: -1rem 0rem !important;
   }
   .ButtonWrapper {
-    margin-top: 2rem;
+    padding: 1.6rem 0rem 1rem;
+    background: ${props => props.theme.SecondaryColor};
+  }
+  .section {
+    background-color: ${props => props.theme.backgroundDark};
+  }
+  .title {
+    margin-bottom: 0.7rem !important;
   }
 `;
 
 const OurDesign = () => (
   <Container className="has-text-centered-mobile">
     <div className="HeadingWrapper has-text-centered section">
-      <Title IsNormal red>
-        Some Our design project examples
-      </Title>
+      <Title red>Some Our design project examples</Title>
       <Subtitle size={7}>
         Here are some examples of some of our latest design
       </Subtitle>
@@ -59,9 +60,7 @@ const OurDesign = () => (
       </div>
     </div>
     <div className="ButtonWrapper has-text-centered">
-      <Button isLarge isMedium>
-        Learn more about our design & creative work
-      </Button>
+      <Button>Learn more about our design & creative work</Button>
     </div>
   </Container>
 );
