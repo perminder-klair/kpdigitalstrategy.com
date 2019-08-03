@@ -14,6 +14,8 @@ import AdviceCentre from '../components/AdviceCentre';
 import AskedQuestions from '../components/AskedQuestions';
 import OurDesign from '../components/OurDesign';
 import MeetTeam from '../components/MeetTeam';
+import CustomerReviews from '../components/CustomerReviews';
+import StrategyProcess from '../components/StrategyProcess';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -30,6 +32,8 @@ export default class IndexPage extends React.Component {
         <Purposeful />
         <BookFreeCall />
         <CardsContent />
+        <CustomerReviews />
+        <StrategyProcess />
         <MeetTeam />
         <OurDesign />
         <AskedQuestions />
