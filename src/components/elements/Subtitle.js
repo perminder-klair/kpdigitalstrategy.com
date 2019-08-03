@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Container = styled.h2`
-  margin-bottom: 0px;
+const Container = styled.p`
+  margin-top: 0px !important;
   color: ${props => props.theme.primaryColor};
 `;
 
 const Subtitle = ({ children, size }) => (
-  <Container className={`has-text-weight-semibold is-size-${size}`}>
+  <Container className={`subtitle has-text-weight-light is-size-${size}`}>
     {children}
   </Container>
 );

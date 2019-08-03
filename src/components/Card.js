@@ -8,20 +8,32 @@ const Container = styled.div`
   .cards {
     background: transparent;
   }
-  i {
-    font-size: 5rem !important;
+  .column {
+    background: ${props => props.theme.primaryColor};
+    height: 11rem;
+    width: 11rem;
+    margin: 0px 5.5px;
+    border-radius: 6rem;
+    padding: 3.5rem 3rem;
   }
+  .media-content {
+    margin-top: 1.5rem;
+  }
+`;
+const Icon = styled.i`
+  font-size: 4rem;
+  color: #0c1117;
 `;
 const Card = ({ title, subtitle, button, icon }) => (
   <Container>
     <div className="cards">
-      <div className="card-icon has-text-centered">
-        <i className={icon}></i>
+      <div className="column">
+        <Icon className={icon}></Icon>
       </div>
       <div className="media-content has-text-centered">
-        <Title>{title}</Title>
-        <Subtitle>{subtitle}</Subtitle>
-        <Button>{button}</Button>
+        <Title red>{title}</Title>
+        <Subtitle size="7">{subtitle}</Subtitle>
+        <Button borderRed className="has-text-weight-semibold">{button}</Button>
       </div>
     </div>
   </Container>
