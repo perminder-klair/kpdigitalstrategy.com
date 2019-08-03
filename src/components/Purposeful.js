@@ -2,10 +2,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 import Image from '../../static/images/sideimage.jpg';
-import Heading from './elements/Heading';
-import Title from './elements/Title';
-import Subtitle from './elements/Subtitle';
-import Button from './elements/Button';
+import { Button, Title, Subtitle, Heading } from './elements';
 
 const Container = styled.div`
   .ContantBox {

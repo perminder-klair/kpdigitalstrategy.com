@@ -11,6 +11,7 @@ import NewWebSite from '../components/NewWebsite';
 import Purposeful from '../components/Purposeful';
 import OurServices from '../components/OurServices';
 import AdviceCentre from '../components/AdviceCentre';
+import AskedQuestions from '../components/AskedQuestions';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -27,6 +28,7 @@ export default class IndexPage extends React.Component {
         <Purposeful />
         <BookFreeCall />
         <CardsContent />
+        <AskedQuestions />
         <AdviceCentre />
         <OurServices />
       </Layout>

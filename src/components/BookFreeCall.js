@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Title from './elements/Title';
-import Button from './elements/Button';
+import { Button, Title } from './elements';
 
 const Container = styled.div`
   background-color: ${props => props.theme.SecondaryColor};
@@ -16,9 +15,7 @@ const BookFreeCall = () => (
         </Title>
       </div>
       <div className="column">
-        <Button className="has-text-weight-semibold">
-          book a FREE call
-        </Button>
+        <Button className="has-text-weight-semibold">book a FREE call</Button>
       </div>
     </div>
   </Container>

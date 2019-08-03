@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Container = styled.h2`
   margin-bottom: 0px;
-  color: ${props => (props.red ? props.theme.SecondaryColor : '#fff')};
+  color: ${props => (props.red ? props.theme.SecondaryColor : '#ffffff')};
   font-size: 1.15rem;
 `;
 

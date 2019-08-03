@@ -48,9 +48,9 @@ export default class DesktopBurger extends React.Component {
             aria-label="menu"
             aria-expanded="false"
             onClick={() => this.Menu()}>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
           </a>
         </div>
         <div

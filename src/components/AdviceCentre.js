@@ -2,8 +2,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import styled from 'styled-components';
-import Button from './elements/Button';
-import Subtitle from './elements/Subtitle';
+
+import { Subtitle, Button } from './elements';
 
 const Container = styled.div`
   background-color: ${props => props.theme.SecondaryColor};
