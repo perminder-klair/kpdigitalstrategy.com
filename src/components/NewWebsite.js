@@ -43,8 +43,6 @@ const Container = styled.div`
     margin: 0rem 0.25rem;
     display: flex;
   }
-  .Latetstudy {
-  }
   .ContantBox {
     display: flex;
     margin: 15rem 3rem;
@@ -80,8 +78,8 @@ const NewWebSite = () => (
       <div className="column is-1">
         <div className="RotateBox">
           <div className="IconBox">
-            <i className="icon fab fa-twitter-square" />
             <i className="icon fab fa-facebook-square" />
+            <i className="icon fab fa-instagram" />
             <i className="icon fab fab fa-linkedin" />
           </div>
           <h3 className="has-text-white is-size-7 has-text-weight-medium">

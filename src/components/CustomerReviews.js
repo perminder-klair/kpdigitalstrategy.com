@@ -10,7 +10,7 @@ const Container = styled.div`
     justify-content: space-evenly;
   }
   .title {
-    margin-bottom: 0.15rem;
+    margin-bottom: 0.35rem;
   }
   .image {
     display: block;

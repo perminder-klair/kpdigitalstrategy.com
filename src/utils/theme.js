@@ -9,6 +9,7 @@ const theme = {
   backgroundDark: '#0c1117',
   darkGrey: '#1e2126',
   roboto: 'Roboto,sans-serif',
+  Black: '#000000',
 };
 
 export default theme;

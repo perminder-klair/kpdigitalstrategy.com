@@ -11,7 +11,7 @@ const Container = styled.div`
 `;
 
 const Section = styled.section`
-  padding: 0rem 2rem;
+  padding: 2rem 2rem;
 `;
 
 const IndexLayout = ({ children }) => (
