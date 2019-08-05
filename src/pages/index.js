@@ -16,6 +16,7 @@ import OurDesign from '../components/OurDesign';
 import MeetTeam from '../components/MeetTeam';
 import CustomerReviews from '../components/CustomerReviews';
 import StrategyProcess from '../components/StrategyProcess';
+import Footer from '../components/Footer';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -39,6 +40,7 @@ export default class IndexPage extends React.Component {
         <AskedQuestions />
         <AdviceCentre />
         <OurServices />
+        <Footer />
       </Layout>
     );
   }
