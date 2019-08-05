@@ -8,6 +8,7 @@ const theme = {
   blackDark: '#0e0e0e',
   backgroundDark: '#0c1117',
   darkGrey: '#1e2126',
+  roboto: 'Roboto,sans-serif',
 };
 
 export default theme;
@@ -15,7 +16,7 @@ export default theme;
 export const GlobalStyle = createGlobalStyle`
  body {
     height: 100vh;
-    font-family: sans-serif;
+    font-family:sans-sero
   }
   .columns {
   margin-top: 0px!important;

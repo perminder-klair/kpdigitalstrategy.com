@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import styled from 'styled-components';
-import { Heading, Title, Button } from './elements';
+import { Heading, Title } from './elements';
 
 const Container = styled.div`
   background-color: ${props => props.theme.SecondaryColor};
@@ -33,7 +33,7 @@ const CustomerReviews = () => (
         <div className="column">
           <Heading black>In the last 30 days we've received</Heading>
           <Title>60 postive customer reviews</Title>
-          <h2 className="has-text-black has-text-weight-medium is-size-5">
+          <h2 className="has-text-black has-text-weight-bold is-size-5">
             Bring us to 200 positve design and marketing outcomes over the past
             year for business all over the UK
           </h2>

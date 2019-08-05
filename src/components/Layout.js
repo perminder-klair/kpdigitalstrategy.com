@@ -7,7 +7,7 @@ import config from '../utils/config';
 import Header from './Header';
 
 const Container = styled.div`
-  font-family: sans-serif;
+  font-family: ${props => props.theme.roboto};
 `;
 
 const Section = styled.section`
