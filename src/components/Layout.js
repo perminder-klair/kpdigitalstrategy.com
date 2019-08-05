@@ -7,6 +7,7 @@ import config from '../utils/config';
 import Header from './Header';
 
 const Container = styled.div`
+  font-family: sans-serif;
 `;
 
 const Section = styled.section`

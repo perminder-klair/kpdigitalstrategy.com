@@ -15,6 +15,7 @@ export default theme;
 export const GlobalStyle = createGlobalStyle`
  body {
     height: 100vh;
+    font-family: sans-serif;
   }
   .columns {
   margin-top: 0px!important;
