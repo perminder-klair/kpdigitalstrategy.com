@@ -11,6 +11,15 @@ const Container = styled.nav`
   }
   .navbar-start {
     background-color: red;
+    justify-content: center;
+    z-index: 400;
+  }
+  aside {
+    margin-top: 52px;
+    position: absolute;
+    background-color: ${props => props.theme.SecondaryColor};
+    margin-left: -81px;
+    width: 165px;
   }
 `;
 
@@ -59,12 +68,8 @@ export default class DesktopBurger extends React.Component {
           <div className={View ? 'navbar-start ' : 'navbar-start is-hidden'}>
             <aside className="menu">
               <ul className="menu-list is-size-6">
-                <a to="/">
-                  <li>Sign up for free</li>
-                </a>
-                <a to="/">
-                  <li>Subscribe</li>
-                </a>
+                <a className="navbar-item has-text-white">Home</a>
+                <a className="navbar-item has-text-white">about</a>
               </ul>
             </aside>
           </div>
