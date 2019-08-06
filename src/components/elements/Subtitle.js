@@ -6,8 +6,8 @@ const Container = styled.p`
   color: ${props => props.theme.primaryColor};
 `;
 
-const Subtitle = ({ children, size }) => (
-  <Container className={`subtitle has-text-weight-light is-size-${size}`}>
+const Subtitle = ({ children }) => (
+  <Container className="subtitle has-text-weight-light is-size-7">
     {children}
   </Container>
 );

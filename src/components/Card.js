@@ -32,7 +32,7 @@ const Card = ({ title, subtitle, button, icon }) => (
       </div>
       <div className="media-content has-text-centered">
         <Title red>{title}</Title>
-        <Subtitle size="7">{subtitle}</Subtitle>
+        <Subtitle>{subtitle}</Subtitle>
         <Button borderRed className="has-text-weight-semibold">{button}</Button>
       </div>
     </div>

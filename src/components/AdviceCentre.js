@@ -3,7 +3,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Subtitle, Button, Title, Heading } from './elements';
+import { Button, Title, Heading } from './elements';
 
 const Container = styled.div`
   background-color: ${props => props.theme.SecondaryColor};
@@ -22,7 +22,7 @@ const AdviceCentre = () => (
         For help of enything you need to know about design and marketing
       </Title>
       <ButtonWrapper>
-        <Button >visit our advice centre</Button>
+        <Button>visit our advice centre</Button>
       </ButtonWrapper>
     </div>
   </Container>

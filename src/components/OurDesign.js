@@ -25,7 +25,7 @@ const OurDesign = () => (
   <Container className="has-text-centered-mobile">
     <div className="HeadingWrapper has-text-centered section">
       <Title red>Some Our design project examples</Title>
-      <Subtitle size={7}>
+      <Subtitle>
         Here are some examples of some of our latest design
       </Subtitle>
     </div>
