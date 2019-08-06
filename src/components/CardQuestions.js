@@ -39,7 +39,7 @@ class CardQuestions extends React.Component {
             </TitleWrapper>
           </div>
           <div className="column">
-            <a className="" onClick={this.toggleDiv}>
+            <a onClick={this.toggleDiv}>
               <i className="Icon fas fa-chevron-circle-down is-pulled-right" />
             </a>
           </div>

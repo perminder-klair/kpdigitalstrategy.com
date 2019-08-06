@@ -8,8 +8,6 @@ const Container = styled.div`
   .ImagesContainer {
     padding: 3rem 0rem;
   }
-  .Marketing {
-  }
 `;
 
 const BrandIdentity = () => (

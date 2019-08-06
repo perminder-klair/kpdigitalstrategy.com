@@ -2,8 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  background-color: white;
-  height: 39%;
+  background-color: ${props => props.theme.primaryColor};
   padding: 1rem 2rem;
 `;
 

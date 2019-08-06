@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Heading, Title} from './elements';
+import { Heading, Title } from './elements';
 
 const Container = styled.div`
   .HeadingWrapper {
@@ -40,9 +40,9 @@ const StrategyProcess = () => (
 
       <div className="columns">
         <div className="column is-2">
-          <figure className="image">
+          <figure className="image is-square">
             <img
-              className="is-rounded"
+              className="image"
               src="https://bulma.io/images/placeholders/128x128.png"
             />
           </figure>
@@ -50,7 +50,7 @@ const StrategyProcess = () => (
         <div className="column is-2">
           <figure className="image is-square">
             <img
-              className="is-rounded"
+              className="image"
               src="https://bulma.io/images/placeholders/128x128.png"
             />
           </figure>
@@ -58,7 +58,7 @@ const StrategyProcess = () => (
         <div className="column is-2">
           <figure className="image is-square">
             <img
-              className="is-rounded"
+              className="image"
               src="https://bulma.io/images/placeholders/128x128.png"
             />
           </figure>
