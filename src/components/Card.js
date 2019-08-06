@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from './elements/Button';
-import Title from './elements/Title';
-import Subtitle from './elements/Subtitle';
+import { Button, Title, Subtitle } from './elements';
 
 const Container = styled.div`
   .cards {
@@ -28,12 +26,14 @@ const Card = ({ title, subtitle, button, icon }) => (
   <Container>
     <div className="cards">
       <div className="column">
-        <Icon className={icon}></Icon>
+        <Icon className={icon} />
       </div>
       <div className="media-content has-text-centered">
         <Title red>{title}</Title>
         <Subtitle>{subtitle}</Subtitle>
-        <Button borderRed className="has-text-weight-semibold">{button}</Button>
+        <Button borderRed className="has-text-weight-semibold">
+          {button}
+        </Button>
       </div>
     </div>
   </Container>

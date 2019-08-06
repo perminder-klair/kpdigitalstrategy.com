@@ -20,7 +20,7 @@ const MeetTeam = () => (
     <div className="container">
       <div className="columns">
         <div className="column is-2">
-          <figure className="image">
+          <figure className="image is-square">
             <img
               className="is-rounded"
               src="https://bulma.io/images/placeholders/128x128.png"

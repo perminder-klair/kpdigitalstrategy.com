@@ -17,7 +17,7 @@ import MeetTeam from '../components/MeetTeam';
 import CustomerReviews from '../components/CustomerReviews';
 import StrategyProcess from '../components/StrategyProcess';
 import Footer from '../components/Footer';
-
+import BrandIdentity from '../components/BrandIdentity';
 export default class IndexPage extends React.Component {
   render() {
     return (
@@ -33,6 +33,7 @@ export default class IndexPage extends React.Component {
         <Purposeful />
         <BookFreeCall />
         <CardsContent />
+        <BrandIdentity />
         <CustomerReviews />
         <StrategyProcess />
         <MeetTeam />
