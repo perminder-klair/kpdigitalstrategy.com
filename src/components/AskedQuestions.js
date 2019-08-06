@@ -12,7 +12,6 @@ const Container = styled.div`
   .ButtonWrapper {
     margin: 4rem 0rem;
   }
-
 `;
 
 const AskedQuestions = () => (
