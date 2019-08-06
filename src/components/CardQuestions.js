@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import styled from 'styled-components';
 import { Title } from './elements';
@@ -17,7 +18,7 @@ const TitleWrapper = styled.div`
 class CardQuestions extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { show: true };
+    this.state = { show: false };
     this.toggleDiv = this.toggleDiv.bind(this);
   }
 
