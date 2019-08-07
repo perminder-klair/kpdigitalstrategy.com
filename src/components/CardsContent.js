@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import Card from './Card';
+import SpkerIcon from '../../static/images/spker.png';
+import BoardIcon from '../../static/images/board.png';
+import PancilIcon from '../../static/images/pancil.png';
 
 const Container = styled.div`
   background-color: ${props => props.theme.backgroundDark};
@@ -15,7 +18,7 @@ const CardsContent = () => (
       <div className="columns">
         <div className="column is-2">
           <Card
-            icon="fas fa-pen"
+            Icon={PancilIcon}
             title="Brand Identity"
             subtitle="Protect excerpt. Lorem ipsum dolor sit amet,
              conselorem ipsum dolor sit amet, consectetuer adipiscing alit,
@@ -26,7 +29,7 @@ const CardsContent = () => (
         </div>
         <div className="column is-2">
           <Card
-            icon="fas fa-laptop-code"
+            Icon={BoardIcon}
             title="Website development"
             subtitle="Protect excerpt. Lorem ipsum dolor sit amet, 
             conselorem ipsum dolor sit amet, consectetuer adipiscing alit,
@@ -37,7 +40,7 @@ const CardsContent = () => (
         </div>
         <div className="column is-2">
           <Card
-            icon="fas fa-bullhorn"
+            Icon={SpkerIcon}
             title="Strategic marketing"
             subtitle="Protect excerpt. Lorem ipsum dolor sit amet,
              conselorem ipsum dolor sit amet, consectetuer adipiscing alit, 

@@ -3,6 +3,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import DesktopBurger from './DesktopBurger';
+import Logo from '../../static/images/logokp.png';
 
 const Container = styled.nav`
   background-color: ${props => props.theme.blackDark};
@@ -42,12 +43,8 @@ export default class Header extends React.Component {
         role="navigation"
         aria-label="main navigation">
         <div className="navbar-brand">
-          <a className="navbar-item" href="https://bulma.io">
-            <img
-              src="https://colorlib.com/preview/theme/academics/images/logo.jpg"
-              width="112"
-              height="28"
-            />
+          <a className="navbar-item" href="/">
+            <img src={Logo} />
           </a>
 
           <a

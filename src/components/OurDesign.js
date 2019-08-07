@@ -1,8 +1,13 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import styled from 'styled-components';
-import Image from '../../static/images/sideimage.jpg';
 import { Button, Title, Subtitle } from './elements';
+import Image from '../../static/images/sideimage.jpg';
+import BusImage from '../../static/images/bus.png';
+import BookImage from '../../static/images/book.png';
+import TruckImage from '../../static/images/truck.png';
+import BottlesImage from '../../static/images/bottles.png';
+import BottelImage from '../../static/images/bottel.png';
 
 const Container = styled.div`
   padding-bottom: 1rem;
@@ -25,27 +30,25 @@ const OurDesign = () => (
   <Container className="has-text-centered-mobile">
     <div className="HeadingWrapper has-text-centered section">
       <Title red>Some Our design project examples</Title>
-      <Subtitle>
-        Here are some examples of some of our latest design
-      </Subtitle>
+      <Subtitle>Here are some examples of some of our latest design</Subtitle>
     </div>
     <div className="columns is-gapless is-0 ">
       <div className="column is-two-quarter">
-        <img src={Image} />
+        <img src={BusImage} />
       </div>
       <div className="column is-two-quarter">
-        <img src={Image} />
+        <img src={BookImage} />
       </div>
       <div className="column is-two-quarter">
-        <img src={Image} />
+        <img src={TruckImage} />
       </div>
     </div>
     <div className="columns is-gapless is-0">
       <div className="column is-half">
-        <img src={Image} />
+        <img src={BottlesImage} />
       </div>
       <div className="column is-half">
-        <img src={Image} />
+        <img src={BottelImage} />
       </div>
     </div>
     <div className="columns is-gapless is-0 ">

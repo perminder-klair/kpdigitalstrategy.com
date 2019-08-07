@@ -10,16 +10,18 @@ const Container = styled.div`
     font-size: 1rem !important;
     padding-top: 1rem;
   }
-`;
-
-const Brand = styled.i`
-  color: ${props => props.theme.blackDark};
-  font-size: 3rem;
+  .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 const MarketingCard = ({ subtitle, Icon }) => (
   <Container className="has-text-centered">
-    <Brand className={Icon} />
+    <figure className="image is-96x96">
+      <img src={Icon} />
+    </figure>
     <Subtitle>{subtitle}</Subtitle>
   </Container>
 );
