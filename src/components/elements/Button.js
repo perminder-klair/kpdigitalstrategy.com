@@ -7,7 +7,8 @@ const Container = styled.button`
     padding: 0rem 2.5rem;
     height: 2.5rem;
     border-radius: 0;
-    background-color: transparent;
+    background-color: ${props =>
+      props.Black ? props.theme.Black : 'transparent'}!important;
     border: 2px solid
       ${props =>
         props.borderRed ? props.theme.SecondaryColor : '#fff'}!important;

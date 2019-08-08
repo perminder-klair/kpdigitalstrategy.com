@@ -42,8 +42,6 @@ export default class IndexPage extends React.Component {
         <OurDesign />
         <AskedQuestions />
         <AdviceCentre />
-        <OurServices />
-        <Footer />
       </Layout>
     );
   }

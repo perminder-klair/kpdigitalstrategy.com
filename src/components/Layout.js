@@ -5,6 +5,8 @@ import styled from 'styled-components';
 
 import config from '../utils/config';
 import Header from './Header';
+import Footer from './Footer';
+import OurServices from './OurServices';
 
 const Container = styled.div`
   font-family: ${props => props.theme.roboto};
@@ -25,6 +27,8 @@ const IndexLayout = ({ children }) => (
     <Section className="section has-background-black">
       <Header />
       <Container>{children}</Container>
+      <OurServices />
+      <Footer />
     </Section>
   </div>
 );
