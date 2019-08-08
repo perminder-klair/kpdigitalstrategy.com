@@ -21,7 +21,7 @@ const CardsContent = () => (
             Icon={PancilIcon}
             title="Brand Identity"
             subtitle="Protect excerpt. Lorem ipsum dolor sit amet,
-             conselorem ipsum dolor sit amet, consectetuer adipiscing alit,
+              conselorem ipsum dolor sit amet, consectetuer adipiscing alit,
               sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
               magna aliquam erat volutpat."
             button="learn more"
@@ -32,8 +32,8 @@ const CardsContent = () => (
             Icon={BoardIcon}
             title="Website development"
             subtitle="Protect excerpt. Lorem ipsum dolor sit amet, 
-            conselorem ipsum dolor sit amet, consectetuer adipiscing alit,
-             sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+              conselorem ipsum dolor sit amet, consectetuer adipiscing alit,
+              sed diam nonummy nibh euismod tincidunt ut laoreet dolore
               magna aliquam erat volutpat."
             button="learn more"
           />
@@ -43,8 +43,8 @@ const CardsContent = () => (
             Icon={SpkerIcon}
             title="Strategic marketing"
             subtitle="Protect excerpt. Lorem ipsum dolor sit amet,
-             conselorem ipsum dolor sit amet, consectetuer adipiscing alit, 
-             sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+              conselorem ipsum dolor sit amet, consectetuer adipiscing alit, 
+              sed diam nonummy nibh euismod tincidunt ut laoreet dolore
               magna aliquam erat volutpat."
             button="learn more"
           />
