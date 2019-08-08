@@ -1,3 +1,7 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable no-unused-vars */
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React from 'react';
 import styled from 'styled-components';
 import { Subtitle } from './elements';
@@ -11,19 +15,51 @@ const Container = styled.div`
     padding-top: 1rem;
   }
   .image {
-    display: block;
     margin-left: auto;
     margin-right: auto;
+    display: block;
   }
 `;
 
-const MarketingCard = ({ subtitle, Icon }) => (
-  <Container className="has-text-centered">
-    <figure className="image is-96x96">
-      <img src={Icon} />
-    </figure>
-    <Subtitle>{subtitle}</Subtitle>
-  </Container>
-);
+class MarketingCard extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      imgSrc: this.props.icon,
+    };
+    this.handleMouseOver = this.handleMouseOver.bind(this);
+    this.handleMouseOut = this.handleMouseOut.bind(this);
+  }
+
+  handleMouseOver() {
+    this.setState({
+      imgSrc: this.props.hovericon,
+    });
+  }
+
+  handleMouseOut() {
+    this.setState({
+      imgSrc: this.props.icon,
+    });
+  }
+
+  render() {
+    const { icon } = this.props;
+    const { hovericon } = this.props;
+    const { subtitle } = this.props;
+    return (
+      <Container className="has-text-centered">
+        <figure className="image is-96x96">
+          <img
+            onMouseOver={this.handleMouseOver}
+            onMouseOut={this.handleMouseOut}
+            src={this.state.imgSrc}
+          />
+        </figure>
+        <Subtitle>{subtitle}</Subtitle>
+      </Container>
+    );
+  }
+}
 
 export default MarketingCard;
