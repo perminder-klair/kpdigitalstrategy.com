@@ -17,6 +17,7 @@ const Container = styled.div`
   .ButtonWrapper {
     padding: 1.6rem 0rem 1rem;
     background: ${props => props.theme.SecondaryColor};
+    
   }
   .section {
     background-color: ${props => props.theme.backgroundDark};
@@ -53,13 +54,13 @@ const OurDesign = () => (
     </div>
     <div className="columns is-gapless is-0 ">
       <div className="column is-two-quarter">
-        <img src={Image} />
+        <img src={BusImage} />
       </div>
       <div className="column is-two-quarter">
-        <img src={Image} />
+        <img src={BookImage} />
       </div>
       <div className="column is-two-quarter">
-        <img src={Image} />
+        <img src={TruckImage} />
       </div>
     </div>
     <div className="ButtonWrapper has-text-centered">
