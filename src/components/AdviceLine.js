@@ -8,11 +8,9 @@ const Container = styled.div`
   .title {
     padding-bottom: 1rem;
   }
-
   span {
     text-decoration: underline;
   }
-  
 `;
 
 const AdviceLine = () => (

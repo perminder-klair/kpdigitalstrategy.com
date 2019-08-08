@@ -9,21 +9,21 @@ const Container = styled.div`
 `;
 const News = () => (
   <Container className="has-background-white">
-    <div className="columns">
-      <div className="">
-        <img src="/images/wired.svg" />
+    <div className="columns has-text-centered-mobile">
+      <div>
+        <img src="/images/wired.svg" alt="wired-logo" />
       </div>
-      <div className="">
-        <img src="/images/telegraph.svg" />
+      <div>
+        <img src="/images/telegraph.svg" alt="telegraph-logo" />
       </div>
-      <div className="">
-        <img src="/images/the-times.svg" />
+      <div>
+        <img src="/images/the-times.svg" alt="the-times-logo" />
       </div>
-      <div className="">
-        <img src="/images/daily-mails.svg" />
+      <div>
+        <img src="/images/daily-mails.svg" alt="daily-mails-logo" />
       </div>
-      <div className="">
-        <img src="/images/forbes.svg" />
+      <div>
+        <img src="/images/forbes.svg" alt="forbes-logo" />
       </div>
     </div>
   </Container>

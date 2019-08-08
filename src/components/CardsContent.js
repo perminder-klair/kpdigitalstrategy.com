@@ -13,10 +13,10 @@ const Container = styled.div`
   }
 `;
 const CardsContent = () => (
-  <Container className="has-text-centered-mobile section">
+  <Container className="has-text-centered section">
     <div className="container">
       <div className="columns">
-        <div className="column is-2">
+        <div className="column is-one-fifth">
           <Card
             Icon={PancilIcon}
             title="Brand Identity"
@@ -27,7 +27,7 @@ const CardsContent = () => (
             button="learn more"
           />
         </div>
-        <div className="column is-2">
+        <div className="column is-one-fifth">
           <Card
             Icon={BoardIcon}
             title="Website development"
@@ -38,7 +38,7 @@ const CardsContent = () => (
             button="learn more"
           />
         </div>
-        <div className="column is-2">
+        <div className="column is-one-fifth">
           <Card
             Icon={SpkerIcon}
             title="Strategic marketing"
