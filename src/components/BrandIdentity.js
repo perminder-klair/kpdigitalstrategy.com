@@ -9,6 +9,11 @@ import LeafletIcon from '../../static/images/leaflet.png';
 import SocialIcon from '../../static/images/Social.png';
 import LogoIcon from '../../static/images/logo.png';
 import HoverWebsite from '../../static/images/redbox.png';
+import searchhover from '../../static/images/searchhover.png';
+import leaflethover from '../../static/images/leaflethover.png';
+import logohover from '../../static/images/logohover.png';
+import EmailHover from '../../static/images/emailhover.png';
+import Socialhover from '../../static/images/socialhover.png';
 
 const Container = styled.div`
   background-color: ${props => props.theme.backgroundDark};
@@ -32,14 +37,14 @@ const BrandIdentity = () => (
             <MarketingCard
               subtitle="logo"
               icon={LogoIcon}
-              hovericon={HoverWebsite}
+              hovericon={logohover}
             />
           </div>
           <div className="column">
             <MarketingCard
               subtitle="Brochure & Leaflet"
               icon={LeafletIcon}
-              hovericon={HoverWebsite}
+              hovericon={leaflethover}
             />
           </div>
           <div className="column">
@@ -53,21 +58,21 @@ const BrandIdentity = () => (
             <MarketingCard
               subtitle="Email newsletter"
               icon={EmailIcon}
-              hovericon={HoverWebsite}
+              hovericon={EmailHover}
             />
           </div>
           <div className="column">
             <MarketingCard
               subtitle="Social media"
               icon={SocialIcon}
-              hovericon={HoverWebsite}
+              hovericon={Socialhover}
             />
           </div>
           <div className="column">
             <MarketingCard
               subtitle="Infographic"
               icon={SearchIcon}
-              hovericon={HoverWebsite}
+              hovericon={searchhover}
             />
           </div>
         </div>
