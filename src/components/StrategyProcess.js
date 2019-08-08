@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Heading, Title } from './elements';
+import ProcessCard from './ProcessCard';
 
 const Container = styled.div`
   .HeadingWrapper {
@@ -40,12 +41,7 @@ const StrategyProcess = () => (
 
       <div className="columns">
         <div className="column is-2">
-          <figure className="image is-square">
-            <img
-              className="image"
-              src="https://bulma.io/images/placeholders/128x128.png"
-            />
-          </figure>
+          <ProcessCard />
         </div>
         <div className="column is-2">
           <figure className="image is-square">

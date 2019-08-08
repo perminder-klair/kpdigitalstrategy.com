@@ -8,11 +8,10 @@ import { Subtitle } from './elements';
 
 const Container = styled.div`
   background-color: ${props => props.theme.darkGrey};
-  padding: 1rem 1rem;
   .subtitle {
     font-weight: 500 !important;
     font-size: 1rem !important;
-    padding-top: 1rem;
+    padding: 1rem 0rem;
   }
   .image {
     margin-left: auto;
