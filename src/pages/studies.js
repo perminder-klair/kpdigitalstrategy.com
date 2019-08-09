@@ -5,14 +5,16 @@ import DesignCase from '../components/DesignCase';
 import ProjectsType from '../components/ProjectsType';
 import BrandIdentity from '../components/BrandIdentity';
 import BookFreeCall from '../components/BookFreeCall';
+import Development from '../components/Development';
 
-const Studies = () => (
+const studies = () => (
   <Layout>
     <DesignCase />
     <ProjectsType />
+    <Development />
     <BrandIdentity />
     <BookFreeCall />
   </Layout>
 );
 
-export default Studies;
+export default studies;
