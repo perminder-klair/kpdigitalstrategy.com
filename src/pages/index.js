@@ -19,6 +19,7 @@ import StrategyProcess from '../components/StrategyProcess';
 import Footer from '../components/Footer';
 import BrandIdentity from '../components/BrandIdentity';
 import TeamQualities from '../components/TeamQualities';
+
 export default class IndexPage extends React.Component {
   render() {
     return (
