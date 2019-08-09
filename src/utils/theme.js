@@ -19,7 +19,7 @@ export default theme;
 export const GlobalStyle = createGlobalStyle`
  body {
     height: 100vh;
-    font-family:sans-sero
+    font-family:'Roboto,sans-serif';
   }
   .columns {
   margin-top: 0px!important;

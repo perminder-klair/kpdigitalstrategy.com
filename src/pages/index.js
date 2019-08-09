@@ -9,14 +9,12 @@ import BookFreeCall from '../components/BookFreeCall';
 import CardsContent from '../components/CardsContent';
 import NewWebSite from '../components/NewWebsite';
 import Purposeful from '../components/Purposeful';
-import OurServices from '../components/OurServices';
 import AdviceCentre from '../components/AdviceCentre';
 import AskedQuestions from '../components/AskedQuestions';
 import OurDesign from '../components/OurDesign';
 import MeetTeam from '../components/MeetTeam';
 import CustomerReviews from '../components/CustomerReviews';
 import StrategyProcess from '../components/StrategyProcess';
-import Footer from '../components/Footer';
 import BrandIdentity from '../components/BrandIdentity';
 import TeamQualities from '../components/TeamQualities';
 

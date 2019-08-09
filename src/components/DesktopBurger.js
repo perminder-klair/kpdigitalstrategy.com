@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 const Container = styled.nav`
   background-color: transparent;
@@ -68,7 +69,9 @@ export default class DesktopBurger extends React.Component {
           <div className={View ? 'navbar-start ' : 'navbar-start is-hidden'}>
             <aside className="menu">
               <ul className="menu-list is-size-6">
-                <a className="navbar-item has-text-white">Home</a>
+                <Link to="/studies" className="navbar-item has-text-white">
+                  studies
+                </Link>
                 <a className="navbar-item has-text-white">about</a>
               </ul>
             </aside>

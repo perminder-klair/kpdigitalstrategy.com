@@ -6,6 +6,9 @@ const Container = styled.div`
   .ListTitle {
     padding: 1rem 0rem;
   }
+  .columns {
+    justify-content: center;
+  }
 `;
 const OurServices = () => (
   <Container className="section">

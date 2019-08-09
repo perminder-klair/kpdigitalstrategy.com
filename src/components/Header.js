@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 import DesktopBurger from './DesktopBurger';
 import Logo from '../../static/images/logokp.png';
 
@@ -62,7 +63,9 @@ export default class Header extends React.Component {
           id="navbarBasicExample"
           className={View ? 'navbar-menu is-active' : 'navbar-menu '}>
           <div className="navbar-start is-hidden-desktop">
-            <a className="navbar-item has-text-white">Home</a>
+            <Link to="/studies" className="navbar-item has-text-white">
+              Home
+            </Link>
             <a className="navbar-item has-text-white">About</a>
           </div>
 

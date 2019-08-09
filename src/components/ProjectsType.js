@@ -11,6 +11,9 @@ const Container = styled.div`
   .columns {
     justify-content: center;
   }
+  .column {
+    margin: 9px !important;
+  }
 `;
 const ProjectsType = () => (
   <Container className="has-text-centered section">
