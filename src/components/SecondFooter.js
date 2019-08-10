@@ -5,16 +5,16 @@ const Container = styled.div`
   background-color: ${props => props.theme.Black};
   p {
     color: ${props => props.theme.primaryColor};
-    margin: 1rem 1rem;
+    text-align: center;
+    padding: 1rem 0rem;
     @media screen and (max-width: 600px) {
-      margin: 1.2rem 0.65rem;
       font-size: 12px !important;
     }
   }
   .IconBox {
     justify-content: space-between;
     display: flex;
-    margin: 0rem 0rem;
+    margin: 0.2rem 0rem;
     @media screen and (max-width: 600px) {
       margin: 0.75rem 0rem;
     }
@@ -29,17 +29,19 @@ const Container = styled.div`
     }
   }
 `;
-const Footer = () => (
+const SecondFooter = () => (
   <Container>
     <div className="IconBox is-pulled-right">
       <i className="icon is-medium fab fab fa-linkedin" />
       <i className="icon is-medium fab fa-instagram" />
       <i className="icon is-medium fab fa-facebook-square" />
     </div>
-    <p className="subtilte is-size-6 has-text-weight-medium is-uppercase is-pulled-right">
-      © kp Digital Strategy 2014-2019
-    </p>
+    <div>
+      <p className="subtilte is-size-6 has-text-weight-medium is-uppercase">
+        © kp Digital Strategy 2014-2019
+      </p>
+    </div>
   </Container>
 );
 
-export default Footer;
+export default SecondFooter;

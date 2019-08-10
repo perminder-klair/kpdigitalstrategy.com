@@ -21,7 +21,7 @@ import TeamQualities from '../components/TeamQualities';
 export default class IndexPage extends React.Component {
   render() {
     return (
-      <Layout>
+      <Layout isfooter>
         <Seo
           title="kpdigitalstrategy"
           description="Welcome to GatsbyJs v2"

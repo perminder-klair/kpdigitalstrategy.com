@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
@@ -7,16 +8,15 @@ import config from '../utils/config';
 import Header from './Header';
 import Footer from './Footer';
 import OurServices from './OurServices';
+import SecondFooter from './SecondFooter';
 
 const Container = styled.div`
   font-family: ${props => props.theme.roboto};
 `;
 
-const Section = styled.section`
-  padding: 4rem 2rem;
-`;
+const Section = styled.section``;
 
-const IndexLayout = ({ children }) => (
+const IndexLayout = ({ children, isfooter }) => (
   <div className="">
     <Helmet>
       <title>{config.siteName}</title>
@@ -28,7 +28,7 @@ const IndexLayout = ({ children }) => (
       <Header />
       <Container>{children}</Container>
       <OurServices />
-      <Footer />
+      {isfooter ? <Footer /> : <SecondFooter />}
     </Section>
   </div>
 );
