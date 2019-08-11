@@ -38,26 +38,15 @@ const StrategyProcess = () => (
           Our step by step guides to help take your business to new heights.
         </Title>
       </div>
-
       <div className="columns">
-        <div className="column is-2">
+        <div className="column ">
           <ProcessCard />
         </div>
-        <div className="column is-2">
-          <figure className="image is-square">
-            <img
-              className="image"
-              src="https://bulma.io/images/placeholders/128x128.png"
-            />
-          </figure>
+        <div className="column ">
+          <ProcessCard />
         </div>
-        <div className="column is-2">
-          <figure className="image is-square">
-            <img
-              className="image"
-              src="https://bulma.io/images/placeholders/128x128.png"
-            />
-          </figure>
+        <div className="column">
+          <ProcessCard />
         </div>
       </div>
       <div className="InstructionWrapper has-text-centered">
