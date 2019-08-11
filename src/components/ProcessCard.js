@@ -14,8 +14,11 @@ const Container = styled.div`
   .RightContainer {
     background-color: ${props => props.theme.darkGrey};
     padding: 1rem 1rem;
+    @media screen and (max-width: 600px) {
+      padding: 1rem 0.55rem;
+    }
   }
-  .Instrution {
+  .discription {
     color: ${props => props.theme.primaryColor};
   }
   .subtitle {
@@ -24,19 +27,19 @@ const Container = styled.div`
   }
   .ButtonWrapper {
     padding: 1rem 1rem;
+    @media screen and (max-width: 600px) {
+      padding: 1rem 0rem;
+    }
   }
 `;
-const ProcessCard = () => (
-  <Container className="">
+const ProcessCard = ({ subtitle, discription }) => (
+  <Container>
     <div>
       <img src={Image} className="image" />
     </div>
     <div className="RightContainer">
-      <Subtitle>Lead generation</Subtitle>
-      <p className="Instrution is-size-7">
-        a step or two ahead of a step or two ahead of us No where you are with
-        your branding and marketing, we can tailor our services to your project.
-      </p>
+      <Subtitle>{subtitle}</Subtitle>
+      <p className="discription is-size-7">{discription}</p>
       <div className="ButtonWrapper">
         <Button borderRed secondary className="has-text-weight-semibold">
           learn more

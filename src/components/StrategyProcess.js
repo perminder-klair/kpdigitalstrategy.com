@@ -40,13 +40,25 @@ const StrategyProcess = () => (
       </div>
       <div className="columns">
         <div className="column ">
-          <ProcessCard />
+          <ProcessCard
+            subtitle="Lead generation"
+            discription="  a step or two ahead of a step or two ahead of us No where you are with
+        your branding and marketing, we can tailor our services to your project."
+          />
         </div>
         <div className="column ">
-          <ProcessCard />
+          <ProcessCard
+            subtitle="Lead generation"
+            discription="  a step or two ahead of a step or two ahead of us No where you are with
+        your branding and marketing, we can tailor our services to your project."
+          />
         </div>
         <div className="column">
-          <ProcessCard />
+          <ProcessCard
+            subtitle="Lead generation"
+            discription="  a step or two ahead of a step or two ahead of us No where you are with
+        your branding and marketing, we can tailor our services to your project."
+          />
         </div>
       </div>
       <div className="InstructionWrapper has-text-centered">
