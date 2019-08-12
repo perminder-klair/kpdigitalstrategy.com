@@ -7,7 +7,7 @@ const Container = styled.div`
   padding: 0.25rem;
   .CardBottom {
     background-color: ${props => props.theme.primaryColor};
-    padding: 0.25rem;
+    padding: 0.25rem 2rem;
   }
   .title {
     padding: 0.75rem 0rem;

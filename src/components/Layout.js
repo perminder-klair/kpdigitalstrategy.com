@@ -14,7 +14,9 @@ const Container = styled.div`
   font-family: ${props => props.theme.roboto};
 `;
 
-const Section = styled.section``;
+const Section = styled.section`
+  padding: 0rem 1.5rem;
+`;
 
 const IndexLayout = ({ children, isfooter }) => (
   <div className="">

@@ -7,6 +7,7 @@ import DesktopBurger from './DesktopBurger';
 import Logo from '../../static/images/logokp.png';
 
 const Container = styled.nav`
+  padding: 1rem;
   background-color: ${props => props.theme.blackDark};
   .button {
     background-color: transparent;
