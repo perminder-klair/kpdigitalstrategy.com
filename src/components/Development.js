@@ -22,23 +22,23 @@ const Development = () => (
   <Container className="has-text-centered section">
     <div className="container">
       <div className="columns">
-        <div className="column is-half">
+        <div className="column is-5">
           <UsingCard />
         </div>
-        <div className="column is-half">
+        <div className="column is-5">
           <UsingCard />
         </div>
       </div>
       <div className="columns">
-        <div className="column is-half">
+        <div className="column is-5">
           <UsingCard />
         </div>
-        <div className="column is-half">
+        <div className="column is-5">
           <UsingCard />
         </div>
       </div>
       <div className="columns ">
-        <div className="column is-half">
+        <div className="column is-5">
           <UsingCard />
         </div>
       </div>
