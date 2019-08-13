@@ -32,14 +32,17 @@ const Container = styled.nav`
     }
   }
   .navbar-burger {
-    padding-top: 14px;
+    padding-top: 16px;
   }
   span {
     width: 25px;
     height: 3px;
     position: initial;
-    margin: 5px 7px;
+    margin: 5px 1px;
     left: calc(12% - 11px);
+  }
+  .navbar-burger.is-active span:nth-child(3) {
+    -webkit-transform: translateY(-11px) rotate(-45deg);
   }
 `;
 

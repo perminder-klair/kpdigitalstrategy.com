@@ -10,6 +10,12 @@ import Development from '../components/Development';
 
 const studies = () => (
   <Layout>
+    <Seo
+      title="kpdigitalstrategy"
+      description="Welcome to GatsbyJs v2"
+      keywords=""
+      url={`${config.siteUrl}`}
+    />
     <HomeCaseStudies />
     <DesignCase />
     <ProjectsType />
