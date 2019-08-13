@@ -30,7 +30,7 @@ const Container = styled.div`
   }
 `;
 const Footer = () => (
-  <Container>
+  <Container className="section">
     <div className="IconBox is-pulled-right">
       <i className="icon is-medium fab fab fa-linkedin" />
       <i className="icon is-medium fab fa-instagram" />

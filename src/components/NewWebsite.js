@@ -6,12 +6,15 @@ import styled from 'styled-components';
 import { Button } from './elements';
 
 const Container = styled.div`
+  blackground-color: ${props => props.theme.BlackBis};
   .title {
     color: ${props => props.theme.primaryColor};
     margin-bottom: 0rem;
+    font-size: 4rem !important;
   }
   span {
     color: ${props => props.theme.SecondaryColor};
+    font-size: 4rem !important;
   }
   .content {
     padding: 8rem 0rem;
@@ -22,7 +25,12 @@ const Container = styled.div`
   }
   .description {
     margin-top: 4rem;
+    padding-right: 13rem;
     color: ${props => props.theme.primaryColor};
+    @media screen and (max-width: 600px) {
+      margin-top: 0rem;
+      padding-right: 0rem;
+    }
   }
   .RotateBox {
     margin: 0rem -28rem;
@@ -45,14 +53,18 @@ const Container = styled.div`
   }
   .ContantBox {
     display: flex;
-    margin: 15rem 3rem;
+    width: 72%;
+    margin: 1rem 7rem;
     @media screen and (max-width: 600px) {
-      margin: 0rem 0rem;
+      margin: 2rem 0rem;
+      height: 18rem;
+      width: 21rem;
     }
   }
   .RotatatText {
     transform: rotate(-90deg);
-    margin: 6rem -7rem;
+    font-size: 11px;
+    margin: 3.75rem -7rem;
     display: flex;
   }
   .ContantText {
@@ -66,10 +78,17 @@ const Container = styled.div`
   .para {
     padding: 0.25rem 3rem;
   }
+  .RightColumn {
+    align-self: flex-end;
+  }
 `;
 
 const ButtonWrapper = styled.div`
   margin: 1rem 3rem;
+`;
+
+const TypingWrapper = styled(Typing)`
+  margin-top: -1.65rem;
 `;
 
 const NewWebSite = () => (
@@ -90,38 +109,38 @@ const NewWebSite = () => (
       <div className="column">
         <div className="content">
           <h1 className="title is-size-1 has-text-weight-bold">Thinking Of</h1>
-          <Typing count={2}>
+          <TypingWrapper count={2}>
             <span className="is-capitalized is-size-1 has-text-weight-bold">
               A New WebSite?
             </span>
-          </Typing>{' '}
+          </TypingWrapper>
           <div>
-            <p className="description is-size-5 has-text-weight-bold">
+            <p className="description is-size-6 has-text-weight-bold">
               We align design, marketing and sales to make it easier than ever
               to reach new business heights.
             </p>
           </div>
         </div>
       </div>
-      <div className="column">
+      <div className="column RightColumn">
         <div className="ContantBox">
           <div className="ContantText">
-            <h4 className="RotatatText is-size-7 has-text-white has-text-weight-medium is-uppercase">
+            <h5 className="RotatatText has-text-white has-text-weight-bold is-uppercase">
               epic risk managemant rebrand
-            </h4>
+            </h5>
           </div>
           <div className="Latetstudy has-background-white is">
-            <h2 className="View has-text-black is-size-4 has-text-weight-bold">
+            <h2 className="View has-text-black is-size-5 has-text-weight-bold">
               View Our Latest case study{' '}
             </h2>
-            <p className="para has-text-black is-size-6 has-text-weight-normal">
+            <p className="para has-text-black is-size-7 has-text-weight-normal">
               Porjects exption able content of a page when looking at its
               layout. The point of using Lorem Ipsum is that it has a
               more-or-less normal distribution of letters, as opposed to
             </p>
             <ButtonWrapper>
               <Button borderRed className="has-text-black has-text-weight-bold">
-                Read More
+                read more
               </Button>
             </ButtonWrapper>
           </div>

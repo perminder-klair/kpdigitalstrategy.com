@@ -12,6 +12,7 @@ const theme = {
   roboto: 'Roboto,sans-serif',
   Black: '#000000',
   BlackTer: ' #111217',
+  BlackBis: '#121318',
 };
 
 export default theme;
