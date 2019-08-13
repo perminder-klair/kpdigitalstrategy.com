@@ -26,7 +26,7 @@ const HorizontalCard = ({ title, subtitle, icon }) => (
     <div className="media">
       <div className="media-left">
         <figure className="">
-          <Icon className={icon}></Icon>
+          <Icon className={icon} />
         </figure>
       </div>
       <div className="media-content">

@@ -19,78 +19,75 @@ const TeamQualities = () => (
       <Heading>Why work with KP Digital Strategy?</Heading>
       <Title red>Expect more from your design & marketing company</Title>
       <div className="cards">
-      <div className="columns">
-        <div className="column is-two-fifths">
-          <HorizontalCard
-            width="7rem"
-            icon="far fa-lightbulb"
-            title="Experienced team"
-            subtitle="Protect excerpt. Lorem ipsum dolor sit amet,
+        <div className="columns">
+          <div className="column is-two-fifths">
+            <HorizontalCard
+              width="7rem"
+              icon="far fa-lightbulb"
+              title="Experienced team"
+              subtitle="Protect excerpt. Lorem ipsum dolor sit amet,
               conselorem ipsum dolor sit amet, consectetuer adipiscing alit, 
               sed diam nonummy nibh euismod tincidunt ut laoreet dolore
               magna aliquam erat volutpat."
-          />
-        </div>
-        <div className="column is-two-fifths">
-          <HorizontalCard
-            small
-            icon="far fa-lightbulb"
-            title="Experienced team"
-            subtitle="Protect excerpt. Lorem ipsum dolor sit amet,
+            />
+          </div>
+          <div className="column is-two-fifths">
+            <HorizontalCard
+              icon="far fa-lightbulb"
+              title="Experienced team"
+              subtitle="Protect excerpt. Lorem ipsum dolor sit amet,
               conselorem ipsum dolor sit amet, consectetuer adipiscing alit, 
               sed diam nonummy nibh euismod tincidunt ut laoreet dolore
               magna aliquam erat volutpat."
-          />
+            />
+          </div>
         </div>
-      </div>
-      <div className="columns">
-        <div className="column is-two-fifths">
-          <HorizontalCard
-            width="7rem"
-            icon="far fa-lightbulb"
-            title="Good communication"
-            subtitle="Protect excerpt. Lorem ipsum dolor sit amet,
+        <div className="columns">
+          <div className="column is-two-fifths">
+            <HorizontalCard
+              width="7rem"
+              icon="far fa-lightbulb"
+              title="Good communication"
+              subtitle="Protect excerpt. Lorem ipsum dolor sit amet,
               conselorem ipsum dolor sit amet, consectetuer adipiscing alit, 
               sed diam nonummy nibh euismod tincidunt ut laoreet dolore
               magna aliquam erat volutpat."
-          />
-        </div>
-        <div className="column is-two-fifths">
-          <HorizontalCard
-            small
-            icon="far fa-lightbulb"
-            title="Good communication"
-            subtitle="Protect excerpt. Lorem ipsum dolor sit amet,
+            />
+          </div>
+          <div className="column is-two-fifths">
+            <HorizontalCard
+              icon="far fa-lightbulb"
+              title="Good communication"
+              subtitle="Protect excerpt. Lorem ipsum dolor sit amet,
               conselorem ipsum dolor sit amet, consectetuer adipiscing alit, 
               sed diam nonummy nibh euismod tincidunt ut laoreet dolore
               magna aliquam erat volutpat."
-          />
+            />
+          </div>
         </div>
-      </div>
-      <div className="columns">
-        <div className="column is-two-fifths">
-          <HorizontalCard
-            width="7rem"
-            icon="far fa-lightbulb"
-            title="Good communication"
-            subtitle="Protect excerpt. Lorem ipsum dolor sit amet,
+        <div className="columns">
+          <div className="column is-two-fifths">
+            <HorizontalCard
+              width="7rem"
+              icon="far fa-lightbulb"
+              title="Good communication"
+              subtitle="Protect excerpt. Lorem ipsum dolor sit amet,
               conselorem ipsum dolor sit amet, consectetuer adipiscing alit, 
               sed diam nonummy nibh euismod tincidunt ut laoreet dolore
               magna aliquam erat volutpat."
-          />
-        </div>
-        <div className="column is-two-fifths">
-          <HorizontalCard
-            small
-            icon="far fa-lightbulb"
-            title="Good communication"
-            subtitle="Protect excerpt. Lorem ipsum dolor sit amet,
+            />
+          </div>
+          <div className="column is-two-fifths">
+            <HorizontalCard
+              icon="far fa-lightbulb"
+              title="Good communication"
+              subtitle="Protect excerpt. Lorem ipsum dolor sit amet,
               conselorem ipsum dolor sit amet, consectetuer adipiscing alit, 
               sed diam nonummy nibh euismod tincidunt ut laoreet dolore
               magna aliquam erat volutpat."
-          />
+            />
+          </div>
         </div>
-      </div>
       </div>
     </div>
   </Container>

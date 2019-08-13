@@ -11,7 +11,7 @@ const Container = styled.div`
 `;
 
 const ButtonWrapper = styled.div`
-  margin: 1rem 3rem;
+  margin-top: 3rem;
 `;
 
 const AdviceCentre = () => (

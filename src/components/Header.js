@@ -27,6 +27,9 @@ const Container = styled.nav`
   }
   .navbar-item img {
     max-height: 2.75rem;
+    @media screen and (max-width: 600px) {
+      max-height: 2.1rem;
+    }
   }
   .navbar-burger {
     padding-top: 14px;

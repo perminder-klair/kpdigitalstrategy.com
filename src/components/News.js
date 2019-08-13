@@ -2,13 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
+  background-color: ${props => props.theme.WhiteDark};
   .columns {
-    padding: 2rem 7rem 2.3rem;
+    padding: 2rem 8rem 2.3rem;
     justify-content: space-between;
   }
 `;
 const News = () => (
-  <Container className="has-background-white">
+  <Container className="">
     <div className="columns has-text-centered-mobile">
       <div>
         <img src="/images/wired.svg" alt="wired-logo" />

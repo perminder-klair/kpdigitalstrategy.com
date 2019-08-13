@@ -17,7 +17,6 @@ const Container = styled.div`
   .ButtonWrapper {
     padding: 1.6rem 0rem 1rem;
     background: ${props => props.theme.SecondaryColor};
-    
   }
   .section {
     background-color: ${props => props.theme.backgroundDark};
@@ -64,7 +63,7 @@ const OurDesign = () => (
       </div>
     </div>
     <div className="ButtonWrapper has-text-centered">
-      <Button>Learn more about our design & creative work</Button>
+      <Button>learn more about our design & creative work</Button>
     </div>
   </Container>
 );

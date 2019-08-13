@@ -18,7 +18,7 @@ import Socialhover from '../../static/images/socialhover.png';
 const Container = styled.div`
   background-color: ${props => props.theme.backgroundDark};
   .ImagesContainer {
-    padding: 3rem 0rem;
+    padding: 2rem 0rem;
   }
 `;
 

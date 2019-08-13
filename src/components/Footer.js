@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
+  height: 3.50rem;
   background-color: ${props => props.theme.Black};
   p {
     color: ${props => props.theme.primaryColor};
@@ -30,7 +31,7 @@ const Container = styled.div`
   }
 `;
 const Footer = () => (
-  <Container className="section">
+  <Container className="">
     <div className="IconBox is-pulled-right">
       <i className="icon is-medium fab fab fa-linkedin" />
       <i className="icon is-medium fab fa-instagram" />

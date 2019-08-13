@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import styled from 'styled-components';
-import { Heading, Title } from './elements';
+import { Title } from './elements';
 
 const Container = styled.div`
   background-color: ${props => props.theme.SecondaryColor};
-  padding: 3rem 0rem;
+  padding: 4rem 0rem;
   .columns {
     justify-content: space-evenly;
   }
@@ -16,6 +16,12 @@ const Container = styled.div`
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  .headline {
+    color: ${props => props.theme.darkGrey};
+  }
+  .discription {
+    padding-right: 14rem;
   }
 `;
 const CustomerReviews = () => (
@@ -31,9 +37,11 @@ const CustomerReviews = () => (
           </figure>
         </div>
         <div className="column">
-          <Heading black>In the last 30 days we've received</Heading>
+          <h1 className="headline is-size-4 has-text-weight-bold">
+            In the last 30 days we've received
+          </h1>
           <Title>60 postive customer reviews</Title>
-          <h2 className="has-text-black has-text-weight-bold is-size-5">
+          <h2 className="has-text-black has-text-weight-bold is-size-6 discription">
             Bring us to 200 positve design and marketing outcomes over the past
             year for business all over the UK
           </h2>

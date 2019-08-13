@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   background-color: ${props => props.theme.primaryColor};
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
 `;
 
 const AnswerModal = () => (

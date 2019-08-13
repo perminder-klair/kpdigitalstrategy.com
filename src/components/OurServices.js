@@ -9,6 +9,12 @@ const Container = styled.div`
   .columns {
     justify-content: center;
   }
+  .container {
+    margin-left: 6rem;
+    @media screen and (max-width: 600px) {
+      margin-left: 2rem;
+    }
+  }
 `;
 const OurServices = () => (
   <Container className="section">
