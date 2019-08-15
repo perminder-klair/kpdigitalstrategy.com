@@ -25,6 +25,6 @@ export const GlobalStyle = createGlobalStyle`
     font-family:'Roboto,sans-serif';
   }
   .columns {
-  margin-top: 0px!important;
+    margin-top: 0px!important;
   }
 `;

@@ -9,7 +9,7 @@ const Container = styled.div`
   }
 `;
 const News = () => (
-  <Container className="">
+  <Container>
     <div className="columns has-text-centered-mobile">
       <div>
         <img
