@@ -12,19 +12,39 @@ const News = () => (
   <Container className="">
     <div className="columns has-text-centered-mobile">
       <div>
-        <img src="/images/wired.svg" alt="wired-logo" />
+        <img
+          src="/images/wired.svg"
+          alt="wired-logo"
+          title="kpdigital strategy group icon"
+        />
       </div>
       <div>
-        <img src="/images/telegraph.svg" alt="telegraph-logo" />
+        <img
+          src="/images/telegraph.svg"
+          alt="telegraph-logo"
+          title="kpdigital strategy group icon"
+        />
       </div>
       <div>
-        <img src="/images/the-times.svg" alt="the-times-logo" />
+        <img
+          src="/images/the-times.svg"
+          alt="the-times-logo"
+          title="kpdigital strategy group icon"
+        />
       </div>
       <div>
-        <img src="/images/daily-mails.svg" alt="daily-mails-logo" />
+        <img
+          src="/images/daily-mails.svg"
+          alt="daily-mails-logo"
+          title="kpdigital strategy group icon"
+        />
       </div>
       <div>
-        <img src="/images/forbes.svg" alt="forbes-logo" />
+        <img
+          src="/images/forbes.svg"
+          alt="forbes-logo"
+          title="kpdigital strategy group icon"
+        />
       </div>
     </div>
   </Container>

@@ -1,7 +1,3 @@
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable no-unused-vars */
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React from 'react';
 import styled from 'styled-components';
 import { Subtitle } from './elements';
@@ -50,9 +46,11 @@ class MarketingCard extends React.Component {
       <Container className="has-text-centered">
         <figure className="image is-96x96">
           <img
+            src={this.state.imgSrc}
+            title="its a icon Brand Identity"
+            alt="Avatar"
             onMouseOver={this.handleMouseOver}
             onMouseOut={this.handleMouseOut}
-            src={this.state.imgSrc}
           />
         </figure>
         <Subtitle>{subtitle}</Subtitle>

@@ -7,6 +7,7 @@ import ProjectsType from '../components/ProjectsType';
 import BrandIdentity from '../components/BrandIdentity';
 import BookFreeCall from '../components/BookFreeCall';
 import Development from '../components/Development';
+import config from '../utils/config';
 import Seo from '../components/Seo';
 
 const studies = () => (

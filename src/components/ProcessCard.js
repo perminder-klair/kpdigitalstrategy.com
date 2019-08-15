@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import styled from 'styled-components';
 import { Button, Subtitle } from './elements';
@@ -35,7 +34,12 @@ const Container = styled.div`
 const ProcessCard = ({ subtitle, discription }) => (
   <Container>
     <div>
-      <img src={Image} className="image" />
+      <img
+        src={Image}
+        className="image"
+        alt="user"
+        title="kpdigital strategy"
+      />
     </div>
     <div className="RightContainer">
       <Subtitle>{subtitle}</Subtitle>

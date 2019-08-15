@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/interactive-supports-focus */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
@@ -71,10 +69,15 @@ export default class Header extends React.Component {
         aria-label="main navigation">
         <div className="navbar-brand">
           <a className="navbar-item" href="/">
-            <img src={Logo} />
+            <img
+              src={Logo}
+              alt="kpdigital-strategy-logo"
+              title="kpdigital strategy group icon"
+            />
           </a>
 
           <a
+            href="/"
             role="button"
             className={View ? 'navbar-burger is-active' : 'navbar-burger'}
             aria-label="menu"
@@ -90,18 +93,24 @@ export default class Header extends React.Component {
           className={View ? 'navbar-menu is-active' : 'navbar-menu '}>
           <div className="navbar-start is-hidden-desktop">
             <Link to="/studies" className="navbar-item has-text-white">
-              Home
+              studies
             </Link>
-            <a className="navbar-item has-text-white">About</a>
+            <a href="/" className="navbar-item has-text-white">
+              About
+            </a>
           </div>
 
           <div className="navbar-end">
             <div className="navbar-item">
               <div className="buttons ">
-                <a className="button has-text-white has-text-weight-medium is-size-7">
+                <a
+                  href="/"
+                  className="button has-text-white has-text-weight-medium is-size-7">
                   get an instant quote
                 </a>
-                <a className="button has-text-white has-text-weight-medium is-size-7">
+                <a
+                  href="/"
+                  className="button has-text-white has-text-weight-medium is-size-7">
                   Contact
                 </a>
               </div>

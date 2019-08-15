@@ -20,26 +20,32 @@ const MeetTeam = () => (
     <div className="container">
       <div className="columns">
         <div className="column is-2">
-          <figure className="image is-square">
+          <figure className="image">
             <img
-              className="is-rounded"
               src="https://bulma.io/images/placeholders/128x128.png"
+              className="is-rounded"
+              title="person belonging to a kpdigital strategy group"
+              alt="team member"
             />
           </figure>
         </div>
         <div className="column is-2">
-          <figure className="image is-square">
+          <figure className="image">
             <img
               className="is-rounded"
               src="https://bulma.io/images/placeholders/128x128.png"
+              title="person belonging to a kpdigital strategy group"
+              alt="team member"
             />
           </figure>
         </div>
         <div className="column is-2">
-          <figure className="image is-square">
+          <figure className="image">
             <img
               className="is-rounded"
               src="https://bulma.io/images/placeholders/128x128.png"
+              title="person belonging to a kpdigital strategy group"
+              alt="team member"
             />
           </figure>
         </div>

@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
@@ -49,6 +47,7 @@ export default class DesktopBurger extends React.Component {
         aria-label="main navigation">
         <div className="navbar-brand">
           <a
+            href="/"
             role="button"
             className={
               View
@@ -72,7 +71,9 @@ export default class DesktopBurger extends React.Component {
                 <Link to="/studies" className="navbar-item has-text-white">
                   studies
                 </Link>
-                <a className="navbar-item has-text-white">about</a>
+                <a href="/" className="navbar-item has-text-white">
+                  about
+                </a>
               </ul>
             </aside>
           </div>

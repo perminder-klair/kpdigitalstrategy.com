@@ -22,7 +22,6 @@ const TeamQualities = () => (
         <div className="columns">
           <div className="column is-two-fifths">
             <HorizontalCard
-              width="7rem"
               icon="far fa-lightbulb"
               title="Experienced team"
               subtitle="Protect excerpt. Lorem ipsum dolor sit amet,
@@ -45,7 +44,6 @@ const TeamQualities = () => (
         <div className="columns">
           <div className="column is-two-fifths">
             <HorizontalCard
-              width="7rem"
               icon="far fa-lightbulb"
               title="Good communication"
               subtitle="Protect excerpt. Lorem ipsum dolor sit amet,
@@ -68,7 +66,6 @@ const TeamQualities = () => (
         <div className="columns">
           <div className="column is-two-fifths">
             <HorizontalCard
-              width="7rem"
               icon="far fa-lightbulb"
               title="Good communication"
               subtitle="Protect excerpt. Lorem ipsum dolor sit amet,

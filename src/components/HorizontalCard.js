@@ -26,7 +26,11 @@ const HorizontalCard = ({ title, subtitle, icon }) => (
     <div className="media">
       <div className="media-left">
         <figure className="">
-          <Icon className={icon} />
+          <Icon
+            className={icon}
+            alt="the-services-icon"
+            title="kpdigital strategy services icon"
+          />
         </figure>
       </div>
       <div className="media-content">

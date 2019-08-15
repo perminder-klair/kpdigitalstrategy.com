@@ -84,7 +84,12 @@ const Purposeful = () => (
       </div>
 
       <div className="column">
-        <img src={Image} className="image" />
+        <img
+          src={Image}
+          className="image"
+          alt="Purposeful-design"
+          title="kpdigital strategy Purposeful design and marketing services "
+        />
       </div>
     </div>
   </Container>

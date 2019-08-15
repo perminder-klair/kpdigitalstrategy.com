@@ -4,7 +4,7 @@ import { Button, Title, Subtitle } from './elements';
 const Card = ({ title, subtitle, button, Icon }) => (
   <div>
     <div>
-      <img src={Icon} />
+      <img src={Icon} title="its a icon Brand Identity" alt="Avatar" />
     </div>
     <div className="media-content has-text-centered">
       <Title red>{title}</Title>

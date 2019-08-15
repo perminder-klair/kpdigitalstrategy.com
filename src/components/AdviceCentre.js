@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import styled from 'styled-components';
 
@@ -16,7 +14,7 @@ const ButtonWrapper = styled.div`
 
 const AdviceCentre = () => (
   <Container className="section">
-    <div className=" has-text-centered">
+    <div className="has-text-centered">
       <Heading black>Not sure where to begin ?</Heading>
       <Title>
         For help of enything you need to know about design and marketing

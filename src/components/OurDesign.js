@@ -1,8 +1,6 @@
-/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import styled from 'styled-components';
 import { Button, Title, Subtitle } from './elements';
-import Image from '../../static/images/sideimage.jpg';
 import BusImage from '../../static/images/bus.png';
 import BookImage from '../../static/images/book.png';
 import TruckImage from '../../static/images/truck.png';
@@ -34,32 +32,64 @@ const OurDesign = () => (
     </div>
     <div className="columns is-gapless is-0 ">
       <div className="column is-two-quarter">
-        <img src={BusImage} />
+        <img
+          src={BusImage}
+          alt="daily-mails-logo"
+          title="kpdigital strategy Design"
+        />
       </div>
       <div className="column is-two-quarter">
-        <img src={BookImage} />
+        <img
+          src={BookImage}
+          alt="daily-mails-logo"
+          title="kpdigital strategy Design"
+        />
       </div>
       <div className="column is-two-quarter">
-        <img src={TruckImage} />
+        <img
+          src={TruckImage}
+          alt="daily-mails-logo"
+          title="kpdigital strategy Design"
+        />
       </div>
     </div>
     <div className="columns is-gapless is-0">
       <div className="column is-half">
-        <img src={BottlesImage} />
+        <img
+          src={BottlesImage}
+          alt="daily-mails-logo"
+          title="kpdigital strategy Design"
+        />
       </div>
       <div className="column is-half">
-        <img src={BottelImage} />
+        <img
+          src={BottelImage}
+          alt="daily-mails-logo"
+          title="kpdigital strategy Design"
+        />
       </div>
     </div>
     <div className="columns is-gapless is-0 ">
       <div className="column is-two-quarter">
-        <img src={BusImage} />
+        <img
+          src={BusImage}
+          alt="daily-mails-logo"
+          title="kpdigital strategy Design"
+        />
       </div>
       <div className="column is-two-quarter">
-        <img src={BookImage} />
+        <img
+          src={BookImage}
+          alt="daily-mails-logo"
+          title="kpdigital strategy Design"
+        />
       </div>
       <div className="column is-two-quarter">
-        <img src={TruckImage} />
+        <img
+          src={TruckImage}
+          alt="daily-mails-logo"
+          title="kpdigital strategy Design"
+        />
       </div>
     </div>
     <div className="ButtonWrapper has-text-centered">

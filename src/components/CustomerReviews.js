@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import styled from 'styled-components';
 import { Title } from './elements';
@@ -34,8 +33,10 @@ const CustomerReviews = () => (
         <div className="column is-one-third">
           <figure className="image is-128x128 center">
             <img
-              className="is-rounded center"
               src="https://bulma.io/images/placeholders/128x128.png"
+              className="is-rounded center"
+              title="its a icon Brand Identity"
+              alt="Bulma Avatar"
             />
           </figure>
         </div>

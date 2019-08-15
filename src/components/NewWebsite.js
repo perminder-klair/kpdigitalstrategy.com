@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Typing from 'react-typing-animation';
 import styled from 'styled-components';
@@ -131,7 +129,7 @@ const NewWebSite = () => (
           </div>
           <div className="Latetstudy has-background-white is">
             <h2 className="View has-text-black is-size-5 has-text-weight-bold">
-              View Our Latest case study{' '}
+              View Our Latest case study
             </h2>
             <p className="para has-text-black is-size-7 has-text-weight-normal">
               Porjects exption able content of a page when looking at its
