@@ -14,8 +14,8 @@ const Container = styled.div`
   font-family: ${props => props.theme.roboto};
 `;
 
-const Section = styled.section`
-  padding: 0rem 1.5rem;
+const Section = styled.div`
+  padding: 0rem 2rem;
 `;
 
 const IndexLayout = ({ children, isfooter }) => (
@@ -26,7 +26,7 @@ const IndexLayout = ({ children, isfooter }) => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta description={config.description} />
     </Helmet>
-    <Section className="section has-background-black">
+    <Section className="has-background-black">
       <Header />
       <Container>{children}</Container>
       <OurServices />

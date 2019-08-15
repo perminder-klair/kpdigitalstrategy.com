@@ -7,10 +7,16 @@ import DesktopBurger from './DesktopBurger';
 import Logo from '../../static/images/logokp.png';
 
 const Container = styled.nav`
-  padding: 1rem;
-  background-color: ${props => props.theme.blackDark};
+  background-color: ${props => props.theme.BlackBis};
+  padding: 1rem 0rem;
+  @media screen and (max-width: 600px) {
+    padding: 0rem 0rem;
+  }
   .button {
     background-color: transparent;
+    border-radius: 0px;
+    margin-right: 0.9rem !important;
+    padding: 1rem 2rem;
     @media screen and (max-width: 600px) {
       background-color: transparent;
       color: white !important;
@@ -18,6 +24,25 @@ const Container = styled.nav`
   }
   #navbarBasicExample {
     background-color: transparent;
+  }
+  .navbar-item img {
+    max-height: 2.75rem;
+    @media screen and (max-width: 600px) {
+      max-height: 2.1rem;
+    }
+  }
+  .navbar-burger {
+    padding-top: 16px;
+  }
+  span {
+    width: 25px;
+    height: 3px;
+    position: initial;
+    margin: 5px 1px;
+    left: calc(12% - 11px);
+  }
+  .navbar-burger.is-active span:nth-child(3) {
+    -webkit-transform: translateY(-11px) rotate(-45deg);
   }
 `;
 
@@ -72,11 +97,11 @@ export default class Header extends React.Component {
 
           <div className="navbar-end">
             <div className="navbar-item">
-              <div className="buttons">
-                <a className="button has-text-white has-text-weight-medium">
+              <div className="buttons ">
+                <a className="button has-text-white has-text-weight-medium is-size-7">
                   get an instant quote
                 </a>
-                <a className="button has-text-white has-text-weight-medium">
+                <a className="button has-text-white has-text-weight-medium is-size-7">
                   Contact
                 </a>
               </div>

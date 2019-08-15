@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
+  height: 3rem;
   background-color: ${props => props.theme.Black};
   p {
     color: ${props => props.theme.primaryColor};
@@ -32,9 +33,9 @@ const Container = styled.div`
 const SecondFooter = () => (
   <Container>
     <div className="IconBox is-pulled-right">
-      <i className="icon is-medium fab fab fa-linkedin" />
-      <i className="icon is-medium fab fa-instagram" />
-      <i className="icon is-medium fab fa-facebook-square" />
+      <i className="icon fab fab fa-linkedin" />
+      <i className="icon fab fa-instagram" />
+      <i className="icon fab fa-facebook-square" />
     </div>
     <div>
       <p className="subtilte is-size-6 has-text-weight-medium is-uppercase">

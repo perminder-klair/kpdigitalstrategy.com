@@ -11,7 +11,7 @@ const Container = styled.div`
   .subtitle {
     font-weight: 500 !important;
     font-size: 1rem !important;
-    padding: 1rem 0rem;
+    padding-bottom: 1rem;
   }
   .image {
     margin-left: auto;

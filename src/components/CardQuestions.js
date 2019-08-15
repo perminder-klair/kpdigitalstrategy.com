@@ -1,15 +1,18 @@
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import styled from 'styled-components';
-import { Title } from './elements';
 import AnswerModal from './AnswerModal';
 
 const Container = styled.div`
+  padding: 1rem 0rem;
   background-color: #1e2126;
   .Icon {
-    font-size: 2rem;
+    font-size: 23px;
     margin: 0rem 2rem;
     color: ${props => props.theme.SecondaryColor};
+  }
+  h1 {
+    color: ${props => props.theme.primaryColor};
   }
 `;
 const TitleWrapper = styled.div`
@@ -32,10 +35,10 @@ class CardQuestions extends React.Component {
 
     return (
       <Container className="container">
-        <div className="columns">
+        <div className="columns is-9">
           <div className="column is-four-fifths">
             <TitleWrapper>
-              <Title>{Questions}</Title>
+              <h1 className="has-text-weight-medium ">{Questions}</h1>
             </TitleWrapper>
           </div>
           <div className="column">
