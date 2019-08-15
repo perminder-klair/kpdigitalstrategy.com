@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/interactive-supports-focus */
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
@@ -47,7 +48,6 @@ export default class DesktopBurger extends React.Component {
         aria-label="main navigation">
         <div className="navbar-brand">
           <a
-            href="/"
             role="button"
             className={
               View
