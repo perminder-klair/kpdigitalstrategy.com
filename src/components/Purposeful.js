@@ -6,8 +6,8 @@ import { Button, Title, Subtitle, Heading } from './elements';
 
 const Container = styled.div`
   .ContantBox {
-    padding-right: 11rem;
-    padding-left: 1rem;
+    padding-right: 10rem;
+    padding-left: 2rem;
     @media screen and (max-width: 600px) {
       margin-left: 0rem;
       padding: 0rem 0rem;
@@ -20,7 +20,7 @@ const Container = styled.div`
     padding: 1rem 0rem;
   }
   .ButtonWrapper {
-    margin-left: 1rem;
+    margin-left: 2rem;
     @media screen and (max-width: 600px) {
       margin-left: 0rem;
     }

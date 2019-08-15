@@ -22,6 +22,9 @@ const Container = styled.div`
   }
   .discription {
     padding-right: 14rem;
+    @media screen and (max-width: 600px) {
+      padding-right: 0rem;
+    }
   }
 `;
 const CustomerReviews = () => (

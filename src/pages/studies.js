@@ -7,6 +7,7 @@ import ProjectsType from '../components/ProjectsType';
 import BrandIdentity from '../components/BrandIdentity';
 import BookFreeCall from '../components/BookFreeCall';
 import Development from '../components/Development';
+import Seo from '../components/Seo';
 
 const studies = () => (
   <Layout>
@@ -14,7 +15,7 @@ const studies = () => (
       title="kpdigitalstrategy"
       description="Welcome to GatsbyJs v2"
       keywords=""
-      url={`${config.siteUrl}`}
+      url={`"${config.siteUrl}"`}
     />
     <HomeCaseStudies />
     <DesignCase />
