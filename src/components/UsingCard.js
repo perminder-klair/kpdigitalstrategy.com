@@ -4,9 +4,10 @@ import { Button, Title, Subtitle } from './elements';
 
 const Container = styled.div`
   background-color: ${props => props.theme.RedDrak};
+  padding: 0.25rem;
   .CardBottom {
     background-color: ${props => props.theme.primaryColor};
-    margin: 0.25rem 0.25rem;
+    padding: 0.25rem 2rem;
   }
   .title {
     padding: 0.75rem 0rem;
@@ -14,7 +15,6 @@ const Container = styled.div`
   }
   .subtitle {
     color: ${props => props.theme.Black};
-    font-weight: bolder !important;
     padding: 0.25rem 0rem;
     margin-top: 0rem !important;
     margin-bottom: 0.65rem;
@@ -23,21 +23,21 @@ const Container = styled.div`
     padding: 0rem 3rem;
   }
   .ButtonWrapper {
-    padding: 1rem 0.25rem;
+    padding: 0rem 0.25rem 0.5rem !important;
   }
 `;
 const UsingCard = () => (
   <Container className="has-text-centered ">
     <div className="container">
       <Title>Website DevelopmentCard Using Gatsby Js </Title>
-      <Subtitle>ACM ENVIROMENTAL PLC</Subtitle>
+      <h6 class="subtitle is-7 has-text-weight-bold">ACM ENVIROMENTAL PLC</h6>
       <div className="CardBottom">
-        <p className="description">
+        <Subtitle className="description ">
           predefined chunks as necessary, making this the first true generator
           on the Internet. It uses a dictionary of over 200 Latin words,
           combined with a handful of model sentence structures, to generate
           Lorem Ipsum which
-        </p>
+        </Subtitle>
         <div className="ButtonWrapper">
           <Button borderRed className="has-text-black has-text-weight-bold">
             Read More
