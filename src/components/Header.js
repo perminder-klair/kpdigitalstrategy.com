@@ -71,7 +71,7 @@ export default class Header extends React.Component {
           <a className="navbar-item" href="/">
             <img
               src={Logo}
-              alt="kpdigital-strategy-logo"
+              alt="kpdigital strategy logo"
               title="kpdigital strategy group icon"
             />
           </a>

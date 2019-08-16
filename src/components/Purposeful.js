@@ -87,7 +87,7 @@ const Purposeful = () => (
         <img
           src={Image}
           className="image"
-          alt="Purposeful-design"
+          alt="Purposeful design"
           title="kpdigital strategy Purposeful design and marketing services "
         />
       </div>

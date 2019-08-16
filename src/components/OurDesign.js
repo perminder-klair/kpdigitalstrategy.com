@@ -34,21 +34,21 @@ const OurDesign = () => (
       <div className="column is-two-quarter">
         <img
           src={BusImage}
-          alt="daily-mails-logo"
+          alt="daily mails logo"
           title="kpdigital strategy Design"
         />
       </div>
       <div className="column is-two-quarter">
         <img
           src={BookImage}
-          alt="daily-mails-logo"
+          alt="daily mails logo"
           title="kpdigital strategy Design"
         />
       </div>
       <div className="column is-two-quarter">
         <img
           src={TruckImage}
-          alt="daily-mails-logo"
+          alt="daily mails logo"
           title="kpdigital strategy Design"
         />
       </div>
@@ -57,14 +57,14 @@ const OurDesign = () => (
       <div className="column is-half">
         <img
           src={BottlesImage}
-          alt="daily-mails-logo"
+          alt="daily mails logo"
           title="kpdigital strategy Design"
         />
       </div>
       <div className="column is-half">
         <img
           src={BottelImage}
-          alt="daily-mails-logo"
+          alt="daily mails logo"
           title="kpdigital strategy Design"
         />
       </div>
@@ -73,21 +73,21 @@ const OurDesign = () => (
       <div className="column is-two-quarter">
         <img
           src={BusImage}
-          alt="daily-mails-logo"
+          alt="daily mails logo"
           title="kpdigital strategy Design"
         />
       </div>
       <div className="column is-two-quarter">
         <img
           src={BookImage}
-          alt="daily-mails-logo"
+          alt="daily mails logo"
           title="kpdigital strategy Design"
         />
       </div>
       <div className="column is-two-quarter">
         <img
           src={TruckImage}
-          alt="daily-mails-logo"
+          alt="daily mails logo"
           title="kpdigital strategy Design"
         />
       </div>
