@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   background-color: ${props => props.theme.WhiteDark};
   .columns {
-    padding: 2rem 8rem 2.3rem;
+    padding: 2rem 8rem 1.5rem;
     justify-content: space-between;
   }
 `;

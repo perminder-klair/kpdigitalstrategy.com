@@ -19,7 +19,7 @@ const Container = styled.div`
 const OurServices = () => (
   <Container className="section">
     <div className="container">
-      <p className="is-size-6">OUR SERVICES</p>
+      <p className="is-size-6 has-text-white">OUR SERVICES</p>
       <div className="columns">
         <div className="column">
           <div>

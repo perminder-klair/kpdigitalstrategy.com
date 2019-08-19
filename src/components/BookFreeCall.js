@@ -4,8 +4,11 @@ import { Button, Title } from './elements';
 
 const Container = styled.div`
   background-color: ${props => props.theme.SecondaryColor};
-  padding: 2.45rem 0rem;
+  padding: 2.45rem 1rem;
   margin-top: 12px;
+  .column {
+    align-self: center;
+  }
 `;
 const BookFreeCall = () => (
   <Container className="has-text-centered-mobile">

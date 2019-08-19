@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Button } from './elements';
 
 const Container = styled.div`
-  blackground-color: ${props => props.theme.BlackBis};
+  background-color: ${props => props.theme.BlackBis};
   .title {
     color: ${props => props.theme.primaryColor};
     margin-bottom: 0rem;
@@ -44,6 +44,10 @@ const Container = styled.div`
     font-size: 23px;
     color: ${props => props.theme.SecondaryColor};
     background-color: transparent;
+    transform: rotate(90deg);
+    @media only screen and (max-width: 600px) {
+      transform: rotate(0deg);
+    }
   }
   .IconBox {
     margin: 0rem 0.25rem;
@@ -59,7 +63,7 @@ const Container = styled.div`
       width: 21rem;
     }
   }
-  .RotatatText {
+  .RotateText {
     transform: rotate(-90deg);
     font-size: 11px;
     margin: 3.75rem -7rem;
@@ -80,11 +84,9 @@ const Container = styled.div`
     align-self: flex-end;
   }
 `;
-
 const ButtonWrapper = styled.div`
   margin: 1rem 3rem;
 `;
-
 const TypingWrapper = styled(Typing)`
   margin-top: -1.65rem;
 `;
@@ -123,7 +125,7 @@ const NewWebSite = () => (
       <div className="column RightColumn">
         <div className="ContantBox">
           <div className="ContantText">
-            <h5 className="RotatatText has-text-white has-text-weight-bold is-uppercase">
+            <h5 className="RotateText has-text-white has-text-weight-bold is-uppercase">
               epic risk managemant rebrand
             </h5>
           </div>

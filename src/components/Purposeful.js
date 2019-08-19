@@ -5,12 +5,13 @@ import Image from '../../static/images/sideimage.jpg';
 import { Button, Title, Subtitle, Heading } from './elements';
 
 const Container = styled.div`
+  margin-top: 12px;
   .ContantBox {
     padding-right: 10rem;
     padding-left: 2rem;
     @media screen and (max-width: 600px) {
       margin-left: 0rem;
-      padding: 0rem 0rem;
+      padding: 1rem 0rem;
     }
   }
   .TitleWrapper {
@@ -20,10 +21,7 @@ const Container = styled.div`
     padding: 1rem 0rem;
   }
   .ButtonWrapper {
-    margin-left: 2rem;
-    @media screen and (max-width: 600px) {
-      margin-left: 0rem;
-    }
+    margin-top: 2rem;
   }
   .column {
     align-self: center;
@@ -74,15 +72,14 @@ const Purposeful = () => (
                 brand's potential
               </Subtitle>
             </div>
+            <div className="ButtonWrapper">
+              <Button borderRed secondary className="is-size-7 has-text-white">
+                View Our Portfolio
+              </Button>
+            </div>
           </div>
         </div>
-        <div className="ButtonWrapper">
-          <Button borderRed secondary className="is-size-7 has-text-white">
-            View Our Portfolio
-          </Button>
-        </div>
       </div>
-
       <div className="column">
         <img
           src={Image}

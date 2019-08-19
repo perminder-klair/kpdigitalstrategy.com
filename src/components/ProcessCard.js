@@ -4,7 +4,7 @@ import { Button, Subtitle } from './elements';
 import Image from '../../static/images/userimage.png';
 
 const Container = styled.div`
-  background-color: ${props => props.theme.SecondaryColor};
+  background-color: #f54054;
   display: flex;
   .image {
     width: 500px;
