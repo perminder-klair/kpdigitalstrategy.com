@@ -3,7 +3,7 @@ import Typing from 'react-typing-animation';
 import styled from 'styled-components';
 import { Button } from './elements';
 
-const Container = styled.div`
+const Container = styled.section`
   background-color: ${props => props.theme.BlackBis};
   .title {
     color: ${props => props.theme.primaryColor};
@@ -71,7 +71,8 @@ const Container = styled.div`
   }
   .ContantText {
     background-color: ${props => props.theme.SecondaryColor};
-    padding: 1rem 1.25rem;
+    padding: 0.25rem 1.25rem;
+    height: auto;
   }
   .View {
     padding: 0.25rem 3rem;
@@ -92,7 +93,7 @@ const TypingWrapper = styled(Typing)`
 `;
 
 const NewWebSite = () => (
-  <Container className="has-background-black">
+  <Container className="has-background-black section">
     <div className="columns">
       <div className="column is-1">
         <div className="RotateBox">

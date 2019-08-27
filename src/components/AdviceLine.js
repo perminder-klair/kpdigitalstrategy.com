@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   padding: 0.4rem 0rem;
   .title {
-    padding-bottom: 1rem;
+    padding: 0.75rem 0rem;
   }
   span {
     text-decoration: underline;
