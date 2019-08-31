@@ -59,9 +59,7 @@ const Container = styled.section`
     @media screen and (max-width: 600px) {
       margin: 2rem 0rem;
       height: 23rem;
-      @media only screen and (max-width: 600px) {
       width: 19rem;
-      }
     }
   }
   .RotateText {
@@ -75,7 +73,11 @@ const Container = styled.section`
     padding-top: 3rem;
     height: 269px;
     width: 105px;
-}
+    @media only screen and (max-width: 600px) {
+      padding-top: 6rem;
+      height: auto;
+      width: 105px;
+    }
   }
   .View {
     padding: 0.25rem 3rem;
@@ -83,14 +85,20 @@ const Container = styled.section`
   }
   .para {
     padding: 0.25rem 3rem;
-    font-size: 16px;
+    font-size: 1rem;
   }
   .RightColumn {
     align-self: flex-end;
   }
   h3 {
-    font-size: 16px;
+    font-size: 1rem;F
   }
+.Latetstudy {
+  padding: 1rem;
+  @media only screen and (max-width: 600px) {
+    padding: 0rem;
+  }
+}
 `;
 const ButtonWrapper = styled.div`
   margin: 1rem 3rem;

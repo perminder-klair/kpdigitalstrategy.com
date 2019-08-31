@@ -7,7 +7,7 @@ const Container = styled.button`
     padding: 0rem 2.5rem;
     height: 2.5rem;
     border-radius: 0;
-    font-size: 14px;
+    font-size: 0.875rem;
     background-color: ${props =>
       props.Black ? props.theme.Black : 'transparent'}!important;
     border: 2px solid

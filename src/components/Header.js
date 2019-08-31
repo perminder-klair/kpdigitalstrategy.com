@@ -27,7 +27,7 @@ const Container = styled.nav`
     }
   }
   .navbar-burger {
-    padding-top: 16px;
+    padding-top: 1rem;
   }
   span {
     width: 25px;

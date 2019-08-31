@@ -21,11 +21,11 @@ const Container = styled.div`
   }
   .title {
     margin-bottom: 0.7rem !important;
-    font-size: 32px !important;
+    font-size: 2rem!important;
   }
   .button {
     background-color: transparent;
-    font-size: 16px;
+    font-size:  1rem;
     border: 2px solid white;
     padding: 2rem 8rem;
     color: white;

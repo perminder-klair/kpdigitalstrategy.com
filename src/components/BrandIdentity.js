@@ -21,10 +21,10 @@ const Container = styled.div`
     padding: 2rem 0rem;
   }
   .title {
-    font-size: 32px;
+    font-size: 2rem;
   }
   .subtitle {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 `;
 

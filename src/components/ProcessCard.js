@@ -19,7 +19,7 @@ const Container = styled.div`
   }
   .discription {
     color: ${props => props.theme.primaryColor};
-    font-size: 16px;
+    font-size: 1rem;
   }
   .subtitle {
     font-size: 1.25rem !important;

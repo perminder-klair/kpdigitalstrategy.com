@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Container = styled.h1`
   color: ${props => (props.black ? props.theme.blackDark : '#ffffff')};
   margin-bottom: 1rem;
-  font-size: 32px;
+  font-size: 2rem;
 `;
 
 const Heading = ({ children, ...props }) => (

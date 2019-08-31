@@ -23,7 +23,7 @@ const Container = styled.div`
     display: block;
     margin-left: auto;
     margin-right: auto;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 1rem 5rem;
     strong {
       color: ${props => props.theme.SecondaryColor};

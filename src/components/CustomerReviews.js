@@ -21,7 +21,7 @@ const Container = styled.div`
   }
   .headline {
     color: ${props => props.theme.darkGrey};
-    font-size: 32px;
+    font-size: 2rem;
   }
   .discription {
     padding-right: 14rem;

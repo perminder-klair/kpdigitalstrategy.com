@@ -11,6 +11,7 @@ import SecondFooter from './SecondFooter';
 
 const Container = styled.div`
   font-family: ${props => props.theme.roboto};
+  word-spacing: 3px;
 `;
 
 const Section = styled.div`
