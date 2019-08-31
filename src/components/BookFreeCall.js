@@ -19,7 +19,7 @@ const BookFreeCall = () => (
         </Title>
       </div>
       <div className="column">
-        <Button>book a FREE call</Button>
+        <Button>Book a free call</Button>
       </div>
     </div>
   </Container>

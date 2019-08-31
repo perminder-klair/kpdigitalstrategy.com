@@ -109,12 +109,12 @@ export default class Header extends React.Component {
               <div className="buttons ">
                 <a
                   href="/"
-                  className="button has-text-white has-text-weight-medium is-size-7">
+                  className="button has-text-white has-text-weight-medium is-size-6">
                   Get an instant quote
                 </a>
                 <a
                   href="/"
-                  className="button has-text-white has-text-weight-medium is-size-7">
+                  className="button has-text-white has-text-weight-medium is-size-6">
                   Contact
                 </a>
               </div>

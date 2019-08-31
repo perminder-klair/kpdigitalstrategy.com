@@ -9,7 +9,7 @@ const Container = styled.div`
     text-align: center;
     padding: 1rem 0rem;
     @media screen and (max-width: 600px) {
-      font-size: 12px !important;
+      font-size: 1rem;
     }
   }
   .IconBox {
@@ -38,7 +38,7 @@ const SecondFooter = () => (
       <i className="icon fab fa-facebook-square" />
     </div>
     <div>
-      <p className="subtilte is-size-6 has-text-weight-medium is-uppercase">
+      <p className="subtilte has-text-weight-medium is-uppercase">
         © kp Digital Strategy 2014-2019
       </p>
     </div>

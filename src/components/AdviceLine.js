@@ -13,9 +13,9 @@ const Container = styled.div`
 
 const AdviceLine = () => (
   <Container className="has-background-white">
-    <h2 className="title has-text-centered has-text-weight-bold has-text-black is-size-7">
+    <h2 className="title has-text-centered has-text-weight-bold has-text-black is-size-6">
       Free advice line:{' '}
-      <span className="has-text-danger is-size-7 has-text-weight-bold">
+      <span className="has-text-danger is-size-6 has-text-weight-bold">
         +44 161 258 3622
       </span>
       (From 8am to 5pm)

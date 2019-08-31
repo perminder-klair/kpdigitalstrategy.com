@@ -132,8 +132,8 @@ const NewWebSite = () => (
           </TypingWrapper>
           <div>
             <p className="description is-size-6 has-text-weight-bold">
-              We align design, marketing and sales to make it easier than ever
-              to reach new business heights.
+              We align design, marketing and sales to make it easier <br />
+              than ever to reach new business heights.
             </p>
           </div>
         </div>

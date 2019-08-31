@@ -73,7 +73,7 @@ const Purposeful = () => (
               </Subtitle>
             </div>
             <div className="ButtonWrapper">
-              <Button borderRed secondary className="is-size-7 has-text-white">
+              <Button borderRed secondary>
                 View Our Portfolio
               </Button>
             </div>

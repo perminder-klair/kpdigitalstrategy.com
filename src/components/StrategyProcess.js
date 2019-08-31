@@ -38,7 +38,7 @@ const StrategyProcess = () => (
   <Container className="has-background-white section">
     <div className="container">
       <div className="has-text-centered HeadingWrapper">
-        <Heading black>Understanding the kP Digital Strategy process</Heading>
+        <Heading black>Understanding the KP Digital Strategy process</Heading>
         <Title red>
           Our step by step guides to help take your business to new heights.
         </Title>
