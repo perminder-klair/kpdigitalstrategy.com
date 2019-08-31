@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { Button, Title, Subtitle } from './elements';
 
 const Container = styled.div`
@@ -26,6 +27,7 @@ const Container = styled.div`
     padding: 0rem 0.25rem 0.5rem !important;
   }
 `;
+
 const UsingCard = () => (
   <Container className="has-text-centered ">
     <div className="container">

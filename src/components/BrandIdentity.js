@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { Subtitle, Title } from './elements';
 import MarketingCard from './MarketingCard';
 import SearchIcon from '../../static/images/search.png';

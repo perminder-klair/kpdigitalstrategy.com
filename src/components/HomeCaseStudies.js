@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { Title } from './elements';
 
 const Container = styled.div`
@@ -9,6 +10,7 @@ const Container = styled.div`
     color: ${props => props.theme.Black};
   }
 `;
+
 const HomeCaseStudies = () => (
   <Container className="has-text-centered section">
     <div className="container">

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { Heading, Title, Button } from './elements';
 
 const Container = styled.div`
@@ -15,6 +16,7 @@ const Container = styled.div`
     margin-top: 5rem;
   }
 `;
+
 const MeetTeam = () => (
   <Container className="has-text-centered-mobile section">
     <div className="container">

@@ -24,8 +24,8 @@ export default class IndexPage extends React.Component {
       <Layout isfooter>
         <Seo
           title="kpdigitalstrategy"
-          description="Welcome to GatsbyJs v2"
-          keywords=""
+          description="home page of kpdigitalstrategy"
+          keywords="website design Purposeful design marketing services"
           url={`"${config.siteUrl}"`}
         />
         <AdviceLine />

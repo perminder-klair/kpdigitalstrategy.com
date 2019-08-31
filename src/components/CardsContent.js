@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import Card from './Card';
 import SpkerIcon from '../../static/images/spker.png';
 import BoardIcon from '../../static/images/board.png';
@@ -12,6 +13,7 @@ const Container = styled.div`
     justify-content: space-evenly;
   }
 `;
+
 const CardsContent = () => (
   <Container className="has-text-centered section">
     <div className="container">

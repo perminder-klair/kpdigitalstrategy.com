@@ -14,7 +14,7 @@ const studies = () => (
   <Layout>
     <Seo
       title="kpdigitalstrategy"
-      description="Welcome to GatsbyJs v2"
+      description="Purposeful design and marketing services f"
       keywords=""
       url={`"${config.siteUrl}"`}
     />

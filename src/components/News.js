@@ -8,6 +8,7 @@ const Container = styled.div`
     justify-content: space-between;
   }
 `;
+
 const News = () => (
   <Container>
     <div className="columns has-text-centered-mobile">

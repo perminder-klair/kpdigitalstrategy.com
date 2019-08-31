@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { Title, Subtitle } from './elements';
 
 const Container = styled.div`
@@ -9,6 +10,7 @@ const Container = styled.div`
     margin-bottom: 0.35rem;
   }
 `;
+
 const DesignCase = () => (
   <Container className="has-text-Left section">
     <div className="container">

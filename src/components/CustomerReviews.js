@@ -1,4 +1,5 @@
 import React from 'react';
+
 import styled from 'styled-components';
 import { Title } from './elements';
 
@@ -30,6 +31,7 @@ const Container = styled.div`
     }
   }
 `;
+
 const CustomerReviews = () => (
   <Container className="has-text-centered-mobile section">
     <div className="container">

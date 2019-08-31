@@ -30,6 +30,7 @@ const Container = styled.div`
     }
   }
 `;
+
 const SecondFooter = () => (
   <Container>
     <div className="IconBox is-pulled-right">

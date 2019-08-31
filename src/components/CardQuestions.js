@@ -14,9 +14,11 @@ const Container = styled.div`
     color: ${props => props.theme.primaryColor};
   }
 `;
+
 const TitleWrapper = styled.div`
   margin: 0rem 3rem;
 `;
+
 class CardQuestions extends React.Component {
   constructor(props) {
     super(props);

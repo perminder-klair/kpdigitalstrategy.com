@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import HorizontalCard from './HorizontalCard';
 import { Heading, Title } from './elements';
 
@@ -13,6 +14,7 @@ const Container = styled.div`
     margin-top: 4%;
   }
 `;
+
 const TeamQualities = () => (
   <Container className="has-text-centered section">
     <div className="container">

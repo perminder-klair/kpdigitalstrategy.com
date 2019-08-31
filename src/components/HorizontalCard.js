@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { Title, Subtitle } from './elements';
 
 const Container = styled.div`
@@ -16,6 +17,7 @@ const Container = styled.div`
     margin-bottom: 3%;
   }
 `;
+
 const Icon = styled.i`
   font-size: 4rem;
   color: ${props => props.theme.SecondaryColor};

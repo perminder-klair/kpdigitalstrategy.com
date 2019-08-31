@@ -16,6 +16,7 @@ const Container = styled.div`
     }
   }
 `;
+
 const OurServices = () => (
   <Container className="section">
     <div className="container">

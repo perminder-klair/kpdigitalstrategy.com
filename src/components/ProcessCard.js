@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { Button, Subtitle } from './elements';
 import Image from '../../static/images/userimage.png';
 
@@ -32,6 +33,7 @@ const Container = styled.div`
     }
   }
 `;
+
 const ProcessCard = ({ subtitle, discription }) => (
   <Container>
     <div>

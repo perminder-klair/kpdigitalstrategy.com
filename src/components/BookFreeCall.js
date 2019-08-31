@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { Button, Title } from './elements';
 
 const Container = styled.div`
@@ -10,6 +11,7 @@ const Container = styled.div`
     align-self: center;
   }
 `;
+
 const BookFreeCall = () => (
   <Container className="has-text-centered-mobile">
     <div className="columns">

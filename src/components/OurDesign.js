@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { Title, Subtitle } from './elements';
 import BusImage from '../../static/images/bus.png';
 import BookImage from '../../static/images/book.png';

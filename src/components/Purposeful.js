@@ -1,6 +1,7 @@
 import React from 'react';
 
 import styled from 'styled-components';
+
 import Image from '../../static/images/sideimage.jpg';
 import { Button, Title, Subtitle, Heading } from './elements';
 

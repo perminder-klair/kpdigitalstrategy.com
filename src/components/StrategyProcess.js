@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { Heading, Title } from './elements';
 import ProcessCard from './ProcessCard';
 
