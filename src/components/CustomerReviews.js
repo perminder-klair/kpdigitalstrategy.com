@@ -15,6 +15,9 @@ const Container = styled.div`
     display: block;
     margin-left: auto;
     margin-right: 3rem;
+    @media screen and (max-width: 600px) {
+      margin-right: auto;
+    }
   }
   .headline {
     color: ${props => props.theme.darkGrey};

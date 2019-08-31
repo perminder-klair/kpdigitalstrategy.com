@@ -59,19 +59,23 @@ const Container = styled.section`
     @media screen and (max-width: 600px) {
       margin: 2rem 0rem;
       height: 23rem;
+      @media only screen and (max-width: 600px) {
       width: 19rem;
+      }
     }
   }
   .RotateText {
     transform: rotate(-90deg);
-    font-size: 11px;
+    font-size: 14px;
     margin: 3.75rem -7rem;
     display: flex;
   }
   .ContantText {
     background-color: ${props => props.theme.SecondaryColor};
-    padding: 0.25rem 1.25rem;
-    height: auto;
+    padding-top: 3rem;
+    height: 269px;
+    width: 105px;
+}
   }
   .View {
     padding: 0.25rem 3rem;
