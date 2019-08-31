@@ -59,8 +59,8 @@ const Container = styled.section`
     margin: 1rem 7rem;
     @media screen and (max-width: 600px) {
       margin: 2rem 0rem;
-      height: 18rem;
-      width: 21rem;
+      height: 23rem;
+      width: 19rem;
     }
   }
   .RotateText {
@@ -80,9 +80,13 @@ const Container = styled.section`
   }
   .para {
     padding: 0.25rem 3rem;
+    font-size: 16px;
   }
   .RightColumn {
     align-self: flex-end;
+  }
+  h3 {
+    font-size: 16px;
   }
 `;
 const ButtonWrapper = styled.div`
@@ -102,7 +106,7 @@ const NewWebSite = () => (
             <i className="icon fab fa-instagram" />
             <i className="icon fab fab fa-linkedin" />
           </div>
-          <h3 className="has-text-white is-size-7 has-text-weight-medium">
+          <h3 className="has-text-white has-text-weight-medium">
             branding design marketing analytics WebSite developement
           </h3>
         </div>
@@ -134,7 +138,7 @@ const NewWebSite = () => (
             <h2 className="View has-text-black is-size-5 has-text-weight-bold">
               View Our Latest case study
             </h2>
-            <p className="para has-text-black is-size-7 has-text-weight-normal">
+            <p className="para has-text-black has-text-weight-normal">
               Porjects exption able content of a page when looking at its
               layout. The point of using Lorem Ipsum is that it has a
               more-or-less normal distribution of letters, as opposed to

@@ -23,14 +23,14 @@ const Container = styled.div`
     display: block;
     margin-left: auto;
     margin-right: auto;
-    font-size: 13px;
+    font-size: 16px;
     padding: 1rem 5rem;
     strong {
       color: ${props => props.theme.SecondaryColor};
     }
     @media only screen and (max-width: 600px) {
       padding: 1rem 1rem;
-}
+    }
   }
 `;
 
@@ -38,7 +38,7 @@ const StrategyProcess = () => (
   <Container className="has-background-white section">
     <div className="container">
       <div className="has-text-centered HeadingWrapper">
-        <Heading black>Understanding the kp Digital Strategy process</Heading>
+        <Heading black>Understanding the kP Digital Strategy process</Heading>
         <Title red>
           Our step by step guides to help take your business to new heights.
         </Title>

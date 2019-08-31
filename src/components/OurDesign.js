@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button, Title, Subtitle } from './elements';
+import { Title, Subtitle } from './elements';
 import BusImage from '../../static/images/bus.png';
 import BookImage from '../../static/images/book.png';
 import TruckImage from '../../static/images/truck.png';
@@ -21,6 +21,15 @@ const Container = styled.div`
   }
   .title {
     margin-bottom: 0.7rem !important;
+    font-size: 32px !important;
+  }
+  .button {
+    background-color: transparent;
+    font-size: 16px;
+    border: 4px solid white;
+    padding: 2rem 8rem;
+    color: white;
+    font-weight: 700;
   }
 `;
 
@@ -93,7 +102,7 @@ const OurDesign = () => (
       </div>
     </div>
     <div className="ButtonWrapper has-text-centered">
-      <Button>learn more about our design & creative work</Button>
+      <a className="button">learn more about our design & creative work</a>
     </div>
   </Container>
 );

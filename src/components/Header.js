@@ -106,7 +106,7 @@ export default class Header extends React.Component {
                 <a
                   href="/"
                   className="button has-text-white has-text-weight-medium is-size-7">
-                  get an instant quote
+                  Get an instant quote
                 </a>
                 <a
                   href="/"

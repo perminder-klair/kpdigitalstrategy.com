@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Container = styled.h2`
   margin-bottom: 0rem;
   color: ${props => (props.red ? props.theme.SecondaryColor : '#ffffff')};
-  font-size: 1.15rem;
+  font-size: 18px;
 `;
 
 const Title = ({ children, ...props }) => (

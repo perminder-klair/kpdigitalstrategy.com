@@ -19,6 +19,7 @@ const Container = styled.div`
   }
   .discription {
     color: ${props => props.theme.primaryColor};
+    font-size: 16px;
   }
   .subtitle {
     font-size: 1.25rem !important;
@@ -43,7 +44,7 @@ const ProcessCard = ({ subtitle, discription }) => (
     </div>
     <div className="RightContainer">
       <Subtitle>{subtitle}</Subtitle>
-      <p className="discription is-size-7">{discription}</p>
+      <p className="discription">{discription}</p>
       <div className="ButtonWrapper">
         <Button borderRed secondary className="has-text-weight-semibold">
           learn more

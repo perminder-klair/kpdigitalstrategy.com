@@ -18,6 +18,7 @@ const Container = styled.div`
   }
   .headline {
     color: ${props => props.theme.darkGrey};
+    font-size: 32px;
   }
   .discription {
     padding-right: 14rem;
@@ -41,7 +42,7 @@ const CustomerReviews = () => (
           </figure>
         </div>
         <div className="column">
-          <h1 className="headline is-size-4 has-text-weight-bold">
+          <h1 className="headline has-text-weight-bold">
             In the last 30 days we've received
           </h1>
           <Title>60 postive customer reviews</Title>
