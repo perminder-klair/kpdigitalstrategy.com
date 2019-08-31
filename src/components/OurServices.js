@@ -29,14 +29,30 @@ const OurServices = () => (
             </h4>
           </div>
           <ul className="has-text-weight-light">
-            <li className="has-text-white">Design Direction</li>
-            <li className="has-text-white">Creative Conepts & Ideas</li>
-            <li className="has-text-white">Brading & identity</li>
-            <li className="has-text-white">Illustration & infographics</li>
-            <li className="has-text-white">App Design</li>
-            <li className="has-text-white">User Experience</li>
-            <li className="has-text-white">Wireframing & Protyping</li>
-            <li className="has-text-white">Printing</li>
+            <a href="/">
+              <li className="has-text-white">Design Direction</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">Creative Conepts & Ideas</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">Brading & identity</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">Illustration & infographics</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">App Design</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">User Experience</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">Wireframing & Protyping</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">Printing</li>
+            </a>
           </ul>
         </div>
         <div className="column">
@@ -46,16 +62,36 @@ const OurServices = () => (
             </h4>
           </div>
           <ul className="has-text-weight-light">
-            <li className="has-text-white">Strategic planning</li>
-            <li className="has-text-white">Content Strategy</li>
-            <li className="has-text-white">Brand experience</li>
-            <li className="has-text-white">PPC advertsing</li>
-            <li className="has-text-white">Google Merchant Centre</li>
-            <li className="has-text-white">Amzone Seller Central</li>
-            <li className="has-text-white">Account based marketing</li>
-            <li className="has-text-white">Email marketing</li>
-            <li className="has-text-white">Data & analytics</li>
-            <li className="has-text-white">Social media</li>
+            <a href="/">
+              <li className="has-text-white">Strategic planning</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">Content Strategy</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">Brand experience</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">PPC advertsing</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">Google Merchant Centre</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">Amzone Seller Central</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">Account based marketing</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">Email marketing</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">Data & analytics</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">Social media</li>
+            </a>
           </ul>
         </div>
         <div className="column">
@@ -65,14 +101,30 @@ const OurServices = () => (
             </h4>
           </div>
           <ul className="has-text-weight-light">
-            <li className="has-text-white">Website design</li>
-            <li className="has-text-white">Word website development</li>
-            <li className="has-text-white">CMS</li>
-            <li className="has-text-white">Technical support</li>
-            <li className="has-text-white">Hosting</li>
-            <li className="has-text-white">eCommerce</li>
-            <li className="has-text-white">Mobile website</li>
-            <li className="has-text-white">Web and Mobile UI</li>
+            <a href="/">
+              <li className="has-text-white">Website design</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">Word website development</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">CMS</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">Technical support</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">Hosting</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">eCommerce</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">Mobile website</li>
+            </a>
+            <a href="/">
+              <li className="has-text-white">Web and Mobile UI</li>
+            </a>
           </ul>
         </div>
       </div>

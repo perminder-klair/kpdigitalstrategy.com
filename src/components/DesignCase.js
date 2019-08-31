@@ -8,6 +8,10 @@ const Container = styled.div`
   padding: 3rem 0rem;
   .title {
     margin-bottom: 0.35rem;
+    font-size: 22px !important;
+  }
+  .subtitle {
+    font-size: 18px;
   }
 `;
 

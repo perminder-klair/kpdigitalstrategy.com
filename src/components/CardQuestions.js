@@ -6,12 +6,13 @@ const Container = styled.div`
   padding: 1rem 0rem;
   background-color: #1e2126;
   .Icon {
-    font-size: 23px;
+    font-size: 27px;
     margin: 0rem 2rem;
     color: ${props => props.theme.SecondaryColor};
   }
   h1 {
     color: ${props => props.theme.primaryColor};
+    font-size: 18px;
   }
 `;
 
