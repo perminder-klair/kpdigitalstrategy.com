@@ -5,14 +5,13 @@ import { Button } from './elements';
 
 const Container = styled.section`
   background-color: ${props => props.theme.BlackBis};
+  margin-bottom: 3rem;
   .title {
     color: ${props => props.theme.primaryColor};
     margin-bottom: 0rem;
-    font-size: 4rem !important;
   }
   span {
     color: ${props => props.theme.SecondaryColor};
-    font-size: 4rem !important;
   }
   .content {
     padding: 8rem 0rem;
@@ -93,7 +92,7 @@ const ButtonWrapper = styled.div`
   margin: 1rem 3rem;
 `;
 const TypingWrapper = styled(Typing)`
-  margin-top: -1.65rem;
+  margin-top: -1.2rem;
 `;
 
 const NewWebSite = () => (

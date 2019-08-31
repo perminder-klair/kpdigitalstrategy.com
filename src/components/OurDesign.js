@@ -26,10 +26,13 @@ const Container = styled.div`
   .button {
     background-color: transparent;
     font-size: 16px;
-    border: 4px solid white;
+    border: 2px solid white;
     padding: 2rem 8rem;
     color: white;
     font-weight: 700;
+    @media screen and (max-width: 600px) {
+      padding: 0rem .75rem;
+      font-size: 14px;
   }
 `;
 

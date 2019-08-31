@@ -20,6 +20,12 @@ const Container = styled.div`
   .ImagesContainer {
     padding: 2rem 0rem;
   }
+  .title {
+    font-size: 32px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
 `;
 
 const BrandIdentity = () => (

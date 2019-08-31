@@ -14,7 +14,7 @@ const Container = styled.div`
   .image {
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 3rem;
   }
   .headline {
     color: ${props => props.theme.darkGrey};

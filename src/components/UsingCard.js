@@ -30,11 +30,11 @@ const UsingCard = () => (
   <Container className="has-text-centered ">
     <div className="container">
       <Title>Website DevelopmentCard Using Gatsby Js </Title>
-      <h6 className="subtitle is-7 has-text-weight-bold">
+      <h6 className="subtitle is-6 has-text-weight-bold">
         ACM ENVIROMENTAL PLC
       </h6>
       <div className="CardBottom">
-        <Subtitle className="description ">
+        <Subtitle className="description">
           predefined chunks as necessary, making this the first true generator
           on the Internet. It uses a dictionary of over 200 Latin words,
           combined with a handful of model sentence structures, to generate

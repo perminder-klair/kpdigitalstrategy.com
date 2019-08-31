@@ -20,9 +20,6 @@ const Container = styled.nav`
       color: white !important;
     }
   }
-  #navbarBasicExample {
-    background-color: transparent;
-  }
   .navbar-item img {
     max-height: 2.75rem;
     @media screen and (max-width: 600px) {
@@ -41,6 +38,15 @@ const Container = styled.nav`
   }
   .navbar-burger.is-active span:nth-child(3) {
     -webkit-transform: translateY(-11px) rotate(-45deg);
+  }
+  .navbar-menu {
+    @media screen and (max-width: 600px) {
+      background-color: #ec333d;
+      position: absolute;
+      width: 100%;
+      height: auto;
+      transition: 0.7s;
+    }
   }
 `;
 
@@ -75,9 +81,8 @@ export default class Header extends React.Component {
               title="kpdigital strategy group icon"
             />
           </a>
-
           <a
-            href="/"
+            href="#"
             role="button"
             className={View ? 'navbar-burger is-active' : 'navbar-burger'}
             aria-label="menu"
@@ -90,7 +95,7 @@ export default class Header extends React.Component {
         </div>
         <div
           id="navbarBasicExample"
-          className={View ? 'navbar-menu is-active' : 'navbar-menu '}>
+          className={View ? 'navbar-menu is-active' : 'navbar-menu'}>
           <div className="navbar-start is-hidden-desktop">
             <Link to="/studies" className="navbar-item has-text-white">
               studies
@@ -99,7 +104,6 @@ export default class Header extends React.Component {
               About
             </a>
           </div>
-
           <div className="navbar-end">
             <div className="navbar-item">
               <div className="buttons ">

@@ -7,6 +7,7 @@ const Container = styled.div`
   padding: 1rem 1.5rem;
   .subtitle {
     margin-bottom: 0.75rem;
+    font-size: 20px;
   }
   .columns {
     justify-content: center;
@@ -15,6 +16,7 @@ const Container = styled.div`
     margin: 9px !important;
   }
 `;
+
 const ProjectsType = () => (
   <Container className="has-text-centered section">
     <div className="container">

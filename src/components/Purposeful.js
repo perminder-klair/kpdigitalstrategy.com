@@ -21,15 +21,15 @@ const Container = styled.div`
     padding: 1rem 0rem;
   }
   .ButtonWrapper {
-    margin-top: 2rem;
+    margin: 2rem 0rem;
   }
   .column {
     align-self: center;
     padding: 0rem 0.78rem;
   }
   .image {
-    width: 683px;
-    height: 686px;
+    width: 100%;
+    height: auto;
   }
 `;
 

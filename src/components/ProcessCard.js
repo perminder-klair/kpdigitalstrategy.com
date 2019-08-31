@@ -26,7 +26,7 @@ const Container = styled.div`
     margin-bottom: 0.25rem;
   }
   .ButtonWrapper {
-    padding: 1rem 1rem;
+    padding: 1rem 0rem;
     @media screen and (max-width: 600px) {
       padding: 1rem 0rem;
     }
@@ -46,7 +46,7 @@ const ProcessCard = ({ subtitle, discription }) => (
       <Subtitle>{subtitle}</Subtitle>
       <p className="discription">{discription}</p>
       <div className="ButtonWrapper">
-        <Button borderRed secondary className="has-text-weight-semibold">
+        <Button borderRed className="has-text-weight-semibold">
           learn more
         </Button>
       </div>

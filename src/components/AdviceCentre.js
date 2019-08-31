@@ -9,7 +9,7 @@ const Container = styled.div`
 `;
 
 const ButtonWrapper = styled.div`
-  margin-top: 3rem;
+  margin-top: 2rem;
 `;
 
 const AdviceCentre = () => (
