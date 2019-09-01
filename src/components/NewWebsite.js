@@ -57,9 +57,6 @@ const Container = styled.section`
     display: flex;
     width: 72%;
     margin: 1rem 7rem;
-    @media screen and (max-width: 600px) {
-      
-    }
   }
   .RotateText {
     transform: rotate(-90deg);
@@ -80,7 +77,13 @@ const Container = styled.section`
       height: auto;
       width: auto;
     }
-  }
+    @media only screen and (min-width: 1024px) and (max-height: 1366px) 
+     and (-webkit-min-device-pixel-ratio: 1.5) {
+        padding-top: 10rem; 
+        height: 414px;
+        width: 40px; 
+      }
+    }
   .View {
     padding: 0.25rem 3rem;
     margin-top: 1rem;
