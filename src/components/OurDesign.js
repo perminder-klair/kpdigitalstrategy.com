@@ -33,7 +33,7 @@ const Container = styled.div`
     font-weight: 700;
     @media screen and (max-width: 600px) {
       padding: 0rem .75rem;
-      font-size: 14px;
+      font-size: 12px;
   }
 `;
 

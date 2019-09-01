@@ -58,26 +58,27 @@ const Container = styled.section`
     width: 72%;
     margin: 1rem 7rem;
     @media screen and (max-width: 600px) {
-      margin: 2rem 0rem;
-      height: 23rem;
-      width: 19rem;
+      
     }
   }
   .RotateText {
     transform: rotate(-90deg);
     font-size: 14px;
-    margin: 3.75rem -7rem;
-    display: flex;
+    margin: 1rem -7rem;
+    @media only screen and (max-width: 600px){
+      margin: 0rem 0rem;
+      transform: rotate(0deg);
+    }
   }
   .ContantText {
     background-color: ${props => props.theme.SecondaryColor};
-    padding-top: 3rem;
+    padding-top: 5rem;
     height: 269px;
-    width: 105px;
+    width: 77px;
     @media only screen and (max-width: 600px) {
-      padding-top: 6rem;
+      padding: 7px;
       height: auto;
-      width: 105px;
+      width: auto;
     }
   }
   .View {
@@ -95,15 +96,13 @@ const Container = styled.section`
     font-size: 1rem;F
   }
 .Latetstudy {
-  padding: 1rem;
-  @media only screen and (max-width: 600px) {
-    padding: 0rem;
-  }
+  padding: 2rem;
+ 
 }
 `;
 
 const ButtonWrapper = styled.div`
-  margin: 1rem 3rem;
+  margin: 1rem 0rem;
 `;
 
 const TypingWrapper = styled(Typing)`
@@ -142,26 +141,32 @@ const NewWebSite = () => (
         </div>
       </div>
       <div className="column RightColumn">
-        <div className="ContantBox">
-          <div className="ContantText">
-            <h5 className="RotateText has-text-white has-text-weight-bold is-uppercase">
-              epic risk managemant rebrand
-            </h5>
+        <div className="columns is-gapless">
+          <div className="column is-1">
+            <div className="ContantText">
+              <h5 className="RotateText has-text-white has-text-weight-bold is-uppercase">
+                epic risk managemant rebrand
+              </h5>
+            </div>
           </div>
-          <div className="Latetstudy has-background-white is">
-            <h2 className="View has-text-black is-size-5 has-text-weight-bold">
-              View Our Latest case study
-            </h2>
-            <p className="para has-text-black has-text-weight-normal">
-              Porjects exption able content of a page when looking at its
-              layout. The point of using Lorem Ipsum is that it has a
-              more-or-less normal distribution of letters, as opposed to
-            </p>
-            <ButtonWrapper>
-              <Button borderRed className="has-text-black has-text-weight-bold">
-                read more
-              </Button>
-            </ButtonWrapper>
+          <div className="column is-7 has-background-white">
+            <div className="Latetstudy">
+              <h2 className="has-text-black is-size-5 has-text-weight-bold">
+                View Our Latest case study
+              </h2>
+              <p className="is-size-6 has-text-black has-text-weight-normal">
+                Porjects exption able content of a page when looking at its
+                layout. The point of using Lorem Ipsum is that it has a
+                more-or-less normal distribution of letters, as opposed to
+              </p>
+              <ButtonWrapper>
+                <Button
+                  borderRed
+                  className="has-text-black has-text-weight-bold">
+                  read more
+                </Button>
+              </ButtonWrapper>
+            </div>
           </div>
         </div>
       </div>
