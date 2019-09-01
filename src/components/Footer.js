@@ -8,8 +8,8 @@ const Container = styled.div`
     color: ${props => props.theme.primaryColor};
     margin: 0.75rem 0.25rem;
     @media screen and (max-width: 600px) {
-      margin: 1.2rem 0.65rem;
-      font-size: 1rem !important;
+      margin: 14px 14px;
+      font-size: 13px !important;
     }
   }
   .IconBox {

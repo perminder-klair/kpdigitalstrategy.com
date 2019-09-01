@@ -9,6 +9,9 @@ const Container = styled.div`
     font-size: 27px;
     margin: 0rem 2rem;
     color: ${props => props.theme.SecondaryColor};
+    @media only screen and (max-width: 600px) {
+      margin: 0rem 7rem;
+    }
   }
   h1 {
     color: ${props => props.theme.primaryColor};
