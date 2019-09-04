@@ -6,16 +6,16 @@ const Container = styled.div`
   background-color: ${props => props.theme.Black};
   p {
     color: ${props => props.theme.primaryColor};
-    margin: 0.75rem 0.25rem;
+    margin-top: 12px;
+    padding: 2px;
     @media screen and (max-width: 600px) {
-      margin-top: 0.25rem;
       font-size: 13px !important;
     }
   }
   .IconBox {
     justify-content: space-between;
     display: flex;
-    margin: 0rem 0rem;
+    margin-left: 6px;
     @media screen and (max-width: 600px) {
       margin: 0.75rem 0rem;
     }
