@@ -2,6 +2,8 @@ import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import styled from 'styled-components';
 
+import TypingAnimation from './TypingAnimation';
+
 const Container = styled.section`
   background-color: ${props => props.theme.BlackBis};
   margin-bottom: 3rem;
@@ -84,7 +86,7 @@ const Container = styled.section`
   }
 `;
 
-const TypingWrapper = styled(ReactTypingEffect)`
+const TypingWrapper = styled(TypingAnimation)`
   margin-top: -1.2rem;
   color: ${props => props.theme.SecondaryColor};
 `;
@@ -107,16 +109,7 @@ const NewWebSite = () => (
       <div className="column">
         <div className="content">
           <h1 className="title is-size-1 has-text-weight-bold">Thinking Of</h1>
-          <TypingWrapper
-            className="is-capitalized is-size-1 has-text-weight-bold"
-            speed="300ms"
-            text={[
-              'A New WebSite?',
-              'A Rebrand?',
-              'A Marketing Strategy',
-              'A Logo Design',
-            ]}
-          />
+          <TypingWrapper />
           <div>
             <p className="description is-size-6 has-text-weight-bold">
               We align design, marketing and sales to make it easier <br />
