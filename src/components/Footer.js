@@ -8,7 +8,7 @@ const Container = styled.div`
     color: ${props => props.theme.primaryColor};
     margin: 0.75rem 0.25rem;
     @media screen and (max-width: 600px) {
-      margin: 14px 14px;
+      margin-top: 0.25rem;
       font-size: 13px !important;
     }
   }

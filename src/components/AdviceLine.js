@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  padding: 0.4rem 0rem;
+  padding: 0rem 0rem;
   .title {
     padding: 0.75rem 0rem;
   }

@@ -1,8 +1,7 @@
 import React from 'react';
-import Typing from 'react-typing-animation';
-import styled from 'styled-components';
+import ReactTypingEffect from 'react-typing-effect';
 
-import { Button } from './elements';
+import styled from 'styled-components';
 
 const Container = styled.section`
   background-color: ${props => props.theme.BlackBis};
@@ -62,28 +61,11 @@ const Container = styled.section`
     transform: rotate(-90deg);
     font-size: 14px;
     margin: 1rem -7rem;
-    @media only screen and (max-width: 600px){
+    @media only screen and (max-width: 600px) {
       margin: 0rem 0rem;
       transform: rotate(0deg);
     }
   }
-  .ContantText {
-    background-color: ${props => props.theme.SecondaryColor};
-    padding-top: 5rem;
-    height: 269px;
-    width: 77px;
-    @media only screen and (max-width: 600px) {
-      padding: 7px;
-      height: auto;
-      width: auto;
-    }
-    @media only screen and (min-width: 1024px) and (max-height: 1366px) 
-     and (-webkit-min-device-pixel-ratio: 1.5) {
-        padding-top: 10rem; 
-        height: 414px;
-        width: 40px; 
-      }
-    }
   .View {
     padding: 0.25rem 3rem;
     margin-top: 1rem;
@@ -96,20 +78,20 @@ const Container = styled.section`
     align-self: flex-end;
   }
   h3 {
-    font-size: 1rem;F
+    font-size: 1rem;
   }
-.Latetstudy {
-  padding: 2rem;
- 
-}
+  .Latetstudy {
+    padding: 2rem;
+  }
 `;
 
 const ButtonWrapper = styled.div`
   margin: 1rem 0rem;
 `;
 
-const TypingWrapper = styled(Typing)`
+const TypingWrapper = styled(ReactTypingEffect)`
   margin-top: -1.2rem;
+  color: ${props => props.theme.SecondaryColor};
 `;
 
 const NewWebSite = () => (
@@ -130,46 +112,21 @@ const NewWebSite = () => (
       <div className="column">
         <div className="content">
           <h1 className="title is-size-1 has-text-weight-bold">Thinking Of</h1>
-          <TypingWrapper count={2}>
-            <span className="is-capitalized is-size-1 has-text-weight-bold">
-              A New WebSite?
-            </span>
-          </TypingWrapper>
+          <TypingWrapper
+            className="is-capitalized is-size-1 has-text-weight-bold"
+            speed="3ms"
+            text={[
+              'A New WebSite?',
+              'A Rebrand?',
+              'A Marketing Strategy',
+              'A Logo Design',
+            ]}
+          />
           <div>
             <p className="description is-size-6 has-text-weight-bold">
               We align design, marketing and sales to make it easier <br />
               than ever to reach new business heights.
             </p>
-          </div>
-        </div>
-      </div>
-      <div className="column RightColumn">
-        <div className="columns is-gapless">
-          <div className="column is-1">
-            <div className="ContantText">
-              <h5 className="RotateText has-text-white has-text-weight-bold is-uppercase">
-                epic risk managemant rebrand
-              </h5>
-            </div>
-          </div>
-          <div className="column is-7 has-background-white">
-            <div className="Latetstudy">
-              <h2 className="has-text-black is-size-5 has-text-weight-bold">
-                View Our Latest case study
-              </h2>
-              <p className="is-size-6 has-text-black has-text-weight-normal">
-                Porjects exption able content of a page when looking at its
-                layout. The point of using Lorem Ipsum is that it has a
-                more-or-less normal distribution of letters, as opposed to
-              </p>
-              <ButtonWrapper>
-                <Button
-                  borderRed
-                  className="has-text-black has-text-weight-bold">
-                  read more
-                </Button>
-              </ButtonWrapper>
-            </div>
           </div>
         </div>
       </div>
