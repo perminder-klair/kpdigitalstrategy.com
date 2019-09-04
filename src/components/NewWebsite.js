@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
-
 import styled from 'styled-components';
 
 const Container = styled.section`
@@ -85,10 +84,6 @@ const Container = styled.section`
   }
 `;
 
-const ButtonWrapper = styled.div`
-  margin: 1rem 0rem;
-`;
-
 const TypingWrapper = styled(ReactTypingEffect)`
   margin-top: -1.2rem;
   color: ${props => props.theme.SecondaryColor};
@@ -114,7 +109,7 @@ const NewWebSite = () => (
           <h1 className="title is-size-1 has-text-weight-bold">Thinking Of</h1>
           <TypingWrapper
             className="is-capitalized is-size-1 has-text-weight-bold"
-            speed="3ms"
+            speed="300ms"
             text={[
               'A New WebSite?',
               'A Rebrand?',
