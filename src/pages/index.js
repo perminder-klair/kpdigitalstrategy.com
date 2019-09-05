@@ -11,6 +11,7 @@ import Features from '../components/Features';
 import OurQualities from '../components/OurQualities';
 import BrandIdentity from '../components/BrandIdentity';
 import CustomerReviews from '../components/CustomerReviews';
+import Portfolio from '../components/Portfolio';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -30,6 +31,7 @@ export default class IndexPage extends React.Component {
         <OurQualities />
         <BrandIdentity />
         <CustomerReviews />
+        <Portfolio />
       </Layout>
     );
   }

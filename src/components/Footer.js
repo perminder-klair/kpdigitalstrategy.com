@@ -5,13 +5,12 @@ import { Link } from 'gatsby';
 import config from '../utils/config';
 
 const Section = styled.section`
-  background-color: ${props => props.theme.darkShades};
   color: ${props => props.theme.lightShades} !important;
   .title {
     color: ${props => props.theme.lightShades} !important;
   }
   .footer {
-    background-color: ${props => props.theme.darkShades};
+    background-color: ${props => props.theme.backgroundColor};
     padding: 3rem 1.5rem 3rem;
     .content {
       margin-top: 3rem;
@@ -26,21 +25,10 @@ const Section = styled.section`
     }
   }
   a {
+    color: #fff;
     :hover {
       color: #fff;
     }
-  }
-`;
-
-const StoreContainer = styled.div`
-  margin-top: 3rem;
-  @media screen and (max-width: 600px) {
-    display: flex;
-  }
-  img {
-    margin-right: 10px;
-    width: auto;
-    height: 42px;
   }
 `;
 
@@ -58,21 +46,7 @@ const Footer = () => (
       <footer className="footer">
         <div className="columns">
           <div className="column">
-            <h4 className="title is-4">Download The App</h4>
-            <StoreContainer>
-              <a href={config.iosStore}>
-                <img src="/images/store-ios.png" alt="Packrs ios store" />
-              </a>
-              <a href={config.androidStore}>
-                <img
-                  src="/images/store-android.png"
-                  alt="Packrs android store"
-                />
-              </a>
-            </StoreContainer>
-          </div>
-          <div className="column">
-            <h4 className="title is-4">Packrs</h4>
+            <h4 className="title is-4">CREATIVE & DESIGN</h4>
             <ul>
               <li>
                 <Link to="/about">About Us</Link>
@@ -101,7 +75,7 @@ const Footer = () => (
             </ul>
           </div>
           <div className="column">
-            <h4 className="title is-4">Our Information</h4>
+            <h4 className="title is-4">MARKETING STRATERGY</h4>
             <ul>
               <li>
                 <Link to="/faq">FAQ</Link>
@@ -115,7 +89,7 @@ const Footer = () => (
             </ul>
           </div>
           <div className="column">
-            <h4 className="title is-4">Reach Us</h4>
+            <h4 className="title is-4">WEB DESIGN</h4>
             <ul>
               <li>
                 <a
@@ -142,8 +116,10 @@ const Footer = () => (
           <div className="columns">
             <div className="column">
               <p>
-                © 2019 <a href="https://www.packrs.co">Packrs</a> | Made with ❤️
-                in Punjab, India, and on the Internet.
+                © 2019{' '}
+                <a href="https://www.kpdigitalstrategy.com/">
+                  KP Digital Strategy
+                </a>
               </p>
             </div>
             <div className="column">

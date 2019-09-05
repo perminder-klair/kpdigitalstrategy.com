@@ -44,6 +44,7 @@ const HeadDivider = styled.div`
   p {
     color: ${props => props.theme.textColorInverse};
     text-align: center;
+    margin-bottom: 0;
   }
 `;
 
