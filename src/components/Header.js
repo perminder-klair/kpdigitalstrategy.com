@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 const Section = styled.section`
-  padding: 1rem 1.5rem;
+  padding: 1rem 0;
   font-family: ${props => props.theme.primaryFontFamily};
   .navbar {
     background-color: transparent;
@@ -35,6 +35,15 @@ const Section = styled.section`
     color: #fff;
     opacity: 0.6;
     border-radius: 4px;
+  }
+`;
+
+const HeadDivider = styled.div`
+  background-color: ${props => props.theme.backgroundColorLite};
+  padding: 0.6rem 0;
+  p {
+    color: ${props => props.theme.textColorInverse};
+    text-align: center;
   }
 `;
 
@@ -74,7 +83,7 @@ export default class Header extends React.Component {
           >
             <div className="navbar-brand">
               <Link className="navbar-item" to="/">
-                <img src="/images/packrs-logo.png" alt="Packrs logo" />
+                <img src="/images/logo.png" alt="Packrs logo" />
               </Link>
               <a
                 href="#"
@@ -95,25 +104,14 @@ export default class Header extends React.Component {
               </a>
             </div>
             <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
-              <div className="navbar-start">
-                <Link to="/" className="navbar-item">
-                  Home
-                </Link>
-                <Link to="/about" className="navbar-item">
-                  About
-                </Link>
-                <Link to="/support" className="navbar-item">
-                  Support
-                </Link>
-              </div>
               <div className="navbar-end">
                 <div className="navbar-item">
                   <div className="buttons is-hidden-mobile">
-                    <Link to="/partner" className="button is-primary">
-                      <strong>Become a Rider</strong>
+                    <Link to="/contact" className="button is-outlined">
+                      <strong>Gen an instant quote</strong>
                     </Link>
-                    <Link to="/business" className="button is-light">
-                      Become a Partner
+                    <Link to="/contact" className="button is-outlined">
+                      contact
                     </Link>
                   </div>
                 </div>
@@ -121,6 +119,12 @@ export default class Header extends React.Component {
             </div>
           </nav>
         </div>
+        <HeadDivider>
+          <p className="has-text-weight-semibold">
+            Free Advice Hotline: <a>+44 161 258 3622</a>{' '}
+            <span>(From 8am to 5pm)</span>
+          </p>
+        </HeadDivider>
       </Section>
     );
   }

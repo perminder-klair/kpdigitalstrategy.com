@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset-advanced';
 import { darken, lighten } from 'polished';
 
-const mainBrandColor = '#33B760';
+const mainBrandColor = '#FB3640';
 const lightShades = '#F9F9F9';
 const darkAccent = '#726699';
 const darkShades = '#1C1323';
@@ -26,7 +26,8 @@ export const theme = {
 
   primaryColor: mainBrandColor,
   borderColor: '#e0e6ef',
-  backgroundColor: '#FFFFFF',
+  backgroundColor: '#121317',
+  backgroundColorLite: '#F3F8FE',
   backgroundInputColor: lightShades,
   backgroundInputColorDark: darkShades,
   fontSize: 16,
@@ -34,8 +35,8 @@ export const theme = {
   fontSizeExtraSmall: 12,
   fontSizeMedium: 18,
   fontSizeLarge: 22,
-  textColor: darkShades, // '#0A0B11',
-  textColorInverse: lightShades,
+  textColor: '#ffffff',
+  textColorInverse: '#111215',
   textColorLite: '#8B8989',
   menuTintColor: darkAccent,
   primaryFontFamily: "'Nunito', sans-serif",
@@ -51,6 +52,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${theme.textColor};
     letter-spacing: 0.03rem !important;
     font-size: 17px;
+    background-color: ${theme.backgroundColor};
   }
   .title {
     font-family: ${theme.primaryFontFamily};
@@ -62,7 +64,10 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.5rem;
   }
   p, .title, .box {
-    color: ${theme.textColor} !important;
+    color: ${theme.textColor};
+  }
+  a {
+    color: ${theme.mainBrandColor};
   }
   .subtitle {
     color: ${lighten(0.06, theme.textColor)} !important;
@@ -88,6 +93,10 @@ const GlobalStyle = createGlobalStyle`
     :hover {
       background-color: ${darken(0.06, theme.darkAccent)};
     }
+  }
+  .button.is-outlined {
+    background-color: transparent;
+    color: ${theme.textColor};
   }
   .button, .input, .card {
     box-shadow: ${theme.boxShadow};
