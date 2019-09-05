@@ -1,0 +1,69 @@
+{
+  "name": "packrs-website",
+  "description": "packrs official website",
+  "version": "2.0.1",
+  "author": "Parminder Klair",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeiq-co/packrs-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zeiq-co/packrs-website/issues"
+  },
+  "homepage": "https://github.com/zeiq-co/packrs-website#readme",
+  "scripts": {
+    "start": "npm run develop",
+    "develop": "gatsby develop",
+    "serve": "gatsby serve",
+    "build": "gatsby build",
+    "lint": "eslint --ignore-path .gitignore \"src/**/*.{js,jsx}\""
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^1.4.0",
+    "@mdx-js/react": "^1.4.0",
+    "apollo-cache-inmemory": "^1.6.3",
+    "apollo-client": "^2.6.4",
+    "apollo-link-context": "^1.0.18",
+    "apollo-link-http": "^1.5.15",
+    "dayjs": "^1.8.16",
+    "formik": "^1.5.8",
+    "gatsby": "^2.3.3",
+    "gatsby-image": "^2.0.35",
+    "gatsby-plugin-google-analytics": "^2.0.18",
+    "gatsby-plugin-manifest": "^2.0.25",
+    "gatsby-plugin-mdx": "^1.0.33",
+    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-react-helmet": "^3.0.11",
+    "gatsby-plugin-sharp": "2.2.12",
+    "gatsby-plugin-sitemap": "^2.2.9",
+    "gatsby-plugin-styled-components": "^3.0.7",
+    "gatsby-remark-images": "^3.1.19",
+    "gatsby-source-filesystem": "^2.1.18",
+    "graphql-tag": "^2.10.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "polished": "^3.4.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "react-helmet": "^5.2.0",
+    "react-slick": "^0.25.2",
+    "slick-carousel": "^1.8.1",
+    "smooth-scroll": "^16.1.0",
+    "styled-components": "^4.2.0",
+    "styled-reset-advanced": "^1.0.1",
+    "sweetalert": "^2.1.2",
+    "yup": "^0.27.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "10.0.1",
+    "babel-plugin-styled-components": "^1.10.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.16.1",
+    "pretty-quick": "^1.10.0"
+  }
+}
