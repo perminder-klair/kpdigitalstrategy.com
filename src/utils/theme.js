@@ -39,8 +39,8 @@ export const theme = {
   textColorInverse: '#111215',
   textColorLite: '#8B8989',
   menuTintColor: darkAccent,
-  primaryFontFamily: "'Nunito', sans-serif",
-  secondaryFontFamily: "'Open Sans', sans-serif",
+  primaryFontFamily: "'Roboto', sans-serif",
+  secondaryFontFamily: "'Roboto', sans-serif",
   boxShadow: 'rgba(0,0,0,0.08) 0px 7px 18px',
 };
 
@@ -51,7 +51,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${theme.secondaryFontFamily};
     color: ${theme.textColor};
     letter-spacing: 0.03rem !important;
-    font-size: 17px;
+    font-size: 16px;
     background-color: ${theme.backgroundColor};
   }
   .title {
@@ -62,6 +62,7 @@ const GlobalStyle = createGlobalStyle`
   }
   p {
     line-height: 1.5rem;
+    margin-bottom: 1rem;
   }
   p, .title, .box {
     color: ${theme.textColor};
@@ -69,14 +70,20 @@ const GlobalStyle = createGlobalStyle`
   a {
     color: ${theme.mainBrandColor};
   }
+  .has-text-danger {
+    color: ${theme.mainBrandColor} !important;
+  }
   .subtitle {
-    color: ${lighten(0.06, theme.textColor)} !important;
+    color: ${lighten(0.06, theme.textColor)};
   }
   .button.is-primary {
-    background-color: ${theme.mainBrandColor};
-    transition: background-color 0.2s ease;
+    border-color: ${theme.mainBrandColor};
+    color: ${theme.textColor};
+    background-color: transparent !important;
+    transition: border-color 0.2s ease;
     :hover {
-      background-color: ${darken(0.06, theme.mainBrandColor)};
+      color: ${darken(0.06, theme.textColor)};
+      border-color: ${darken(0.1, theme.mainBrandColor)};
     }
   }
   .button.is-secondary {
