@@ -8,6 +8,9 @@ import FeaturedLogos from '../components/FeaturedLogos';
 import SeviceItem from '../components/SeviceItem';
 import BookCall from '../components/BookCall';
 import Features from '../components/Features';
+import OurQualities from '../components/OurQualities';
+import BrandIdentity from '../components/BrandIdentity';
+import CustomerReviews from '../components/CustomerReviews';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -24,6 +27,9 @@ export default class IndexPage extends React.Component {
         <SeviceItem />
         <BookCall />
         <Features />
+        <OurQualities />
+        <BrandIdentity />
+        <CustomerReviews />
       </Layout>
     );
   }

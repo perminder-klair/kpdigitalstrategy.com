@@ -28,6 +28,7 @@ export const theme = {
   borderColor: '#e0e6ef',
   backgroundColor: '#121317',
   backgroundColorLite: '#F3F8FE',
+  backgroundColorGrey: '#1E2125',
   backgroundInputColor: lightShades,
   backgroundInputColorDark: darkShades,
   fontSize: 16,
@@ -110,6 +111,9 @@ const GlobalStyle = createGlobalStyle`
   }
   .has-text-warning {
     color: ${theme.lightAccent} !important;
+  }
+  .has-text-black {
+    color: ${theme.textColorInverse};
   }
 `;
 

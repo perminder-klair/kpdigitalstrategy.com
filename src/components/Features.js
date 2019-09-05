@@ -3,7 +3,9 @@ import styled from 'styled-components';
 
 import FeatureItem from './FeatureItem';
 
-const Container = styled.section``;
+const Container = styled.section`
+  padding: 5rem 1.5rem;
+`;
 
 const Features = () => (
   <Container className="section">
