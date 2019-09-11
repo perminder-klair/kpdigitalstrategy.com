@@ -115,6 +115,10 @@ const GlobalStyle = createGlobalStyle`
   .has-text-black {
     color: ${theme.textColorInverse};
   }
+  .columns{
+    margin-left: 0rem !important;
+    margin-right:0rem !important;
+  }
 `;
 
 export default GlobalStyle;

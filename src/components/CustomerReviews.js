@@ -32,16 +32,16 @@ const CustomerReviews = () => (
             />
           </figure>
         </div>
-        <div className="column">
+        <div className="column is-7">
           <p className="is-size-4 has-text-weight-semibold has-text-black">
             In the last 30 days we've received
           </p>
           <p className="is-size-4 has-text-weight-semibold">
             60 postive customer reviews
           </p>
-          <p className="has-text-black has-text-weight-semibold">
-            Bring us to 200 positve design and marketing outcomes over the past
-            year for business all over the UK
+          <p className="has-text-black has-text-weight-semibold is-italic">
+            Bringing us to 200 positve design and marketing outcomes over the
+            past year for business all over the UK.
           </p>
         </div>
       </div>

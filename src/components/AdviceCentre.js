@@ -8,13 +8,20 @@ const Container = styled.div`
 
 const ButtonWrapper = styled.div`
   margin-top: 2rem;
+  .button {
+    border: 2px solid;
+    border-radius: 0px;
+    padding: 0.5rem 2rem 2rem 2rem;
+  }
 `;
 
 const AdviceCentre = () => (
   <Container className="section">
     <div className="has-text-centered">
       <h2 className="title size-3 has-text-black">Not sure where to begin ?</h2>
-      <p>For help of enything you need to know about design and marketing</p>
+      <p className="has-text-weight-bold">
+        For help of enything you need to know about design and marketing
+      </p>
       <ButtonWrapper>
         <button className="button is-outlined" type="button">
           visit our advice centre

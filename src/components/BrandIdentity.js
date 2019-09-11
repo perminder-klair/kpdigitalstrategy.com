@@ -14,10 +14,10 @@ const BrandIdentity = () => (
   <Container className="section">
     <div className="container">
       <div className="has-text-centered HeadingWrapper">
-        <h2 className="title size-2 has-text-danger">
+        <h2 className="title size-2 has-text-danger is-spaced">
           Looking to improve your brand identity & marketing ?
         </h2>
-        <h3 className="subtitle size-3">
+        <h3 className="subtitle is-5 has-text-weight-light">
           Select an option below to get a quick quote for our services
         </h3>
       </div>

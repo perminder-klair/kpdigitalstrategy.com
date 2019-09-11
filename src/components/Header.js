@@ -26,6 +26,8 @@ const Section = styled.section`
   .navbar-item {
     font-weight: 700;
     font-size: 1.2rem;
+    flex-shrink: initial !important;
+
     :hover {
       color: ${props => props.theme.darkAccent};
     }

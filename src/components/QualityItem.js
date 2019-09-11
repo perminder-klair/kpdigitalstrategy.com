@@ -13,6 +13,9 @@ const Container = styled.div`
       height: 100%;
       margin-top: 2rem;
     }
+    .text {
+      font-weight: 300;
+    }
   }
 `;
 
@@ -34,8 +37,8 @@ const QualityItem = ({ title, text, icon }) => (
         </figure>
       </div>
       <div className="media-content">
-        <h3 className="title size-3">{title}</h3>
-        <p>{text}</p>
+        <h3 className="title is-4">{title}</h3>
+        <p className="text">{text}</p>
       </div>
     </div>
   </Container>
