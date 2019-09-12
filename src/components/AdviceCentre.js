@@ -9,8 +9,6 @@ const Container = styled.div`
 const ButtonWrapper = styled.div`
   margin-top: 2rem;
   .button {
-    border: 2px solid;
-    border-radius: 0px;
     padding: 0.5rem 2rem 2rem 2rem;
   }
 `;
@@ -23,7 +21,10 @@ const AdviceCentre = () => (
         For help of enything you need to know about design and marketing
       </p>
       <ButtonWrapper>
-        <button className="button is-outlined" type="button">
+        <button
+          className="button  is-rounded has-text-weight-bold"
+          type="button"
+        >
           visit our advice centre
         </button>
       </ButtonWrapper>

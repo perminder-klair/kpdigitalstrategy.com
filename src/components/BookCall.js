@@ -11,8 +11,6 @@ const Section = styled.section`
     margin-bottom: 0;
   }
   .button {
-    border: 2.5px solid;
-    border-radius: 0px;
     padding: 0.5rem 2rem 2rem 2rem;
   }
 `;
@@ -21,14 +19,17 @@ const BookCall = () => (
   <Section className="section">
     <div className="container">
       <div className="columns has-text-centered">
-        <div className="column is-three-quarters">
+        <div className="column is-two-thirds">
           <p className="is-size-5 has-text-weight-semibold">
             Want to discuss your project with one of our expert team?
           </p>
         </div>
         <div className="column">
-          <button className="button is-outlined" type="button">
-            Book a FREE call
+          <button
+            className="button is-rounded has-text-weight-bold"
+            type="button"
+          >
+            Book a free call
           </button>
         </div>
       </div>

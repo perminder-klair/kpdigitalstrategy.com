@@ -86,7 +86,7 @@ export default class Header extends React.Component {
           >
             <div className="navbar-brand">
               <Link className="navbar-item" to="/">
-                <img src="/images/logo.png" alt="Packrs logo" />
+                <img src="/images/logo.png" alt="KpDigital logo" />
               </Link>
               <a
                 href="#"
@@ -110,10 +110,10 @@ export default class Header extends React.Component {
               <div className="navbar-end">
                 <div className="navbar-item">
                   <div className="buttons is-hidden-mobile">
-                    <Link to="/contact" className="button is-outlined">
+                    <Link to="/contact" className="button is-danger is-rounded">
                       Get an instant quote
                     </Link>
-                    <Link to="/contact" className="button is-outlined">
+                    <Link to="/contact" className="button is-rounded">
                       Contact
                     </Link>
                   </div>

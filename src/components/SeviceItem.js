@@ -9,8 +9,8 @@ const Section = styled.section`
     margin-bottom: 2rem;
   }
   .button {
-    border: 2px solid ${props => props.theme.mainBrandColor};
-    border-radius: 0px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 `;
 
@@ -19,10 +19,10 @@ const SeviceItem = () => (
     <div className="container">
       <div className="columns">
         <div className="column first">
-          <h1 className="title is-3 is-spaced">
+          <h1 className="title is-3">
             Purposeful design and marketing services for aspirational companies
           </h1>
-          <h2 className="subtitle is-4 has-text-danger">
+          <h2 className="subtitle is-5 has-text-danger has-text-weight-bold">
             We align design, marketing and sales to make it easier than ever to
             reach new business heights.
           </h2>
@@ -42,7 +42,10 @@ const SeviceItem = () => (
             No matter the size of your project, or if you are just starting out,
             KP Digital Strategy has
           </p>
-          <button className="button is-primary" type="button">
+          <button
+            className="button is-danger is-rounded has-text-weight-semibold"
+            type="button"
+          >
             View our portfolio
           </button>
         </div>

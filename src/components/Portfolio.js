@@ -14,9 +14,7 @@ const Section = styled.div`
     }
   }
   .button {
-    border: 2px solid;
     padding: 0.5rem 2rem 2rem 2rem;
-    border-radius: 0px;
     @media only screen and (max-width: 768px) {
       padding: 0.5rem 0.5rem 2rem 0.5rem;
     }
@@ -72,7 +70,10 @@ const Portfolio = () => (
         </div>
       </div>
       <div className="button-wrapper">
-        <button className="button is-outlined" type="button">
+        <button
+          className="button is-rounded has-text-weight-semibold"
+          type="button"
+        >
           learn more about our design & creative work
         </button>
       </div>

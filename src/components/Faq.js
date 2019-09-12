@@ -14,9 +14,7 @@ const Container = styled.div`
     margin: 4rem 0rem;
   }
   .button {
-    border: 2px solid;
     padding: 0.5rem 2rem 2rem 2rem;
-    border-radius: unset;
   }
 `;
 
@@ -38,7 +36,7 @@ const Faq = () => (
     </div>
     <div className="ButtonWrapper has-text-centered">
       <button
-        className="button is-primary has-text-danger has-text-weight-bold"
+        className="button is-danger is-rounded has-text-weight-bold"
         type="button"
       >
         View All Questions
