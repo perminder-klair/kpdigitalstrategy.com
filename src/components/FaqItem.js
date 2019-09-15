@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   padding: 1rem 0rem;
   background-color: ${props => props.theme.backgroundColorGrey};
+  border-radius: 2rem;
   .Icon {
     font-size: 27px;
     margin: 0rem 2rem;
@@ -46,7 +47,7 @@ class FaqItem extends React.Component {
         <div className="columns is-9">
           <div className="column is-four-fifths">
             <TitleWrapper>
-              <h1 className="has-text-weight-medium ">{questions}</h1>
+              <h1 className="has-text-weight-medium">{questions}</h1>
             </TitleWrapper>
           </div>
           <div className="column">
@@ -56,7 +57,7 @@ class FaqItem extends React.Component {
           </div>
         </div>
         {show && (
-          <AnswerContainer className="">
+          <AnswerContainer>
             <p>
               Below is a sample of “Lorem ipsum dolor sit” dummy copy text often
               used to show font face samples, for page layout and design as

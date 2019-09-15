@@ -11,6 +11,7 @@ import Features from '../components/Features';
 import OurQualities from '../components/OurQualities';
 import BrandIdentity from '../components/BrandIdentity';
 import CustomerReviews from '../components/CustomerReviews';
+import OurProcess from '../components/OurProcess';
 import Portfolio from '../components/Portfolio';
 import Faq from '../components/Faq';
 import AdviceCentre from '../components/AdviceCentre';
@@ -33,6 +34,7 @@ export default class IndexPage extends React.Component {
         <OurQualities />
         <BrandIdentity />
         <CustomerReviews />
+        <OurProcess />
         <Portfolio />
         <Faq />
         <AdviceCentre />

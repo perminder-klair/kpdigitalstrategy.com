@@ -5,7 +5,7 @@ const Container = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 0.75rem 2.4rem;
+  padding: 0.75rem 4rem;
   img {
     width: 150px;
     max-width: 100%;
@@ -20,7 +20,7 @@ const Container = styled.div`
 `;
 
 const FeatureItem = ({ title, subtitle, button, icon }) => (
-  <Container className="column ">
+  <Container className="column">
     <img src={icon} title={title} alt={title} />
     <div className="media-content has-text-centered">
       <h2 className="title is-4  has-text-danger">{title}</h2>

@@ -2,15 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Section = styled.section`
-  .first {
-    align-self: center;
-  }
   .text {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
   .button {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+  .first {
+    align-self: center;
+    padding-right: 3.75rem;
   }
 `;
 
@@ -19,7 +20,7 @@ const SeviceItem = () => (
     <div className="container">
       <div className="columns">
         <div className="column first">
-          <h1 className="title is-3">
+          <h1 className="title is-4">
             Purposeful design and marketing services for aspirational companies
           </h1>
           <h2 className="subtitle is-5 has-text-danger has-text-weight-bold">

@@ -21,26 +21,33 @@ const Container = styled.div`
 const Faq = () => (
   <Container className="section">
     <div className="Container">
-      <div className="has-text-centered	">
-        <h2 className="title size-2 ">Frequently Asked Questions</h2>
+      <div className="has-text-centered">
+        <h2 className="title size-2">Frequently Asked Questions</h2>
       </div>
-      <div className="CardWrapper">
-        <FaqItem questions="What information do i need to supply to you to start my project ?" />
+      <div className="columns is-centered">
+        <div className="column is-two-thirds">
+          <div className="CardWrapper">
+            <FaqItem questions="What information do i need to supply to you to start my project ?" />
+          </div>
+          <div className="CardWrapper">
+            <FaqItem questions="What information do i need to supply to you to start my project ?" />
+          </div>
+          <div className="CardWrapper">
+            <FaqItem questions="What information do i need to supply to you to start my project ?" />
+          </div>
+          <div className="CardWrapper">
+            <FaqItem questions="What information do i need to supply to you to start my project ?" />
+          </div>
+          <div className="ButtonWrapper has-text-centered">
+            <button
+              className="button is-danger is-rounded has-text-weight-bold"
+              type="button"
+            >
+              View All Questions
+            </button>
+          </div>
+        </div>
       </div>
-      <div className="CardWrapper">
-        <FaqItem questions="What information do i need to supply to you to start my project ?" />
-      </div>
-      <div className="CardWrapper">
-        <FaqItem questions="What information do i need to supply to you to start my project ?" />
-      </div>
-    </div>
-    <div className="ButtonWrapper has-text-centered">
-      <button
-        className="button is-danger is-rounded has-text-weight-bold"
-        type="button"
-      >
-        View All Questions
-      </button>
     </div>
   </Container>
 );
