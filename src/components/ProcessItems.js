@@ -6,12 +6,18 @@ const Container = styled.div`
     background-color: ${props => props.theme.mainBrandColor};
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
+    @media screen and (max-width: 600px) {
+      border-radius: 0rem;
+    }
   }
   .second {
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     background-color: ${props => props.theme.backgroundColor};
     padding: 1.15rem 0.5rem;
+    @media screen and (max-width: 600px) {
+      border-radius: 0rem;
+    }
   }
 `;
 

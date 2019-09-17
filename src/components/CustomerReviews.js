@@ -26,7 +26,7 @@ const CustomerReviews = () => (
           <figure className="image is-128x128 center">
             <img
               src="/images/customerplaceholder.png"
-              className="is-rounded center"
+              className="center"
               title="its a icon Brand Identity"
               alt="Customer reviews"
             />

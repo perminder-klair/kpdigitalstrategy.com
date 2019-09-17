@@ -12,6 +12,9 @@ const Section = styled.section`
   .first {
     align-self: center;
     padding-right: 3.75rem;
+    @media screen and (max-width: 600px) {
+      padding: 3rem 1rem;
+    }
   }
 `;
 
