@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Text from './Autotext';
 
 const Section = styled.section`
+  background: url(/images/heroimage.jpg);
   .title {
     font-size: 2.5rem;
     font-weight: 700;
