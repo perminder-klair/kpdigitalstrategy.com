@@ -21,21 +21,18 @@ const Container = styled.div`
   }
 `;
 
-const Processitems = ({ title, text, icon }) => (
+const Processitems = ({ title, text, button }) => (
   <Container className="column is-one-third">
     <div className="columns">
       <div className="column first" />
       <div className="column  has-text-centered is-9 second">
-        <h3 className="title is-5 is-spaced">Lead genertation</h3>
-        <p className="subtitle is-6">
-          Poect excerpt,Loreum ipsum dolor siteamet, onseLorem ipsum dolor
-          sitamnet, maygvolutpat.
-        </p>
+        <h3 className="title is-5 is-spaced">{title}</h3>
+        <p className="subtitle is-6"> {text}</p>
         <button
           className="button is-danger is-rounded has-text-weight-semibold"
           type="button"
         >
-          View our portfolio
+          {button}
         </button>
       </div>
     </div>

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import ProcessItems from './ProcessItems';
 
 const Container = styled.div`
-background-color:#ffff;
+  background-color: #ffff;
   padding: 5rem 1.5rem;
   .columns {
     margin-top: 1rem;
@@ -25,12 +25,42 @@ const OurProcess = () => (
         Our step by step guide to help take your business to new heights.
       </h3>
       <div className="columns is-multiline">
-        <ProcessItems />
-        <ProcessItems />
-        <ProcessItems />
-        <ProcessItems />
-        <ProcessItems />
-        <ProcessItems />
+        <ProcessItems
+          title="Lead genertation"
+          text="Poect excerpt,Loreum ipsum dolor siteamet, onseLorem ipsum dolor
+          sitamnet, maygvolutpat."
+          button="View our portfolio"
+        />
+        <ProcessItems
+          title="Lead genertation"
+          text="Poect excerpt,Loreum ipsum dolor siteamet, onseLorem ipsum dolor
+          sitamnet, maygvolutpat."
+          button="View our portfolio"
+        />
+        <ProcessItems
+          title="Lead genertation"
+          text="Poect excerpt,Loreum ipsum dolor siteamet, onseLorem ipsum dolor
+          sitamnet, maygvolutpat."
+          button="View our portfolio"
+        />
+        <ProcessItems
+          title="Lead genertation"
+          text="Poect excerpt,Loreum ipsum dolor siteamet, onseLorem ipsum dolor
+          sitamnet, maygvolutpat."
+          button="View our portfolio"
+        />
+        <ProcessItems
+          title="Lead genertation"
+          text="Poect excerpt,Loreum ipsum dolor siteamet, onseLorem ipsum dolor
+          sitamnet, maygvolutpat."
+          button="View our portfolio"
+        />
+        <ProcessItems
+          title="Lead genertation"
+          text="Poect excerpt,Loreum ipsum dolor siteamet, onseLorem ipsum dolor
+          sitamnet, maygvolutpat."
+          button="View our portfolio"
+        />
       </div>
       <div className="columns is-centered">
         <div className="column is-three-quarters bottom-section">
