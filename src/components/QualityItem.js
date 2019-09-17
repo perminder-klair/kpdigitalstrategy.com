@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   .media {
     background-color: ${props => props.theme.backgroundColor};
-    padding: 1.2rem;
+    padding: 0.5rem 0rem;
     .media-left {
       min-width: 20%;
       align-items: center;

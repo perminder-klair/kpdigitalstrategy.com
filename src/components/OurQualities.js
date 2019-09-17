@@ -20,7 +20,7 @@ const OurQualities = () => (
       <h3 className="subtitle size-3 has-text-danger has-text-weight-bold">
         Expect more from your design & marketing company
       </h3>
-      <div className="columns is-multiline">
+      <div className="columns is-multiline is-variable is-1">
         <QualityItem
           icon="far fa-lightbulb"
           title="Experienced team"

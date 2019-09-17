@@ -5,22 +5,26 @@ import Text from './Autotext';
 
 const Section = styled.section`
   .title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
   }
   .subtitle {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .auto {
     height: 3rem;
   }
   .button {
-    padding: 0.5rem 3rem 0.5rem 3rem;
+    padding: 0.35rem 2.75rem 0.5rem 2.75rem;
     margin-top: 1rem;
+  }
+  .hero-body {
+    padding-bottom: 6.5rem !important;
+    padding-top: 9rem !important;
   }
 `;
 const HelpText = styled.p`
-  margin-top: 1.25rem;
+  margin-top: 1rem;
 `;
 
 const HomeHero = () => (
@@ -41,7 +45,7 @@ const HomeHero = () => (
                 to reach new business heights.
               </HelpText>
               <button
-                className="button is-danger is-rounded has-text-weight-semibold is-size-5"
+                className="button is-danger is-rounded has-text-weight-semibold is-size-6"
                 type="button"
               >
                 Get started

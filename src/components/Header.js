@@ -13,7 +13,7 @@ const Section = styled.section`
   .navbar-brand {
     margin-right: 20px;
     .navbar-item img {
-      max-height: 3.75rem;
+      max-height: 2.75rem;
     }
   }
   .navbar-menu {
@@ -41,10 +41,10 @@ const Section = styled.section`
 `;
 
 const HeadDivider = styled.div`
-  background-color: ${props => props.theme.backgroundColorLite};
-  padding: 0.6rem 0;
+  background-color: ${props => props.theme.mainBrandColor};
+  padding: 0.3rem 0;
   p {
-    color: ${props => props.theme.textColorInverse};
+    color: ${props => props.theme.backgroundColorLite};
     text-align: center;
     margin-bottom: 0;
   }
@@ -124,7 +124,8 @@ export default class Header extends React.Component {
         </div>
         <HeadDivider>
           <p className="has-text-weight-semibold">
-            Free Advice Hotline: <a>+44 161 258 3622</a>{' '}
+            Free Advice Hotline:
+            <a className="has-text-white">+44 161 258 3622</a>
             <span>(From 8am to 5pm)</span>
           </p>
         </HeadDivider>

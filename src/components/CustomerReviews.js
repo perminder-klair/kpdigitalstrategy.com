@@ -25,10 +25,10 @@ const CustomerReviews = () => (
         <div className="column is-one-third">
           <figure className="image is-128x128 center">
             <img
-              src="https://bulma.io/images/placeholders/128x128.png"
+              src="/images/customerplaceholder.png"
               className="is-rounded center"
               title="its a icon Brand Identity"
-              alt="Bulma Avatar"
+              alt="Customer reviews"
             />
           </figure>
         </div>

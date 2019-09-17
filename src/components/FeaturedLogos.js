@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Section = styled.section`
+  padding: 1.5rem 1.5rem;
   background-color: ${props => props.theme.backgroundColorLite};
 `;
 
