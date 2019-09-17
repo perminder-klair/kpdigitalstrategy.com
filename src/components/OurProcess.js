@@ -4,12 +4,13 @@ import styled from 'styled-components';
 import ProcessItems from './ProcessItems';
 
 const Container = styled.div`
-  background-color: ${props => props.theme.backgroundColorLite};
+background-color:#ffff;
   padding: 5rem 1.5rem;
   .columns {
     margin-top: 1rem;
   }
   .bottom-section {
+    background-color: ${props => props.theme.backgroundColorLite};
     margin-top: 2.75rem;
   }
 `;
