@@ -16,11 +16,11 @@ const Section = styled.section`
 `;
 
 const SeviceItem = () => (
-  <Section className="section">
+  <Section>
     <div className="container">
       <div className="columns">
         <div className="column first">
-          <h1 className="title is-4">
+          <h1 className="title is-4 has-text-white">
             Purposeful design and marketing services for aspirational companies
           </h1>
           <h2 className="subtitle is-5 has-text-danger has-text-weight-bold">
