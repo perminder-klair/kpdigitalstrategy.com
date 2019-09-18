@@ -110,7 +110,7 @@ export default class Header extends React.Component {
               <div className="navbar-end">
                 <div className="navbar-item">
                   <div className="buttons is-hidden-mobile">
-                    <Link to="/contact" className="button is-danger is-rounded">
+                    <Link to="/blog" className="button is-danger is-rounded">
                       Get an instant quote
                     </Link>
                     <Link to="/contact" className="button is-rounded">

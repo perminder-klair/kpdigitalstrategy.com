@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 const Container = styled.div`
   background-color: ${props => props.theme.primaryColor};
@@ -9,7 +10,7 @@ const Container = styled.div`
 const ButtonWrapper = styled.div`
   margin-top: 2rem;
   .button {
-    padding: 0.5rem 2rem 2rem 2rem;
+    padding: 0rem 2rem 0rem 2rem;
   }
 `;
 
@@ -21,12 +22,9 @@ const AdviceCentre = () => (
         For help of enything you need to know about design and marketing
       </p>
       <ButtonWrapper>
-        <button
-          className="button  is-rounded has-text-weight-bold"
-          type="button"
-        >
+        <Link to="/blog" className="button  is-rounded has-text-weight-bold">
           visit our advice centre
-        </button>
+        </Link>
       </ButtonWrapper>
     </div>
   </Container>
