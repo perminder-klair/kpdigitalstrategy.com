@@ -37,9 +37,12 @@ const ArticleCard = () => (
           like to create or whether you are open to exploration we are here to
           help.
         </p>
-        <buttom className="button is-danger is-rounded has-text-weight-bold">
+        <button
+          className="button is-danger is-rounded has-text-weight-bold"
+          type="button"
+        >
           Read More
-        </buttom>
+        </button>
       </div>
     </div>
   </Container>

@@ -16,6 +16,9 @@ const Container = styled.div`
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
   }
+  .image.is-3by1 {
+    padding-top: 45%;
+  }
   .media-content {
     padding: 3rem 2rem;
   }
@@ -28,7 +31,7 @@ const KnowlegeCard = () => (
   <Container className="column is-half">
     <div className="card">
       <div className="card-image">
-        <figure className="image is-2by1">
+        <figure className="image is-3by1">
           <img src="/images/dummy/image5.png" alt="Placeholder image" />
           <button
             className="button is-danger has-text-weight-bold"
@@ -48,9 +51,12 @@ const KnowlegeCard = () => (
           like to create or whether you are open to exploration we are here to
           help.
         </p>
-        <buttom className="button is-danger is-rounded has-text-weight-bold">
+        <button
+          className="button is-danger is-rounded has-text-weight-bold"
+          type="button"
+        >
           Read More
-        </buttom>
+        </button>
       </div>
     </div>
   </Container>

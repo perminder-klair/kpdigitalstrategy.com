@@ -3,6 +3,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import HamburgerMenu from 'react-hamburger-menu';
 
 const Section = styled.section`
   padding: 1rem 0;
@@ -38,6 +39,9 @@ const Section = styled.section`
     opacity: 0.6;
     border-radius: 4px;
   }
+  .BurgerMenu {
+    margin: 1rem;
+  }
 `;
 
 const HeadDivider = styled.div`
@@ -50,12 +54,29 @@ const HeadDivider = styled.div`
   }
 `;
 
+const Dropdown = styled.div`
+  background-color: rgba(255, 56, 96, 0.5);
+  position: absolute;
+  width: 100%;
+  .list-item {
+    padding-top: 1rem;
+    border-bottom: none;
+  }
+  .contact {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background: transparent;
+    color: white;
+  }
+`;
+
 export default class Header extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
       isActive: false,
+      View: false,
     };
   }
 
@@ -74,8 +95,15 @@ export default class Header extends React.Component {
     });
   }
 
+  handleClick() {
+    this.setState({
+      open: !this.state.open,
+      View: !this.state.View,
+    });
+  }
+
   render() {
-    const { isActive } = this.state;
+    const { isActive, View } = this.state;
     return (
       <Section className="section">
         <div className="container">
@@ -118,6 +146,19 @@ export default class Header extends React.Component {
                     </Link>
                   </div>
                 </div>
+                <div className="BurgerMenu">
+                  <HamburgerMenu
+                    isOpen={this.state.open}
+                    menuClicked={this.handleClick.bind(this)}
+                    width={26}
+                    height={20}
+                    strokeWidth={1}
+                    rotate={0}
+                    color="#FFFFFF"
+                    borderRadius={0}
+                    animationDuration={0.6}
+                  />
+                </div>
               </div>
             </div>
           </nav>
@@ -129,6 +170,36 @@ export default class Header extends React.Component {
             <span>(From 8am to 5pm)</span>
           </p>
         </HeadDivider>
+        <Dropdown className={View ? 'list has-text-centered' : 'is-hidden'}>
+          <div className="list-item">
+            <Link to="/blog" className="has-text-white">
+              Case Studies
+            </Link>
+          </div>
+          <div className="list-item">
+            <Link to="/blog" className="has-text-white">
+              Services
+            </Link>
+          </div>
+          <div className="list-item">
+            <Link to="/blog" className="has-text-white">
+              Advice Center
+            </Link>
+          </div>
+          <div className="list-item">
+            <Link to="/blog" className="has-text-white">
+              About us
+            </Link>
+          </div>
+          <div className="list-item">
+            <Link
+              to="/contact"
+              className="button is-rounded is-outlined has-text-weight-semibold contact"
+            >
+              Contact
+            </Link>
+          </div>
+        </Dropdown>
       </Section>
     );
   }

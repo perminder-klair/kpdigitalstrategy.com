@@ -20,8 +20,8 @@ const Section = styled.section`
     margin-top: 1rem;
   }
   .hero-body {
-    padding-bottom: 6.5rem !important;
-    padding-top: 9rem !important;
+    padding-bottom: 4rem !important;
+    padding-top: 10rem !important;
   }
 `;
 const HelpText = styled.p`
