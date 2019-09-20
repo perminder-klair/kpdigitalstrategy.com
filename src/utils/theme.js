@@ -47,13 +47,17 @@ export const theme = {
 
 const GlobalStyle = createGlobalStyle`
   ${reset};
-
+  
   body {
     font-family: ${theme.secondaryFontFamily};
     color: ${theme.textColor};
     letter-spacing: 0.03rem !important;
     font-size: 16px;
     background-color: ${theme.backgroundColor};
+  }
+  .columns{
+    margin-left: 0rem !important;
+    margin-right:0rem !important;
   }
   .title {
     font-family: ${theme.primaryFontFamily};
@@ -112,10 +116,6 @@ const GlobalStyle = createGlobalStyle`
   }
   .has-text-black {
     color: ${theme.textColorInverse};
-  }
-  .columns{
-    margin-left: 0rem !important;
-    margin-right:0rem !important;
   }
 `;
 

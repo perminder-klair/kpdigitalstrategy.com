@@ -55,8 +55,9 @@ const HeadDivider = styled.div`
 `;
 
 const Dropdown = styled.div`
-  background-color: rgba(255, 56, 96, 0.5);
+  background-color: rgba(255, 56, 96, 94%);
   position: absolute;
+  z-index: 1;
   width: 100%;
   .list-item {
     padding-top: 1rem;

@@ -16,7 +16,8 @@ const Container = styled.div`
     padding: 3rem 2rem;
   }
   .button {
-    padding: 1rem 3rem 1rem 3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
   }
 `;
 
