@@ -10,7 +10,8 @@ const Container = styled.div`
 const ButtonWrapper = styled.div`
   margin-top: 2rem;
   .button {
-    padding: 0rem 2rem 0rem 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 `;
 

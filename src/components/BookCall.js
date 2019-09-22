@@ -11,7 +11,8 @@ const Section = styled.section`
     margin-bottom: 0;
   }
   .button {
-    padding: 0.5rem 2rem 2rem 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 `;
 

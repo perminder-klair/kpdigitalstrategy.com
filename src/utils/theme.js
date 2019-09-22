@@ -86,12 +86,6 @@ const GlobalStyle = createGlobalStyle`
     color: #ffffff;
     border-color: transparent;
     border-width: 0px;
-    :hover {
-      transform: translateY(-1px);
-      box-shadow: 0 7px 14px rgba(50,50,93,0.1), 0 3px 6px rgba(0,0,0,0.08)
-      border-color: transparent;
-      color: #fff;
-  }
   }
   .button.is-link {
     background-color: ${theme.darkShades};
@@ -99,10 +93,6 @@ const GlobalStyle = createGlobalStyle`
     border-width: 0px;
     :hover {
       background-color:${theme.darkShades}!important;
-      transform: translateY(-1px);
-      box-shadow: 0 7px 14px rgba(50,50,93,0.1), 0 3px 6px rgba(0,0,0,0.08)
-      border-color: transparent;
-      color: #fff;
   }
   .button.is-outlined {
     background-color: transparent;

@@ -7,7 +7,6 @@ const Section = styled.section`
   }
   .button {
     width: 100%;
-    padding: 0rem 2rem 0rem 2rem;
     @media screen and (max-width: 600px) {
       width: 70%;
     }
@@ -74,10 +73,10 @@ const FeaturesArticles = () => (
           <input
             className="input is-rounded"
             type="text"
-            placeholder="Text input"
+            placeholder="Search by keyword"
           />
         </div>
-        <div className="column">
+        <div className="column  has-text-centered">
           <button
             className="button is-rounded is-danger has-text-weight-bold"
             type="button"

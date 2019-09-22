@@ -16,7 +16,8 @@ const Section = styled.section`
     height: 3rem;
   }
   .button {
-    padding: 0.35rem 2.75rem 0.5rem 2.75rem;
+    padding-right: 2.75rem;
+    padding-left: 2.75rem;
     margin-top: 1rem;
   }
   .hero-body {

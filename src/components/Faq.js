@@ -14,7 +14,8 @@ const Container = styled.div`
     margin: 4rem 0rem;
   }
   .button {
-    padding: 0.5rem 2rem 2rem 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 `;
 

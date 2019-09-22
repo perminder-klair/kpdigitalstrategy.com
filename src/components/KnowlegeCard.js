@@ -23,21 +23,19 @@ const Container = styled.div`
     padding: 3rem 2rem;
   }
   .button {
-    padding: 0rem 3rem 0rem 3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
   }
 `;
 
-const KnowlegeCard = () => (
+const KnowlegeCard = props => (
   <Container className="column is-half">
     <div className="card">
       <div className="card-image">
         <figure className="image is-3by1">
-          <img src="/images/dummy/image5.png" alt="Placeholder image" />
-          <button
-            className="button is-danger has-text-weight-bold"
-            type="button"
-          >
-            Branding
+          <img src={props.src} alt="Placeholder image" />
+          <button className={props.bclass} type="button">
+            {props.btitle}
           </button>
         </figure>
       </div>

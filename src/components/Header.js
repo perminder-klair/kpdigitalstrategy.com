@@ -76,7 +76,6 @@ export default class Header extends React.Component {
     super(props);
 
     this.state = {
-      isActive: false,
       View: false,
     };
   }
@@ -86,14 +85,6 @@ export default class Header extends React.Component {
       const SmoothScroll = require('smooth-scroll');
       const scroll = new SmoothScroll('a[href*="#"]');
     }
-  }
-
-  handleMobileMenu() {
-    const { isActive } = this.state;
-
-    this.setState({
-      isActive: !isActive,
-    });
   }
 
   handleClick() {
@@ -117,25 +108,21 @@ export default class Header extends React.Component {
               <Link className="navbar-item" to="/">
                 <img src="/images/logo.png" alt="KpDigital logo" />
               </Link>
-              <a
-                href="#"
-                role="button"
-                className={
-                  isActive
-                    ? 'navbar-burger burger mobile is-active'
-                    : 'navbar-burger burger mobile'
-                }
-                aria-label="menu"
-                aria-expanded="false"
-                data-target="navbarBasicExample"
-                onClick={() => this.handleMobileMenu()}
-              >
-                <span aria-hidden="true" />
-                <span aria-hidden="true" />
-                <span aria-hidden="true" />
-              </a>
+              <div className="BurgerMenu is-hidden-desktop">
+                <HamburgerMenu
+                  isOpen={this.state.open}
+                  menuClicked={this.handleClick.bind(this)}
+                  width={26}
+                  height={20}
+                  strokeWidth={1}
+                  rotate={0}
+                  color="#FFFFFF"
+                  borderRadius={0}
+                  animationDuration={0.6}
+                />
+              </div>
             </div>
-            <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
+            <div className="navbar-menu">
               <div className="navbar-end">
                 <div className="navbar-item">
                   <div className="buttons is-hidden-mobile">

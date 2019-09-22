@@ -14,7 +14,8 @@ const Section = styled.div`
     }
   }
   .button {
-    padding: 0.5rem 2rem 2rem 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
     @media only screen and (max-width: 768px) {
       padding: 0.5rem 0.5rem 2rem 0.5rem;
     }

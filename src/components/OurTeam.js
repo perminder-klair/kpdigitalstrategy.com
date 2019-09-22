@@ -4,6 +4,9 @@ import styled from 'styled-components';
 const Container = styled.div`
   background-color: ${props => props.theme.mainBrandColor};
   padding: 5rem 1.5rem;
+  img {
+    padding: 0rem 2rem;
+  }
   .columns {
     margin-top: 1rem;
   }
@@ -14,7 +17,7 @@ const Team = () => (
     <div className="container">
       <div className="columns">
         <div className="column">
-          <img src="/images/team.jpg" alt="team image" />
+          <img src="/images/team/member-one.jpg" alt="team image" />
         </div>
         <div className="column">
           <img src="/images/team.jpg" alt="team image" />
