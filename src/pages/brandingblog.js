@@ -3,6 +3,8 @@ import React from 'react';
 import config from '../utils/config';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
+import CategoryHero from '../components/CategoryHero';
+import BlogContent from '../components/BlogContent';
 
 export default class BrandingBlog extends React.Component {
   render() {
@@ -14,6 +16,8 @@ export default class BrandingBlog extends React.Component {
           url={config.siteUrl}
           image={config.image}
         />
+        <CategoryHero />
+        <BlogContent />
       </Layout>
     );
   }
