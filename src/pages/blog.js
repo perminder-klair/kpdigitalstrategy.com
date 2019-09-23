@@ -10,7 +10,7 @@ import KnowlegeCenter from '../components/KnowlegeCenter';
 import BrandIdentity from '../components/BrandIdentity';
 import BookCall from '../components/BookCall';
 
-export default class IndexPage extends React.Component {
+export default class Blog extends React.Component {
   render() {
     return (
       <Layout>

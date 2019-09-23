@@ -95,7 +95,7 @@ export default class Header extends React.Component {
   }
 
   render() {
-    const { isActive, View } = this.state;
+    const { View } = this.state;
     return (
       <Section className="section">
         <div className="container">
@@ -129,7 +129,7 @@ export default class Header extends React.Component {
                     <Link to="/blog" className="button is-danger is-rounded">
                       Get an instant quote
                     </Link>
-                    <Link to="/contact" className="button is-rounded">
+                    <Link to="/brandingblog" className="button is-rounded">
                       Contact
                     </Link>
                   </div>
