@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import ProcessItems from './ProcessItems';
+import BlogContentcard from './BlogContentcard';
+import BlogProjectIdea from './BlogProjectIdea';
 
 const Section = styled.section`
   .color {
@@ -39,7 +40,7 @@ const BlogContent = () => (
           </span>
         </section>
       </div>
-      <div className="column">
+      <div className="column is-6">
         <section className="section">
           <div className="container">
             Hello World Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -57,7 +58,27 @@ const BlogContent = () => (
           </div>
         </section>
       </div>
-      <div className="column" />
+      <div className="column">
+        <section className="section">
+          <div className="container">
+            <p className="has-text-danger has-text-weight-semibold">
+              Related Content
+            </p>
+            <BlogContentcard />
+            <BlogContentcard />
+            <BlogContentcard />
+            <div className="tags is-block">
+              <p className="is-block has-text-danger has-text-weight-semibold">
+                Tags
+              </p>
+              <span className="tag is-rounded is-danger">Google Analytics</span>
+              <span className="tag is-rounded is-danger">Maketing</span>
+              <span className="tag is-rounded is-danger">Data</span>
+              <BlogProjectIdea />
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   </Section>
 );
