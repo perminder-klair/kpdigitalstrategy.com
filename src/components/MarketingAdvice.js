@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 const Section = styled.section`
@@ -15,58 +16,57 @@ const Section = styled.section`
     height: 100%;
   }
 `;
+const NavItems = [
+  {
+    id: 1,
+    name: 'Branding',
+    url: '/page/Branding',
+    class: 'button is-rounded is-danger has-text-weight-bold',
+  },
+  {
+    id: 1,
+    name: 'Digital Marketing',
+    url: '/page/Digital-Marketing',
+    class: 'button is-rounded is-link has-text-weight-bold',
+  },
+  {
+    id: 1,
+    name: 'Website Development',
+    url: 'page/Website-Development',
+    class: 'button is-rounded is-secondary has-text-weight-bold',
+  },
+  {
+    id: 1,
+    name: 'Social Media',
+    url: '/page/Social-Media',
+    class: 'button is-rounded is-primary has-text-weight-bold',
+  },
+  {
+    id: 1,
+    name: 'Business Advice',
+    url: '/page/Business-Advice',
+    class: 'button is-rounded is-info has-text-weight-bold',
+  },
+];
 
 const FeaturesArticles = () => (
   <Section>
     <div className="columns is-centered">
       <div className="column  has-text-centered">
         <p className="has-text-weight-light">
-          KP Digital Home > Design & Marketing Advice Centre
+          KP Digital Home Design & Marketing Advice Centre
         </p>
       </div>
     </div>
     <div className="container">
       <div className="columns has-text-centered">
-        <div className="column">
-          <button
-            className="button is-rounded is-danger has-text-weight-bold"
-            type="button"
-          >
-            Branding
-          </button>
-        </div>
-        <div className="column">
-          <button
-            className="button is-rounded is-link has-text-weight-bold"
-            type="button"
-          >
-            Digital Marketing
-          </button>
-        </div>
-        <div className="column">
-          <button
-            className="button is-rounded is-secondary has-text-weight-bold"
-            type="button"
-          >
-            Website development
-          </button>
-        </div>
-        <div className="column">
-          <button
-            className="button is-rounded is-primary has-text-weight-bold"
-            type="button"
-          >
-            Social Media
-          </button>
-        </div>
-        <div className="column">
-          <button
-            className="button is-rounded is-info has-text-weight-bold"
-            type="button"
-          >
-            Business Advice
-          </button>
-        </div>
+        {NavItems.map(item => (
+          <div className="column">
+            <Link to={item.url} className={item.class}>
+              {item.name}
+            </Link>
+          </div>
+        ))}
       </div>
       <div className="columns">
         <div className="column is-11">

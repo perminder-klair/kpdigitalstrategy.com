@@ -126,10 +126,10 @@ export default class Header extends React.Component {
               <div className="navbar-end">
                 <div className="navbar-item">
                   <div className="buttons is-hidden-mobile">
-                    <Link to="/blog" className="button is-danger is-rounded">
+                    <Link to="#" className="button is-danger is-rounded">
                       Get an instant quote
                     </Link>
-                    <Link to="/brandingblog" className="button is-rounded">
+                    <Link to="#" className="button is-rounded">
                       Contact
                     </Link>
                   </div>
@@ -170,12 +170,12 @@ export default class Header extends React.Component {
             </Link>
           </div>
           <div className="list-item">
-            <Link to="/blog" className="has-text-white">
+            <Link to="/advice" className="has-text-white">
               Advice Center
             </Link>
           </div>
           <div className="list-item">
-            <Link to="/blog" className="has-text-white">
+            <Link to="/advice" className="has-text-white">
               About us
             </Link>
           </div>

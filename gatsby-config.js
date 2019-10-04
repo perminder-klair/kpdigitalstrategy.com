@@ -14,9 +14,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        defaultLayouts: {
-          default: require.resolve('./src/components/PageLayout.js'),
-        },
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
@@ -26,6 +23,15 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `8wh1xftcp0ap`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: 'jbrXSb4T-2d6rh7UMabjjVT7MC38pmNQ2jlV-kzTosw',
+        host: `preview.contentful.com`,
       },
     },
     {

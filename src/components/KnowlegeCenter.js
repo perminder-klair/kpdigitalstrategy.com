@@ -10,37 +10,43 @@ const KnowlegeCenter = () => (
     <div className="container">
       <h1 className="title is-3">Industry Leading</h1>
       <p className="has-text-danger">Knowledge, Advice & Guidance</p>
-      <p> All categories > Digital Marketing</p>
+      <p> All categories</p>
       <div className="columns is-multiline is-variable is-6">
         <KnowlegeCard
           src="/images/categories/image-one.jpg"
-          bclass="button is-danger has-text-weight-bold"
-          btitle="Branding"
+          buttonclass="button is-danger has-text-weight-bold"
+          buttontitle="Branding"
+          link="/page/Branding"
         />
         <KnowlegeCard
           src="/images/categories/image-two.jpg"
-          bclass="button is-link has-text-weight-bold"
-          btitle="Digital Marketing"
+          buttonclass="button is-link has-text-weight-bold"
+          buttontitle="Digital Marketing"
+          link="/page/Digital-Marketing"
         />
         <KnowlegeCard
           src="/images/categories/image-three.jpg"
-          bclass="button is-secondary has-text-weight-bold"
-          btitle="Website development"
+          buttonclass="button is-secondary has-text-weight-bold"
+          buttontitle="Website development"
+          link="page/Website-Development"
         />
         <KnowlegeCard
           src="/images/categories/image-four.jpg"
-          bclass="button is-primary has-text-weight-bold"
-          btitle="Social Media"
+          buttonclass="button is-primary has-text-weight-bold"
+          buttontitle="Social Media"
+          link="/page/Social-Media"
         />
         <KnowlegeCard
           src="/images/categories/image-five.jpg"
-          bclass="button is-info has-text-weight-bold"
-          btitle="Business Advice"
+          buttonclass="button is-info has-text-weight-bold"
+          buttontitle="Business Advice"
+          link="/page/Business-Advice"
         />
         <KnowlegeCard
           src="/images/categories/image-six.jpg"
-          bclass="button is-danger has-text-weight-bold"
-          btitle="Branding"
+          buttonclass="button is-danger has-text-weight-bold"
+          buttontitle="Branding"
+          link="/page/Branding"
         />
       </div>
     </div>

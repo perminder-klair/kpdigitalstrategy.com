@@ -13,6 +13,7 @@ const Container = styled.div`
   }
   .text {
     padding: 1rem;
+    line-height: 1.25;
   }
 `;
 
@@ -20,8 +21,10 @@ const BlogContentcard = () => (
   <Container className="container has-text-centered">
     <div className="columns">
       <div className="column is-4" />
-      <div className="column first">
-        <h1 className="text">Understanding our logo process</h1>
+      <div className="column first is-7">
+        <h1 className="text has-text-weight-semibold">
+          Understanding our logo design process
+        </h1>
       </div>
     </div>
   </Container>

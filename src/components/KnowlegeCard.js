@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 const Container = styled.div`
   margin-top: 1rem;
@@ -34,8 +35,8 @@ const KnowlegeCard = props => (
       <div className="card-image">
         <figure className="image is-3by1">
           <img src={props.src} alt="Placeholder image" />
-          <button className={props.bclass} type="button">
-            {props.btitle}
+          <button className={props.buttonclass} type="button">
+            {props.buttontitle}
           </button>
         </figure>
       </div>
@@ -49,12 +50,12 @@ const KnowlegeCard = props => (
           like to create or whether you are open to exploration we are here to
           help.
         </p>
-        <button
+        <Link
+          to={props.link}
           className="button is-danger is-rounded has-text-weight-bold"
-          type="button"
         >
           Read More
-        </button>
+        </Link>
       </div>
     </div>
   </Container>
