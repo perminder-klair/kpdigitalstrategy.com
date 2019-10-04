@@ -37,19 +37,6 @@ exports.createPages = ({ actions, graphql }) => {
       });
     });
 
-    result.data.allContentfulProduct.edges.forEach(({ node }) => {
-      // console.log('node', node);
-      const pagePath = `product/${node.slug}`;
-      createPage({
-        path: pagePath,
-        component: path.resolve(`src/templates/product.js`),
-        // additional data can be passed via context
-        context: {
-          slug: node.slug,
-        },
-      });
-    });
-
     return null;
   });
 };
