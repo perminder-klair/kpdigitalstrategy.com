@@ -23,7 +23,7 @@ const AdviceCentre = () => (
         For help of enything you need to know about design and marketing
       </p>
       <ButtonWrapper>
-        <Link to="/blog" className="button  is-rounded has-text-weight-bold">
+        <Link to="/advice" className="button  is-rounded has-text-weight-bold">
           visit our advice centre
         </Link>
       </ButtonWrapper>

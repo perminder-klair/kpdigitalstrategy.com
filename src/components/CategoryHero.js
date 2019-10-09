@@ -14,6 +14,9 @@ const Section = styled.section`
     width: 71%;
     position: relative;
     margin-top: -12rem;
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
   }
   .image {
     display: block;

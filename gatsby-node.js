@@ -35,7 +35,7 @@ exports.createPages = ({ actions, graphql }) => {
           slug: node.slug,
         },
       });
-    });
+    }); 
 
     return null;
   });
