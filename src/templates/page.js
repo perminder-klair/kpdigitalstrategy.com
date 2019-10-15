@@ -15,6 +15,9 @@ export const pageQuery = graphql`
       title
       slug
       color
+      description {
+        description
+      }
     }
   }
 `;

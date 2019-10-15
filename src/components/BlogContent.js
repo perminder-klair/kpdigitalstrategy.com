@@ -64,26 +64,7 @@ class BlogContent extends React.Component {
             <section className="section">
               <div className="container content">
                 <h1 className="title is-5 has-text-danger">{page.title}</h1>
-                <p>
-                  Rich text is more exciting than plain text. It supports text
-                  formatting, such as bold, italics, and underlining, as well as
-                  different fonts, font sizes, and colored text. Rich text
-                  documents can also include page formatting options, such as
-                  custom page margins, line spacing, and tab widths. Most word
-                  processors, such as Microsoft Word, Lotus Word Pro, and
-                  AppleWorks, create rich text documents. However, if you save a
-                  document in a program's native format, it may only open with
-                  the program that created it. For example, Lotus Word Pro will
-                  not be able to open an AppleWorks text document, even though
-                  both programs are text editors. This is because each program
-                  uses its own method of formatting and creating text files. The
-                  good news is, most word processors allow you to save rich text
-                  documents in the generic Rich Text Format. This file format,
-                  which uses the .RTF extension keeps most, if not all the text
-                  formatting. However, because it is a standard format, it can
-                  be opened by just about any word processing program and even
-                  most basic text editors.
-                </p>
+                <p>{page.description.description}</p>
               </div>
             </section>
           </div>
