@@ -129,7 +129,7 @@ export default class Header extends React.Component {
                     <Link to="#" className="button is-danger is-rounded">
                       Get an instant quote
                     </Link>
-                    <Link to="#" className="button is-rounded">
+                    <Link to="/contact" className="button is-rounded">
                       Contact
                     </Link>
                   </div>
