@@ -8,7 +8,7 @@ import MyMapComponent from '../components/GoogleMaps';
 import ContactForm from '../components/ContactForm';
 import CustomerReviews from '../components/CustomerReviews';
 
-export default class ContactPage extends React.Component {
+export default class PortfoliosPage extends React.Component {
   render() {
     return (
       <Layout>
