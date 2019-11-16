@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Section = styled.section`
   .text {
@@ -18,7 +18,7 @@ const Section = styled.section`
   }
 `;
 
-const SeviceItem = () => (
+const ServiceItem = () => (
   <Section>
     <div className="container">
       <div className="columns">
@@ -61,4 +61,4 @@ const SeviceItem = () => (
   </Section>
 );
 
-export default SeviceItem;
+export default ServiceItem;

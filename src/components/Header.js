@@ -1,9 +1,9 @@
 /* eslint global-require: 0 */
 
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'gatsby';
-import HamburgerMenu from 'react-hamburger-menu';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
+import HamburgerMenu from "react-hamburger-menu";
 
 const Section = styled.section`
   padding: 1rem 0;
@@ -59,11 +59,14 @@ const Dropdown = styled.div`
   position: absolute;
   z-index: 1;
   width: 100%;
+  height: 100%;
   .list-item {
+    font-size: 30px;
     padding-top: 1rem;
     border-bottom: none;
   }
   .contact {
+    font-size: 30px;
     padding-left: 3rem;
     padding-right: 3rem;
     background: transparent;
@@ -76,13 +79,13 @@ export default class Header extends React.Component {
     super(props);
 
     this.state = {
-      View: false,
+      View: false
     };
   }
 
   componentDidMount() {
     if (typeof window !== `undefined`) {
-      const SmoothScroll = require('smooth-scroll');
+      const SmoothScroll = require("smooth-scroll");
       const scroll = new SmoothScroll('a[href*="#"]');
     }
   }
@@ -90,7 +93,7 @@ export default class Header extends React.Component {
   handleClick() {
     this.setState({
       open: !this.state.open,
-      View: !this.state.View,
+      View: !this.state.View
     });
   }
 
@@ -158,14 +161,14 @@ export default class Header extends React.Component {
             <span>(From 8am to 5pm)</span>
           </p>
         </HeadDivider>
-        <Dropdown className={View ? 'list has-text-centered' : 'is-hidden'}>
+        <Dropdown className={View ? "list has-text-centered" : "is-hidden"}>
           <div className="list-item">
             <Link to="/portfolios" className="has-text-white">
               Case Studies
             </Link>
           </div>
           <div className="list-item">
-            <Link to="/blog" className="has-text-white">
+            <Link to="/service" className="has-text-white">
               Services
             </Link>
           </div>
