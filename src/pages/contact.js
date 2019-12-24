@@ -1,12 +1,11 @@
-import React from 'react';
+import React from "react";
+import config from "../utils/config";
 
-import config from '../utils/config';
-import Seo from '../components/Seo';
-import Layout from '../components/Layout';
-import ContactHero from '../components/ContactHero';
-import MyMapComponent from '../components/GoogleMaps';
-import ContactForm from '../components/ContactForm';
-import CustomerReviews from '../components/CustomerReviews';
+import Seo from "../components/Seo";
+import Layout from "../components/Layout";
+import ContactHero from "../components/ContactHero";
+import MyMapComponent from "../components/GoogleMaps";
+import ContactForm from "../components/ContactForm";
 
 export default class ContactPage extends React.Component {
   render() {
@@ -21,7 +20,6 @@ export default class ContactPage extends React.Component {
         <ContactHero />
         <ContactForm />
         <MyMapComponent />
-        <CustomerReviews />
       </Layout>
     );
   }

@@ -1,21 +1,20 @@
 import React from "react";
-
 import config from "../utils/config";
+
 import Seo from "../components/Seo";
 import Layout from "../components/Layout";
 import HomeHero from "../components/HomeHero";
 import FeaturedLogos from "../components/FeaturedLogos";
 import ServiceItem from "../components/ServiceItem";
-import BookCall from "../components/BookCall";
+import ContactUs from "../components/ContactUs";
 import Features from "../components/Features";
-import OurQualities from "../components/OurQualities";
 import BrandIdentity from "../components/BrandIdentity";
-import CustomerReviews from "../components/CustomerReviews";
 import OurProcess from "../components/OurProcess";
 import Team from "../components/OurTeam";
 import Portfolio from "../components/Portfolio";
 import Faq from "../components/Faq";
 import AdviceCentre from "../components/AdviceCentre";
+import OurValue from "../components/OurValue";
 
 export default class IndexPage extends React.Component {
   render() {
@@ -28,15 +27,20 @@ export default class IndexPage extends React.Component {
           image={config.image}
         />
         <HomeHero />
+        {/*
         <FeaturedLogos />
+        */}
+        <OurValue />
         <ServiceItem />
-        <BookCall />
         <Features />
-        <OurQualities />
+        {/*
         <BrandIdentity />
-        <CustomerReviews />
+         */}
+        <ContactUs />
+        {/*
         <OurProcess />
         <Team />
+        */}
         <Portfolio />
         <Faq />
         <AdviceCentre />

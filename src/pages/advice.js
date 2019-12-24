@@ -8,7 +8,7 @@ import MarketingAdvice from "../components/MarketingAdvice";
 import FeaturesArticles from "../components/FeaturesArticles";
 import KnowlegeCenter from "../components/KnowlegeCenter";
 import BrandIdentity from "../components/BrandIdentity";
-import BookCall from "../components/BookCall";
+import ContactUs from "../components/ContactUs";
 
 export default class Blog extends React.Component {
   render() {
@@ -28,7 +28,7 @@ export default class Blog extends React.Component {
         <FeaturesArticles />
         <KnowlegeCenter />
         <BrandIdentity />
-        <BookCall />
+        <ContactUs />
       </Layout>
     );
   }

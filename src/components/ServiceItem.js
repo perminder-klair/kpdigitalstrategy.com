@@ -9,52 +9,29 @@ const Section = styled.section`
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
-  .first {
-    align-self: center;
-    padding-right: 3.75rem;
-    @media screen and (max-width: 600px) {
-      padding: 3rem 1rem;
-    }
-  }
 `;
 
 const ServiceItem = () => (
-  <Section>
+  <Section className="section">
     <div className="container">
-      <div className="columns">
-        <div className="column first">
+      <div className="columns is-centered">
+        <div className="column is-7 has-text-centered">
           <h1 className="title is-4 has-text-white">
             Purposeful design and marketing services for aspirational companies
           </h1>
-          <h2 className="subtitle is-5 has-text-danger has-text-weight-bold">
-            We align design, marketing and sales to make it easier than ever to
-            reach new business heights.
-          </h2>
           <p className="text">
-            we are an experienced team of desigenrs and marketeers who are ready
-            to create brand identities, devise informed marketing strategues,
-            create competlling email nurture track campaigns, and develop
-            pixel-perfect websites-to name just a few of services.
-          </p>
-          <p>
-            we are unfarid of data & analytics our results are transparent. We
-            are passionate probelm solves who define objectives, pinpoint
-            challenges and abovw all else are on your side celebrating your
-            every win
-          </p>
-          <p className="text">
-            No matter the size of your project, or if you are just starting out,
-            KP Digital Strategy has
+            KP Digital Strategy are experienced designers and marketeers who
+            work with a range of businesses across the UK to create meaningful
+            brand identities, devise and implement effective marketing
+            strategies and design and develop pixel-perfect lead generation
+            websites.
           </p>
           <button
-            className="button is-danger is-rounded has-text-weight-semibold"
+            className="button is-medium is-danger is-rounded has-text-weight-semibold"
             type="button"
           >
             View our portfolio
           </button>
-        </div>
-        <div className="column">
-          <img src="/images/dummy/image5.png" alt="service image" />
         </div>
       </div>
     </div>
