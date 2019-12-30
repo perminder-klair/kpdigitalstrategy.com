@@ -4,8 +4,8 @@ import { darken, lighten } from 'polished';
 
 const mainBrandColor = '#FF3860';
 const lightShades = '#F9F9F9';
-const darkAccent = '#726699';
-const darkShades = '#1C1323';
+const darkAccent = '#402840';
+const darkShades = '#874666';
 
 export const theme = {
   // It can be liberally applied to your layout as its main identity.
@@ -47,13 +47,17 @@ export const theme = {
 
 const GlobalStyle = createGlobalStyle`
   ${reset};
-
+  
   body {
     font-family: ${theme.secondaryFontFamily};
     color: ${theme.textColor};
     letter-spacing: 0.03rem !important;
     font-size: 16px;
     background-color: ${theme.backgroundColor};
+  }
+  .columns{
+    margin-left: 0rem !important;
+    margin-right:0rem !important;
   }
   .title {
     font-family: ${theme.primaryFontFamily};
@@ -77,30 +81,18 @@ const GlobalStyle = createGlobalStyle`
   .subtitle {
     color: ${lighten(0.06, theme.textColor)};
   }
-  .button.is-primary {
-    border-color: ${theme.mainBrandColor};
-    color: ${theme.textColor};
-    background-color: transparent !important;
-    transition: border-color 0.2s ease;
-    :hover {
-      color: ${darken(0.06, theme.textColor)};
-      border-color: ${darken(0.1, theme.mainBrandColor)};
-    }
-  }
   .button.is-secondary {
-    background-color: ${theme.lightAccent};
-    transition: background-color 0.2s ease;
+    background-color: ${theme.darkAccent};
     color: #ffffff;
-    :hover {
-      background-color: ${darken(0.06, theme.lightAccent)};
-    }
+    border-color: transparent;
+    border-width: 0px;
   }
   .button.is-link {
-    background-color: ${theme.darkAccent};
-    transition: background-color 0.2s ease;
+    background-color: ${theme.darkShades};
+    color: #ffffff;
+    border-width: 0px;
     :hover {
-      background-color: ${darken(0.06, theme.darkAccent)};
-    }
+      background-color:${theme.darkShades}!important;
   }
   .button.is-outlined {
     background-color: transparent;
@@ -114,10 +106,6 @@ const GlobalStyle = createGlobalStyle`
   }
   .has-text-black {
     color: ${theme.textColorInverse};
-  }
-  .columns{
-    margin-left: 0rem !important;
-    margin-right:0rem !important;
   }
 `;
 

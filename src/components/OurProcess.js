@@ -24,7 +24,7 @@ const OurProcess = () => (
       <h3 className="subtitle size-3 has-text-danger has-text-weight-bold">
         Our step by step guide to help take your business to new heights.
       </h3>
-      <div className="columns is-multiline">
+      <div className="columns is-variable is-5 is-multiline">
         <ProcessItems
           title="Lead genertation"
           text="Poect excerpt,Loreum ipsum dolor siteamet, onseLorem ipsum dolor

@@ -1,10 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import Text from './Autotext';
+import Text from "./Autotext";
 
 const Section = styled.section`
-  background: url(/images/heroimage.jpg);
   .title {
     font-size: 2.5rem;
     font-weight: 700;
@@ -16,12 +15,13 @@ const Section = styled.section`
     height: 3rem;
   }
   .button {
-    padding: 0.35rem 2.75rem 0.5rem 2.75rem;
+    padding-right: 2.75rem;
+    padding-left: 2.75rem;
     margin-top: 1rem;
   }
   .hero-body {
-    padding-bottom: 6.5rem !important;
-    padding-top: 9rem !important;
+    padding-bottom: 4rem !important;
+    padding-top: 10rem !important;
   }
 `;
 const HelpText = styled.p`
