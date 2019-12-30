@@ -8,13 +8,17 @@ import FeaturedLogos from "../components/FeaturedLogos";
 import ServiceItem from "../components/ServiceItem";
 import ContactUs from "../components/ContactUs";
 import Features from "../components/Features";
+import Social from "../components/Social";
 import BrandIdentity from "../components/BrandIdentity";
 import OurProcess from "../components/OurProcess";
 import Team from "../components/OurTeam";
 import Portfolio from "../components/Portfolio";
+import Brand from "../components/Brand";
+import Reliable from "../components/Reliable";
 import Faq from "../components/Faq";
 import AdviceCentre from "../components/AdviceCentre";
 import OurValue from "../components/OurValue";
+import Purposeful from "../components/Purposeful";
 
 export default class IndexPage extends React.Component {
   render() {
@@ -27,9 +31,11 @@ export default class IndexPage extends React.Component {
           image={config.image}
         />
         <HomeHero />
+        <Brand />
         {/*
         <FeaturedLogos />
         */}
+
         <OurValue />
         <ServiceItem />
         <Features />
@@ -42,8 +48,11 @@ export default class IndexPage extends React.Component {
         <Team />
         */}
         <Portfolio />
+        <Reliable />
         <Faq />
+        <Social />
         <AdviceCentre />
+        <Purposeful />
       </Layout>
     );
   }

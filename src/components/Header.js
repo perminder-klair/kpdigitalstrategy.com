@@ -45,7 +45,7 @@ const Section = styled.section`
 `;
 
 const HeadDivider = styled.div`
-  background-color: ${props => props.theme.mainBrandColor};
+  background-color: ${props => props.theme.backgroundColorLite};
   padding: 0.3rem 0;
   p {
     color: ${props => props.theme.backgroundColorLite};
@@ -155,9 +155,9 @@ export default class Header extends React.Component {
           </nav>
         </div>
         <HeadDivider>
-          <p className="has-text-weight-semibold">
+          <p className="has-text-weight-semibold has-text-black">
             Free Advice Hotline:
-            <a className="has-text-white">+44 161 258 3622</a>
+            <a className="has-text-black">+44 161 258 3622</a>
             <span>(From 8am to 5pm)</span>
           </p>
         </HeadDivider>
@@ -180,6 +180,11 @@ export default class Header extends React.Component {
           <div className="list-item">
             <Link to="/advice" className="has-text-white">
               About us
+            </Link>
+          </div>
+          <div className="list-item">
+            <Link to="/Thanku" className="has-text-white">
+              Thanku
             </Link>
           </div>
           <div className="list-item">
