@@ -3,10 +3,6 @@ import config from "../utils/config";
 
 import Seo from "../components/Seo";
 import OurValue from "../components/OurValue";
-<<<<<<< HEAD
-
-=======
->>>>>>> 33cded8b6e3440e33e0d0994c1c04ff61a84c068
 import Layout from "../components/Layout";
 
 export default class ThankuPage extends React.Component {
@@ -19,11 +15,9 @@ export default class ThankuPage extends React.Component {
               <div className="pic">
                 <img
                   src="/images/icons/thank-you-page-image.png"
-<<<<<<< HEAD
                   alt="you"
-=======
                   alt="thanku"
->>>>>>> 33cded8b6e3440e33e0d0994c1c04ff61a84c068
+
                   title="kpdigital strategy Design"
                 />
               </div>
