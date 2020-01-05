@@ -19,7 +19,7 @@ import Faq from "../components/Faq";
 import AdviceCentre from "../components/AdviceCentre";
 import OurValue from "../components/OurValue";
 import Purposeful from "../components/Purposeful";
-
+import ImageCard from "../components/ImageCard";
 export default class IndexPage extends React.Component {
   render() {
     return (
@@ -53,6 +53,7 @@ export default class IndexPage extends React.Component {
         <Social />
         <AdviceCentre />
         <Purposeful />
+        <ImageCard />
       </Layout>
     );
   }

@@ -4,6 +4,8 @@ import styled from "styled-components";
 const Container = styled.div`
   .card {
     border-radius: 1rem;
+    background-color: ${props => props.theme.darkShades};
+    height: 36rem;
   }
   .title {
   }
@@ -13,7 +15,6 @@ const Container = styled.div`
   }
   .media-content {
     padding: 3rem 2rem;
-    background-color: ${props => props.theme.darkShades};
   }
   .button {
     padding-right: 3rem;

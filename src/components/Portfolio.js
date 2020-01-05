@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Section = styled.div`
   .button-wrapper {
@@ -34,23 +34,16 @@ const Portfolio = () => (
         </h3>
       </div>
       <div className="columns is-gapless is-0 is-multiline">
-        <div className="column is-one-third">
+        <div className="column is-half">
           <img
-            src="/images/dummy/image6.png"
+            src="/images/dummy/image3.png"
             alt="daily mails logo"
             title="kpdigital strategy Design"
           />
         </div>
-        <div className="column is-one-third">
+        <div className="column is-half">
           <img
-            src="/images/dummy/image4.png"
-            alt="daily mails logo"
-            title="kpdigital strategy Design"
-          />
-        </div>
-        <div className="column is-one-third">
-          <img
-            src="/images/dummy/image2.png"
+            src="/images/dummy/image3.png"
             alt="daily mails logo"
             title="kpdigital strategy Design"
           />
