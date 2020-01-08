@@ -4,11 +4,12 @@ import config from "../utils/config";
 import Seo from "../components/Seo";
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
+import Faq from "../components/Faq";
 import MarketingAdvice from "../components/MarketingAdvice";
 import FeaturesArticles from "../components/FeaturesArticles";
-import KnowlegeCenter from "../components/KnowlegeCenter";
 import BrandIdentity from "../components/BrandIdentity";
 import ContactUs from "../components/ContactUs";
+import OurValue from "../components/OurValue";
 
 export default class Blog extends React.Component {
   render() {
@@ -26,8 +27,10 @@ export default class Blog extends React.Component {
         />
         <MarketingAdvice />
         <FeaturesArticles />
-        <KnowlegeCenter />
+
         <BrandIdentity />
+        <OurValue />
+        <Faq />
         <ContactUs />
       </Layout>
     );

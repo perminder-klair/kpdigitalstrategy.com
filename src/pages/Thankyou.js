@@ -15,7 +15,9 @@ export default class ThankuPage extends React.Component {
               <div className="pic">
                 <img
                   src="/images/icons/thank-you-page-image.png"
+                  alt="you"
                   alt="thanku"
+
                   title="kpdigital strategy Design"
                 />
               </div>

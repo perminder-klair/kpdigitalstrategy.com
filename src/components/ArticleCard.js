@@ -1,12 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Container = styled.div`
   .card {
     border-radius: 1rem;
+    background-color: ${props => props.theme.darkShades};
+    height: 36rem;
   }
   .title {
-    line-height: 0.5;
   }
   img {
     border-top-right-radius: 1rem;
@@ -21,23 +22,18 @@ const Container = styled.div`
   }
 `;
 
-const ArticleCard = () => (
+const ArticleCard = props => (
   <Container className="column is-4">
     <div className="card">
       <div className="card-image">
         <figure className="image is-4by3">
-          <img src="/images/dummy/image5.png" alt="dummy" />
+          <img src={props.image} alt={props.alt} />
         </figure>
       </div>
       <div className="media-content has-text-centered">
-        <h2 className="title is-5 has-text-black">Understanding our logo</h2>
-        <h2 className="title is-5  has-text-black">design process</h2>
-        <p className="has-text-black">
-          Our step by step guides talks you through the process of team take
-          when developing a logo. Whether you have an idea of the logo you would
-          like to create or whether you are open to exploration we are here to
-          help.
-        </p>
+        <h2 className="subtitle is-6 has-text-danger">{props.h2}</h2>
+        <h2 className="title is-6  has-text-white is-spaced">{props.title}</h2>
+        <p className="subtitle is-7 has-text-white">{props.subtitle}</p>
         <button
           className="button is-danger is-rounded has-text-weight-bold"
           type="button"

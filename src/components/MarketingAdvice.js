@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
 
 const Section = styled.section`
   p {
@@ -19,34 +19,34 @@ const Section = styled.section`
 const NavItems = [
   {
     id: 1,
-    name: 'Branding',
-    url: '/page/Branding',
-    class: 'button is-rounded is-danger has-text-weight-bold',
+    name: "Branding",
+    url: "/page/Branding",
+    class: "button is-rounded is-danger has-text-weight-bold"
   },
   {
     id: 1,
-    name: 'Digital Marketing',
-    url: '/page/Digital-Marketing',
-    class: 'button is-rounded is-link has-text-weight-bold',
+    name: "Digital Marketing",
+    url: "/page/Digital-Marketing",
+    class: "button is-rounded is-link has-text-weight-bold"
   },
   {
     id: 1,
-    name: 'Website Development',
-    url: 'page/Website-Development',
-    class: 'button is-rounded is-secondary has-text-weight-bold',
+    name: "Website Development",
+    url: "page/Website-Development",
+    class: "button is-rounded is-secondary has-text-weight-bold"
   },
   {
     id: 1,
-    name: 'Social Media',
-    url: '/page/Social-Media',
-    class: 'button is-rounded is-primary has-text-weight-bold',
+    name: "Social Media",
+    url: "/page/Social-Media",
+    class: "button is-rounded is-primary has-text-weight-bold"
   },
   {
     id: 1,
-    name: 'Business Advice',
-    url: '/page/Business-Advice',
-    class: 'button is-rounded is-info has-text-weight-bold',
-  },
+    name: "Business Advice",
+    url: "/page/Business-Advice",
+    class: "button is-rounded is-info has-text-weight-bold"
+  }
 ];
 
 const FeaturesArticles = () => (
