@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "kickoff-sanity"
-  },
   "api": {
-    "projectId": "k4leuyup",
+    "projectId": "v4zuhgl8",
     "dataset": "production"
+  },
+  "project": {
+    "name": "kp-digital"
   },
   "plugins": [
     "@sanity/base",
@@ -16,9 +16,7 @@
   ],
   "env": {
     "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
+      "plugins": ["@sanity/vision"]
     }
   },
   "parts": [
