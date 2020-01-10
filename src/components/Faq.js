@@ -1,14 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import FaqItem from './FaqItem';
+import FaqItem from "./FaqItem";
 
 const Container = styled.div`
   .title {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
   .CardWrapper {
-    margin: 2rem 0rem;
+    margin: 1rem 0rem;
   }
   .ButtonWrapper {
     margin: 4rem 0rem;
@@ -22,30 +22,24 @@ const Container = styled.div`
 const Faq = () => (
   <Container className="section">
     <div className="Container">
-      <div className="has-text-centered">
-        <h2 className="title size-2">Frequently Asked Questions</h2>
-      </div>
+      <h2 className="title size-4 has-text-centered">FAQ’s</h2>
+      <p className="subtitle is-6 has-text-centered is-spaced">
+        We answer your questions.
+      </p>
+
       <div className="columns is-centered">
-        <div className="column is-two-thirds">
+        <div className="column is-four-fifths">
           <div className="CardWrapper">
-            <FaqItem questions="What information do i need to supply to you to start my project ?" />
+            <FaqItem questions="How does your pricing work?" />
           </div>
           <div className="CardWrapper">
-            <FaqItem questions="What information do i need to supply to you to start my project ?" />
+            <FaqItem questions="How does your pricing work?" />
           </div>
           <div className="CardWrapper">
-            <FaqItem questions="What information do i need to supply to you to start my project ?" />
+            <FaqItem questions="How does your pricing work? ?" />
           </div>
           <div className="CardWrapper">
-            <FaqItem questions="What information do i need to supply to you to start my project ?" />
-          </div>
-          <div className="ButtonWrapper has-text-centered">
-            <button
-              className="button is-danger is-rounded has-text-weight-bold"
-              type="button"
-            >
-              View All Questions
-            </button>
+            <FaqItem questions="How does your pricing work?" />
           </div>
         </div>
       </div>

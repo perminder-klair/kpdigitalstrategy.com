@@ -16,9 +16,9 @@ import Portfolio from "../components/Portfolio";
 import Brand from "../components/Brand";
 import Reliable from "../components/Reliable";
 import Faq from "../components/Faq";
-import AdviceCentre from "../components/AdviceCentre";
 import OurValue from "../components/OurValue";
 import Purposeful from "../components/Purposeful";
+
 import ImageCard from "../components/ImageCard";
 export default class IndexPage extends React.Component {
   render() {
@@ -51,7 +51,7 @@ export default class IndexPage extends React.Component {
         <Reliable />
         <Faq />
         <Social />
-        <AdviceCentre />
+
         <Purposeful />
         <ImageCard />
       </Layout>

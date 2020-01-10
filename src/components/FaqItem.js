@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Container = styled.div`
   padding: 1rem 0rem;
-  background-color: ${props => props.theme.backgroundColorGrey};
-  border-radius: 2rem;
+  background-color: ${props => props.theme.darkShades};
+  border-radius: 0rem;
   .Icon {
     font-size: 27px;
     margin: 0rem 2rem;

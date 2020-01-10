@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Text from "./Autotext";
 
 const Section = styled.section`
+  background-color: ${props => props.theme.darkShades};
   .title {
     font-size: 2.5rem;
     font-weight: 700;
@@ -12,7 +13,7 @@ const Section = styled.section`
     font-size: 2.5rem;
   }
   .auto {
-    height: 3rem;
+    height: 2rem;
   }
   .button {
     padding-right: 2.75rem;
@@ -35,13 +36,13 @@ const HomeHero = () => (
         <div className="column is-half">
           <section className="hero is-medium">
             <div className="hero-body">
-              <h2 className="subtitle is-1 is-size-3-mobile has-text-weight-bold">
+              <h2 className="subtitle is-1 is-size-3-mobile has-text-weight-semibold">
                 Thinking of
               </h2>
               <div className="auto">
                 <Text />
               </div>
-              <HelpText className="has-text-weight-semibold">
+              <HelpText className="has-text-weight-semibold has-text-danger">
                 We align design, marketing and sales to make it easier than ever
                 to reach new business heights.
               </HelpText>
