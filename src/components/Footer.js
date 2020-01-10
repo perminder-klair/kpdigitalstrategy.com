@@ -6,12 +6,12 @@ import { Link } from "gatsby";
 import config from "../utils/config";
 
 const Section = styled.section`
-  color: ${props => props.theme.lightShades} !important;
+  background-color: ${props => props.theme.darkShades};
   .title {
     color: ${props => props.theme.lightShades} !important;
   }
   .footer {
-    background-color: ${props => props.theme.backgroundColor};
+    background-color: ${props => props.theme.darkShades};
     padding: 3rem 1.5rem 3rem;
     .content {
       margin-top: 3rem;

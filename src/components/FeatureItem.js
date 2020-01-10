@@ -29,7 +29,7 @@ const FeatureItem = ({ title, subtitle, button, icon }) => (
         <div className="media-content has-text-centered">
           <h2 className="title is-4  has-text-white">{title}</h2>
           <p>{subtitle}</p>
-          <Link className="is-size-5 has-text-weight-bold">{button}</Link>
+          <Link className="is-size-6 has-text-weight-bold">{button}</Link>
         </div>
       </div>
     </section>

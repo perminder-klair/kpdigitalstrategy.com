@@ -173,6 +173,11 @@ export default class Header extends React.Component {
             </Link>
           </div>
           <div className="list-item">
+            <Link to="/LandingPage" className="has-text-white">
+              LandingPage
+            </Link>
+          </div>
+          <div className="list-item">
             <Link to="/advice" className="has-text-white">
               Advice Center
             </Link>

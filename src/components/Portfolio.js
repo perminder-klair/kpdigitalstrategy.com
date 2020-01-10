@@ -1,26 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Section = styled.div`
-  .button-wrapper {
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0;
-    margin: 0 -2rem;
-    background: ${props => props.theme.mainBrandColor};
-    @media only screen and (max-width: 768px) {
-      padding: 0rem 0;
-      margin: 0 0rem;
-    }
-  }
-  .button {
-    padding-right: 2rem;
-    padding-left: 2rem;
-    @media only screen and (max-width: 768px) {
-      padding: 0.5rem 0.5rem 2rem 0.5rem;
-    }
-  }
-`;
+const Section = styled.div``;
 
 const Portfolio = () => (
   <Section className="section">
@@ -33,7 +14,7 @@ const Portfolio = () => (
           Here are some examples of some of our latest design
         </h3>
       </div>
-      <div className="columns is-gapless is-0 is-multiline">
+      <div className="columns is-multiline is-variable is-1">
         <div className="column is-half">
           <img
             src="/images/dummy/image3.png"
@@ -62,14 +43,6 @@ const Portfolio = () => (
             title="kpdigital strategy Design"
           />
         </div>
-      </div>
-      <div className="button-wrapper">
-        <button
-          className="button is-rounded has-text-weight-semibold"
-          type="button"
-        >
-          learn more about our design & creative work
-        </button>
       </div>
     </div>
   </Section>
