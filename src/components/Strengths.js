@@ -11,7 +11,7 @@ const Container = styled.div`
   }
 `;
 
-const Reliable = () => (
+const Strengths = () => (
   <Container className="section">
     <div className="container">
       <section className="section">
@@ -69,4 +69,4 @@ const Reliable = () => (
   </Container>
 );
 
-export default Reliable;
+export default Strengths;

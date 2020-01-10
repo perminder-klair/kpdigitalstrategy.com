@@ -1,21 +1,44 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
 
-const Section = styled.section``;
+import styled from "styled-components";
 
-const ContactHero = () => (
-  <Section className="section">
-    <div className="container">
-      <section className="hero has-text-centered">
-        <div className="hero-body">
-          <h2 className="title is-1 is-size-3-mobile">Contact us</h2>
-          <h2 className="has-text-danger has-text-weight-bold">
-            Send us an email or drop us a line, We would love to hear from you
-          </h2>
+import ContactForm from "./ContactForm";
+
+const Container = styled.div`
+  padding: 1rem 1.5rem;
+  background-color: ${props => props.theme.darkShades};
+}
+.ButtonWrapper {
+  margin: 2rem 0rem;
+}
+.button {
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+`;
+
+const ContactHero = props => (
+  <Container>
+    <section className="section">
+      <div className="columns">
+        <div className="column is-5">
+          <section className="hero  is-bold">
+            <div className="hero-body">
+              <div className="container">
+                <h1 className="title is-3 is-spaced has-text-left">
+                  {props.title}
+                </h1>
+                <h2 className="subtitle is-6 has-text-left is has-text-danger">
+                  {props.subtitle}
+                </h2>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
-    </div>
-  </Section>
+        <ContactForm />
+      </div>
+    </section>
+  </Container>
 );
 
 export default ContactHero;

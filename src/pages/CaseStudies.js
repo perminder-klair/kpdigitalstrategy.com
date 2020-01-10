@@ -3,9 +3,8 @@ import config from "../utils/config";
 
 import Seo from "../components/Seo";
 import OurValue from "../components/OurValue";
-import ImageCard from "../components/ImageCard";
-import BrandIdentity from "../components/BrandIdentity";
-import ContactUs from "../components/ContactUs";
+// import ImageCard from "../components/ImageCard";
+import ContactUs from "../components/ReachUs";
 import Layout from "../components/Layout";
 
 export default class CaseStudiesPage extends React.Component {
@@ -20,6 +19,7 @@ export default class CaseStudiesPage extends React.Component {
         </p>
 
         <section className="columns is-gapless is-0 is-multiline">
+          {/*
           <ImageCard image="/images/dummy/case-study-image.png" alt="test" />
           <ImageCard
             image="/images/dummy/steven-shaw-website@3x.png"
@@ -33,6 +33,7 @@ export default class CaseStudiesPage extends React.Component {
             image="/images/dummy/learn-realm-website-design.png"
             alt="test"
           />
+        */}
         </section>
 
         <Seo
@@ -42,7 +43,6 @@ export default class CaseStudiesPage extends React.Component {
           image={config.image}
         />
         <OurValue />
-        <BrandIdentity />
         <ContactUs />
       </Layout>
     );

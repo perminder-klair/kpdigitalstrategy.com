@@ -16,7 +16,7 @@ const LinkStyled = styled(Link)`
   border-bottom-right-radius: 1rem;
 `;
 
-const ContactUs = () => (
+const ReachUs = () => (
   <Section className="section">
     <div className="container">
       <div className="columns">
@@ -38,4 +38,4 @@ const ContactUs = () => (
   </Section>
 );
 
-export default ContactUs;
+export default ReachUs;

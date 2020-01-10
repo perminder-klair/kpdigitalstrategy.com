@@ -163,11 +163,6 @@ export default class Header extends React.Component {
         </HeadDivider>
         <Dropdown className={View ? "list has-text-centered" : "is-hidden"}>
           <div className="list-item">
-            <Link to="/portfolios" className="has-text-white">
-              Case Studies
-            </Link>
-          </div>
-          <div className="list-item">
             <Link to="/service" className="has-text-white">
               Services
             </Link>

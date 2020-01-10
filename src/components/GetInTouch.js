@@ -15,7 +15,7 @@ const Section = styled.section`
 padding-inline-end: 0rem;}
 `;
 
-const Purposeful = () => (
+const GetInTouch = () => (
   <Section className="section">
     <div className="columns ">
       <div className="column text is-half">
@@ -99,4 +99,4 @@ const Purposeful = () => (
   </Section>
 );
 
-export default Purposeful;
+export default GetInTouch;

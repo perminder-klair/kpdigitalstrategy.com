@@ -7,8 +7,7 @@ import Hero from "../components/Hero";
 import Faq from "../components/Faq";
 import MarketingAdvice from "../components/MarketingAdvice";
 import FeaturesArticles from "../components/FeaturesArticles";
-import BrandIdentity from "../components/BrandIdentity";
-import ContactUs from "../components/ContactUs";
+import ContactUs from "../components/ReachUs";
 import OurValue from "../components/OurValue";
 
 export default class Blog extends React.Component {
@@ -27,8 +26,6 @@ export default class Blog extends React.Component {
         />
         <MarketingAdvice />
         <FeaturesArticles />
-
-        <BrandIdentity />
         <OurValue />
         <Faq />
         <ContactUs />
