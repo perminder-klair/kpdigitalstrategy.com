@@ -8,7 +8,7 @@ const Container = styled.div`
 }
 `;
 
-const ContactForm = () => (
+const ContactForm = ({ display }) => (
   <Container>
     <section className="section">
       <h2 className="subtitle is-6 has-text-left is has-text-danger">
@@ -32,7 +32,6 @@ const ContactForm = () => (
           />
         </div>
       </div>
-
       <div className="field">
         <div className="control">
           <input
@@ -41,6 +40,9 @@ const ContactForm = () => (
             placeholder="Enter Your Phone Number"
           />
         </div>
+      </div>
+      <div className={display ? "field" : "is-hidden"}>
+        <textarea className="textarea" placeholder="Enter Your Message" />
       </div>
       <div className="text">
         <p className="subtitle is-6 is-spaced has-text-left">

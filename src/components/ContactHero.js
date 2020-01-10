@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import ContactForm from "./ContactForm";
 
-const Container = styled.div`
+const Container = styled.section`
   padding: 1rem 1.5rem;
   background-color: ${props => props.theme.darkShades};
 }
@@ -18,8 +18,8 @@ const Container = styled.div`
 `;
 
 const ContactHero = props => (
-  <Container>
-    <section className="section">
+  <Container className="section">
+    <div className="container">
       <div className="columns">
         <div className="column is-5">
           <section className="hero  is-bold">
@@ -35,9 +35,11 @@ const ContactHero = props => (
             </div>
           </section>
         </div>
-        <ContactForm />
+        <div className="column is-7">
+          <ContactForm display={props.textareaay} />
+        </div>
       </div>
-    </section>
+    </div>
   </Container>
 );
 

@@ -26,8 +26,8 @@ export default class LandingPage extends React.Component {
         <ContactHero
           title="Digital Design
           Agency"
-          subtitle="We align design, marketing and sales to empower business growth. "
-          paraone=""
+          subtitle="We align design, marketing and sales to empower business growth."
+          textarea={false}
         />
         <OurValue />
         <ServiceItem />
