@@ -22,7 +22,7 @@ const Container = styled.div`
 `;
 
 const FeatureItem = ({ title, subtitle, button, icon }) => (
-  <Container className="column">
+  <Container className="column is-4">
     <section className="section">
       <div className="container">
         <img src={icon} title={title} alt={title} />

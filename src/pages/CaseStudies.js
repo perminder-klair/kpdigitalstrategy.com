@@ -4,6 +4,7 @@ import config from "../utils/config";
 import Seo from "../components/Seo";
 import OurValue from "../components/OurValue";
 // import ImageCard from "../components/ImageCard";
+import BrandIdentity from "../components/BrandIdentity";
 import ContactUs from "../components/ReachUs";
 import Layout from "../components/Layout";
 
@@ -43,6 +44,7 @@ export default class CaseStudiesPage extends React.Component {
           image={config.image}
         />
         <OurValue />
+        <BrandIdentity />
         <ContactUs />
       </Layout>
     );

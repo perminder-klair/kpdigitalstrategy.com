@@ -7,8 +7,10 @@ import Hero from "../components/Hero";
 import Faq from "../components/Faq";
 import MarketingAdvice from "../components/MarketingAdvice";
 import FeaturesArticles from "../components/FeaturesArticles";
+import BrandIdentity from "../components/BrandIdentity";
 import ContactUs from "../components/ReachUs";
 import OurValue from "../components/OurValue";
+import ReachUs from "../components/ReachUs";
 
 export default class Blog extends React.Component {
   render() {
@@ -26,9 +28,11 @@ export default class Blog extends React.Component {
         />
         <MarketingAdvice />
         <FeaturesArticles />
+
+        <BrandIdentity />
         <OurValue />
         <Faq />
-        <ContactUs />
+        <ReachUs />
       </Layout>
     );
   }
