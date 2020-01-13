@@ -81,8 +81,7 @@ export default class ServicePage extends React.Component {
               <FeatureItem
                 icon="/images/icons/support-icon.png"
                 title="Website support"
-                subtitle="Our service level agreements are in place to give you our clients a fast, responsive service that resolves issues and applies updates promptly.
-"
+                subtitle="Our service level agreements are in place to give you our clients a fast, responsive service that resolves issues and applies updates promptly."
                 button="
               Get in touch"
               />
