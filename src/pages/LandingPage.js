@@ -11,7 +11,8 @@ import ServiceItem from "../components/ServiceItem";
 import Faq from "../components/Faq";
 import OurValue from "../components/OurValue";
 import Layout from "../components/Layout";
-import Testimonail from "../components/Testimonail";
+import Testimonail from "../components/TestimonailData";
+import TestimonailData from "../components/TestimonailData";
 
 export default class LandingPage extends React.Component {
   render() {
@@ -35,7 +36,7 @@ export default class LandingPage extends React.Component {
         <Portfolio />
         <Strengths />
         <Faq />
-        <Testimonail />
+        <TestimonailData />
         <Brand />
       </Layout>
     );

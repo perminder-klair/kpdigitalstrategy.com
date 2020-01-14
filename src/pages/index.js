@@ -12,7 +12,7 @@ import Brand from "../components/Brand";
 import Strengths from "../components/Strengths";
 import Faq from "../components/Faq";
 import OurValue from "../components/OurValue";
-import Testimonail from "../components/Testimonail";
+import TestimonailData from "../components/TestimonailData";
 import GetInTouch from "../components/GetInTouch";
 
 export default class IndexPage extends React.Component {
@@ -34,7 +34,7 @@ export default class IndexPage extends React.Component {
         <Portfolio />
         <Strengths />
         <Faq />
-        <Testimonail />
+        <TestimonailData />
         <GetInTouch />
       </Layout>
     );

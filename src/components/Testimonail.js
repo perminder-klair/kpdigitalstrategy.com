@@ -1,35 +1,40 @@
 import React from "react";
 import styled from "styled-components";
-
-import FeatureItem from "./FeatureItem";
+import { Link } from "gatsby";
 
 const Container = styled.section`
-  border-top: 1px solid #ffff;
-  padding: 5rem 1.5rem;
-  background-color: ${props => props.theme.primaryColor};
-  .section {
-    background-color: ${props => props.theme.backgroundColor};
+
+    section {
+      border: 2px solid ${props => props.theme.mainBrandColor};
+      height: 30rem;
+    }
+    .container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 1rem;
+    }
+    img {
+      margin: 2rem 0rem;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
   }
 `;
 
-const Testimonail = () => (
-  <Container className="section">
-    <div className="container">
-      <div className="columns is-variable is-3">
-        <FeatureItem
-          icon="/images/icons/quote-icon@2x.png"
-          title="Auroras Copywriting"
-          subtitle="We can work with you from start to finish to create a consistent brand both online and offline. Whether you are a start up business or looking to develop your existing identity, we can help."
-          button="Find out more"
-        />
-        <FeatureItem
-          icon="/images/icons/quote-icon@2x.png"
-          title="With Social Enterprise"
-          subtitle="Our in house team create live visual mockups of your website to show how it will look across different devices. Developing pixel-perfect websites that are secure, responsive & professional."
-          button="Find out more"
-        />
+const Testimonail = ({ title, subtitle, button, icon }) => (
+  <Container className="column is-half">
+    <section className="section">
+      <div className="container">
+        <img src={icon} title={title} alt={title} />
+        <div className="media-content has-text-centered">
+          <h2 className="title is-4  has-text-white">{title}</h2>
+          <p>{subtitle}</p>
+          <Link className="is-size-6 has-text-weight-bold">{button}</Link>
+        </div>
       </div>
-    </div>
+    </section>
   </Container>
 );
 

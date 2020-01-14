@@ -13,7 +13,7 @@ import ReachUs from "../components/ReachUs";
 import Layout from "../components/Layout";
 import GetInTouch from "../components/GetInTouch";
 
-import Testimonail from "../components/Testimonail";
+import TestimonailData from "../components/TestimonailData";
 
 export default class ServicePage extends React.Component {
   render() {
@@ -91,8 +91,7 @@ export default class ServicePage extends React.Component {
         <ReachUs />
         <Portfolio />
         <Strengths />
-
-        <Testimonail />
+        <TestimonailData />
         <Brand />
         <GetInTouch />
       </Layout>
