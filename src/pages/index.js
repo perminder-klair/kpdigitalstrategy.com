@@ -1,30 +1,41 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import config from "../utils/config";
 
-import Seo from '../components/Seo';
-import Layout from '../components/Layout';
-
-const Container = styled.div`
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-  text-align: center;
-  h1 {
-    color: ${props => props.theme.mainBrandColor} !important;
-  }
-`;
+import Seo from "../components/Seo";
+import Layout from "../components/Layout";
+import HomeHero from "../components/HomeHero";
+import ServiceItem from "../components/ServiceItem";
+import ReachUs from "../components/ReachUs";
+import Features from "../components/Features";
+import Portfolio from "../components/Portfolio";
+import Brand from "../components/Brand";
+import Strengths from "../components/Strengths";
+import Faq from "../components/Faq";
+import OurValue from "../components/OurValue";
+import TestimonailData from "../components/TestimonailData";
+import GetInTouch from "../components/GetInTouch";
 
 export default class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <Seo title="Home" description="Welcome to GatsbyJs v1" />
-        <section className="section">
-          <Container className="container">
-            <h1 className="title">Hi people</h1>
-            <p>Welcome to your new Gatsby site.</p>
-            <p>Now go build something great.</p>
-          </Container>
-        </section>
+        <Seo
+          title="Manchester Digital Marketing Agency"
+          description="KP Digital Strategy"
+          url={config.siteUrl}
+          image={config.image}
+        />
+        <HomeHero />
+        <Brand />
+        <OurValue />
+        <ServiceItem />
+        <Features />
+        <ReachUs />
+        <Portfolio />
+        <Strengths />
+        <Faq />
+        <TestimonailData />
+        <GetInTouch />
       </Layout>
     );
   }

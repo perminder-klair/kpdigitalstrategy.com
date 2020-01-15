@@ -54,14 +54,14 @@ const Seo = ({ title, description, url, image }) => {
 };
 
 Seo.defaultProps = {
+  description: '',
   url: config.siteUrl,
   image: `${config.siteUrl}/${config.logo}`,
-  description: config.description,
 };
 
 Seo.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string,
+  title: PropTypes.any.isRequired,
+  description: PropTypes.any,
   url: PropTypes.string,
   image: PropTypes.string,
 };

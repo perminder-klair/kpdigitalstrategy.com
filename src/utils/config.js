@@ -1,21 +1,19 @@
 module.exports = {
   DEBUG: process.env.NODE_ENV === 'development',
 
-  siteName: 'Kickoff GatsbyJs',
-  author: 'Parminder Klair',
-  description: 'A starting point using ReactJs, bundled with awesome GatsbyJs.',
-  siteUrl: 'http://kickoff-gatsbyjs.netlify.com',
-  logo: '/images/logo-1024.png',
+  siteName: 'KP Digital Strategy',
+  author: 'KP Digital',
+  description: 'Manchester Digital Marketing Agency',
+  siteUrl: 'https://www.kpdigitalstrategy.com/',
+  image: '/images/poster.png',
 
-  telephone: '+1-123-123-123',
-  email: 'john@doe.com',
-  location: 'California, USA',
-  twitter: '@NAME-HERE',
-  fbUserId: '@NAME-HERE',
-  fbAppID: '@NAME-HERE',
+  twitter: '',
+  facebook: '',
+  instagram: '',
+  linkedin: '',
 
   type: 'website',
   googleAnalytics: '',
   backgroundColor: '#e0e0e0',
-  themeColor: '#c62828',
+  themeColor: '#FB3640',
 };

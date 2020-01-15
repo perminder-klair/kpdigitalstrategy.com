@@ -1,11 +1,12 @@
 /* eslint global-require: 0 */
 
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'gatsby';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
+import HamburgerMenu from "react-hamburger-menu";
 
 const Section = styled.section`
-  padding: 1rem 1.5rem;
+  padding: 1rem 0;
   font-family: ${props => props.theme.primaryFontFamily};
   .navbar {
     background-color: transparent;
@@ -13,7 +14,7 @@ const Section = styled.section`
   .navbar-brand {
     margin-right: 20px;
     .navbar-item img {
-      max-height: 3.75rem;
+      max-height: 2rem;
     }
   }
   .navbar-menu {
@@ -26,6 +27,8 @@ const Section = styled.section`
   .navbar-item {
     font-weight: 700;
     font-size: 1.2rem;
+    flex-shrink: initial !important;
+
     :hover {
       color: ${props => props.theme.darkAccent};
     }
@@ -36,6 +39,39 @@ const Section = styled.section`
     opacity: 0.6;
     border-radius: 4px;
   }
+  .BurgerMenu {
+    margin: 1rem;
+  }
+`;
+
+const HeadDivider = styled.div`
+  background-color: ${props => props.theme.backgroundColorLite};
+  padding: 0.3rem 0;
+  p {
+    color: ${props => props.theme.backgroundColorLite};
+    text-align: center;
+    margin-bottom: 0;
+  }
+`;
+
+const Dropdown = styled.div`
+  background-color: rgba(255, 56, 96, 94%);
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  .list-item {
+    font-size: 30px;
+    padding-top: 1rem;
+    border-bottom: none;
+  }
+  .contact {
+    font-size: 30px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background: transparent;
+    color: white;
+  }
 `;
 
 export default class Header extends React.Component {
@@ -43,21 +79,26 @@ export default class Header extends React.Component {
     super(props);
 
     this.state = {
-      isActive: false,
+      View: false
     };
   }
 
-  handleMobileMenu() {
-    const { isActive } = this.state;
+  componentDidMount() {
+    if (typeof window !== `undefined`) {
+      const SmoothScroll = require("smooth-scroll");
+      const scroll = new SmoothScroll('a[href*="#"]');
+    }
+  }
 
+  handleClick() {
     this.setState({
-      isActive: !isActive,
+      open: !this.state.open,
+      View: !this.state.View
     });
   }
 
   render() {
-    const { isActive } = this.state;
-
+    const { View } = this.state;
     return (
       <Section className="section">
         <div className="container">
@@ -68,44 +109,108 @@ export default class Header extends React.Component {
           >
             <div className="navbar-brand">
               <Link className="navbar-item" to="/">
-                <img src="/images/logo-1024.png" alt="site logo" />
+                <img src="/images/logo.png" alt="KpDigital logo" />
               </Link>
-              <a
-                href="#"
-                role="button"
-                className={
-                  isActive
-                    ? 'navbar-burger burger mobile is-active'
-                    : 'navbar-burger burger mobile'
-                }
-                aria-label="menu"
-                aria-expanded="false"
-                data-target="navbarBasicExample"
-                onClick={() => this.handleMobileMenu()}
-              >
-                <span aria-hidden="true" />
-                <span aria-hidden="true" />
-                <span aria-hidden="true" />
-              </a>
+              <div className="BurgerMenu is-hidden-desktop">
+                <HamburgerMenu
+                  isOpen={this.state.open}
+                  menuClicked={this.handleClick.bind(this)}
+                  width={26}
+                  height={20}
+                  strokeWidth={1}
+                  rotate={0}
+                  color="#FFFFFF"
+                  borderRadius={0}
+                  animationDuration={0.6}
+                />
+              </div>
             </div>
-            <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
-              <div className="navbar-start">
-                <Link to="/" className="navbar-item">
-                  Home
-                </Link>
-                <Link to="/about" className="navbar-item">
-                  About
-                </Link>
-                <Link to="/news" className="navbar-item">
-                  News
-                </Link>
-                <Link to="/contact" className="navbar-item">
-                  Contact
-                </Link>
+            <div className="navbar-menu">
+              <div className="navbar-end">
+                <div className="navbar-item">
+                  <div className="buttons is-hidden-mobile">
+                    <Link to="#" className="button is-danger is-rounded">
+                      Get an instant quote
+                    </Link>
+                    <Link to="/contact" className="button is-rounded">
+                      Contact
+                    </Link>
+                  </div>
+                </div>
+                <div className="BurgerMenu">
+                  <HamburgerMenu
+                    isOpen={this.state.open}
+                    menuClicked={this.handleClick.bind(this)}
+                    width={26}
+                    height={20}
+                    strokeWidth={1}
+                    rotate={0}
+                    color="#FFFFFF"
+                    borderRadius={0}
+                    animationDuration={0.6}
+                  />
+                </div>
               </div>
             </div>
           </nav>
         </div>
+        <HeadDivider>
+          <p className="has-text-weight-semibold has-text-black">
+            Free Advice Hotline:
+            <a className="has-text-black">+44 161 258 3622</a>
+            <span>(From 8am to 5pm)</span>
+          </p>
+        </HeadDivider>
+        <Dropdown className={View ? "list has-text-centered" : "is-hidden"}>
+          <div className="list-item">
+            <Link to="/OverView" className="has-text-white">
+              Overview-Service
+            </Link>
+          </div>
+          <div className="list-item">
+            <Link to="/LandingPage" className="has-text-white">
+              LandingPage
+            </Link>
+          </div>
+          <div className="list-item">
+            <Link to="/advice" className="has-text-white">
+              Advice Center
+            </Link>
+          </div>
+          <div className="list-item">
+            <Link to="/advice" className="has-text-white">
+              About us
+            </Link>
+          </div>
+          <div className="list-item">
+            <Link to="/Thankyou" className="has-text-white">
+              Thankyou Page
+            </Link>
+          </div>
+          <div className="list-item">
+            <Link to="/CaseStudies" className="has-text-white">
+              Case-Studies
+            </Link>
+          </div>
+          <div className="list-item">
+            <Link to="/Service" className="has-text-white">
+              Service
+            </Link>
+          </div>
+          <div className="list-item">
+            <Link to="/Product" className="has-text-white">
+              Product-Page
+            </Link>
+          </div>
+          <div className="list-item">
+            <Link
+              to="/contact"
+              className="button is-rounded is-outlined has-text-weight-semibold contact"
+            >
+              Contact
+            </Link>
+          </div>
+        </Dropdown>
       </Section>
     );
   }
