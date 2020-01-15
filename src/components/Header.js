@@ -1,9 +1,9 @@
 /* eslint global-require: 0 */
 
-import React from "react";
-import styled from "styled-components";
-import { Link } from "gatsby";
-import HamburgerMenu from "react-hamburger-menu";
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'gatsby';
+import HamburgerMenu from 'react-hamburger-menu';
 
 const Section = styled.section`
   padding: 1rem 0;
@@ -79,21 +79,14 @@ export default class Header extends React.Component {
     super(props);
 
     this.state = {
-      View: false
+      View: false,
     };
-  }
-
-  componentDidMount() {
-    if (typeof window !== `undefined`) {
-      const SmoothScroll = require("smooth-scroll");
-      const scroll = new SmoothScroll('a[href*="#"]');
-    }
   }
 
   handleClick() {
     this.setState({
       open: !this.state.open,
-      View: !this.state.View
+      View: !this.state.View,
     });
   }
 
@@ -161,7 +154,7 @@ export default class Header extends React.Component {
             <span>(From 8am to 5pm)</span>
           </p>
         </HeadDivider>
-        <Dropdown className={View ? "list has-text-centered" : "is-hidden"}>
+        <Dropdown className={View ? 'list has-text-centered' : 'is-hidden'}>
           <div className="list-item">
             <Link to="/OverView" className="has-text-white">
               Overview-Service
