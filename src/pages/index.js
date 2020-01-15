@@ -1,22 +1,48 @@
-import React from "react";
-import config from "../utils/config";
+import React from 'react';
+import { graphql } from 'gatsby';
+import config from '../utils/config';
 
-import Seo from "../components/Seo";
-import Layout from "../components/Layout";
-import HomeHero from "../components/HomeHero";
-import ServiceItem from "../components/ServiceItem";
-import ReachUs from "../components/ReachUs";
-import Features from "../components/Features";
-import Portfolio from "../components/Portfolio";
-import Brand from "../components/Brand";
-import Strengths from "../components/Strengths";
-import Faq from "../components/Faq";
-import OurValue from "../components/OurValue";
-import TestimonailData from "../components/TestimonailData";
-import GetInTouch from "../components/GetInTouch";
+import Seo from '../components/Seo';
+import Layout from '../components/Layout';
+import HomeHero from '../components/HomeHero';
+import ServiceItem from '../components/ServiceItem-old';
+import ReachUs from '../components/ReachUs';
+import Services from '../components/ServiceItems';
+import Portfolio from '../components/Portfolio';
+import Brand from '../components/Brand';
+import Strengths from '../components/Strengths';
+import Faq from '../components/Faq';
+import OurValue from '../components/OurValue';
+import TestimonailData from '../components/TestimonailData';
+import GetInTouch from '../components/GetInTouch';
+
+export const homeQuery = graphql`
+  query homepage {
+    allSanityService(sort: { fields: Order }) {
+      edges {
+        node {
+          Order
+          title
+          slug {
+            current
+          }
+          Logo {
+            asset {
+              url
+            }
+          }
+          description
+        }
+      }
+    }
+  }
+`;
 
 export default class IndexPage extends React.Component {
   render() {
+    const {
+      data: { allSanityService: page },
+    } = this.props;
     return (
       <Layout>
         <Seo
@@ -28,8 +54,10 @@ export default class IndexPage extends React.Component {
         <HomeHero />
         <Brand />
         <OurValue />
+        {/* change Component  name */}
         <ServiceItem />
-        <Features />
+        {/* ---------- */}
+        <Services data={page.edges} />
         <ReachUs />
         <Portfolio />
         <Strengths />

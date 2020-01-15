@@ -1,19 +1,18 @@
-import React from "react";
-import config from "../utils/config";
+import React from 'react';
+import config from '../utils/config';
 
-import ContactHero from "../components/ContactHero";
-import Seo from "../components/Seo";
-import Portfolio from "../components/Portfolio";
-import Brand from "../components/Brand";
-import FeatureItem from "../components/FeatureItem";
-import Strengths from "../components/Strengths";
-import ServiceItem from "../components/ServiceItem";
-import OurValue from "../components/OurValue";
-import ReachUs from "../components/ReachUs";
-import Layout from "../components/Layout";
-import GetInTouch from "../components/GetInTouch";
-
-import TestimonailData from "../components/TestimonailData";
+import ContactHero from '../components/ContactHero';
+import Seo from '../components/Seo';
+import Portfolio from '../components/Portfolio';
+import Brand from '../components/Brand';
+import FeatureItem from '../components/FeatureItem';
+import Strengths from '../components/Strengths';
+import ServiceItem from '../components/ServiceItem-old';
+import OurValue from '../components/OurValue';
+import ReachUs from '../components/ReachUs';
+import Layout from '../components/Layout';
+import GetInTouch from '../components/GetInTouch';
+import TestimonailData from '../components/TestimonailData';
 
 export default class ServicePage extends React.Component {
   render() {
@@ -49,8 +48,6 @@ export default class ServicePage extends React.Component {
                 icon="/images/icons/branding-icon.png"
                 title="Website design & UX"
                 subtitle="Choose from either static or live visualisations of your website design across different devices so that you know exactly how your website will look.
-
-
               Find out more"
                 button="Find out more"
               />

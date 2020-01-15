@@ -1,17 +1,16 @@
-import React from "react";
-import config from "../utils/config";
-import ContactHero from "../components/ContactHero";
-import Seo from "../components/Seo";
-import Portfolio from "../components/Portfolio";
-import Brand from "../components/Brand";
-import FeatureItem from "../components/FeatureItem";
-import Strengths from "../components/Strengths";
-import ServiceItem from "../components/ServiceItem";
-import OurValue from "../components/OurValue";
-import ReachUs from "../components/ReachUs";
-import Layout from "../components/Layout";
-import GetInTouch from "../components/GetInTouch";
-import TestimonailData from "../components/TestimonailData";
+import React from 'react';
+import config from '../utils/config';
+import ContactHero from '../components/ContactHero';
+import Seo from '../components/Seo';
+import Portfolio from '../components/Portfolio';
+import Brand from '../components/Brand';
+import Strengths from '../components/Strengths';
+import ServiceItem from '../components/ServiceItem-old';
+import OurValue from '../components/OurValue';
+import ReachUs from '../components/ReachUs';
+import Layout from '../components/Layout';
+import GetInTouch from '../components/GetInTouch';
+import TestimonailData from '../components/TestimonailData';
 
 export default class ProductPage extends React.Component {
   render() {
@@ -33,7 +32,6 @@ export default class ProductPage extends React.Component {
         />
         <OurValue />
         <ServiceItem />
-
         <Strengths />
         <ReachUs />
         <Portfolio />
