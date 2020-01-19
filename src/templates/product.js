@@ -1,5 +1,7 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import config from '../utils/config';
+
 import ContactHero from '../components/ContactHero';
 import Seo from '../components/Seo';
 import Portfolio from '../components/Portfolio';
@@ -12,8 +14,23 @@ import Layout from '../components/Layout';
 import GetInTouch from '../components/GetInTouch';
 import TestimonailData from '../components/TestimonailData';
 
+export const productQuery = graphql`
+  query product($slug: String) {
+    sanityProducts(slug: { current: { eq: $slug } }) {
+      slug {
+        current
+      }
+      herotitle
+      herosubtitle
+    }
+  }
+`;
+
 export default class ProductPage extends React.Component {
   render() {
+    const {
+      data: { sanityProducts: product },
+    } = this.props;
     return (
       <Layout>
         <Seo
@@ -23,11 +40,8 @@ export default class ProductPage extends React.Component {
           image={config.image}
         />
         <ContactHero
-          title="Strategic user friendly  
-          website design
-          "
-          subtitle="Website design that enhances customer experience with improved  usability and ease of use. Our process enhances customer satisfaction and 
-          loyalty with your brand.  "
+          title={product.herotitle}
+          subtitle={product.herosubtitle}
           textarea={false}
         />
         <OurValue />

@@ -15,6 +15,15 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      allSanityProducts {
+        edges {
+          node {
+            slug {
+              current
+            }
+          }
+        }
+      }
     }
   `);
 
@@ -23,6 +32,17 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: pagePath,
       component: path.resolve(`./src/templates/service.js`),
+      context: {
+        slug: node.slug.current,
+      },
+    });
+  });
+
+  result.data.allSanityProducts.edges.forEach(({ node }) => {
+    const pagePath = `product/${node.slug.current}`;
+    createPage({
+      path: pagePath,
+      component: path.resolve(`./src/templates/product.js`),
       context: {
         slug: node.slug.current,
       },
