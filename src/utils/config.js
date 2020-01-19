@@ -16,4 +16,9 @@ module.exports = {
   googleAnalytics: '',
   backgroundColor: '#e0e0e0',
   themeColor: '#FB3640',
+
+  sanity: {
+    projectId: process.env.GATSBY_SANITY_PROJECT_ID || 'v4zuhgl8',
+    dataset: process.env.GATSBY_SANITY_DATASET || 'production',
+  },
 };

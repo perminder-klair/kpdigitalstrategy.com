@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Block from './PortableText';
 
 import ArticleCard from './ArticleCard';
 
@@ -19,11 +20,12 @@ const FeaturesArticles = ({ data }) => (
             alt="test"
             h2={item.node.categorie}
             title={item.node.title}
-            subtitle="Information and graphic, or simply infographic, is a graphic presentation of certain data, information and/or knowledge. used to  market products or services."
+            subtitle=<Block input={item.node._rawBody} />
           />
         ))}
       </div>
-      <div className="has-text-centered">
+      <div className="has-text-centered has-text-white">
+        <Block />
         <button
           className="button is-danger is-rounded has-text-weight-bold is-medium"
           type="button"

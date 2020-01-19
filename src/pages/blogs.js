@@ -11,6 +11,7 @@ import FeaturesArticles from '../components/FeaturesArticles';
 import BrandIdentity from '../components/BrandIdentity';
 import OurValue from '../components/OurValue';
 import ReachUs from '../components/ReachUs';
+import Block from '../components/PortableText';
 
 export const blogQuery = graphql`
   query blogQuery {
@@ -24,6 +25,7 @@ export const blogQuery = graphql`
               url
             }
           }
+          _rawBody
         }
       }
     }
@@ -35,6 +37,10 @@ export default class Blog extends React.Component {
     const {
       data: { allSanityBlog: blog },
     } = this.props;
+
+    console.log('hello world');
+
+    blog.edges.map(item => console.log(item.node._rawBody));
 
     return (
       <Layout>
