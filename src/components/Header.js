@@ -166,8 +166,8 @@ export default class Header extends React.Component {
             </Link>
           </div>
           <div className="list-item">
-            <Link to="/advice" className="has-text-white">
-              Advice Center
+            <Link to="/blogs" className="has-text-white">
+              blogs
             </Link>
           </div>
           <div className="list-item">
@@ -183,16 +183,6 @@ export default class Header extends React.Component {
           <div className="list-item">
             <Link to="/CaseStudies" className="has-text-white">
               Case-Studies
-            </Link>
-          </div>
-          <div className="list-item">
-            <Link to="/Service" className="has-text-white">
-              Service
-            </Link>
-          </div>
-          <div className="list-item">
-            <Link to="/Product" className="has-text-white">
-              Product-Page
             </Link>
           </div>
           <div className="list-item">

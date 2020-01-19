@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import config from "../utils/config";
-import Seo from "../components/Seo";
-import Layout from "../components/Layout";
-import Hero from "../components/Hero";
-import OurValue from "../components/OurValue";
-import ServiceHero from "../components/ServiceHero";
+import config from '../utils/config';
+import Seo from '../components/Seo';
+import Layout from '../components/Layout';
+import PageHero from '../components/PageHero';
+import OurValue from '../components/OurValue';
+import ServiceHero from '../components/ServiceHero';
 
 export default class OverViewPage extends React.Component {
   render() {
@@ -17,7 +17,7 @@ export default class OverViewPage extends React.Component {
           url={config.siteUrl}
           image={config.image}
         />
-        <Hero
+        <PageHero
           title="Our digital marketing services"
           subtitle="We align design, marketing and sales to make it easier than every to reach new business heights. "
         />
