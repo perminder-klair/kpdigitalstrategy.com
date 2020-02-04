@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Container = styled.div`
   padding: 1rem 0rem;
@@ -52,7 +52,7 @@ class FaqItem extends React.Component {
           </div>
           <div className="column">
             <a onClick={this.toggleDiv}>
-              <i className="Icon fas fa-chevron-circle-down is-pulled-right" />
+              <i className="Icon fas fa-plus is-pulled-right" />
             </a>
           </div>
         </div>

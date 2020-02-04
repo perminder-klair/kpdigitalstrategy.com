@@ -1,9 +1,9 @@
 /* eslint-disable prettier/prettier */
-import React from "react";
-import styled from "styled-components";
-import { Link } from "gatsby";
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'gatsby';
 
-import config from "../utils/config";
+import config from '../utils/config';
 
 const Section = styled.section`
   background-color: ${props => props.theme.darkShades};
@@ -127,17 +127,6 @@ const Footer = () => (
                   </a>
                 </li>
               </h4>
-              <h4 className="subtitle is-7">
-                <li>
-                  <a
-                    href="https://packrs-334.freshstatus.io/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Server Stats
-                  </a>
-                </li>
-              </h4>
             </ul>
           </div>
           <div className="column is-3">
@@ -184,24 +173,7 @@ const Footer = () => (
                   <Link to="/partner">Apply as Rider</Link>
                 </li>
               </h4>
-              <h4 className="subtitle is-7">
-                <li>
-                  <Link to="/contact">Contact Us</Link>
-                </li>
-              </h4>
             </ul>
-          </div>
-        </div>
-        <div className="content">
-          <div className="columns">
-            <div className="column">
-              <p>
-                © 2019
-                <a href="https://www.kpdigitalstrategy.com/">
-                  KP Digital Strategy
-                </a>
-              </p>
-            </div>
           </div>
         </div>
       </footer>
