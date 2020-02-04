@@ -38,10 +38,6 @@ export default class Blog extends React.Component {
       data: { allSanityBlog: blog },
     } = this.props;
 
-    console.log('hello world');
-
-    blog.edges.map(item => console.log(item.node._rawBody));
-
     return (
       <Layout>
         <Seo
