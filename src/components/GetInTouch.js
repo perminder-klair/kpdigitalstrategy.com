@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Section = styled.section`
 }
@@ -92,8 +92,7 @@ const GetInTouch = () => (
           <div className="ButtonWrapper has-text-centered">
             <button
               className="button is-danger is-rounded has-text-weight-bold"
-              type="button"
-            >
+              type="button">
               Get started
             </button>
           </div>

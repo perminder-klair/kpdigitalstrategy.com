@@ -6,7 +6,7 @@ import { Link } from 'gatsby';
 import HamburgerMenu from 'react-hamburger-menu';
 
 const Section = styled.section`
-  padding: 1rem 0;
+  padding: 1rem 0 0;
   font-family: ${props => props.theme.primaryFontFamily};
   .navbar {
     background-color: transparent;
@@ -46,7 +46,7 @@ const Section = styled.section`
 
 const HeadDivider = styled.div`
   background-color: ${props => props.theme.backgroundColorLite};
-  padding: 0.3rem 0;
+  padding-top: 0.3rem;
   p {
     color: ${props => props.theme.backgroundColorLite};
     text-align: center;
@@ -98,8 +98,7 @@ export default class Header extends React.Component {
           <nav
             className="navbar"
             role="navigation"
-            aria-label="main navigation"
-          >
+            aria-label="main navigation">
             <div className="navbar-brand">
               <Link className="navbar-item" to="/">
                 <img src="/images/logo.png" alt="KpDigital logo" />
@@ -166,6 +165,11 @@ export default class Header extends React.Component {
             </Link>
           </div>
           <div className="list-item">
+            <Link to="/Quick" className="has-text-white">
+              Quick
+            </Link>
+          </div>
+          <div className="list-item">
             <Link to="/blogs" className="has-text-white">
               blogs
             </Link>
@@ -188,8 +192,7 @@ export default class Header extends React.Component {
           <div className="list-item">
             <Link
               to="/contact"
-              className="button is-rounded is-outlined has-text-weight-semibold contact"
-            >
+              className="button is-rounded is-outlined has-text-weight-semibold contact">
               Contact
             </Link>
           </div>
