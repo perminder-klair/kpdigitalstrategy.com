@@ -11,6 +11,9 @@ const PageHero = props => (
         <h2 className="subtitle is-6  has-text-weight-semibold has-text-danger">
           {props.subtitle}
         </h2>
+        <h2 className="subtitle is-6  has-text-weight-normal ">
+          {props.paragraph}
+        </h2>
       </section>
     </div>
   </Section>
