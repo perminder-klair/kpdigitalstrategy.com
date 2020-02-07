@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import FeatureItem from './FeatureItem';
+import PageHero from './PageHero';
 
 const Container = styled.section`
   background-color: ${props => props.theme.darkShades};
@@ -11,15 +12,13 @@ const Container = styled.section`
 
 const Services = ({ data }) => (
   <Container className="section">
-    <section className="section">
-      <p className="title is-4 has-text-centered is-spaced">
-        Services for fast-growing companies
-      </p>
-      <p className="subtitle is-6 has-text-centered">
+    <PageHero
+      title="  Services for fast-growing companies"
+      paragraph="
         Our super talented, dedicated team are responsive and ready to meet your
-        critical business needs.
-      </p>
-    </section>
+        critical business needs."
+    />
+
     <div className="container">
       <div className="columns is-variable is-3">
         {data.map(item => (

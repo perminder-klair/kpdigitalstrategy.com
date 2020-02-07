@@ -1,5 +1,6 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import PageHero from './PageHero';
 
 const Section = styled.section`
   .text {
@@ -16,16 +17,16 @@ const ServiceItem = () => (
     <div className="container">
       <div className="columns is-centered">
         <div className="column is-7 has-text-centered">
-          <h1 className="title is-4 has-text-white">
-            Purposeful design and marketing services for aspirational companies
-          </h1>
-          <p className="text">
+          <PageHero
+            title=" Purposeful design and marketing services for aspirational companies"
+            paragraph="
             KP Digital Strategy are experienced designers and marketeers who
             work with a range of businesses across the UK to create meaningful
             brand identities, devise and implement effective marketing
             strategies and design and develop pixel-perfect lead generation
-            websites.
-          </p>
+            websites."
+          />
+
           <button
             className="button is-medium is-danger is-rounded has-text-weight-semibold"
             type="button"

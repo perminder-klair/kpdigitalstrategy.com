@@ -9,13 +9,17 @@ const Hr = styled.hr`
   margin: 1.5rem 6.5rem;
 `;
 
-const QuickItems = () => (
+const QuickQuestion1 = () => (
   <container className="section">
     <div className="container">
+      <PageHero title="Quick quote form" subtitle="(3 minutes)" />
+      <Hr />
       <PageHero
-        title="Quick quote form"
-        subtitle="(3 minutes)"
-        paragraph="What type of project are you looking to start?Select all that apply"
+        title="Let’s talk about your project"
+        subtitle="Question 1/5"
+        paragraph="
+What type of project are you looking to start?
+Select all that apply"
       />
       <div className="columns is-centered is-multiline">
         <QuickHero image="/images/icons/branding-icon.png" text="Branding" />
@@ -27,4 +31,4 @@ const QuickItems = () => (
   </container>
 );
 
-export default QuickItems;
+export default QuickQuestion1;

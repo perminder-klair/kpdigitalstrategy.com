@@ -1,24 +1,22 @@
-import React from "react";
-import config from "../utils/config";
+import React from 'react';
+import config from '../utils/config';
 
-import Seo from "../components/Seo";
-import OurValue from "../components/OurValue";
+import Seo from '../components/Seo';
+import OurValue from '../components/OurValue';
 // import ImageCard from "../components/ImageCard";
-import BrandIdentity from "../components/BrandIdentity";
-import ContactUs from "../components/ReachUs";
-import Layout from "../components/Layout";
+import BrandIdentity from '../components/BrandIdentity';
+import ContactUs from '../components/ReachUs';
+import Layout from '../components/Layout';
+import PageHero from '../components/PageHero';
 
 export default class CaseStudiesPage extends React.Component {
   render() {
     return (
       <Layout>
-        <p className="title is-4 is-spaced has-text-centered">
-          Our Case Studies
-        </p>
-        <p className="subtitle is-6 has-text-centered has-text-danger">
-          Here is some of our latest work
-        </p>
-
+        <PageHero
+          title="Our Case Studies"
+          subtitle="Here is Some Of Our Latest Work"
+        />
         <section className="columns is-gapless is-0 is-multiline">
           {/*
           <ImageCard image="/images/dummy/case-study-image.png" alt="test" />
