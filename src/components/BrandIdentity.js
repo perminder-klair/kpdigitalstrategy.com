@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import BrandIdentityItem from "./BrandIdentityItem";
+import BrandIdentityItem from './BrandIdentityItem';
 
 const Container = styled.div`
   padding: 5rem 1.5rem;
