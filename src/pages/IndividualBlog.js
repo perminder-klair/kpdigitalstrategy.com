@@ -7,7 +7,7 @@ import BrandIdentity from '../components/BrandIdentity';
 import ContactUs from '../components/ReachUs';
 import Layout from '../components/Layout';
 import PageHero from '../components/PageHero';
-import BlogHeader from '../components/BlogHeader';
+import BlogHeading from '../components/BlogHeading';
 import BlogContent from '../components/BlogContent';
 
 export default class IndividualPage extends React.Component {
@@ -24,11 +24,7 @@ export default class IndividualPage extends React.Component {
           title="Our design & marketing advice centre"
           subtitle="A collection of resources to support your business growth"
         />
-        <img
-          src="/images/service/top-image-block@2x.png"
-          alt="backgroundImage"
-        />
-        <BlogHeader />
+        <BlogHeading />
         <BlogContent />
         <OurValue />
         <BrandIdentity />

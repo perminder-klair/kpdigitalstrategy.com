@@ -10,8 +10,8 @@ const Section = styled.section`
     height: 30rem;
   }
   .blog-heading {
-    background-color: ${props => props.color};
-    width: 71%;
+    background-color: ${props => props.theme.backgroundColor};
+    width: 67%;
     position: relative;
     margin-top: -12rem;
     @media screen and (max-width: 600px) {
@@ -28,29 +28,34 @@ const Section = styled.section`
     }
   }
 `;
-``;
 
-class CategoryHero extends React.Component {
+class BlogHeading extends React.Component {
   render() {
-    const { page } = this.props;
+    // const { page } = this.props;
     return (
-      <Section color={page.color}>
-        <img className="background-image" src="/images/blog/background.jpg" />
+      <Section>
+        <img
+          className="background-image"
+          src="/images/service/top-image-block@2x.png"
+          alt="backimage"
+        />
         <div className="blog-heading">
           <div className="columns">
             <div className="column is-4 has-text-right">
               <figure className="image is-128x128">
                 <img
                   className="is-rounded"
-                  src="https://bulma.io/images/placeholders/128x128.png"
+                  src="/images/service/kelly-pierduta-photo.png"
                   alt="Branding"
                 />
                 <p>Written by Kelly</p>
               </figure>
             </div>
             <div className="column">
-              <p>{page.title}</p>
-              <h3 className="title is-3">Who is Kp Digital Strategy?</h3>
+              <h3 className="title is-3">
+                {' '}
+                10 reasons Why you should use infographics in marketing
+              </h3>
               <h3 className="title is-6 has-text-weight-medium">
                 Last Updated Friday 20th September 2019
               </h3>
@@ -62,4 +67,4 @@ class CategoryHero extends React.Component {
   }
 }
 
-export default CategoryHero;
+export default BlogHeading;
