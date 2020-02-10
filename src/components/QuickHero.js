@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   background-color: ${props => props.theme.backgroundColor};
   border: 2px solid ${props => props.theme.mainBrandColor};
-  padding: 3rem 3.5rem;
+  padding: 3rem 4rem;
   margin: 1rem;
   :hover {
     background-color: ${props => props.theme.mainBrandColor}!important;

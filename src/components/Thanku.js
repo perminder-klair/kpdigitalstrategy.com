@@ -1,7 +1,5 @@
 import React from 'react';
 
-import styled from 'styled-components';
-
 import PageHero from './PageHero';
 
 const Thanku = () => (
@@ -9,16 +7,9 @@ const Thanku = () => (
     <section className="section">
       <div className="columns">
         <div className="column has-text-centered">
-          <section className="section">
-            <div className="pic">
-              <img
-                src="/images/icons/thank-you-page-image.png"
-                alt="you"
-                alt="thanku"
-                title="kpdigital strategy Design"
-              />
-            </div>
-          </section>
+          <div className="pic">
+            <img src="/images/icons/thank-you-page-image.png" alt="you" />
+          </div>
 
           <PageHero
             title="Thank you for contacting us"
