@@ -1,6 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import { Link } from "gatsby";
+/* eslint-disable no-undef */
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 const Container = styled.section`
 
@@ -38,4 +39,4 @@ const Testimonail = ({ title, subtitle, button, icon }) => (
   </Container>
 );
 
-export default Testimonail;
+export default Testimonial;
