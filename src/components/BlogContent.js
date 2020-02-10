@@ -5,9 +5,8 @@ import BlogContentcard from './BlogContentcard';
 import BlogProjectIdea from './BlogProjectIdea';
 
 const Section = styled.section`
-  .color,
   .card-image {
-    background-color: ${props => props.color};
+    background-color: 'red';
   }
   .icon {
     margin-left: 1.25rem;
@@ -35,9 +34,9 @@ const Section = styled.section`
 
 class BlogContent extends React.Component {
   render() {
-    const { page } = this.props;
+    // const { page } = this.props;
     return (
-      <Section color={page.color}>
+      <Section>
         <div className="columns">
           <div className="column is-1 color" />
           <div className="column is-1">
@@ -63,8 +62,8 @@ class BlogContent extends React.Component {
           <div className="column is-6">
             <section className="section">
               <div className="container content">
-                <h1 className="title is-5 has-text-danger">{page.title}</h1>
-                <p>{page.description.description}</p>
+                <h1 className="title is-5 has-text-danger">10reasons</h1>
+                <p>i am subtitle</p>
               </div>
             </section>
           </div>

@@ -7,8 +7,8 @@ import BrandIdentity from '../components/BrandIdentity';
 import ContactUs from '../components/ReachUs';
 import Layout from '../components/Layout';
 import PageHero from '../components/PageHero';
-import Reason from '../components/Reason';
-import ReasonInformation from '../components/ReasonInformation';
+import BlogHeader from '../components/BlogHeader';
+import BlogContent from '../components/BlogContent';
 
 export default class IndividualPage extends React.Component {
   render() {
@@ -28,8 +28,8 @@ export default class IndividualPage extends React.Component {
           src="/images/service/top-image-block@2x.png"
           alt="backgroundImage"
         />
-        <Reason />
-        <ReasonInformation />
+        <BlogHeader />
+        <BlogContent />
         <OurValue />
         <BrandIdentity />
         <ContactUs />

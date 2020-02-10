@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const Section = styled.div`
   .columns .column.is-two-thirds {
     background-color: ${props => props.theme.backgroundColor};
-    height: 54rem;
     margin-bottom: 2rem;
     margin-top: -10rem;
   }
@@ -17,8 +16,8 @@ const Section = styled.div`
   }
 `;
 
-const Reason = () => (
-  <Section >
+const BlogHeader = () => (
+  <Section>
     <div className="columns">
       <div className="column is-two-thirds">
         <div className="section">
@@ -47,7 +46,6 @@ const Reason = () => (
         </div>
       </div>
     </div>
-
   </Section>
 );
-export default Reason;
+export default BlogHeader;
