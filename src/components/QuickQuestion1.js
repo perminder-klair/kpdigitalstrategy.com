@@ -10,7 +10,7 @@ const Hr = styled.hr`
 `;
 
 const QuickQuestion1 = () => (
-  <container className="section">
+  <section className="section">
     <div className="container">
       <PageHero title="Quick quote form" subtitle="(3 minutes)" />
       <Hr />
@@ -26,9 +26,10 @@ Select all that apply"
         <QuickHero image="/images/icons/branding-icon.png" text="Branding" />
         <QuickHero image="/images/icons/branding-icon.png" text="Branding" />
       </div>
-      <Hr />
     </div>
-  </container>
+
+    <Hr />
+  </section>
 );
 
 export default QuickQuestion1;

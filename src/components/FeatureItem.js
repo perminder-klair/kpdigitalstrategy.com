@@ -5,13 +5,12 @@ import { Link } from 'gatsby';
 const Container = styled.div`
   section {
     border: 2px solid ${props => props.theme.mainBrandColor};
-    height: 30rem;
+    height: 31rem;
   }
   .container {
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding-bottom: 1rem;
   }
   img {
     margin: 2rem 0rem;

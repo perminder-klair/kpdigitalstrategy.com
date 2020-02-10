@@ -10,7 +10,7 @@ const Hr = styled.hr`
 `;
 
 const QuickQuestion2 = () => (
-  <container className="section">
+  <section className="section">
     <div className="container">
       <PageHero
         title="Let’s talk about your project"
@@ -35,7 +35,7 @@ const QuickQuestion2 = () => (
       </div>
       <Hr />
     </div>
-  </container>
+  </section>
 );
 
 export default QuickQuestion2;
