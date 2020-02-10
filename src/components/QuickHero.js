@@ -3,9 +3,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  .box {
-    align-self: center;
-
     background-color: ${props => props.theme.backgroundColor};
   }
   .subtitle {
@@ -21,9 +18,8 @@ const Container = styled.div`
       background-color:${props => props.theme.mainBrandColor}!important;
       color: #ffffff;
   }
-  .box {
-    margin-top: 1rem;
-  }
+
+
 `;
 
 const QuickHero = props => (
