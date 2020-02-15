@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import FaqItem from "./FaqItem";
+import FaqItem from './FaqItem';
 
 const Container = styled.div`
   .title {
@@ -46,5 +46,4 @@ const Faq = () => (
     </div>
   </Container>
 );
-
 export default Faq;

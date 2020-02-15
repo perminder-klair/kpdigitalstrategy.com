@@ -59,7 +59,7 @@ const Dropdown = styled.div`
   position: absolute;
   z-index: 1;
   width: 100%;
-  height: 100%;
+  height: 110%;
   .list-item {
     font-size: 30px;
     padding-top: 1rem;
@@ -98,7 +98,8 @@ export default class Header extends React.Component {
           <nav
             className="navbar"
             role="navigation"
-            aria-label="main navigation">
+            aria-label="main navigation"
+          >
             <div className="navbar-brand">
               <Link className="navbar-item" to="/">
                 <img src="/images/logo.png" alt="KpDigital logo" />
@@ -185,6 +186,11 @@ export default class Header extends React.Component {
             </Link>
           </div>
           <div className="list-item">
+            <Link to="/IndividualCaseStudy" className="has-text-white">
+              Individual Case-Study
+            </Link>
+          </div>
+          <div className="list-item">
             <Link to="/Thankyou" className="has-text-white">
               Thankyou Page
             </Link>
@@ -197,7 +203,8 @@ export default class Header extends React.Component {
           <div className="list-item">
             <Link
               to="/contact"
-              className="button is-rounded is-outlined has-text-weight-semibold contact">
+              className="button is-rounded is-outlined has-text-weight-semibold contact"
+            >
               Contact
             </Link>
           </div>

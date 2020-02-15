@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import Text from "./Autotext";
+import Text from './Autotext';
 
 const Section = styled.section`
   background-color: ${props => props.theme.darkShades};

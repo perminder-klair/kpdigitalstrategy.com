@@ -63,7 +63,6 @@ export default class IndexPage extends React.Component {
         <Strengths />
         <Faq />
         <TestimonailData />
-
         <GetInTouch />
       </Layout>
     );

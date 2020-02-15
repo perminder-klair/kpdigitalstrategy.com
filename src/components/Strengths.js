@@ -1,27 +1,24 @@
 /* eslint-disable prettier/prettier */
-import React from "react";
+import React from 'react';
 
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Container = styled.div`
-  padding: 1rem 1.5rem;
   background-color: ${props => props.theme.mainBrandColor};
   p {
     margin-top: 1rem;
+  }
+  h3 {
+    margin-bottom: 3rem;
   }
 `;
 
 const Strengths = () => (
   <Container className="section">
     <div className="container">
-      <section className="section">
-        <div className="container">
-          <h3 className="title is-5 has-text-centered">
-            Reliable, efficient & transparent service, every time
-          </h3>
-        </div>
-      </section>
-
+      <h3 className="title is-5 has-text-centered">
+        Reliable, efficient & transparent service, every time
+      </h3>
       <div className="columns">
         <div className="column is-4 has-text-centered">
           <img

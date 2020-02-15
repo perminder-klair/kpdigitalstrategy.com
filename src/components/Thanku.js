@@ -8,7 +8,7 @@ const Thanku = () => (
       <div className="columns">
         <div className="column has-text-centered">
           <div className="pic">
-            <img src="/images/icons/thank-you-page-image.png" alt="you" />
+            <img src="/images/team/thank-you-page-image.png" alt="you" />
           </div>
 
           <PageHero

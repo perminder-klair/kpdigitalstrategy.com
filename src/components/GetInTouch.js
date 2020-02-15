@@ -35,7 +35,6 @@ const GetInTouch = () => (
               challenges and above all else are on your side celebrating your
               every win.
             </p>
-
             <p className="subtitle is-6 is-spaced">
               No matter the size of your project, or if you are just starting
               out, KP Digital Strategy has everything you need to unlock your
@@ -61,7 +60,6 @@ const GetInTouch = () => (
               />
             </div>
           </div>
-
           <div className="field">
             <div className="control">
               <input
