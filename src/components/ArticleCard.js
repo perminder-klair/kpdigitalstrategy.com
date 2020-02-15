@@ -22,21 +22,21 @@ const Container = styled.div`
   }
 `;
 
-const ArticleCard = props => (
+const ArticleCard = ({ image, alt, h2, title, subtitle }) => (
   <Container className="column is-4">
     <div className="card">
       <div className="card-image">
         <figure className="image is-4by3">
-          <img src={props.image} alt={props.alt} />
+          <img src={image} alt={alt} />
         </figure>
       </div>
       <div className="media-content has-text-centered">
-        <h2 className="subtitle is-6 has-text-danger">{props.h2}</h2>
-        <h2 className="title is-6  has-text-white is-spaced">{props.title}</h2>
-        <p className="subtitle is-7 has-text-white">{props.subtitle}</p>
+        <h2 className="subtitle is-6 has-text-danger">{h2}</h2>
+        <h2 className="title is-6  has-text-white is-spaced">{title}</h2>
+        <p className="subtitle is-7 has-text-white">{subtitle}</p>
         <button
           className="button is-danger is-rounded has-text-weight-bold"
-          type="button"
+          type="Read More"
         >
           Read More
         </button>

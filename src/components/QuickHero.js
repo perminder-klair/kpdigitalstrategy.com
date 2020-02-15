@@ -16,12 +16,12 @@ const Container = styled.div`
   }
 `;
 
-const QuickHero = props => (
+const QuickHero = ({ image, text }) => (
   <Container>
     <div className="has-text-centered">
-      <img src={props.image} alt="daily-mails-logo" />
+      <img src={image} alt="daily-mails-logo" />
 
-      <h4 className="subtitle is-5 has-text-centered">{props.text}</h4>
+      <h4 className="subtitle is-5 has-text-centered">{text}</h4>
     </div>
   </Container>
 );

@@ -24,7 +24,7 @@ const Container = styled.section`
   }
 `;
 
-const Testimonail = ({ title, subtitle, button, icon }) => (
+const Testimonial = ({ title, subtitle, button, icon }) => (
   <Container className="column is-half">
     <section className="section">
       <div className="container">
