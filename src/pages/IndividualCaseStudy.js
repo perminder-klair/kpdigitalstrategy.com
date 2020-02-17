@@ -3,8 +3,9 @@ import Seo from '../components/Seo';
 import config from '../utils/config';
 import Layout from '../components/Layout';
 import PageHero from '../components/PageHero';
-import HeroCase from '../components/HeroCase';
+import HeaderCase from '../components/HeaderCase';
 import Solution from '../components/Solution';
+import HeroCase from '../components/HeroCase';
 
 export default class IndividualCaseStudy extends React.Component {
   render() {
@@ -20,8 +21,9 @@ export default class IndividualCaseStudy extends React.Component {
           title="Branding.Web design.UX"
           subtitle="EPIC Risk Management"
         />
-        <HeroCase />
+        <HeaderCase />
         <Solution />
+        <HeroCase />
       </Layout>
     );
   }
