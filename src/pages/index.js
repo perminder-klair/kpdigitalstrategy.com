@@ -8,6 +8,7 @@ import HomeHero from '../components/HomeHero';
 import ServiceItem from '../components/ServiceItem-old';
 import ReachUs from '../components/ReachUs';
 import Services from '../components/ServiceItems';
+import ReactSlider from '../components/Slider';
 import Portfolio from '../components/Portfolio';
 import Brand from '../components/Brand';
 import Strengths from '../components/Strengths';
@@ -58,6 +59,7 @@ export default class IndexPage extends React.Component {
         <ServiceItem />
         {/* ---------- */}
         <Services data={page.edges} />
+        <ReactSlider />
         <ReachUs />
         <Portfolio />
         <Strengths />
