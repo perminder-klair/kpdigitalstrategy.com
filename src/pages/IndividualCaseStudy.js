@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 import PageHero from '../components/PageHero';
 import HeaderCase from '../components/HeaderCase';
 import Solution from '../components/Solution';
-import HeroCase from '../components/HeroCase';
+import FeatureCase from '../components/FeatureCase';
 
 export default class IndividualCaseStudy extends React.Component {
   render() {
@@ -23,7 +23,7 @@ export default class IndividualCaseStudy extends React.Component {
         />
         <HeaderCase />
         <Solution />
-        <HeroCase />
+        <FeatureCase />
       </Layout>
     );
   }

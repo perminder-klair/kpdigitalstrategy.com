@@ -9,22 +9,27 @@ const Section = styled.section`
   }
   .hero {
     background-color: ${props => props.theme.mainBrandColor};
-    height: 22rem;
+    height: 24.2rem;
   }
   h1 {
     margin-top: 6rem;
-    width: 20rem;
+  }
+  img {
+    width: -webkit-fill-available;
   }
 `;
-
-const HeroCase = () => (
+const Border = styled.div`
+  border-bottom: 1px solid;
+  margin-top: -1.6rem;
+`;
+const FeatureCase = () => (
   <Section>
     <img
       className="background-image"
       src="/images/team/mock-up.png"
       alt="Heroimage"
     />
-    <div className="columns is-multiline is-variable is-1">
+    <div className="columns is-multiline is-variable is-2">
       <div className="column is-half">
         <img
           src="/images/team/epic-brand-guidelines-mockup-copy.png"
@@ -50,14 +55,11 @@ const HeroCase = () => (
         <section className="hero">
           <div className="hero-body">
             <div className="container is-widescreen">
-              <h1 className="title is-size-6 is-spaced">
+              <h1 className="title is-size-4 is-spaced is-size-4-mobile">
                 {' '}
                 Do you want to discuss your project with one of our expert team?
               </h1>
-              <button
-                className="button is-black has-text-weight-semibold is-size-6"
-                type="button"
-              >
+              <button className="button is-black is-size-5" type="button">
                 Contact us
               </button>
             </div>
@@ -65,6 +67,7 @@ const HeroCase = () => (
         </section>
       </div>
     </div>
+    <Border />
   </Section>
 );
-export default HeroCase;
+export default FeatureCase;

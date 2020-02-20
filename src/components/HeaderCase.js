@@ -1,11 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Section = styled.div``;
-
+const Section = styled.div`
+  img {
+    width: -webkit-fill-available;
+  }
+`;
+const Border = styled.div`
+  border-top: 1px solid;
+`;
 const HeaderCase = () => (
   <Section>
-    <div className="columns is-multiline is-variable is-1">
+    <Border />
+    <div className="columns is-multiline is-variable is-2">
       <div className="column is-half">
         <img
           src="/images/team/website-epic-risk-management.png"
@@ -18,7 +25,7 @@ const HeaderCase = () => (
           <div className="hero-body">
             <div className="container">
               <h1 className="title is-size-6 is-spaced">Background</h1>
-              <p className="subtitle is-size-7 is-spaced">
+              <p className="subtitle is-size-6 is-spaced">
                 EPIC Risk Management is the world’s leading independent gambling
                 harm minimisation consultancy. EPIC raises awareness of
                 gambling-related harm in order to identify and mitigate the
@@ -26,7 +33,7 @@ const HeaderCase = () => (
                 gambling can create.
               </p>
               <h1 className="title is-size-6 is-spaced">Brief</h1>
-              <p className="subtitle is-size-7">
+              <p className="subtitle is-size-6">
                 In preparation of delivering services to the USA, EPIC Risk
                 Management were looking to align their branding to give a
                 consisent presence across all brand touch points
