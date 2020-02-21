@@ -2,46 +2,44 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  section {
+  .card {
     border: 1px solid ${props => props.theme.lightShades};
-    width: 20rem;
+    margin: 0rem 1rem;
+    background: transparent;
   }
-  .container {
-    align-items: center;
+  .card-image {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    background-color: ${props => props.theme.mainBrandColor};
+    padding: 2rem 1rem;
   }
-  img {
-    margin: 2rem 0rem;
+  .media-content {
+    padding: 1.5rem 3rem;
   }
-`;
-const Color = styled.div`
-  background-color: ${props => props.theme.mainBrandColor};
 `;
 
 const ProductSlider = () => (
-  <Container className="">
-    <section className="section">
-      <Color />
-      <div className="container">
+  <Container>
+    <div className="card">
+      <div className="card-image">
         <img
-          src="/images/team/website-epic-risk-management.png"
+          src="/images/team/card-image.png"
           alt="daily mails logo"
           title="kpdigital strategy Design"
         />
-        <div className="media-content has-text-centered">
-          <h2 className="title is-4  has-text-white">
-            Website Design & Development
-          </h2>
-          <button
-            className="button is-medium is-danger is-rounded has-text-weight-semibold"
-            type="button"
-          >
-            Explore this product
-          </button>
-        </div>
       </div>
-    </section>
+      <div className="media-content has-text-centered">
+        <h2 className="title is-6  has-text-white">
+          Website Design & Development
+        </h2>
+        <button
+          className="button is-medium is-danger is-rounded has-text-weight-semibold"
+          type="button"
+        >
+          Explore this product
+        </button>
+      </div>
+    </div>
   </Container>
 );
 
