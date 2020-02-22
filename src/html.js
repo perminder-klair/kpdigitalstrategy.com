@@ -40,6 +40,7 @@ export default class HTML extends React.Component {
             rel="stylesheet"
           />
           <script src="/js/scripts.js" />
+          <script src="https://unpkg.com/react-tabs/dist/react-tabs.development.js" />
           {/* Add custom css or scripts here */}
 
           {this.props.headComponents}
