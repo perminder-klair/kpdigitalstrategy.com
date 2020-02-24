@@ -4,9 +4,8 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 const Container = styled.section`
-
     section {
-      border: 2px solid ${props => props.theme.mainBrandColor};
+      /* border: 2px solid ${props => props.theme.mainBrandColor}; */
       height: 30rem;
     }
     .container {
@@ -38,5 +37,4 @@ const Testimonial = ({ title, subtitle, button, icon }) => (
     </section>
   </Container>
 );
-
 export default Testimonial;

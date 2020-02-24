@@ -6,6 +6,8 @@ import Seo from '../components/Seo';
 import Portfolio from '../components/Portfolio';
 import Brand from '../components/Brand';
 import Features from '../components/Features';
+import Slider from '../components/Slider';
+import ReachUs from '../components/ReachUs';
 import Strengths from '../components/Strengths';
 import ServiceItem from '../components/ServiceItem-old';
 import Faq from '../components/Faq';
@@ -33,6 +35,8 @@ export default class LandingPage extends React.Component {
         <OurValue />
         <ServiceItem />
         <Features />
+        <Slider />
+        <ReachUs />
         <Portfolio />
         <Strengths />
         <Faq />

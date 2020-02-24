@@ -1,19 +1,20 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import Testimonail from "./Testimonail";
+import Testimonail from './Testimonail';
 
 const Container = styled.section`
   border-top: 1px solid #ffff;
   padding: 5rem 1.5rem;
-  background-color: ${props => props.theme.primaryColor};
+  background-color: ${props => (props.backgroundColor ? '#FF3860' : '#000')};
+
   .section {
     background-color: ${props => props.theme.backgroundColor};
   }
 `;
 
-const TestimonailData = () => (
-  <Container className="section">
+const TestimonailData = ({ backgroundColor }) => (
+  <Container className="section" backgroundColor={backgroundColor}>
     <div className="container">
       <div className="columns is-variable is-3">
         <Testimonail

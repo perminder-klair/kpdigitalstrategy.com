@@ -64,7 +64,7 @@ export default class IndexPage extends React.Component {
         <Portfolio />
         <Strengths />
         <Faq />
-        <TestimonailData />
+        <TestimonailData backgroundColor />
         <GetInTouch />
       </Layout>
     );
