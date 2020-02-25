@@ -18,12 +18,10 @@ const Container = styled.div`
 `;
 
 const QuickHero = ({ image, text }) => (
-  <Container>
-    <div className="has-text-centered">
-      <img src={image} alt="daily-mails-logo" />
+  <Container className="has-text-centered">
+    <img src={image} alt="daily-mails-logo" />
 
-      <h4 className="subtitle is-5 has-text-centered">{text}</h4>
-    </div>
+    <h4 className="subtitle is-5 has-text-centered">{text}</h4>
   </Container>
 );
 

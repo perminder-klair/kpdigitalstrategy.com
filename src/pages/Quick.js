@@ -10,17 +10,15 @@ export default class QuickPage extends React.Component {
   render() {
     return (
       <Layout>
-        <div className="container">
-          <QuickQuestion1 />
-          {/* <QuickQuestion2 /> */}
-          <QuickQuestion3 />
-          <Seo
-            title="Manchester Digital Marketing Agency"
-            description="KP Digital Strategy"
-            url={config.siteUrl}
-            image={config.image}
-          />
-        </div>
+        <QuickQuestion1 />
+        {/* <QuickQuestion2 /> */}
+        <QuickQuestion3 />
+        <Seo
+          title="Manchester Digital Marketing Agency"
+          description="KP Digital Strategy"
+          url={config.siteUrl}
+          image={config.image}
+        />
       </Layout>
     );
   }
