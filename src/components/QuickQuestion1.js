@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import QuickTabOptions from './QuickTabOptions';
 import QuickHero from './QuickHero';
+import QuickCheckBox from './QuickCheckBox';
 import PageHero from './PageHero';
 
 import 'react-tabs/style/react-tabs.css';
@@ -86,23 +87,37 @@ const QuickQuestion1 = () => {
             <TabPanel>
               {' '}
               <div className="columns is-centered is-multiline">
-                <QuickHero image="/images/icons/branding-icon.png" text="a1" />{' '}
-                <QuickHero image="/images/icons/branding-icon.png" text="a1" />{' '}
-                <QuickHero image="/images/icons/branding-icon.png" text="a1" />
+                <QuickCheckBox id="1" value="1" />
+                <QuickCheckBox id="2" value="2" />
+                <QuickCheckBox id="3" value="3" />
               </div>
             </TabPanel>
 
             <TabPanel>
               <div className="columns is-centered is-multiline">
+                <QuickCheckBox id="1" value="1" />
+                <QuickCheckBox id="2" value="2" />
+                <QuickCheckBox id="3" value="3" />
+                <QuickCheckBox id="4" value="4" />
+              </div>
+              {/* <div className="columns is-centered is-multiline">
                 <QuickHero image="/images/icons/branding-icon.png" text="b1" />{' '}
                 <QuickHero image="/images/icons/branding-icon.png" text="b1" />{' '}
                 <QuickHero image="/images/icons/branding-icon.png" text="b1" />
-              </div>
+              </div> */}
             </TabPanel>
             <TabPanel>
               <div className="columns is-centered is-multiline">
-                <QuickHero image="/images/icons/branding-icon.png" text="c1" />
+                <QuickCheckBox id="1" value="1" />
+                <QuickCheckBox id="2" value="2" />
+                <QuickCheckBox id="3" value="3" />
+                <QuickCheckBox id="4" value="4" />
+                <QuickCheckBox id="5" value="5" />
+                <QuickCheckBox id="6" value="6" />
               </div>
+              {/* <div className="columns is-centered is-multiline">
+                <QuickHero image="/images/icons/branding-icon.png" text="c1" />
+              </div> */}
             </TabPanel>
           </div>
         </Tabs>
