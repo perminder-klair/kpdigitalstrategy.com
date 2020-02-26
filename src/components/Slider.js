@@ -1,31 +1,32 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import Slider from 'react-slick';
 import ProductSlider from './ProductSlider';
 import PageHero from './PageHero';
 
-// const Section = styled.div`
-// .slick-prev:before {
-//     width: 28px;
-//     height: 50px;
-//     background-size: cover;
-//     content: '' !important;
-//     position: absolute;
-//     top: -11px;
-//     left: -7px;
-//     background-image: url('./images/team/arrow-1@2x.png');
-//   }
-//     opacity: 1 !important;
-//   }
-//   .slick-next:before {
-//     width: 28px;
-//     height: 50px;
-//     background-size: cover;
-//     content: '' !important;
-//     position: absolute;
-//     top: -11px;
-//     left: 0px;
-//     background-image: url('./images/team/arrow-2@2x.png');
-//   }`;
+const Section = styled.div`
+.slick-prev:before {
+  width: 70px;
+    height: 70px;
+    background-size: cover;
+    content: '' !important;
+    position: absolute;
+    top: -11px;
+    left: -31px;
+    background-image: url('./images/team/Left Scroll.png');
+  }
+    opacity: 1 !important;
+  }
+  .slick-next:before {
+    width: 75px;
+    height: 75px;
+    background-size: cover;
+    content: '' !important;
+    position: absolute;
+    top: -11px;
+    left: -58px;
+    background-image: url('./images/team/Right scroll.png');
+  }`;
 export default class Responsive extends Component {
   render() {
     const settings = {
@@ -63,7 +64,7 @@ export default class Responsive extends Component {
       ],
     };
     return (
-      <div className="section">
+      <Section className="section">
         <div className="container">
           <PageHero
             title="Products to suit your critical business needs"
@@ -91,7 +92,7 @@ export default class Responsive extends Component {
             </div>
           </Slider>
         </div>
-      </div>
+      </Section>
     );
   }
 }
