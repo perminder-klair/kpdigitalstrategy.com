@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import QuickTabOptions from './QuickTabOptions';
-import QuickHero from './QuickHero';
 import QuickCheckBox from './QuickCheckBox';
 import PageHero from './PageHero';
 
@@ -30,12 +29,12 @@ ul, li {
 .tabs-border {
     border-bottom: 2px solid ${props => props.theme.mainBrandColor};
 }
-.pannels {
+.panels {
   border-bottom: 2px solid ${props => props.theme.mainBrandColor};
   padding-bottom: 1.5rem;
 }
 `;
-const QuickQuestion1 = () => {
+const QuickQuestionOne = () => {
   const [tab, tabSelected] = useState('zero');
   return (
     <Section className="section">
@@ -83,7 +82,7 @@ const QuickQuestion1 = () => {
             subtitle="Question 2/5"
             paragraph=" What do you need help with? Select all that apply"
           />
-          <div className="pannels">
+          <div className="panels">
             <TabPanel>
               {' '}
               <div className="columns is-centered is-multiline">
@@ -100,11 +99,6 @@ const QuickQuestion1 = () => {
                 <QuickCheckBox id="3" value="3" />
                 <QuickCheckBox id="4" value="4" />
               </div>
-              {/* <div className="columns is-centered is-multiline">
-                <QuickHero image="/images/icons/branding-icon.png" text="b1" />{' '}
-                <QuickHero image="/images/icons/branding-icon.png" text="b1" />{' '}
-                <QuickHero image="/images/icons/branding-icon.png" text="b1" />
-              </div> */}
             </TabPanel>
             <TabPanel>
               <div className="columns is-centered is-multiline">
@@ -115,9 +109,6 @@ const QuickQuestion1 = () => {
                 <QuickCheckBox id="5" value="5" />
                 <QuickCheckBox id="6" value="6" />
               </div>
-              {/* <div className="columns is-centered is-multiline">
-                <QuickHero image="/images/icons/branding-icon.png" text="c1" />
-              </div> */}
             </TabPanel>
           </div>
         </Tabs>
@@ -125,4 +116,4 @@ const QuickQuestion1 = () => {
     </Section>
   );
 };
-export default QuickQuestion1;
+export default QuickQuestionOne;
