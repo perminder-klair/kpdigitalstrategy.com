@@ -10,6 +10,18 @@ const Section = styled.section`
   .title {
     color: ${props => props.theme.lightShades} !important;
   }
+  .logoImage {
+    width: 18rem;
+  }
+  .mg {
+    margin-top: 3rem;
+  }
+  .mb {
+    margin-bottom: 20px;
+  }
+  .underline {
+    text-decoration: underline;
+  }
   .footer {
     background-color: ${props => props.theme.darkShades};
     padding: 3rem 1.5rem 3rem;
@@ -31,13 +43,8 @@ const Section = styled.section`
       color: #fff;
     }
   }
-`;
-
-const Icons = styled.div`
-  .icon {
-    color: ${props => props.theme.lightShades} !important;
-    font-size: 1.7rem;
-    margin-left: 5px;
+  img {
+    margin-right: 6px;
   }
 `;
 
@@ -46,131 +53,94 @@ const Footer = () => (
     <div className="container">
       <footer className="footer">
         <div className="columns">
-          <div className="column is-3">
-            <Icons className="has-text-left">
-              <Link className="navbar-item" to="/">
-                <img src="/images/logo.png" alt="KpDigital logo" />
+          <div className="column is-4">
+            <ul>
+              <Link to="/">
+                <img
+                  src="/images/logo.png"
+                  alt="KpDigital logo"
+                  className="logoImage"
+                />
               </Link>
-              <ul>
-                <h4 className="subtitle is-6">
-                  <li>
-                    <Link to="">Get in touch</Link>
-                  </li>
-                </h4>
-                <h4 className="subtitle is-7">
-                  <li>
-                    <Link to="">
-                      Get in touch Contact us at hello@kpdigitalstrategy.com
-                    </Link>
-                  </li>
-                </h4>
-              </ul>
-              <a
-                target="_blank"
-                href={config.facebook}
-                rel="noopener noreferrer"
-              >
-                <span className="icon has-text-info">
-                  <i className="fab fa-facebook-square" />
-                </span>
-              </a>
-              <a
-                target="_blank"
-                href={config.instagram}
-                rel="noopener noreferrer"
-              >
-                <span className="icon has-text-info">
-                  <i className="fab fa-instagram" />
-                </span>
-              </a>
-              <a
-                target="_blank"
-                href={config.twitter}
-                rel="noopener noreferrer"
-              >
-                <span className="icon has-text-info">
-                  <i className="fab fa-twitter-square" />
-                </span>
-              </a>
-              <a
-                target="_blank"
-                href={config.linkedin}
-                rel="noopener noreferrer"
-              >
-                <span className="icon has-text-info">
-                  <i className="fab fa-linkedin" />
-                </span>
-              </a>
-            </Icons>
+              <Link to="" className="subtitle is-size-6 is-block mg">
+                Get in touch
+              </Link>
+              <h4 className="subtitle is-size-6 is-block mb">
+                Contact us at{' '}
+                <a href="" className="underline">
+                  hello@kpdigitalstrategy.com
+                </a>
+              </h4>
+            </ul>
+            <a target="_blank" href={config.facebook}>
+              <img src="/images/team/twitter@2x.png" alt="twitter" />
+            </a>
+            <a target="_blank" href={config.instagram}>
+              <img src="/images/team/facebook@2x.png" alt="facebook" />
+            </a>
+            <a target="_blank" href={config.twitter}>
+              <img src="/images/team/instagram@2x.png" alt="instagram" />
+            </a>
+            <a target="_blank" href={config.linkedin}>
+              <img src="/images/team/linkedin.png" alt="linkedin" />
+            </a>
           </div>
           <div className="column is-3">
-            <h4 className="title is-5">CREATIVE & DESIGN</h4>
+            <h4 className="title is-size-6">Services</h4>
             <ul>
-              <h4 className="subtitle is-7">
+              <h4 className="subtitle is-size-6">
                 <li>
-                  <Link to="/about">About Us</Link>
+                  <Link to="/about">Branding design</Link>
                 </li>
               </h4>
-              <h4 className="subtitle is-7">
+              <h4 className="subtitle is-size-6">
                 <li>
-                  <Link to="/news-updates">News & Updates</Link>
+                  <Link to="/news-updates">Digital marketing</Link>
                 </li>
               </h4>
-              <h4 className="subtitle is-7">
+              <h4 className="subtitle is-size-6">
                 <li>
-                  <a
-                    href="https://packrs.freshdesk.com/support/tickets/new"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Support
-                  </a>
+                  <Link to="/news-updates">Website design & development</Link>
                 </li>
               </h4>
             </ul>
           </div>
           <div className="column is-3">
-            <h4 className="title is-5">MARKETING STRATERGY</h4>
+            <h4 className="title is-size-6">Company</h4>
             <ul>
-              <h4 className="subtitle is-7">
+              <h4 className="subtitle is-size-6">
                 <li>
-                  <Link to="/faq">FAQ</Link>
+                  <Link to="/faq">Meet the team</Link>
                 </li>
               </h4>
-              <h4 className="subtitle is-7">
+              <h4 className="subtitle is-size-6">
                 <li>
-                  <Link to="/privacy-policy">Privacy Policy</Link>
+                  <Link to="/privacy-policy">About us</Link>
                 </li>
               </h4>
-              <h4 className="subtitle is-7">
+              <h4 className="subtitle is-size-6">
                 <li>
-                  <Link to="/terms-and-conditions">Terms & Conditions</Link>
+                  <Link to="/terms-and-conditions">Careers</Link>
                 </li>
               </h4>
             </ul>
           </div>
           <div className="column is-3">
-            <h4 className="title is-5">WEB DESIGN</h4>
+            <h4 className="title is-size-6">Legal</h4>
             <ul>
-              <h4 className="subtitle is-7">
+              <h4 className="subtitle is-size-6">
                 <li>
-                  <a
-                    href="https://perminderklair.freshteam.com/jobs/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Careers
-                  </a>
+                  <Link to="/business">Terms of use</Link>
                 </li>
               </h4>
-              <h4 className="subtitle is-7">
+              <h4 className="subtitle is-size-6">
                 <li>
-                  <Link to="/business">Apply as Business</Link>
+                  <Link to="/partner">Privacy policy</Link>
                 </li>
               </h4>
-              <h4 className="subtitle is-7">
+              <h4 className="subtitle is-size-6">
                 <li>
-                  <Link to="/partner">Apply as Rider</Link>
+                  <Link to="/partner">GDPR</Link>
                 </li>
               </h4>
             </ul>
