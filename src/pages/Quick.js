@@ -2,17 +2,15 @@ import React from 'react';
 import Layout from '../components/Layout';
 import config from '../utils/config';
 import Seo from '../components/Seo';
-import QuickQuestion1 from '../components/QuickQuestion1';
-import QuickQuestion2 from '../components/QuickQuestion2';
-import QuickQuestion3 from '../components/QuickQuestion3';
+import QuickQuestionOne from '../components/QuickQuestionOne';
+import QuickQuestionThree from '../components/QuickQuestionThree';
 
 export default class QuickPage extends React.Component {
   render() {
     return (
       <Layout>
-        <QuickQuestion1 />
-        {/* <QuickQuestion2 /> */}
-        <QuickQuestion3 />
+        <QuickQuestionOne />
+        <QuickQuestionThree />
         <Seo
           title="Manchester Digital Marketing Agency"
           description="KP Digital Strategy"

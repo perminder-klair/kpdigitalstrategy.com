@@ -8,17 +8,16 @@ const Container = styled.div`
   }
 `;
 
-const PageHero = props => (
+const PageHero = ({ title, subtitle, paragraph, text }) => (
   <Container>
     <div className="container">
       <section className="has-text-centered">
-        <h2 className="title is-4 is-size-3-mobile is-spaced">{props.title}</h2>
+        <h2 className="title is-4 is-size-3-mobile is-spaced">{title}</h2>
         <h2 className="subtitle is-6  has-text-weight-semibold has-text-danger">
-          {props.subtitle}
+          {subtitle}
         </h2>
-        <h2 className="subtitle is-6  has-text-weight-normal ">
-          {props.paragraph}
-        </h2>
+        <h2 className="subtitle is-6  has-text-weight-normal ">{paragraph}</h2>
+        <h2 className="subtitle is-6  has-text-weight-normal ">{text}</h2>
       </section>
     </div>
   </Container>
