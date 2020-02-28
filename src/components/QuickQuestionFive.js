@@ -14,21 +14,22 @@ const Section = styled.div`
 const QuickQuestionFive = () => {
   return (
     <Section>
-      <PageHero
-        subtitle=" Question 5/5"
-        paragraph="
-        When are you hoping to select an agency?
-        "
-      />
-      <div className="container">
-        <div className="columns is-centered is-multiline">
-          <QuickSelect text="Branding" />
-          <QuickSelect text="Branding" />
-          <QuickSelect text="Branding" />
-          <QuickSelect text="Branding" />
-          <QuickSelect text="Branding" />
-          <QuickSelect text="Branding" />
-          <QuickSelect text="Branding" />
+      <div className="hero">
+        <div className="hero-body">
+          <div className="container">
+            <PageHero
+              subtitle=" Your information"
+              paragraph="
+        How can we contact you?"
+            />
+            <div className="columns is-centered is-multiline is-variable is-0">
+              <QuickSelect text="Marketing" />
+              <QuickSelect text="Marketing" />
+              <QuickSelect text="Marketing" />
+              <QuickSelect text="Marketing" />
+              <QuickSelect text="Marketing" />
+            </div>
+          </div>
         </div>
       </div>
     </Section>

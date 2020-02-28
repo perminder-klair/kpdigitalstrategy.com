@@ -26,16 +26,14 @@ const Section = styled.div`
 const QuickSelect = ({ text }) => {
   return (
     <Section>
-      <div className="container">
-        <label>
-          <input type="radio" name="product" className="card-input-element" />
-          <div className="panel panel-default card-input">
-            <div className="column  has-text-centered">
-              <h5 className="title is-5 has-text-centered">{text}</h5>
-            </div>
+      <label>
+        <input type="radio" name="product" className="card-input-element" />
+        <div className="panel panel-default card-input">
+          <div className="column  has-text-centered">
+            <h5 className="title is-5 has-text-centered">{text}</h5>
           </div>
-        </label>
-      </div>
+        </div>
+      </label>
     </Section>
   );
 };
