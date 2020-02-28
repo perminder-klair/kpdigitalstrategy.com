@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Section = styled.section`
+const Section = styled.div`
   .background-image {
     width: 100%;
     height: 38rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.4rem;
   }
   .hero {
     background-color: ${props => props.theme.mainBrandColor};
@@ -22,14 +22,14 @@ const Border = styled.div`
   border-bottom: 1px solid;
   margin-top: -1.6rem;
 `;
-const FeatureCase = () => (
+const PortfolioShowCase = () => (
   <Section>
     <img
       className="background-image"
       src="/images/team/mock-up.png"
       alt="Heroimage"
     />
-    <div className="columns is-multiline is-variable is-2">
+    <div className="columns is-multiline is-variable is-3">
       <div className="column is-half">
         <img
           src="/images/team/epic-brand-guidelines-mockup-copy.png"
@@ -70,4 +70,4 @@ const FeatureCase = () => (
     <Border />
   </Section>
 );
-export default FeatureCase;
+export default PortfolioShowCase;

@@ -55,9 +55,11 @@ const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     background-color: ${theme.backgroundColor};
   }
-  .columns{
+  ${
+    '' /* .columns{
     margin-left: 0rem !important;
     margin-right:0rem !important;
+  } */
   }
   .title {
     font-family: ${theme.primaryFontFamily};
