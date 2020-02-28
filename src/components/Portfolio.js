@@ -1,7 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Section = styled.div``;
+const Section = styled.div`
+  .mg-top {
+    margin-top: -10px;
+  }
+`;
 
 const Portfolio = () => (
   <Section className="section">
@@ -14,7 +18,7 @@ const Portfolio = () => (
           Here are some examples of some of our latest design
         </h3>
       </div>
-      <div className="columns is-multiline is-variable is-1">
+      <div className="columns is-multiline is-variable is-2">
         <div className="column is-half">
           <img
             src="/images/dummy/image3.png"
@@ -29,14 +33,14 @@ const Portfolio = () => (
             title="kpdigital strategy Design"
           />
         </div>
-        <div className="column is-half">
+        <div className="column is-half mg-top">
           <img
             src="/images/dummy/image3.png"
             alt="daily mails logo"
             title="kpdigital strategy Design"
           />
         </div>
-        <div className="column is-half">
+        <div className="column is-half mg-top">
           <img
             src="/images/dummy/image1.png"
             alt="daily mails logo"

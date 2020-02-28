@@ -24,7 +24,7 @@ const Section = styled.div`
     content: '' !important;
     position: absolute;
     top: -11px;
-    left: -58px;
+    left: -18px;
     background-image: url('./images/team/Right scroll.png');
   }`;
 export default class Responsive extends Component {

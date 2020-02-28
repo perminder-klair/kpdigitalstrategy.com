@@ -3,9 +3,9 @@ import Seo from '../components/Seo';
 import config from '../utils/config';
 import Layout from '../components/Layout';
 import PageHero from '../components/PageHero';
-import HeaderCase from '../components/HeaderCase';
-import Solution from '../components/Solution';
-import FeatureCase from '../components/FeatureCase';
+import BrandHeaderCase from '../components/BrandHeaderCase';
+import SectionCase from '../components/SectionCase';
+import PortfolioShowCase from '../components/PortfolioShowCase';
 
 export default class IndividualCaseStudy extends React.Component {
   render() {
@@ -21,9 +21,9 @@ export default class IndividualCaseStudy extends React.Component {
           title="Branding.Web design.UX"
           subtitle="EPIC Risk Management"
         />
-        <HeaderCase />
-        <Solution />
-        <FeatureCase />
+        <BrandHeaderCase />
+        <SectionCase />
+        <PortfolioShowCase />
       </Layout>
     );
   }

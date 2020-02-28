@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Section = styled.div``;
 
-const Solution = () => (
+const SectionCase = () => (
   <Section className="section">
     <div className="container">
       <div className="columns">
@@ -29,4 +29,4 @@ const Solution = () => (
     </div>
   </Section>
 );
-export default Solution;
+export default SectionCase;

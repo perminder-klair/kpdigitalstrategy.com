@@ -12,7 +12,7 @@ const Border = styled.div`
 const HeaderCase = () => (
   <Section>
     <Border />
-    <div className="columns is-multiline is-variable is-2">
+    <div className="columns is-multiline is-variable is-3">
       <div className="column is-half">
         <img
           src="/images/team/website-epic-risk-management.png"
