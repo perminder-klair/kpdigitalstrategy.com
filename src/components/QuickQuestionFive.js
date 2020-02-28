@@ -13,7 +13,7 @@ const Section = styled.div`
 
 const QuickQuestionFive = () => {
   return (
-    <Section className="section">
+    <Section>
       <PageHero
         subtitle=" Question 5/5"
         paragraph="

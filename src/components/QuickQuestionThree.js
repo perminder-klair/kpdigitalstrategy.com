@@ -35,7 +35,7 @@ const QuickQuestionThree = () => {
         <div className="hero-body">
           <div className="container">
             <div className="columns is-centered">
-              <div className="column is-three-quarters">
+              <div className="column is-three-fifths">
                 <PageHero
                   subtitle=" Question 3/5"
                   paragraph="Did you find everything you were looking for above ?"

@@ -6,6 +6,7 @@ import QuickQuestionOne from '../components/QuickQuestionOne';
 import QuickQuestionThree from '../components/QuickQuestionThree';
 import QuickQuestionFour from '../components/QuickQuestionFour';
 import QuickQuestionFive from '../components/QuickQuestionFive';
+import QuickFeild from '../components/QuickFeild';
 
 export default class QuickPage extends React.Component {
   render() {
@@ -15,6 +16,7 @@ export default class QuickPage extends React.Component {
         <QuickQuestionThree />
         <QuickQuestionFour />
         <QuickQuestionFive />
+        <QuickFeild />
         <Seo
           title="Manchester Digital Marketing Agency"
           description="KP Digital Strategy"
