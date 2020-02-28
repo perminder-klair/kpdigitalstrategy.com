@@ -14,8 +14,22 @@ const Section = styled.section`
   .navbar-brand {
     margin-right: 20px;
     .navbar-item img {
-      max-height: 2rem;
+      max-height: 1.5rem;
     }
+  }
+  .request {
+    font-size: 13px;
+    border-radius: 12px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-weight: 100;
+  }
+  .cont {
+    font-size: 13px;
+    border-radius: 12px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 100;
   }
   .navbar-menu {
     @media screen and (max-width: 600px) {
@@ -94,7 +108,7 @@ export default class Header extends React.Component {
     const { View } = this.state;
     return (
       <Section className="section">
-        <div className="container">
+        <div className="">
           <nav
             className="navbar"
             role="navigation"
@@ -122,10 +136,13 @@ export default class Header extends React.Component {
               <div className="navbar-end">
                 <div className="navbar-item">
                   <div className="buttons is-hidden-mobile">
-                    <Link to="#" className="button is-danger is-rounded">
-                      Get an instant quote
+                    <Link
+                      to="#"
+                      className="button is-danger is-rounded request"
+                    >
+                      Request a quote
                     </Link>
-                    <Link to="/contact" className="button is-rounded">
+                    <Link to="/contact" className="button is-rounded cont">
                       Contact
                     </Link>
                   </div>

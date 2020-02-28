@@ -9,7 +9,7 @@ const Section = styled.div`
 const Border = styled.div`
   border-top: 1px solid;
 `;
-const HeaderCase = () => (
+const BrandHeaderCase = () => (
   <Section>
     <Border />
     <div className="columns is-multiline is-variable is-3">
@@ -60,4 +60,4 @@ const HeaderCase = () => (
   </Section>
 );
 
-export default HeaderCase;
+export default BrandHeaderCase;
