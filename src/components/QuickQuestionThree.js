@@ -7,6 +7,10 @@ const Section = styled.div`
   .hero-body {
     padding-top: 0rem;
   }
+
+  .cover {
+    border: 2px solid ${props => props.theme.mainBrandColor};
+  }
   .columns {
     padding-bottom: 2rem;
     border-bottom: 2px solid ${props => props.theme.mainBrandColor};
@@ -45,33 +49,6 @@ const QuickQuestionThree = () => {
                       rows="8"
                     />
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="hero">
-        <div className="hero-body">
-          <div className="columns is-centered">
-            <div className="column is-three-quarters">
-              <PageHero
-                subtitle=" Question 4/5"
-                paragraph="How many years has the company been operating ?"
-              />
-              <div>
-                <h1 className="title is-3 is-inline">{count}</h1>
-                <div className="is-flex">
-                  <button type="button" onClick={() => UpdateCount(count + 1)}>
-                    <span className="icon has-text-danger is-size-3">
-                      <i className="fas fa-caret-up" />
-                    </span>
-                  </button>
-                  <button type="button" onClick={() => UpdateCount(count - 1)}>
-                    <span className="icon has-text-danger is-size-3">
-                      <i className="fas fa-sort-down" />
-                    </span>
-                  </button>
                 </div>
               </div>
             </div>
