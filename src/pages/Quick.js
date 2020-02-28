@@ -5,6 +5,7 @@ import Seo from '../components/Seo';
 import QuickQuestionOne from '../components/QuickQuestionOne';
 import QuickQuestionThree from '../components/QuickQuestionThree';
 import QuickQuestionFour from '../components/QuickQuestionFour';
+import QuickQuestionFive from '../components/QuickQuestionFive';
 
 export default class QuickPage extends React.Component {
   render() {
@@ -13,6 +14,7 @@ export default class QuickPage extends React.Component {
         <QuickQuestionOne />
         <QuickQuestionThree />
         <QuickQuestionFour />
+        <QuickQuestionFive />
         <Seo
           title="Manchester Digital Marketing Agency"
           description="KP Digital Strategy"

@@ -16,7 +16,7 @@ const Section = styled.div`
     display: inline-flex;
   }
 
-  .dd {
+  .wrapper {
     display: grid;
   }
   .text {
@@ -42,7 +42,7 @@ const QuickQuestionFour = () => {
                   {count}
                 </h1>
               </div>
-              <div className="dd">
+              <div className="wrapper">
                 <button type="button" onClick={() => UpdateCount(count + 1)}>
                   <span className="icon has-text-danger is-size-3">
                     <i className="fas fa-caret-up" />
