@@ -5,8 +5,9 @@ import { Link } from 'gatsby';
 
 const Container = styled.section`
     section {
-      /* border: 2px solid ${props => props.theme.mainBrandColor}; */
-      height: 30rem;
+    
+      height: 368.5px;
+      
     }
     .container {
       align-items: center;
@@ -16,6 +17,8 @@ const Container = styled.section`
     }
     img {
       margin: 2rem 0rem;
+      height: 60px;
+    width: 82px;
     }
     p {
       margin-bottom: 2rem;

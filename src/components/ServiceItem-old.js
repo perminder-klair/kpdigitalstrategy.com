@@ -9,6 +9,7 @@ const Section = styled.section`
   .button {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    border-radius: 12.5px;
   }
 `;
 
@@ -28,7 +29,7 @@ const ServiceItem = () => (
           />
 
           <button
-            className="button is-medium is-danger is-rounded has-text-weight-semibold"
+            className="button is-medium is-danger has-text-weight-semibold"
             type="button"
           >
             View our portfolio
