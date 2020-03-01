@@ -8,7 +8,7 @@ const Section = styled.div`
     display: inline-flex;
     height: 78px;
     width: 225px;
-    margin: 0.5rem 2rem 1rem 2rem;
+    margin: 0.5rem 0rem 1rem 6rem;
     border: 2px solid ${props => props.theme.mainBrandColor};
   }
   .card-input-element {
