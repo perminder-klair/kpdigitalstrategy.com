@@ -16,6 +16,11 @@ const Container = styled.div`
   .media-content {
     padding: 1.5rem 3rem;
   }
+  .button {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 12.5px;
+  }
 `;
 
 const ProductSlider = () => (
@@ -33,7 +38,7 @@ const ProductSlider = () => (
           Website Design & Development
         </h2>
         <button
-          className="button is-medium is-danger is-rounded has-text-weight-semibold"
+          className="button is-medium is-danger has-text-weight-semibold"
           type="button"
         >
           Explore this product
