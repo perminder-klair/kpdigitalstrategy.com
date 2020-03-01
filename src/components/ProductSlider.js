@@ -39,8 +39,7 @@ const ProductSlider = () => (
         </h2>
         <button
           className="button is-medium is-danger has-text-weight-semibold"
-          type="button"
-        >
+          type="button">
           Explore this product
         </button>
       </div>

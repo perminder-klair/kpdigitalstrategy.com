@@ -30,8 +30,7 @@ const ServiceItem = () => (
 
           <button
             className="button is-medium is-danger has-text-weight-semibold"
-            type="button"
-          >
+            type="button">
             View our portfolio
           </button>
         </div>
