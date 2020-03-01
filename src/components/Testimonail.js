@@ -28,7 +28,7 @@ const Container = styled.section`
 
 const Testimonial = ({ title, subtitle, button, icon }) => (
   <Container className="column is-half">
-    <section className="section">
+    <div className="section">
       <div className="container">
         <img src={icon} title={title} alt={title} />
         <div className="media-content has-text-centered">
@@ -37,7 +37,7 @@ const Testimonial = ({ title, subtitle, button, icon }) => (
           <Link className="is-size-6 has-text-weight-bold">{button}</Link>
         </div>
       </div>
-    </section>
+    </div>
   </Container>
 );
 export default Testimonial;

@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import ContactForm from "./ContactForm";
+import ContactForm from './ContactForm';
 
 const Container = styled.section`
   padding: 1rem 1.5rem;
@@ -20,8 +20,8 @@ const Container = styled.section`
 const ContactHero = props => (
   <Container className="section">
     <div className="container">
-      <div className="columns">
-        <div className="column is-5">
+      <div className="columns is-variable is-8">
+        <div className="column is-one-third">
           <section className="hero  is-bold">
             <div className="hero-body">
               <div className="container">
@@ -35,8 +35,10 @@ const ContactHero = props => (
             </div>
           </section>
         </div>
-        <div className="column is-7">
-          <ContactForm display={props.textareaay} />
+        <div className="column is-6">
+          <div className="container">
+            <ContactForm display={props.textareaay} />
+          </div>
         </div>
       </div>
     </div>

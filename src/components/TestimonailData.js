@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import Testimonail from './Testimonail';
 
 const Container = styled.section`
-  border-top: 1px solid #ffff;
   padding: 5rem 1.5rem;
   background-color: ${props => (props.backgroundColor ? '#FF3860' : '#000')};
 
