@@ -9,10 +9,6 @@ const Section = styled.section``;
 const FeaturesArticles = ({ data }) => (
   <Section className="section">
     <div className="container">
-      <h1 className="title is-3">Featured</h1>
-      <h2 className="subtitle is-5 has-text-danger">
-        Articles on KP Digital Strategy
-      </h2>
       <div className="columns is-multiline">
         {data.map(item => (
           <ArticleCard
