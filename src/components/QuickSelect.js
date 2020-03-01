@@ -6,9 +6,9 @@ const Section = styled.div`
   .panel {
     background-color: ${props => props.theme.backgroundColor};
     display: inline-flex;
-    padding: 5px 30px 5px 30px;
-    margin: 1rem;
-
+    height: 78px;
+    width: 225px;
+    margin: 0.5rem 2rem 1rem 2rem;
     border: 2px solid ${props => props.theme.mainBrandColor};
   }
   .card-input-element {
@@ -21,19 +21,24 @@ const Section = styled.div`
   .card-input:hover {
     cursor: pointer;
   }
+  .title {
+    padding-top: 1rem;
+  }
 `;
 
 const QuickSelect = ({ text }) => {
   return (
     <Section>
-      <label>
-        <input type="radio" name="product" className="card-input-element" />
-        <div className="panel panel-default card-input">
-          <div className="column  has-text-centered">
-            <h5 className="title is-5 has-text-centered">{text}</h5>
+      <div className="container">
+        <label>
+          <input type="radio" name="product" className="card-input-element" />
+          <div className="panel panel-default card-input">
+            <div className="column  has-text-centered">
+              <h5 className="title is-5 has-text-centered">{text}</h5>
+            </div>
           </div>
-        </div>
-      </label>
+        </label>
+      </div>
     </Section>
   );
 };

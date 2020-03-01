@@ -28,6 +28,7 @@ const QuickQuestionFive = () => {
               <QuickSelect text="Marketing" />
               <QuickSelect text="Marketing" />
               <QuickSelect text="Marketing" />
+              <QuickSelect text="Marketing" />
             </div>
           </div>
         </div>
