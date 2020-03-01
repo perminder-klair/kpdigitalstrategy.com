@@ -10,14 +10,10 @@ const Section = styled.section`
     padding-left: 4rem;
     border-radius: 0.8rem;
   }
-  .text {
-    margin-top: 1.5rem;
-    padding-inline-end: 0rem;
-  }
   .columns {
     justify-content: space-around;
   }
-  .pdright {
+  .text {
     padding-right: 2.5rem;
   }
   .line {
@@ -40,32 +36,28 @@ const GetInTouch = () => (
   <Section className="section">
     <div className="container">
       <div className="columns">
-        <div className="column text is-half pdright">
-          <div className="text">
-            <p className="subtitle is-3 has-text-weight-medium is-spaced ">
-              Purposeful design and marketing services for aspirational
-              companies
-            </p>
+        <div className="column text is-half">
+          <p className="subtitle is-3 has-text-weight-medium is-spaced ">
+            Purposeful design and marketing services for aspirational companies
+          </p>
 
-            <p className="subtitle is-6 is-spaced has-text-danger has-text-weight-normal">
-              We align design, marketing and sales to empower business growth.
-            </p>
+          <p className="subtitle is-6 is-spaced has-text-danger has-text-weight-normal">
+            We align design, marketing and sales to empower business growth.
+          </p>
 
-            <p className="title is-6 is-spaced has-text-weight-light line">
-              We are passionate problem solvers who define objectives, pinpoint
-              challenges and above all else are on your side celebrating your
-              every win.
-            </p>
-            <p className="subtitle is-6 is-spaced has-text-weight-light line">
-              No matter the size of your project, or if you are just starting
-              out, KP Digital Strategy has everything you need to unlock your
-              brand’s potential.
-            </p>
-            <p className="title is-6 is-spaced has-text-weight-normal">
-              You can send us a message or you can fill in our quick enquiry
-              form.
-            </p>
-          </div>
+          <p className="title is-6 is-spaced has-text-weight-light line">
+            We are passionate problem solvers who define objectives, pinpoint
+            challenges and above all else are on your side celebrating your
+            every win.
+          </p>
+          <p className="subtitle is-6 is-spaced has-text-weight-light line">
+            No matter the size of your project, or if you are just starting out,
+            KP Digital Strategy has everything you need to unlock your brand’s
+            potential.
+          </p>
+          <p className="title is-6 is-spaced has-text-weight-normal">
+            You can send us a message or you can fill in our quick enquiry form.
+          </p>
         </div>
 
         <div className="column is-one-third">

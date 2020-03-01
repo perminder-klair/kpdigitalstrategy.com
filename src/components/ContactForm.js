@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Container = styled.div`
   padding: 1rem 1.5rem;
@@ -41,7 +41,7 @@ const ContactForm = ({ display }) => (
           />
         </div>
       </div>
-      <div className={display ? "field" : "is-hidden"}>
+      <div className={display ? 'field' : 'is-hidden'}>
         <textarea className="textarea" placeholder="Enter Your Message" />
       </div>
       <div className="text">
