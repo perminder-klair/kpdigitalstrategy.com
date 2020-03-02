@@ -5,6 +5,13 @@ const Section = styled.div`
   .columns {
     margin-bottom: -0.9rem;
   }
+  img {
+    transition: transform 0.8s;
+    margin: 0 auto;
+  }
+  img:hover {
+    transform: scale(1.05);
+  }
 `;
 const Border = styled.div`
   border-top: 1px solid;
