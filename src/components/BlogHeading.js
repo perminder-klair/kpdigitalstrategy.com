@@ -27,6 +27,12 @@ const Section = styled.section`
       margin-right: auto;
     }
   }
+  .columns {
+    margin-right: 0;
+  }
+  .left {
+    padding-left: 1.5rem;
+  }
 `;
 
 class BlogHeading extends React.Component {
@@ -38,30 +44,32 @@ class BlogHeading extends React.Component {
           className="background-image"
           src="/images/service/top-image-block@2x.png"
           alt="backimage"
-        />
-        <div className="blog-heading">
-          <div className="columns">
-            <div className="column is-4 has-text-right">
-              <figure className="image is-128x128">
-                <img
-                  className="is-rounded"
-                  src="/images/service/kelly-pierduta-photo.png"
-                  alt="Branding"
-                />
-                <p>Written by Kelly</p>
-              </figure>
-            </div>
-            <div className="column">
-              <h3 className="title is-3">
-                {' '}
-                10 reasons Why you should use infographics in marketing
-              </h3>
-              <h3 className="title is-6 has-text-weight-medium">
-                Last Updated Friday 20th September 2019
-              </h3>
+        />{' '}
+        <section className="">
+          <div className="blog-heading">
+            <div className="columns">
+              <div className="column is-4 has-text-right">
+                <figure className="image is-128x128">
+                  <img
+                    className="is-rounded"
+                    src="/images/service/kelly-pierduta-photo.png"
+                    alt="Branding"
+                  />
+                  <p>Written by Kelly</p>
+                </figure>
+              </div>
+              <div className="column left">
+                <h3 className="title is-3">
+                  {' '}
+                  10 reasons Why you should use infographics in marketing
+                </h3>
+                <h3 className="title is-6 has-text-weight-medium">
+                  Last Updated Friday 20th September 2019
+                </h3>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
       </Section>
     );
   }
