@@ -12,7 +12,7 @@ const ContactForm = ({ display }) => (
   <Container>
     <section className="section">
       <h2 className="subtitle is-6 has-text-left is has-text-danger">
-        We will Touch in 24 hours.
+        We will be in touch within 24 hours.
       </h2>
       <div className="field">
         <div className="control">
