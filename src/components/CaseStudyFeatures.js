@@ -6,9 +6,13 @@ const Section = styled.div`
     margin-bottom: -0.9rem;
   }
 `;
+const Border = styled.div`
+  border-top: 1px solid;
+`;
 
 const CaseStudyFeatures = () => (
   <Section>
+    <Border />
     <div className="columns is-multiline">
       <div className="column is-half">
         <img src="/images/team/case-study-image@2x.png" alt="case-studies" />
