@@ -6,9 +6,9 @@ const Section = styled.div`
   .panel {
     background-color: ${props => props.theme.backgroundColor};
     display: inline-flex;
-    height: 78px;
-    width: 225px;
-    margin: 0.5rem 0rem 1rem 2.5rem;
+    height: 88px;
+    width: 255px;
+    margin: 0.5rem 1rem 1rem 2.5rem;
     border: 2px solid ${props => props.theme.mainBrandColor};
   }
   .card-input-element {

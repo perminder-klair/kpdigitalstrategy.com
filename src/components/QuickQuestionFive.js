@@ -18,9 +18,9 @@ const QuickQuestionFive = () => {
         <div className="hero-body">
           <div className="container">
             <PageHero
-              subtitle=" Your information"
+              subtitle="  Question 5/5"
               paragraph="
-        How can we contact you?"
+              When are you hoping to select an agency?"
             />
             <div className="columns is-centered is-multiline is-variable is-0">
               <QuickSelect text="Marketing" />
