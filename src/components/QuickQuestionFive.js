@@ -23,12 +23,24 @@ const QuickQuestionFive = () => {
               When are you hoping to select an agency?"
             />
             <div className="columns is-centered is-multiline is-variable is-0">
-              <QuickSelect text="Marketing" />
-              <QuickSelect text="Marketing" />
-              <QuickSelect text="Marketing" />
-              <QuickSelect text="Marketing" />
-              <QuickSelect text="Marketing" />
-              <QuickSelect text="Marketing" />
+              <div className="column is-4  is-centered">
+                <QuickSelect text="Marketing" />
+              </div>
+              <div className="column is-4  is-centered">
+                <QuickSelect text="Marketing" />
+              </div>{' '}
+              <div className="column is-4  is-centered">
+                <QuickSelect text="Marketing" />
+              </div>{' '}
+              <div className="column is-4  is-centered">
+                <QuickSelect text="Marketing" />
+              </div>{' '}
+              <div className="column is-4  is-centered">
+                <QuickSelect text="Marketing" />
+              </div>{' '}
+              <div className="column is-4  is-centered">
+                <QuickSelect text="Marketing" />
+              </div>
             </div>
           </div>
         </div>

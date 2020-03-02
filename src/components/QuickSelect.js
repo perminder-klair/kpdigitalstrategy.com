@@ -2,13 +2,13 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-const Section = styled.div`
+const Container = styled.div`
+  text-align-last: center;
   .panel {
     background-color: ${props => props.theme.backgroundColor};
     display: inline-flex;
-    height: 88px;
-    width: 255px;
-    margin: 0.5rem 1rem 1rem 2.5rem;
+    padding: 25px 82px 25px 82px;
+
     border: 2px solid ${props => props.theme.mainBrandColor};
   }
   .card-input-element {
@@ -28,18 +28,16 @@ const Section = styled.div`
 
 const QuickSelect = ({ text }) => {
   return (
-    <Section>
-      <div className="container">
-        <label>
-          <input type="radio" name="product" className="card-input-element" />
-          <div className="panel panel-default card-input">
-            <div className="column  has-text-centered">
-              <h5 className="title is-5 has-text-centered">{text}</h5>
-            </div>
+    <Container>
+      <label>
+        <input type="radio" name="product" className="card-input-element" />
+        <div className="panel panel-default card-input">
+          <div className="column  has-text-centered">
+            <h5 className="title is-5 has-text-centered">{text}</h5>
           </div>
-        </label>
-      </div>
-    </Section>
+        </div>
+      </label>
+    </Container>
   );
 };
 
