@@ -23,7 +23,7 @@ export const serviceQuery = graphql`
       }
       herotitle
       herosubtitle
-      products {
+      product {
         title
         slug {
           current
@@ -60,7 +60,7 @@ export default class ServicePage extends React.Component {
         />
         <OurValue />
         <ServiceItem />
-        <Products data={service.products} />
+        <Products data={service.product} />
         <ReachUs />
         <Portfolio />
         <Strengths />

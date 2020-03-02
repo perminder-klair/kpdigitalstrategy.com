@@ -16,7 +16,7 @@ import TestimonailData from '../components/TestimonailData';
 
 export const productQuery = graphql`
   query product($slug: String) {
-    sanityProducts(slug: { current: { eq: $slug } }) {
+    sanityProduct(slug: { current: { eq: $slug } }) {
       slug {
         current
       }

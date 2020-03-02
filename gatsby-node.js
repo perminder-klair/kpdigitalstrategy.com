@@ -15,7 +15,7 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
-      allSanityProducts {
+      allSanityProduct {
         edges {
           node {
             slug {
@@ -38,7 +38,7 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  result.data.allSanityProducts.edges.forEach(({ node }) => {
+  result.data.allSanityProduct.edges.forEach(({ node }) => {
     const pagePath = `product/${node.slug.current}`;
     createPage({
       path: pagePath,
