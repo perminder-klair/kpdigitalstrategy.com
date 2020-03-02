@@ -66,9 +66,9 @@ class BlogContent extends React.Component {
             <p className="has-text-danger has-text-weight-semibold">
               Related Content
             </p>
-            <BlogContentcard />
-            <BlogContentcard />
-            <BlogContentcard />
+            <BlogContentcard text="Create a killer Google Ads campaign with these 5 top tips" />
+            <BlogContentcard text="5 essential steps to create your content marketing strategy" />
+            <BlogContentcard text="How to attract people to your website" />
             <div className="tags is-block">
               <p className="is-block  has-text-weight-semibold">Tags</p>
               <span className="tag is-rounded is-danger has-text-weight-semibold">
