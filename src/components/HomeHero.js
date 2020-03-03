@@ -16,9 +16,10 @@ const Section = styled.section`
     height: 2rem;
   }
   .button {
-    padding-right: 2.75rem;
-    padding-left: 2.75rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
     margin-top: 1rem;
+    border-radius: 0.6rem;
   }
   .hero-body {
     padding-bottom: 4rem !important;
@@ -47,7 +48,7 @@ const HomeHero = () => (
                 to reach new business heights.
               </HelpText>
               <button
-                className="button is-danger is-rounded has-text-weight-semibold is-size-6"
+                className="button is-danger is-rounded has-text-weight-medium is-size-6"
                 type="button"
               >
                 Get started

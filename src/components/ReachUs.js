@@ -21,7 +21,7 @@ const ReachUs = () => (
     <div className="container">
       <div className="columns">
         <div className="column is-8 has-text-centered">
-          <p className="is-size-5 has-text-weight-semibold">
+          <p className="is-size-5 has-text-weight-medium">
             Want to discuss your project with one of our expert team?
           </p>
         </div>
