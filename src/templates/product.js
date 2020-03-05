@@ -29,7 +29,7 @@ export const productQuery = graphql`
 export default class ProductPage extends React.Component {
   render() {
     const {
-      data: { sanityProducts: product },
+      data: { sanityProduct: product },
     } = this.props;
     return (
       <Layout>
