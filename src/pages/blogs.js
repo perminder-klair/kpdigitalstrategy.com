@@ -11,7 +11,6 @@ import FeaturesArticles from '../components/FeaturesArticles';
 import BrandIdentity from '../components/BrandIdentity';
 import OurValue from '../components/OurValue';
 import ReachUs from '../components/ReachUs';
-import Block from '../components/PortableText';
 
 export const blogQuery = graphql`
   query blogQuery {

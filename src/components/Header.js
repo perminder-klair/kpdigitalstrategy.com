@@ -203,11 +203,6 @@ export default class Header extends React.Component {
             </Link>
           </div>
           <div className="list-item">
-            <Link to="/IndividualCaseStudy" className="has-text-white">
-              Individual Case-Study
-            </Link>
-          </div>
-          <div className="list-item">
             <Link to="/Thankyou" className="has-text-white">
               Thankyou Page
             </Link>
