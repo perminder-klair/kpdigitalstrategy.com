@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset-advanced';
-import { darken, lighten } from 'polished';
+import { lighten } from 'polished';
 
 const mainBrandColor = '#FF3860';
 const lightShades = '#F9F9F9';
@@ -98,6 +98,7 @@ const GlobalStyle = createGlobalStyle`
     border-width: 0px;
     :hover {
       background-color:${theme.darkShades}!important;
+    }
   }
   .button.is-outlined {
     background-color: transparent;
