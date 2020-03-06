@@ -34,86 +34,92 @@ ul, li {
   padding-bottom: 1.5rem;
 }
 `;
+const Border = styled.div`
+  border-top: 1px solid;
+`;
 const QuickQuestionOne = () => {
   const [tab, tabSelected] = useState('zero');
   return (
-    <Section className="section">
-      <div className="container">
-        <PageHero title="Quick quote form" subtitle="(3 minutes)" />
-        <PageHero
-          title="Let’s talk about your project"
-          subtitle="Question 1/5"
-          paragraph="What type of project are you looking to start ? Select all that apply"
-        />
-        <Tabs>
-          <div className="tabs-border">
-            <TabList>
-              <Tab>
-                <QuickTabOptions
-                  selected={tab === 'first'}
-                  onPress={() => tabSelected('first')}
-                  redIcon="/images/icons/branding-icon.png"
-                  whiteIcon="/images/icons/target-icon.png"
-                  text="Branding"
-                />
-              </Tab>
-              <Tab>
-                <QuickTabOptions
-                  selected={tab === 'second'}
-                  onPress={() => tabSelected('second')}
-                  redIcon="/images/icons/website-icon.png"
-                  whiteIcon="/images/icons/target-icon.png"
-                  text="Website"
-                />
-              </Tab>
-              <Tab>
-                <QuickTabOptions
-                  selected={tab === 'third'}
-                  onPress={() => tabSelected('third')}
-                  redIcon="/images/icons/marketing-icon.png"
-                  whiteIcon="/images/icons/target-icon.png"
-                  text="Marketing"
-                />
-              </Tab>
-            </TabList>
-          </div>
+    <div>
+      <PageHero title="Quick quote form" subtitle="(3 minutes)" />
+      <Border />
+      <Section className="section">
+        <div className="container">
           <PageHero
             title="Let’s talk about your project"
-            subtitle="Question 2/5"
-            paragraph=" What do you need help with? Select all that apply"
+            subtitle="Question 1/5"
+            paragraph="What type of project are you looking to start ? Select all that apply"
           />
-          <div className="panels">
-            <TabPanel>
-              {' '}
-              <div className="columns is-centered is-multiline">
-                <QuickCheckBox id="1" value="1" />
-                <QuickCheckBox id="2" value="2" />
-                <QuickCheckBox id="3" value="3" />
-              </div>
-            </TabPanel>
+          <Tabs>
+            <div className="tabs-border">
+              <TabList>
+                <Tab>
+                  <QuickTabOptions
+                    selected={tab === 'first'}
+                    onPress={() => tabSelected('first')}
+                    redIcon="/images/icons/branding-icon.png"
+                    whiteIcon="/images/icons/target-icon.png"
+                    text="Branding"
+                  />
+                </Tab>
+                <Tab>
+                  <QuickTabOptions
+                    selected={tab === 'second'}
+                    onPress={() => tabSelected('second')}
+                    redIcon="/images/icons/website-icon.png"
+                    whiteIcon="/images/icons/target-icon.png"
+                    text="Website"
+                  />
+                </Tab>
+                <Tab>
+                  <QuickTabOptions
+                    selected={tab === 'third'}
+                    onPress={() => tabSelected('third')}
+                    redIcon="/images/icons/marketing-icon.png"
+                    whiteIcon="/images/icons/target-icon.png"
+                    text="Marketing"
+                  />
+                </Tab>
+              </TabList>
+            </div>
+            <PageHero
+              title="Let’s talk about your project"
+              subtitle="Question 2/5"
+              paragraph=" What do you need help with? Select all that apply"
+            />
+            <div className="panels">
+              <TabPanel>
+                {' '}
+                <div className="columns is-centered is-multiline">
+                  <QuickCheckBox id="1" value="1" />
+                  <QuickCheckBox id="2" value="2" />
+                  <QuickCheckBox id="3" value="3" />
+                </div>
+              </TabPanel>
 
-            <TabPanel>
-              <div className="columns is-centered is-multiline">
-                <QuickCheckBox id="1" value="1" />
-                <QuickCheckBox id="2" value="2" />
-                <QuickCheckBox id="3" value="3" />
-                <QuickCheckBox id="4" value="4" />
-              </div>
-            </TabPanel>
-            <TabPanel>
-              <div className="columns is-centered is-multiline">
-                <QuickCheckBox id="1" value="1" />
-                <QuickCheckBox id="2" value="2" />
-                <QuickCheckBox id="3" value="3" />
-                <QuickCheckBox id="4" value="4" />
-                <QuickCheckBox id="5" value="5" />
-                <QuickCheckBox id="6" value="6" />
-              </div>
-            </TabPanel>
-          </div>
-        </Tabs>
-      </div>
-    </Section>
+              <TabPanel>
+                <div className="columns is-centered is-multiline">
+                  <QuickCheckBox id="1" value="1" />
+                  <QuickCheckBox id="2" value="2" />
+                  <QuickCheckBox id="3" value="3" />
+                  <QuickCheckBox id="4" value="4" />
+                </div>
+              </TabPanel>
+              <TabPanel>
+                <div className="columns is-centered is-multiline">
+                  <QuickCheckBox id="1" value="1" />
+                  <QuickCheckBox id="2" value="2" />
+                  <QuickCheckBox id="3" value="3" />
+                  <QuickCheckBox id="4" value="4" />
+                  <QuickCheckBox id="5" value="5" />
+                  <QuickCheckBox id="6" value="6" />
+                </div>
+              </TabPanel>
+            </div>
+          </Tabs>
+        </div>
+      </Section>
+    </div>
   );
 };
 export default QuickQuestionOne;
