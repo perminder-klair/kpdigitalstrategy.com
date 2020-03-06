@@ -17,7 +17,10 @@ export const blogQuery = graphql`
     allSanityBlog {
       edges {
         node {
-          categorie
+          slug {
+            current
+          }
+          category
           title
           Thumbnail {
             asset {

@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
+
+import Block from './PortableText';
 
 const Container = styled.div`
   .card {
@@ -22,27 +25,34 @@ const Container = styled.div`
   }
 `;
 
-const ArticleCard = ({ image, alt, h2, title, subtitle }) => (
-  <Container className="column is-4">
-    <div className="card">
-      <div className="card-image">
-        <figure className="image is-4by3">
-          <img src={image} alt={alt} />
-        </figure>
+const ArticleCard = ({ data }) => {
+  return (
+    <Container className="column is-4">
+      <div className="card">
+        <div className="card-image">
+          <figure className="image is-4by3">
+            <img src={data.Thumbnail.asset.url} alt="kp-digital" />
+          </figure>
+        </div>
+        <div className="media-content has-text-centered">
+          <h2 className="subtitle is-6 has-text-danger is-spaced">
+            {data.category}
+          </h2>
+          <h2 className="title is-5  has-text-white is-spaced">{data.title}</h2>
+          <p className="subtitle is-6 has-text-white">
+            <Block input={data._rawBody} />
+          </p>
+          <Link
+            to={`/blog/${data.slug.current}`}
+            className="button is-danger is-rounded has-text-weight-bold"
+            type="Read More"
+          >
+            Read More
+          </Link>
+        </div>
       </div>
-      <div className="media-content has-text-centered">
-        <h2 className="subtitle is-6 has-text-danger is-spaced">{h2}</h2>
-        <h2 className="title is-5  has-text-white is-spaced">{title}</h2>
-        <p className="subtitle is-6 has-text-white">{subtitle}</p>
-        <button
-          className="button is-danger is-rounded has-text-weight-bold"
-          type="Read More"
-        >
-          Read More
-        </button>
-      </div>
-    </div>
-  </Container>
-);
+    </Container>
+  );
+};
 
 export default ArticleCard;

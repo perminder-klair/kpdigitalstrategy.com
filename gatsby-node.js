@@ -24,6 +24,15 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      allSanityBlog {
+        edges {
+          node {
+            slug {
+              current
+            }
+          }
+        }
+      }
     }
   `);
 
@@ -43,6 +52,17 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: pagePath,
       component: path.resolve(`./src/templates/product.js`),
+      context: {
+        slug: node.slug.current,
+      },
+    });
+  });
+
+  result.data.allSanityBlog.edges.forEach(({ node }) => {
+    const pagePath = `blog/${node.slug.current}`;
+    createPage({
+      path: pagePath,
+      component: path.resolve(`./src/templates/blog.js`),
       context: {
         slug: node.slug.current,
       },

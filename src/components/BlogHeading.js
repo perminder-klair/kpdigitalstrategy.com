@@ -37,7 +37,7 @@ const Section = styled.section`
 
 class BlogHeading extends React.Component {
   render() {
-    // const { page } = this.props;
+    const { title } = this.props;
     return (
       <Section>
         <img
@@ -59,10 +59,7 @@ class BlogHeading extends React.Component {
                 </figure>
               </div>
               <div className="column left">
-                <h3 className="title is-3">
-                  {' '}
-                  10 reasons Why you should use infographics in marketing
-                </h3>
+                <h3 className="title is-3"> {title}</h3>
                 <h3 className="title is-6 has-text-weight-medium">
                   Last Updated Friday 20th September 2019
                 </h3>

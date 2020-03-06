@@ -10,8 +10,22 @@ import PageHero from '../components/PageHero';
 import BlogHeading from '../components/BlogHeading';
 import BlogContent from '../components/BlogContent';
 
-export default class IndividualPage extends React.Component {
+export const blogPageQuery = graphql`
+  query blogPageQuery($slug: String) {
+    sanityBlog(slug: { current: { eq: $slug } }) {
+      slug {
+        current
+      }
+      title
+    }
+  }
+`;
+
+export default class IndividualBlog extends React.Component {
   render() {
+    const {
+      data: { sanityBlog: blog },
+    } = this.props;
     return (
       <Layout>
         <Seo
@@ -24,7 +38,7 @@ export default class IndividualPage extends React.Component {
           title="Our design & marketing advice centre"
           subtitle="A collection of resources to support your business growth"
         />
-        <BlogHeading />
+        <BlogHeading title={blog.title} />
         <BlogContent />
         <OurValue />
         <BrandIdentity />
