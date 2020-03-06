@@ -173,17 +173,17 @@ export default class Header extends React.Component {
         </HeadDivider>
         <Dropdown className={View ? 'list has-text-centered' : 'is-hidden'}>
           <div className="list-item">
-            <Link to="/OverView" className="has-text-white">
+            <Link to="/overView" className="has-text-white">
               Overview-Service
             </Link>
           </div>
           <div className="list-item">
-            <Link to="/LandingPage" className="has-text-white">
+            <Link to="/landingPage" className="has-text-white">
               LandingPage
             </Link>
           </div>
           <div className="list-item">
-            <Link to="/Quick" className="has-text-white">
+            <Link to="/quick" className="has-text-white">
               Quick
             </Link>
           </div>
@@ -193,27 +193,27 @@ export default class Header extends React.Component {
             </Link>
           </div>
           <div className="list-item">
-            <Link to="/IndividualBlog" className="has-text-white">
-              Individual-blog
+            <Link to="/individualCaseStudy" className="has-text-white">
+              Individual Case Study
             </Link>
           </div>
           <div className="list-item">
-            <Link to="/AboutUs" className="has-text-white">
+            <Link to="/about" className="has-text-white">
               About us
             </Link>
           </div>
           <div className="list-item">
-            <Link to="/Thankyou" className="has-text-white">
+            <Link to="/thankYou" className="has-text-white">
               Thankyou Page
             </Link>
           </div>
           <div className="list-item">
-            <Link to="/Generic" className="has-text-white">
+            <Link to="/generic" className="has-text-white">
               Generic
             </Link>
           </div>
           <div className="list-item">
-            <Link to="/CaseStudies" className="has-text-white">
+            <Link to="/caseStudies" className="has-text-white">
               Case-Studies
             </Link>
           </div>
