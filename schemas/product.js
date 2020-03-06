@@ -1,13 +1,8 @@
 export default {
-  name: 'service',
-  title: 'Service',
+  name: 'product',
+  title: 'Product',
   type: 'document',
   fields: [
-    {
-      title: 'order',
-      name: 'Order',
-      type: 'number',
-    },
     {
       name: 'title',
       title: 'Title',
@@ -30,7 +25,7 @@ export default {
     {
       title: 'Description',
       name: 'description',
-      type: 'text',
+      type: 'string',
     },
     {
       name: 'herotitle',
@@ -41,17 +36,6 @@ export default {
       name: 'herosubtitle',
       title: 'Hero Subtitle',
       type: 'string',
-    },
-    {
-      title: 'Product',
-      name: 'product',
-      type: 'array',
-      of: [
-        {
-          type: 'reference',
-          to: [{ type: 'product' }],
-        },
-      ],
     },
   ],
 };
