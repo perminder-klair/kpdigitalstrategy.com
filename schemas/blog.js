@@ -37,6 +37,26 @@ export default {
       title: 'Body',
       type: 'blockContent',
     },
+    {
+      title: 'Related Content',
+      name: 'relatedcontent',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'blog' }],
+        },
+      ],
+    },
+    {
+      title: 'Tags',
+      name: 'tags',
+      type: 'array',
+      of: [{ type: 'string' }],
+      options: {
+        layout: 'tags',
+      },
+    },
   ],
 
   preview: {
