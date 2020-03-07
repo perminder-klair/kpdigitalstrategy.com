@@ -35,41 +35,36 @@ const Section = styled.section`
   }
 `;
 
-class BlogHeading extends React.Component {
-  render() {
-    const { title } = this.props;
-    return (
-      <Section>
-        <img
-          className="background-image"
-          src="/images/service/top-image-block@2x.png"
-          alt="backimage"
-        />{' '}
-        <section className="">
-          <div className="blog-heading">
-            <div className="columns">
-              <div className="column is-4 has-text-right">
-                <figure className="image is-128x128">
-                  <img
-                    className="is-rounded"
-                    src="/images/service/kelly-pierduta-photo.png"
-                    alt="Branding"
-                  />
-                  <p>Written by Kelly</p>
-                </figure>
-              </div>
-              <div className="column left">
-                <h3 className="title is-3"> {title}</h3>
-                <h3 className="title is-6 has-text-weight-medium">
-                  Last Updated Friday 20th September 2019
-                </h3>
-              </div>
-            </div>
+const BlogHeading = ({ data }) => (
+  <Section>
+    <img
+      className="background-image"
+      src="/images/service/top-image-block@2x.png"
+      alt="backimage"
+    />{' '}
+    <section className="">
+      <div className="blog-heading">
+        <div className="columns">
+          <div className="column is-4 has-text-right">
+            <figure className="image is-128x128">
+              <img
+                className="is-rounded"
+                src="/images/service/kelly-pierduta-photo.png"
+                alt="Branding"
+              />
+              <p>Written by Kelly</p>
+            </figure>
           </div>
-        </section>
-      </Section>
-    );
-  }
-}
+          <div className="column left">
+            <h3 className="title is-3"> {data.title}</h3>
+            <h3 className="title is-6 has-text-weight-medium has-text-danger">
+              Last Updated {data.publishedAt}
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </Section>
+);
 
 export default BlogHeading;

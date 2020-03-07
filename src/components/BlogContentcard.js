@@ -1,32 +1,37 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 const Container = styled.div`
   margin-top: 2rem;
   margin-bottom: 2rem;
-  .is-4 {
-    background: url('https://econ70.com/wp-content/uploads/2019/05/working-women.jpg');
-    border-top-left-radius: 1rem;
-    padding-bottom: 8rem;
-  }
-  .first {
+  .columns {
     background-color: ${props => props.theme.backgroundColorGrey};
   }
+  .is-5 {
+    padding: 0rem;
+  }
+  img {
+    height: 8rem;
+  }
   .subtitle {
-    padding: 1rem;
-    line-height: 1.25;
+    padding-top: 1rem;
   }
 `;
 
-const BlogContentcard = ({ text }) => (
-  <Container className="container has-text-centered">
-    <div className="columns">
-      <div className="column is-4 has-text-centered" />
-      <div className="column first is-7 has-text-left">
-        <h1 className="subtitle">{text}</h1>
+const BlogContentCard = ({ data }) => (
+  <Link to={`/blog/${data.slug.current}`}>
+    <Container className="container">
+      <div className="columns">
+        <div className="column is-5">
+          <img src={data.Thumbnail.asset.url} alt="/" />
+        </div>
+        <div className="column first is-7">
+          <h1 className="subtitle is-6">{data.title}</h1>
+        </div>
       </div>
-    </div>
-  </Container>
+    </Container>
+  </Link>
 );
 
-export default BlogContentcard;
+export default BlogContentCard;

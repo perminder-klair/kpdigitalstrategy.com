@@ -16,7 +16,21 @@ export const blogPageQuery = graphql`
       slug {
         current
       }
+      publishedAt(formatString: "dddd Do MMMM YYYY")
       title
+      _rawBody
+      relatedcontent {
+        slug {
+          current
+        }
+        title
+        Thumbnail {
+          asset {
+            url
+          }
+        }
+      }
+      tags
     }
   }
 `;
@@ -38,8 +52,8 @@ export default class IndividualBlog extends React.Component {
           title="Our design & marketing advice centre"
           subtitle="A collection of resources to support your business growth"
         />
-        <BlogHeading title={blog.title} />
-        <BlogContent />
+        <BlogHeading data={blog} />
+        <BlogContent data={blog} />
         <OurValue />
         <BrandIdentity />
         <ContactUs />

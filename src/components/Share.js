@@ -16,6 +16,7 @@ const Container = styled.div`
 
 const Share = ({ url, quote }) => (
   <Container>
+    <p className="subtitle is-6 has-text-centered">Share:</p>
     <span className="icon is-block-desktop is-size-3 has-text-danger">
       <i className="fab fa-instagram " />
     </span>
