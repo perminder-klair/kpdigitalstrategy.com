@@ -28,14 +28,20 @@ export default {
       type: 'image',
     },
     {
+      name: 'excerpt',
+      title: 'Excerpt',
+      type: 'string',
+    },
+    {
+      name: 'content',
+      title: 'Content',
+      type: 'array',
+      of: [{ type: 'block' }],
+    },
+    {
       name: 'publishedAt',
       title: 'Published at',
       type: 'datetime',
-    },
-    {
-      name: 'body',
-      title: 'Body',
-      type: 'blockContent',
     },
     {
       title: 'Related Content',
