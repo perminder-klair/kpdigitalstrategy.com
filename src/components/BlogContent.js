@@ -43,7 +43,7 @@ const BlogContent = ({ data }) => (
         <Share url="/google" quote="test" />
       </div>
       <ContentWrapper className="column is-6 content">
-        <Block input={data._rawBody} />
+        <Block input={data._rawContent} />
       </ContentWrapper>
       <div className="column">
         <p className="title is-5 has-text-danger has-text-weight-semibold">

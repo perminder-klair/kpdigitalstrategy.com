@@ -18,7 +18,7 @@ export const blogPageQuery = graphql`
       }
       publishedAt(formatString: "dddd Do MMMM YYYY")
       title
-      _rawBody
+      _rawContent
       relatedcontent {
         slug {
           current

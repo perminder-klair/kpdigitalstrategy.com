@@ -22,12 +22,12 @@ export const blogQuery = graphql`
           }
           category
           title
+          excerpt
           Thumbnail {
             asset {
               url
             }
           }
-          _rawBody
         }
       }
     }
@@ -35,11 +35,17 @@ export const blogQuery = graphql`
 `;
 
 export default class Blog extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { searchQuery: '' };
+  }
+
   render() {
+    const { searchQuery } = this.state;
     const {
       data: { allSanityBlog: blog },
     } = this.props;
-
     return (
       <Layout>
         <Seo
@@ -52,8 +58,8 @@ export default class Blog extends React.Component {
           title="Our design & marketing advice centre"
           subtitle="A collection of resources to support your business growth"
         />
-        <SearchBar />
-        <FeaturesArticles data={blog.edges} />
+        <SearchBar onChange={value => this.setState({ searchQuery: value })} />
+        <FeaturesArticles items={blog.edges} filter={searchQuery} />
         <BrandIdentity />
         <OurValue />
         <Faq />
