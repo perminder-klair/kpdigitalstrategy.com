@@ -13,18 +13,13 @@ const FeaturesArticles = ({ items, filter }) => {
   const [length, setLength] = useState(3);
   const array = items.slice(0, length);
 
-  console.log(filter.length);
   return (
     <Section className="section">
       <div className="container">
         <div className="columns is-multiline">
           {array.map(({ node }) => {
             const nodeTitle = node.title.toLowerCase();
-            if (!filter) {
-              //
-            } else if (filter.length < 2) {
-              //
-            } else if (nodeTitle.search(filter.toLowerCase()) === -1) {
+            if (nodeTitle.search(filter.toLowerCase()) === -1) {
               return null;
             }
             return <ArticleCard data={node} />;
