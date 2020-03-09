@@ -24,6 +24,10 @@ const Section = styled.section`
     padding-right: 2rem;
     font-weight: 100;
   }
+  .BurgerMenu1 {
+    margin-inline-start: auto;
+    padding-top: 1rem;
+  }
   .cont {
     font-size: 13px;
     border-radius: 12px;
@@ -118,7 +122,7 @@ export default class Header extends React.Component {
               <Link className="navbar-item" to="/">
                 <img src="/images/logo.png" alt="KpDigital logo" />
               </Link>
-              <div className="BurgerMenu is-hidden-desktop">
+              <div className="BurgerMenu1 is-hidden-desktop">
                 <HamburgerMenu
                   isOpen={this.state.open}
                   menuClicked={this.handleClick.bind(this)}
