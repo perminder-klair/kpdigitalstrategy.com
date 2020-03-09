@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import styled from 'styled-components';
 import PageHero from './PageHero';
@@ -26,7 +26,21 @@ const Section = styled.div`
 `;
 
 const QuickQuestionFour = () => {
-  const [count, UpdateCount] = useState(0);
+  const [count, setCount] = useState(0);
+
+  const add = () => {
+    setCount(count + 1);
+  };
+  const subtract = () => {
+    if (count > 1) {
+      setCount(count - 1);
+    } else {
+      setCount(0);
+    }
+  };
+  useEffect(() => {
+    setCount(0);
+  }, [0]);
   return (
     <Section>
       <PageHero
@@ -43,12 +57,12 @@ const QuickQuestionFour = () => {
                 </h1>
               </div>
               <div className="wrapper">
-                <button type="button" onClick={() => UpdateCount(count + 1)}>
+                <button type="button" onClick={add}>
                   <span className="icon has-text-danger is-size-3">
                     <i className="fas fa-caret-up" />
                   </span>
                 </button>
-                <button type="button" onClick={() => UpdateCount(count - 1)}>
+                <button type="button" onClick={subtract}>
                   <span className="icon has-text-danger is-size-3">
                     <i className="fas fa-sort-down" />
                   </span>
