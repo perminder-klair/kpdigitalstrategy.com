@@ -11,7 +11,7 @@ const Portfolio = () => (
   <Section className="section">
     <div className="container">
       <div className="HeadingWrapper has-text-centered section">
-        <h2 className="title size-2 is-spaced">
+        <h2 className="title size-2 is-spaced is-size-4-mobile">
           Some of our design project examples
         </h2>
         <h3 className="subtitle is-5 has-text-weight-light">

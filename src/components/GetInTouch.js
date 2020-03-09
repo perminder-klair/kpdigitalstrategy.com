@@ -37,7 +37,7 @@ const GetInTouch = () => (
     <div className="container">
       <div className="columns">
         <div className="column text is-half">
-          <p className="subtitle is-3 has-text-weight-medium is-spaced ">
+          <p className="subtitle is-3 has-text-weight-medium is-spaced is-size-4-mobile ">
             Purposeful design and marketing services for aspirational companies
           </p>
 
