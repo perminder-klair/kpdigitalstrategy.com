@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Share from './Share';
-import BlogContentCard from './BlogContentCard';
+import BlogReference from './BlogReference';
 import BlogProjectIdea from './BlogProjectIdea';
 import Block from './PortableText';
 
@@ -50,7 +50,7 @@ const BlogContent = ({ data }) => (
           Related Content
         </p>
         {data.relatedcontent.map(items => (
-          <BlogContentCard data={items} />
+          <BlogReference data={items} />
         ))}
         <div className="tags is-block">
           <p className="is-block  has-text-weight-semibold">Tags</p>

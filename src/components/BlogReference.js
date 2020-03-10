@@ -19,7 +19,7 @@ const Container = styled.div`
   }
 `;
 
-const BlogContentCard = ({ data }) => (
+const BlogReference = ({ data }) => (
   <Link to={`/blog/${data.slug.current}`}>
     <Container className="container">
       <div className="columns">
@@ -34,4 +34,4 @@ const BlogContentCard = ({ data }) => (
   </Link>
 );
 
-export default BlogContentCard;
+export default BlogReference;
