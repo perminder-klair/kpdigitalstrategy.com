@@ -7,6 +7,11 @@ import BlogProjectIdea from './BlogProjectIdea';
 import Block from './PortableText';
 
 const Section = styled.section`
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+    .related {
+      width: 0% !important;
+    }
+  }
   .card-image {
     background-color: 'red';
   }
@@ -16,11 +21,13 @@ const Section = styled.section`
   .tag {
     padding: 1rem 1rem;
   }
-  .is-2 {
-    width: 14% !important;
-  }
   .content {
-    width: 45% !important;
+    padding-left: 5.4rem;
+  }
+  @media only screen and (max-width: 600px) {
+    .content {
+      padding-left: 0rem;
+    }
   }
 `;
 
@@ -39,13 +46,13 @@ const BlogContent = ({ data }) => (
   <Section className="section">
     <div className="columns">
       <div className="column is-1" />
-      <div className="column is-2">
+      <div className="column is-1">
         <Share url="/google" quote="test" />
       </div>
       <ContentWrapper className="column is-6 content">
         <Block input={data._rawContent} />
       </ContentWrapper>
-      <div className="column">
+      <div className="column related">
         <p className="title is-5 has-text-danger has-text-weight-semibold">
           Related Content
         </p>
