@@ -16,10 +16,7 @@ const Container = styled.div`
 
 const Share = ({ url, quote }) => (
   <Container>
-    <p className="subtitle is-6 has-text-centered">Share:</p>
-    <span className="icon is-block-desktop is-size-3 has-text-danger is-inline-mobile">
-      <i className="fab fa-instagram " />
-    </span>
+    <p className="subtitle is-6 has-text-centered-desktop">Share:</p>
     <span className="icon is-block-desktop is-size-3 has-text-danger is-inline-mobile">
       <FacebookShareButton url={url} quote={quote} hashtag="kp-digital">
         <i className="fab fa-facebook-square" />

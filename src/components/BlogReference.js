@@ -7,6 +7,7 @@ const Container = styled.div`
   margin-bottom: 2rem;
   .columns {
     background-color: ${props => props.theme.backgroundColorGrey};
+    display: flex;
   }
   .is-5 {
     padding: 0rem;

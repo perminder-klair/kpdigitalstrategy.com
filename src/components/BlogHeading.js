@@ -31,7 +31,7 @@ const Section = styled.section`
     margin-right: 0;
   }
   .left {
-    padding-left: 1.5rem;
+    padding-left: 1.2rem;
   }
 `;
 
@@ -55,7 +55,7 @@ const BlogHeading = ({ data }) => (
               <p>Written by Kelly</p>
             </figure>
           </div>
-          <div className="column left">
+          <div className="column left has-text-centered-touch">
             <h3 className="title is-3"> {data.title}</h3>
             <h3 className="title is-6 has-text-weight-medium has-text-danger">
               Last Updated {data.publishedAt}

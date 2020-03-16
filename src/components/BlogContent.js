@@ -21,13 +21,8 @@ const Section = styled.section`
   .tag {
     padding: 1rem 1rem;
   }
-  .content {
-    padding-left: 5.4rem;
-  }
-  @media only screen and (max-width: 600px) {
-    .content {
-      padding-left: 0rem;
-    }
+  .empty {
+    width: 4.8%;
   }
 `;
 
@@ -49,9 +44,11 @@ const BlogContent = ({ data }) => (
       <div className="column is-1">
         <Share url="/google" quote="test" />
       </div>
-      <ContentWrapper className="column is-6 content">
+      <div className="column is-1 empty" />
+      <ContentWrapper className="column is-5">
         <Block input={data._rawContent} />
       </ContentWrapper>
+      <div className="column is-1 empty" />
       <div className="column related">
         <p className="title is-5 has-text-danger has-text-weight-semibold">
           Related Content
