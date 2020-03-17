@@ -18,6 +18,14 @@ const Section = styled.section`
       width: 100%;
     }
   }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+    .blog-heading {
+      width: 100%;
+    }
+    .image {
+      margin-right: auto !important;
+    }
+  }
   .image {
     display: block;
     margin-left: auto;
