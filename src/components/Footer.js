@@ -6,60 +6,35 @@ import { Link } from 'gatsby';
 import config from '../utils/config';
 
 const Section = styled.section`
-  background-color: ${props => props.theme.darkShades};
-  .title {
-    color: ${props => props.theme.lightShades} !important;
-  }
-  .logoImage {
+background-color: ${props => props.theme.darkShades};
+.logoImage {
     width: 18rem;
+    margin-bottom: 2rem;
+}
   }
-  .mg {
-    margin-top: 3rem;
+  .title {
+    margin-bottom: 1rem;
   }
-  .mb {
-    margin-bottom: 20px;
+  .is-block {
+    padding-bottom: 1rem;
   }
   .underline {
     text-decoration: underline;
   }
-  .footer {
-    background-color: ${props => props.theme.darkShades};
-    padding: 3rem 1.5rem 3rem;
-    .content {
-      margin-top: 3rem;
-      p {
-        color: ${props => props.theme.lightShades} !important;
-      }
-    }
-  }
-  ul {
-    li {
-      margin-bottom: 1.2rem;
-    }
-  }
-  a {
-    color: #fff;
-    :hover {
-      color: #fff;
-    }
-  }
-  img {
+  .icon{
     margin-right: 6px;
   }
-  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
-    .column {
-      width: 24%;
-    }
+  a{
+    color: inherit;
   }
 `;
-
 const Footer = () => (
   <Section className="section">
     <div className="container">
-      <footer className="footer">
-        <div className="columns">
-          <div className="column is-4">
-            <ul>
+      <div className="columns">
+        <div className="column is-4">
+          <ul>
+            <li>
               <Link to="/">
                 <img
                   src="/images/logo.png"
@@ -67,93 +42,118 @@ const Footer = () => (
                   className="logoImage"
                 />
               </Link>
-              <Link to="" className="subtitle is-size-6 is-block mg">
+            </li>
+            <li>
+              <Link to="" className="subtitle is-size-6 is-block">
                 Get in touch
               </Link>
-              <h4 className="subtitle is-size-6 is-block mb">
+            </li>
+            <li>
+              <div className="subtitle is-size-6 is-block ">
                 Contact us at{' '}
-                <a href="" className="underline">
+                <a href="" className="underline has-text-white">
                   hello@kpdigitalstrategy.com
                 </a>
-              </h4>
-            </ul>
-            <a target="_blank" href={config.facebook}>
-              <img src="/images/team/twitter@2x.png" alt="twitter" />
-            </a>
-            <a target="_blank" href={config.instagram}>
-              <img src="/images/team/facebook@2x.png" alt="facebook" />
-            </a>
-            <a target="_blank" href={config.twitter}>
-              <img src="/images/team/instagram@2x.png" alt="instagram" />
-            </a>
-            <a target="_blank" href={config.linkedin}>
-              <img src="/images/team/linkedin.png" alt="linkedin" />
-            </a>
-          </div>
-          <div className="column is-3">
-            <h4 className="title is-size-6">Services</h4>
-            <ul>
-              <h4 className="subtitle is-size-6">
-                <li>
-                  <Link to="/about">Branding design</Link>
-                </li>
-              </h4>
-              <h4 className="subtitle is-size-6">
-                <li>
-                  <Link to="/news-updates">Digital marketing</Link>
-                </li>
-              </h4>
-              <h4 className="subtitle is-size-6">
-                <li>
-                  <Link to="/news-updates">Website design & development</Link>
-                </li>
-              </h4>
-            </ul>
-          </div>
-          <div className="column is-3">
-            <h4 className="title is-size-6">Company</h4>
-            <ul>
-              <h4 className="subtitle is-size-6">
-                <li>
-                  <Link to="/faq">Meet the team</Link>
-                </li>
-              </h4>
-              <h4 className="subtitle is-size-6">
-                <li>
-                  <Link to="/privacy-policy">About us</Link>
-                </li>
-              </h4>
-              <h4 className="subtitle is-size-6">
-                <li>
-                  <Link to="/terms-and-conditions">Careers</Link>
-                </li>
-              </h4>
-            </ul>
-          </div>
-          <div className="column is-3">
-            <h4 className="title is-size-6">Legal</h4>
-            <ul>
-              <h4 className="subtitle is-size-6">
-                <li>
-                  <Link to="/business">Terms of use</Link>
-                </li>
-              </h4>
-              <h4 className="subtitle is-size-6">
-                <li>
-                  <Link to="/partner">Privacy policy</Link>
-                </li>
-              </h4>
-              <h4 className="subtitle is-size-6">
-                <li>
-                  <Link to="/partner">GDPR</Link>
-                </li>
-              </h4>
-            </ul>
-          </div>
+              </div>
+            </li>
+          </ul>
+          <a target="_blank" href={config.facebook}>
+            <img
+              src="/images/team/twitter@2x.png"
+              alt="twitter"
+              className="icon"
+            />
+          </a>
+          <a target="_blank" href={config.instagram}>
+            <img
+              src="/images/team/facebook@2x.png"
+              alt="facebook"
+              className="icon"
+            />
+          </a>
+          <a target="_blank" href={config.twitter}>
+            <img
+              src="/images/team/instagram@2x.png"
+              alt="instagram"
+              className="icon"
+            />
+          </a>
+          <a target="_blank" href={config.linkedin}>
+            <img
+              src="/images/team/linkedin.png"
+              alt="linkedin"
+              className="icon"
+            />
+          </a>
         </div>
-      </footer>
+        <div className="column is-3">
+          <h1 className="title is-size-6">Services</h1>
+          <ul>
+            <li>
+              <Link to="/about" className="subtitle is-size-6 is-block">
+                Branding design
+              </Link>
+            </li>
+            <li>
+              <Link to="/news-updates" className="subtitle is-size-6 is-block">
+                Digital marketing
+              </Link>
+            </li>
+            <li>
+              <Link to="/news-updates" className="subtitle is-size-6 is-block">
+                Website design & development
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="column is-3">
+          <h4 className="title is-size-6">Company</h4>
+          <ul>
+            <li>
+              <Link to="/faq" className="subtitle is-size-6 is-block">
+                Meet the team
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/privacy-policy"
+                className="subtitle is-size-6 is-block"
+              >
+                About us
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/terms-and-conditions"
+                className="subtitle is-size-6 is-block"
+              >
+                Careers
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="column is-2">
+          <h4 className="title is-size-6">Legal</h4>
+          <ul>
+            <li>
+              <Link to="/business" className="subtitle is-size-6 is-block">
+                Terms of use
+              </Link>
+            </li>
+            <li>
+              <Link to="/partner" className="subtitle is-size-6 is-block">
+                Privacy policy
+              </Link>
+            </li>
+            <li>
+              <Link to="/partner" className="subtitle is-size-6 is-block">
+                GDPR
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </Section>
 );
-
 export default Footer;
