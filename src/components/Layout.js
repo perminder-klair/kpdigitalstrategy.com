@@ -7,6 +7,7 @@ import GlobalStyle, { theme } from '../utils/theme';
 import config from '../utils/config';
 import Header from './Header';
 import Footer from './Footer';
+import CookiesPopUp from './CookiesPopUp';
 
 const Container = styled.div`
   min-height: 70vh;
@@ -14,7 +15,7 @@ const Container = styled.div`
 
 const IndexLayout = ({ children, hideHeader }) => (
   <ThemeProvider theme={theme}>
-    <React.Fragment>
+    <>
       <Helmet>
         <title>{config.siteName}</title>
         <meta charSet="utf-8" />
@@ -25,7 +26,8 @@ const IndexLayout = ({ children, hideHeader }) => (
       {!hideHeader && <Header />}
       <Container>{children}</Container>
       <Footer />
-    </React.Fragment>
+      <CookiesPopUp />
+    </>
   </ThemeProvider>
 );
 
