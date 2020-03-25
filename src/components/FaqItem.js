@@ -9,7 +9,7 @@ const Container = styled.div`
     font-size: 27px;
     margin: 0rem 2rem;
     @media only screen and (max-width: 600px) {
-      margin: 0rem 7rem;
+      margin: -2rem 7rem;
     }
   }
   h1 {

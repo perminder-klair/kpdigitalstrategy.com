@@ -14,10 +14,7 @@ const Container = styled.div`
     padding: 2rem 1rem;
   }
   .media-content {
-    padding: 1.5rem 3rem;
-  }
-  .title {
-    padding: 0rem 1rem 0rem 1rem;
+    padding: 1.5rem 0rem;
   }
   .button {
     padding-left: 1.5rem;

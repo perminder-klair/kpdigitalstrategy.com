@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 const Container = styled.div`
   section {
     border: 2px solid ${props => props.theme.mainBrandColor};
-    height: 31rem;
+    height: 33rem;
     transition: transform 0.3s;
   }
   section:hover {
