@@ -15,7 +15,7 @@ const Portfolio = () => (
           Some of our design project examples
         </h2>
         <h3 className="subtitle is-5 has-text-weight-light">
-          Here are some examples of some of our latest design
+          Take a look at some of our work.
         </h3>
       </div>
       <div className="columns is-multiline is-variable is-2">

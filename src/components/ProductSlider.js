@@ -16,6 +16,9 @@ const Container = styled.div`
   .media-content {
     padding: 1.5rem 3rem;
   }
+  .title {
+    padding: 0rem 1rem 0rem 1rem;
+  }
   .button {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -38,8 +41,9 @@ const ProductSlider = () => (
           Website Design & Development
         </h2>
         <button
-          className="button is-medium is-danger has-text-weight-semibold"
-          type="button">
+          className="button  is-danger has-text-weight-semibold"
+          type="button"
+        >
           Explore this product
         </button>
       </div>
