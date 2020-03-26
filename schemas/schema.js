@@ -9,6 +9,9 @@ import blockContent from './blockContent';
 import blog from './blog';
 import service from './service';
 import product from './product';
+import slider from './slider';
+import siteSettingPortfolio from './siteSettingPortfolio';
+import siteSettingPortfolioItem from './siteSettingPortfolioItem';
 import siteSettings from './siteSettings';
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -23,6 +26,9 @@ export default createSchema({
     service,
     product,
     blog,
+    slider,
+    siteSettingPortfolio,
+    siteSettingPortfolioItem,
     siteSettings,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
