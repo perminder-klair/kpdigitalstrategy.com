@@ -62,13 +62,13 @@ export default {
       type: 'string',
     },
     {
-      title: 'Slider',
-      name: 'slider',
+      title: 'Slider Items',
+      name: 'slideritems',
       type: 'array',
       of: [
         {
           type: 'reference',
-          to: [{ type: 'slider' }],
+          to: [{ type: 'product' }],
         },
       ],
     },
@@ -78,9 +78,14 @@ export default {
       type: 'string',
     },
     {
-      name: 'Portfolio',
+      name: 'portfolio',
       title: 'Portfolio',
       type: 'siteSettingPortfolio',
+    },
+    {
+      name: 'features',
+      title: 'Features',
+      type: 'features',
     },
   ],
 };

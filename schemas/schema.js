@@ -9,10 +9,10 @@ import blockContent from './blockContent';
 import blog from './blog';
 import service from './service';
 import product from './product';
-import slider from './slider';
 import siteSettingPortfolio from './siteSettingPortfolio';
 import siteSettingPortfolioItem from './siteSettingPortfolioItem';
 import siteSettings from './siteSettings';
+import features from './features';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -26,7 +26,7 @@ export default createSchema({
     service,
     product,
     blog,
-    slider,
+    features,
     siteSettingPortfolio,
     siteSettingPortfolioItem,
     siteSettings,
