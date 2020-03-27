@@ -30,14 +30,14 @@ export default {
       type: 'string',
     },
     {
-      title: 'Brand Icons',
       name: 'brandIcons',
+      title: 'Brand Icons',
       type: 'array',
       of: [{ type: 'image' }],
     },
     {
-      title: 'Our Value',
       name: 'ourValue',
+      title: 'Our Value',
       type: 'array',
       of: [{ type: 'string' }],
     },
@@ -63,7 +63,7 @@ export default {
     },
     {
       title: 'Slider Items',
-      name: 'slideritems',
+      name: 'sliderItems',
       type: 'array',
       of: [
         {
