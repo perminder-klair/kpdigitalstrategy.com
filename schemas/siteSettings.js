@@ -80,12 +80,17 @@ export default {
     {
       name: 'portfolio',
       title: 'Portfolio',
-      type: 'siteSettingPortfolio',
+      type: 'portfolio',
     },
     {
       name: 'features',
       title: 'Features',
       type: 'features',
+    },
+    {
+      name: 'faq',
+      title: 'Faq',
+      type: 'faq',
     },
   ],
 };

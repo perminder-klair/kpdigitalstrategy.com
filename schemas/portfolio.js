@@ -1,6 +1,6 @@
 export default {
-  title: 'Site Setting Portfolio',
-  name: 'siteSettingPortfolio',
+  title: 'Portfolio',
+  name: 'portfolio',
   type: 'object',
   fields: [
     {
@@ -14,13 +14,13 @@ export default {
       type: 'string',
     },
     {
-      title: 'Items',
       name: 'items',
+      title: 'Image',
       type: 'array',
       of: [
         {
           title: 'Items',
-          type: 'siteSettingPortfolioItem',
+          type: 'portfolioItemImage',
         },
       ],
     },

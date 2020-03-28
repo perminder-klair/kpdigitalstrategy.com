@@ -1,10 +1,10 @@
 export default {
-  title: 'Site Setting Portfolio Item',
-  name: 'siteSettingPortfolioItem',
+  title: 'Portfolio Item Image',
+  name: 'portfolioItemImage',
   type: 'object',
   fields: [
     {
-      name: 'PortfolioImage',
+      name: 'portfolioImage',
       title: 'Portfolio Image',
       type: 'image',
     },

@@ -9,8 +9,9 @@ import blockContent from './blockContent';
 import blog from './blog';
 import service from './service';
 import product from './product';
-import siteSettingPortfolio from './siteSettingPortfolio';
-import siteSettingPortfolioItem from './siteSettingPortfolioItem';
+import portfolio from './portfolio';
+import portfolioItemImage from './portfolioItemImage';
+import faq from './faq';
 import siteSettings from './siteSettings';
 import features from './features';
 
@@ -27,8 +28,9 @@ export default createSchema({
     product,
     blog,
     features,
-    siteSettingPortfolio,
-    siteSettingPortfolioItem,
+    portfolio,
+    portfolioItemImage,
+    faq,
     siteSettings,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
