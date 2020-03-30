@@ -92,5 +92,10 @@ export default {
       title: 'Faq',
       type: 'faq',
     },
+    {
+      name: 'testimonial',
+      title: 'Testimonial',
+      type: 'testimonialItem',
+    },
   ],
 };

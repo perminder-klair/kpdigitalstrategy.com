@@ -12,6 +12,7 @@ import product from './product';
 import portfolio from './portfolio';
 import portfolioItemImage from './portfolioItemImage';
 import faq from './faq';
+import testimonialItem from './testimonialItem';
 import siteSettings from './siteSettings';
 import features from './features';
 
@@ -31,6 +32,7 @@ export default createSchema({
     portfolio,
     portfolioItemImage,
     faq,
+    testimonialItem,
     siteSettings,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
