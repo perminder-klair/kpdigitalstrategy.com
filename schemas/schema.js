@@ -9,6 +9,7 @@ import blockContent from './blockContent';
 import blog from './blog';
 import service from './service';
 import product from './product';
+import overViewService from './overViewService';
 import portfolio from './portfolio';
 import portfolioItemImage from './portfolioItemImage';
 import faq from './faq';
@@ -28,6 +29,7 @@ export default createSchema({
     service,
     product,
     blog,
+    overViewService,
     features,
     portfolio,
     portfolioItemImage,
