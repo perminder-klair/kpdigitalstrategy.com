@@ -42,13 +42,13 @@ export default {
       of: [{ type: 'string' }],
     },
     {
-      name: 'designPurposeTitle',
-      title: 'Design Purpose Item Title',
+      name: 'strengthTitle',
+      title: 'Strength Title',
       type: 'string',
     },
     {
-      name: 'designPurposeSubtitle',
-      title: 'Design Purpose Subtitle',
+      name: 'strengthSubtitle',
+      title: 'Strength Subtitle',
       type: 'text',
     },
     {
@@ -93,9 +93,24 @@ export default {
       type: 'faq',
     },
     {
-      name: 'testimonial',
-      title: 'Testimonial',
+      name: 'testimonialItem',
+      title: 'Testimonial Item',
       type: 'testimonialItem',
+    },
+    {
+      name: 'ourGrowthTitle',
+      title: 'Our Growth Title',
+      type: 'string',
+    },
+    {
+      name: 'ourGrowthSubtitle',
+      title: 'Our Growth Subtitle',
+      type: 'string',
+    },
+    {
+      name: 'ourGrowthdescription',
+      title: 'Our Growth Description',
+      type: 'text',
     },
   ],
 };

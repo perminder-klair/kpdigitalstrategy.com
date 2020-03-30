@@ -4,13 +4,8 @@ export default {
   type: 'object',
   fields: [
     {
-      name: 'featureTitle',
-      title: 'Feature Title',
-      type: 'string',
-    },
-    {
-      name: 'featureSubtitle',
-      title: 'Feature Subtitle',
+      name: 'featureHeading',
+      title: 'Feature Heading',
       type: 'string',
     },
     {

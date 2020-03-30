@@ -43,6 +43,22 @@ export default {
       type: 'string',
     },
     {
+      name: 'ourValue',
+      title: 'Our Value',
+      type: 'array',
+      of: [{ type: 'string' }],
+    },
+    {
+      name: 'strengthTitle',
+      title: 'Strength Title',
+      type: 'string',
+    },
+    {
+      name: 'strengthSubtitle',
+      title: 'Strength Subtitle',
+      type: 'text',
+    },
+    {
       title: 'Product',
       name: 'product',
       type: 'array',
@@ -52,6 +68,52 @@ export default {
           to: [{ type: 'product' }],
         },
       ],
+    },
+    {
+      name: 'reachUsText',
+      title: 'ReachUs Text',
+      type: 'string',
+    },
+    {
+      name: 'portfolio',
+      title: 'Portfolio',
+      type: 'portfolio',
+    },
+    {
+      name: 'features',
+      title: 'Features',
+      type: 'features',
+    },
+    {
+      name: 'testimonialItem',
+      title: 'Testimonial Item',
+      type: 'testimonialItem',
+    },
+    {
+      name: 'brandTitle',
+      title: 'Brand Title',
+      type: 'string',
+    },
+    {
+      name: 'brandIcons',
+      title: 'Brand Icons',
+      type: 'array',
+      of: [{ type: 'image' }],
+    },
+    {
+      name: 'ourGrowthTitle',
+      title: 'Our Growth Title',
+      type: 'string',
+    },
+    {
+      name: 'ourGrowthSubtitle',
+      title: 'Our Growth Subtitle',
+      type: 'string',
+    },
+    {
+      name: 'ourGrowthdescription',
+      title: 'Our Growth Description',
+      type: 'text',
     },
   ],
 };

@@ -9,7 +9,6 @@ export default {
       type: 'array',
       of: [
         {
-          name: 'testimonialItem',
           title: 'Testimonial Item',
           type: 'object',
           fields: [

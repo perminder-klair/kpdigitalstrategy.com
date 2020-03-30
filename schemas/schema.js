@@ -12,9 +12,9 @@ import product from './product';
 import portfolio from './portfolio';
 import portfolioItemImage from './portfolioItemImage';
 import faq from './faq';
+import features from './features';
 import testimonialItem from './testimonialItem';
 import siteSettings from './siteSettings';
-import features from './features';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
