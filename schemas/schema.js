@@ -9,7 +9,9 @@ import blockContent from './blockContent';
 import blog from './blog';
 import service from './service';
 import product from './product';
-import overViewService from './overViewService';
+import digitalService from './digitalService';
+import ourTeam from './ourTeam';
+import teamInformation from './teamInformation';
 import portfolio from './portfolio';
 import portfolioItemImage from './portfolioItemImage';
 import faq from './faq';
@@ -29,7 +31,9 @@ export default createSchema({
     service,
     product,
     blog,
-    overViewService,
+    digitalService,
+    ourTeam,
+    teamInformation,
     features,
     portfolio,
     portfolioItemImage,

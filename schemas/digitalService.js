@@ -1,6 +1,6 @@
 export default {
-  name: 'overViewService',
-  title: 'Over View Service',
+  name: 'digitalService',
+  title: 'Digital Service',
   type: 'document',
   fields: [
     {
@@ -66,6 +66,16 @@ export default {
     {
       name: 'serviceSubtitle',
       title: 'Service  Subtitle',
+      type: 'string',
+    },
+    {
+      name: 'sliderTitle',
+      title: 'Slider Title',
+      type: 'string',
+    },
+    {
+      name: 'sliderSubtitle',
+      title: 'Slider Subtitle',
       type: 'string',
     },
     {

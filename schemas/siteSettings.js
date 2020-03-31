@@ -62,6 +62,16 @@ export default {
       type: 'string',
     },
     {
+      name: 'sliderTitle',
+      title: 'Slider Title',
+      type: 'string',
+    },
+    {
+      name: 'sliderSubtitle',
+      title: 'Slider Subtitle',
+      type: 'string',
+    },
+    {
       title: 'Slider Items',
       name: 'sliderItems',
       type: 'array',
