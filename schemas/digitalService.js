@@ -43,8 +43,8 @@ export default {
       type: 'string',
     },
     {
-      name: 'ourValue',
-      title: 'Our Value',
+      name: 'ourValues',
+      title: 'Our Values',
       type: 'array',
       of: [{ type: 'string' }],
     },
@@ -60,12 +60,12 @@ export default {
     },
     {
       name: 'serviceTitle',
-      title: 'Service  Title',
+      title: 'Service Title',
       type: 'string',
     },
     {
       name: 'serviceSubtitle',
-      title: 'Service  Subtitle',
+      title: 'Service Subtitle',
       type: 'string',
     },
     {
@@ -110,8 +110,8 @@ export default {
       type: 'faq',
     },
     {
-      name: 'testimonialItem',
-      title: 'Testimonial Item',
+      name: 'testimonialItems',
+      title: 'Testimonial Items',
       type: 'testimonialItem',
     },
     {
@@ -124,21 +124,6 @@ export default {
       title: 'Brand Icons',
       type: 'array',
       of: [{ type: 'image' }],
-    },
-    {
-      name: 'ourGrowthTitle',
-      title: 'Our Growth Title',
-      type: 'string',
-    },
-    {
-      name: 'ourGrowthSubtitle',
-      title: 'Our Growth Subtitle',
-      type: 'string',
-    },
-    {
-      name: 'ourGrowthdescription',
-      title: 'Our Growth Description',
-      type: 'text',
     },
   ],
 };

@@ -108,19 +108,9 @@ export default {
       type: 'testimonialItem',
     },
     {
-      name: 'ourGrowthTitle',
-      title: 'Our Growth Title',
-      type: 'string',
-    },
-    {
-      name: 'ourGrowthSubtitle',
-      title: 'Our Growth Subtitle',
-      type: 'string',
-    },
-    {
-      name: 'ourGrowthdescription',
-      title: 'Our Growth Description',
-      type: 'text',
+      name: 'aboutPage',
+      title: 'About Page',
+      type: 'aboutUs',
     },
   ],
 };

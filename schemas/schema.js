@@ -10,14 +10,17 @@ import blog from './blog';
 import service from './service';
 import product from './product';
 import digitalService from './digitalService';
-import ourTeam from './ourTeam';
-import teamInformation from './teamInformation';
+import aboutUs from './aboutus';
+import team from './team';
 import portfolio from './portfolio';
 import portfolioItemImage from './portfolioItemImage';
 import faq from './faq';
 import features from './features';
 import testimonialItem from './testimonialItem';
 import siteSettings from './siteSettings';
+import caseStudy from './caseStudy';
+import details from './details';
+import gallery from './gallery';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -29,17 +32,20 @@ export default createSchema({
     // The following are document types which will appear
     // in the studio.
     service,
+    caseStudy,
     product,
     blog,
     digitalService,
-    ourTeam,
-    teamInformation,
+    aboutUs,
+    team,
     features,
     portfolio,
     portfolioItemImage,
     faq,
     testimonialItem,
     siteSettings,
+    details,
+    gallery,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
