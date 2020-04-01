@@ -110,9 +110,15 @@ export default {
       type: 'faq',
     },
     {
-      name: 'testimonialItems',
-      title: 'Testimonial Items',
-      type: 'testimonialItem',
+      name: 'testimonialItem',
+      title: 'Testimonial Item',
+      type: 'array',
+      of: [
+        {
+          title: 'Testimonial Item',
+          type: 'testimonialItem',
+        },
+      ],
     },
     {
       name: 'brandTitle',

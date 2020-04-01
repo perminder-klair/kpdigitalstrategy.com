@@ -15,6 +15,7 @@ import team from './team';
 import portfolio from './portfolio';
 import portfolioItemImage from './portfolioItemImage';
 import faq from './faq';
+import faqQuestion from './faqQuestion';
 import features from './features';
 import featuresItem from './featuresItem';
 import testimonialItem from './testimonialItem';
@@ -44,6 +45,7 @@ export default createSchema({
     portfolio,
     portfolioItemImage,
     faq,
+    faqQuestion,
     testimonialItem,
     siteSettings,
     details,

@@ -82,7 +82,13 @@ export default {
     {
       name: 'testimonialItem',
       title: 'Testimonial Item',
-      type: 'testimonialItem',
+      type: 'array',
+      of: [
+        {
+          title: 'Testimonial Item',
+          type: 'testimonialItem',
+        },
+      ],
     },
     {
       name: 'ourGrowthTitle',
