@@ -14,26 +14,8 @@ export default {
       type: 'array',
       of: [
         {
-          title: 'features Item',
-          name: 'features Item',
-          type: 'object',
-          fields: [
-            {
-              name: 'logo',
-              title: 'Logo',
-              type: 'image',
-            },
-            {
-              name: 'title',
-              title: 'Title',
-              type: 'string',
-            },
-            {
-              name: 'subtitle',
-              title: 'SubTitle',
-              type: 'string',
-            },
-          ],
+          title: 'Features Item',
+          type: 'featuresItem',
         },
       ],
     },
