@@ -16,14 +16,12 @@ const LinkStyled = styled(Link)`
   border-bottom-right-radius: 1rem;
 `;
 
-const ReachUs = () => (
+const ReachUs = ({ data }) => (
   <Section className="section">
     <div className="container">
       <div className="columns">
         <div className="column is-8 has-text-centered">
-          <p className="is-size-5 has-text-weight-medium">
-            Want to discuss your project with one of our expert team?
-          </p>
+          <p className="is-size-5 has-text-weight-medium">{data.reachUsText}</p>
         </div>
         <div className="column is-2 ">
           <LinkStyled

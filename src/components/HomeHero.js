@@ -30,7 +30,7 @@ const HelpText = styled.p`
   margin-top: 1rem;
 `;
 
-const HomeHero = () => (
+const HomeHero = ({ data }) => (
   <Section className="section">
     <div className="container">
       <div className="columns">
@@ -38,14 +38,13 @@ const HomeHero = () => (
           <section className="hero is-medium">
             <div className="hero-body">
               <h2 className="subtitle is-1 is-size-3-mobile has-text-weight-semibold">
-                Thinking of
+                {data.title}
               </h2>
               <div className="auto">
                 <Text />
               </div>
               <HelpText className="has-text-weight-semibold has-text-danger">
-                We align design, marketing and sales to make it easier than ever
-                to reach new business heights.
+                {data.redSubtitle}
               </HelpText>
               <button
                 className="button is-danger is-rounded has-text-weight-medium is-size-6"

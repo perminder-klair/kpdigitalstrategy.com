@@ -18,7 +18,6 @@ const Services = ({ data }) => (
         Our super talented, dedicated team are responsive and ready to meet your
         critical business needs."
     />
-
     <div className="container">
       <div className="columns is-variable is-3">
         {data.map(item => (

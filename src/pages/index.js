@@ -19,6 +19,65 @@ import GetInTouch from '../components/GetInTouch';
 
 export const homeQuery = graphql`
   query homepage {
+    sanitySiteSettings {
+      title
+      autoSubtitle
+      redSubtitle
+      brandTitle
+      brandIcons {
+        asset {
+          url
+        }
+      }
+      ourValue
+      strengthTitle
+      strengthSubtitle
+      serviceTitle
+      serviceSubtitle
+      sliderTitle
+      sliderSubtitle
+      reachUsText
+      portfolio {
+        portfolioTitle
+        portfolioSubtitle
+        items {
+          portfolioImage {
+            asset {
+              url
+            }
+          }
+        }
+      }
+      features {
+        featureHeading
+        featuresItems {
+          logo {
+            asset {
+              url
+            }
+          }
+          title
+          subtitle
+        }
+      }
+      faq {
+        faqTitle
+        faqSubtitle
+        faqQuestion {
+          question
+          answer
+        }
+      }
+      testimonialItem {
+        logo {
+          asset {
+            url
+          }
+        }
+        title
+        subtitle
+      }
+    }
     allSanityService(sort: { fields: Order }) {
       edges {
         node {
@@ -42,7 +101,7 @@ export const homeQuery = graphql`
 export default class IndexPage extends React.Component {
   render() {
     const {
-      data: { allSanityService: page },
+      data: { allSanityService: page, sanitySiteSettings: home },
     } = this.props;
     return (
       <Layout>
@@ -52,17 +111,17 @@ export default class IndexPage extends React.Component {
           url={config.siteUrl}
           image={config.image}
         />
-        <HomeHero />
-        <Brand />
-        <OurValue />
+        <HomeHero data={home} />
+        <Brand data={home.brandIcons} />
+        <OurValue data={home} />
         {/* change Component  name */}
-        <ServiceItem />
+        <ServiceItem data={home} />
         {/* ---------- */}
         <Services data={page.edges} />
-        <ReactSlider />
-        <ReachUs />
+        <ReactSlider data={home} />
+        <ReachUs data={home} />
         <Portfolio />
-        <Strengths />
+        <Strengths data={home.features} />
         <Faq />
         <TestimonailData backgroundColor />
         <GetInTouch />

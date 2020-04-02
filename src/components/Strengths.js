@@ -13,12 +13,10 @@ const Container = styled.div`
   }
 `;
 
-const Strengths = () => (
+const Strengths = ({ data }) => (
   <Container className="section">
     <div className="container">
-      <h3 className="title is-5 has-text-centered">
-        Reliable, efficient & transparent service, every time
-      </h3>
+      <h3 className="title is-5 has-text-centered">{data.featureHeading}</h3>
       <div className="columns">
         <div className="column is-4 has-text-centered">
           <img
