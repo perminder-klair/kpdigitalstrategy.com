@@ -39,7 +39,7 @@ export default {
       name: 'ourValue',
       title: 'Our Value',
       type: 'array',
-      of: [{ type: 'string' }],
+      of: [{ title: 'Item', type: 'string' }],
     },
     {
       name: 'strengthTitle',
