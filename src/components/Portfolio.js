@@ -7,46 +7,28 @@ const Section = styled.div`
   }
 `;
 
-const Portfolio = () => (
+const Portfolio = ({ data }) => (
   <Section className="section">
     <div className="container">
       <div className="HeadingWrapper has-text-centered section">
         <h2 className="title size-2 is-spaced is-size-4-mobile">
-          Some of our design project examples
+          {data.portfolioTitle}
         </h2>
         <h3 className="subtitle is-5 has-text-weight-light">
-          Take a look at some of our work.
+          {data.portfolioSubtitle}
         </h3>
       </div>
       <div className="columns is-multiline is-variable is-2">
-        <div className="column is-half">
-          <img
-            src="/images/dummy/image3.png"
-            alt="daily mails logo"
-            title="kpdigital strategy Design"
-          />
-        </div>
-        <div className="column is-half">
-          <img
-            src="/images/dummy/image3.png"
-            alt="daily mails logo"
-            title="kpdigital strategy Design"
-          />
-        </div>
-        <div className="column is-half mg-top">
-          <img
-            src="/images/dummy/image3.png"
-            alt="daily mails logo"
-            title="kpdigital strategy Design"
-          />
-        </div>
-        <div className="column is-half mg-top">
-          <img
-            src="/images/dummy/image1.png"
-            alt="daily mails logo"
-            title="kpdigital strategy Design"
-          />
-        </div>
+        {data.items.map(items => (
+          <div className="column is-half">
+            <div className="main">
+              <img
+                src={items.portfolioImage.asset.url}
+                alt="daily mails logo"
+              />
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   </Section>

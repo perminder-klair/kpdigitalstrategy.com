@@ -11,7 +11,7 @@ import Services from '../components/ServiceItems';
 import ReactSlider from '../components/Slider';
 import Portfolio from '../components/Portfolio';
 import Brand from '../components/Brand';
-import Strengths from '../components/Strengths';
+import StrengthData from '../components/StrengthData';
 import Faq from '../components/Faq';
 import OurValue from '../components/OurValue';
 import TestimonailData from '../components/TestimonailData';
@@ -120,8 +120,8 @@ export default class IndexPage extends React.Component {
         <Services data={page.edges} />
         <ReactSlider data={home} />
         <ReachUs data={home} />
-        <Portfolio />
-        <Strengths data={home.features} />
+        <Portfolio data={home.portfolio} />
+        <StrengthData data={home.features} />
         <Faq />
         <TestimonailData data={home.testimonialItem} backgroundColor />
         <GetInTouch />
