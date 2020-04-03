@@ -123,7 +123,7 @@ export default class IndexPage extends React.Component {
         <Portfolio />
         <Strengths data={home.features} />
         <Faq />
-        <TestimonailData backgroundColor />
+        <TestimonailData data={home.testimonialItem} backgroundColor />
         <GetInTouch />
       </Layout>
     );
