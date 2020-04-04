@@ -19,27 +19,23 @@ const Container = styled.div`
   }
 `;
 
-const Faq = () => (
+const Faq = ({ data }) => (
   <Container className="section">
     <div className="Container">
-      <h2 className="title size-4 has-text-centered">FAQ’s</h2>
+      <h2 className="title size-4 has-text-centered">{data.faqTitle}</h2>
       <p className="subtitle is-6 has-text-centered is-spaced">
-        We answer your questions.
+        {data.faqSubtitle}
       </p>
 
       <div className="columns is-centered">
         <div className="column is-four-fifths">
-          <div className="CardWrapper">
-            <FaqItem questions="How does your pricing work?" />
-          </div>
-          <div className="CardWrapper">
-            <FaqItem questions="How does your pricing work?" />
-          </div>
-          <div className="CardWrapper">
-            <FaqItem questions="How does your pricing work? ?" />
-          </div>
-          <div className="CardWrapper">
-            <FaqItem questions="How does your pricing work?" />
+        <div className="CardWrapper">
+        {data.faqQuestion.map(items => (
+            <FaqItem
+              questions={items.question}
+              answer={items.answer}
+            />
+          ))}
           </div>
         </div>
       </div>

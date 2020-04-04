@@ -5,6 +5,7 @@ const Container = styled.div`
   padding: 1rem 0rem;
   background-color: ${props => props.theme.darkShades};
   border-radius: 0rem;
+  margin-bottom: 1rem;
   .Icon {
     font-size: 27px;
     margin: 0rem 2rem;
@@ -39,7 +40,7 @@ class FaqItem extends React.Component {
   };
 
   render() {
-    const { questions } = this.props;
+    const { questions, answer } = this.props;
     const { show } = this.state;
 
     return (
@@ -58,14 +59,7 @@ class FaqItem extends React.Component {
         </div>
         {show && (
           <AnswerContainer>
-            <p>
-              Below is a sample of “Lorem ipsum dolor sit” dummy copy text often
-              used to show font face samples, for page layout and design as
-              sample layout text by printers, graphic designers, Web designers,
-              people creating Microsoft Word templates, and many other uses. It
-              mimics the look of real text quite well as you design and set up
-              your page layouts.
-            </p>
+            <p>{answer}</p>
           </AnswerContainer>
         )}
       </Container>
