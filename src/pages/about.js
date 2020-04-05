@@ -11,7 +11,7 @@ import TestimonailData from '../components/TestimonailData';
 import GetInTouch from '../components/GetInTouch';
 
 export const aboutQuery = graphql`
-  query aboutpage {
+  query about {
     sanitySiteSettings {
       aboutPage {
         heroTitle
@@ -24,8 +24,9 @@ export const aboutQuery = graphql`
 export default class AboutUs extends React.Component {
   render() {
     const {
-      about: { sanitySiteSettings: page },
+      data: { sanitySiteSettings: page },
     } = this.props;
+    console.log(page);
     return (
       <Layout>
         <Seo
@@ -35,7 +36,7 @@ export default class AboutUs extends React.Component {
           image={config.image}
         />
         <AboutHomeHero />
-        <OurValue about={page.ourValue} />
+        <OurValue data={page.aboutPage.ourValues} />
         <InformationAbout
           title="Kelly Pierduta"
           subtitle="Founder"
@@ -48,9 +49,9 @@ export default class AboutUs extends React.Component {
           DescriptionOne="Lorem ipsum dolor sit amet, iuvaret honestatis vis eu. Cu quem phaedrum voluptaria sed, ne eum elit eloquentiam, qualisque scriptorem in eam. Qui an tollit similique consectetuer. Indoctum disputationi eu sea. Ad per adhuc nemore, et duo ubique contentiones."
           DescriptionTwo="Sententiae definiebas sit ei, id quem postea tacimates vel. Nullam utamur posidonium ius ne, cu quot fastidii hendrerit sed, ne mei sumo feugiat. Mandamus similique cu quo. Cum erat molestie in, mea tale zril ex."
         />
-        <ReachUs />
-        <TestimonailData />
-        <GetInTouch />
+        {/* <ReachUs /> */}
+        {/* <TestimonailData />
+        <GetInTouch /> */}
       </Layout>
     );
   }

@@ -103,6 +103,7 @@ export default class IndexPage extends React.Component {
     const {
       data: { allSanityService: page, sanitySiteSettings: home },
     } = this.props;
+    console.log(home);
     return (
       <Layout>
         <Seo
