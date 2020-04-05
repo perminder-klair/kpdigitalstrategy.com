@@ -7,8 +7,8 @@ const Section = styled.div`
   h3 {
     margin-bottom: 3rem;
   }
-  .column{
-    display: contents
+  .column {
+    display: contents;
   }
 `;
 

@@ -10,8 +10,22 @@ import ReachUs from '../components/ReachUs';
 import TestimonailData from '../components/TestimonailData';
 import GetInTouch from '../components/GetInTouch';
 
+export const aboutQuery = graphql`
+  query aboutpage {
+    sanitySiteSettings {
+      aboutPage {
+        heroTitle
+        heroSubtitle
+        ourValues
+      }
+    }
+  }
+`;
 export default class AboutUs extends React.Component {
   render() {
+    const {
+      about: { sanitySiteSettings: page },
+    } = this.props;
     return (
       <Layout>
         <Seo
@@ -21,7 +35,7 @@ export default class AboutUs extends React.Component {
           image={config.image}
         />
         <AboutHomeHero />
-        <OurValue />
+        <OurValue about={page.ourValue} />
         <InformationAbout
           title="Kelly Pierduta"
           subtitle="Founder"

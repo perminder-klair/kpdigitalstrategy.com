@@ -14,7 +14,7 @@ const OurValue = ({ data }) => (
   <Container className="section">
     <div className="container">
       <div className="columns">
-        {data.ourValue.map(items => (
+        {data.map(items => (
           <div className="column  has-text-centered">
             <p className=" has-text-weight-medium has-text-white">{items}</p>
           </div>
