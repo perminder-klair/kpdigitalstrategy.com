@@ -31,7 +31,7 @@ export default {
     {
       name: 'linkedInLink',
       title: 'LinkedIn Link',
-      type: 'string',
+      type: 'image',
     },
   ],
 };

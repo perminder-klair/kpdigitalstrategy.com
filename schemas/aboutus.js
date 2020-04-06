@@ -34,5 +34,16 @@ export default {
       title: 'Reach Us Text',
       type: 'string',
     },
+    {
+      name: 'testimonialItem',
+      title: 'Testimonial Item',
+      type: 'array',
+      of: [
+        {
+          title: 'Testimonial Item',
+          type: 'testimonialItem',
+        },
+      ],
+    },
   ],
 };
