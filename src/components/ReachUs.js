@@ -35,5 +35,4 @@ const ReachUs = ({ data }) => (
     </div>
   </Section>
 );
-
 export default ReachUs;

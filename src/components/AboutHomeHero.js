@@ -8,7 +8,7 @@ const Section = styled.div`
   }
 `;
 
-const AboutHomeHero = () => (
+const AboutHomeHero = ({ data }) => (
   <Section className="section">
     <div className="container">
       <div className="columns">
@@ -16,14 +16,9 @@ const AboutHomeHero = () => (
           <div className="hero is-medium">
             <div className="hero-body">
               <h2 className="has-text-danger is-size-2 has-text-weight-semibold is-spaced">
-                Meet the KP Digital Strategy team
+                {data.heroTitle}
               </h2>
-              <p className="is-size-6">
-                We are an experienced team of designers who create high-quality,
-                bespoke infographics. Our infographic present complex data in a
-                visually engaging format to aid compregension and improve
-                understanding and retention.
-              </p>
+              <p className="is-size-6">{data.heroSubtitle}</p>
             </div>
           </div>
         </div>
