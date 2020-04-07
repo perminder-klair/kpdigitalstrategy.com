@@ -7,7 +7,7 @@ import Seo from '../components/Seo';
 import Portfolio from '../components/Portfolio';
 import Brand from '../components/Brand';
 import Products from '../components/Products';
-import Strengths from '../components/Strengths';
+import StrengthData from '../components/StrengthData';
 import ServiceItem from '../components/ServiceItem-old';
 import OurValue from '../components/OurValue';
 import ReachUs from '../components/ReachUs';
@@ -23,6 +23,48 @@ export const serviceQuery = graphql`
       }
       herotitle
       herosubtitle
+      ourValue
+      strengthTitle
+      strengthSubtitle
+      reachUsText
+      portfolio {
+        portfolioTitle
+        portfolioSubtitle
+        items {
+          portfolioImage {
+            asset {
+              url
+            }
+          }
+        }
+      }
+      features {
+        featureHeading
+        featuresItems {
+          logo {
+            asset {
+              url
+            }
+          }
+          title
+          subtitle
+        }
+      }
+      testimonialItem {
+        logo {
+          asset {
+            url
+          }
+        }
+        title
+        subtitle
+      }
+      brandTitle
+      brandIcons {
+        asset {
+          url
+        }
+      }
       product {
         title
         slug {
@@ -58,14 +100,14 @@ export default class ServicePage extends React.Component {
           subtitle={service.herosubtitle}
           textarea={false}
         />
-        <OurValue />
-        <ServiceItem />
+        <OurValue data={service.ourValue} />
+        <ServiceItem data={service} />
         <Products data={service.product} />
-        <ReachUs />
-        <Portfolio />
-        <Strengths />
-        <TestimonailData />
-        <Brand />
+        <ReachUs data={service.reachUsText} />
+        <Portfolio data={service.portfolio} />
+        <StrengthData data={service.features} />
+        <TestimonailData data={service.testimonialItem} />
+        <Brand data={service.brandIcons} />
         <GetInTouch />
       </Layout>
     );
