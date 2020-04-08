@@ -5,21 +5,23 @@ import ServiceCard from './ServiceCard';
 
 const Container = styled.section``;
 
-const ServiceHero = () => (
+const ServiceHero = ({ data }) => (
   <Container>
     <div className="container">
       <section className="section">
         <div className="columns  is-multiline">
-          <div className="column is-6">
-            <ServiceCard
-              title="Creative branding"
-              subtitle="For digital & print"
-              firstpara="Online brochure downloads, email signatures, presentations, email newsletters & social media post & covers."
-              secondpara=" Brand guidelines, business cards, exhibition stands displays, leaflets & brochures & template documents."
-              bgImage="/images/service/creative.jpg"
-            />
-          </div>
-          <div className="column is-6">
+          {data.map(items => (
+            <div className="column is-6">
+              <ServiceCard
+                title={items.category}
+                subtitle={items.title}
+                firstpara={items.description}
+                secondpara={items.description}
+                bgImage={items.Thumbnail.asset.url}
+              />
+            </div>
+          ))}
+          {/* <div className="column is-6">
             <ServiceCard
               title="Digital marketing"
               subtitle="Strategy & execution"
@@ -36,7 +38,7 @@ const ServiceHero = () => (
               secondpara="Lead generation, landing page creation. Built for business growth."
               bgImage="/images/service/code.jpg"
             />
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
