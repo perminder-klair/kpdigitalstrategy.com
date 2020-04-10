@@ -10,14 +10,9 @@ const ServiceHero = ({ data }) => (
     <div className="container">
       <section className="section">
         <div className="columns  is-multiline">
-          {data.map(items => (
+          {data.map(item => (
             <div className="column is-6">
-              <ServiceCard
-                title={items.node.category}
-                subtitle={items.node.title}
-                firstpara={items.node.description}
-                bgImage={items.node.Thumbnail.asset.url}
-              />
+              <ServiceCard data={item.node} />
             </div>
           ))}
         </div>

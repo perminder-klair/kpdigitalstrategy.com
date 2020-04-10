@@ -1,6 +1,7 @@
 /* eslint-disable react/destructuring-assignment */
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 const Container = styled.div`
   background-color: ${props => props.theme.backgroundColorGrey};
@@ -20,26 +21,25 @@ const Container = styled.div`
   }
 `;
 
-const ServiceCard = props => (
-  <Container bgImage={props.bgImage}>
+const ServiceCard = ({ data }) => (
+  <Container bgImage={data.Thumbnail.asset.url}>
     <div className="columns is-gapless">
       <div className="column is-7">
         <section className="section">
           <div className="container">
             <h1 className="title is-5 is-spaced has-text-white">
-              {props.title}
+              {data.title}
             </h1>
             <h2 className="subtitle is-6 has-text-danger has-text-weight-bold">
-              {props.subtitle}
+              {data.title}
             </h2>
-            <p className="text">{props.firstpara}</p>
-            <p className="text">{props.secondpara}</p>
-            <button
+            <p className="text">{data.description}</p>
+            {/* <p className="text">{props.secondpara}</p> */}
+            <Link
               className="button is-rounded has-text-weight-bold"
-              type="button"
-            >
+              to={`digitalService/${data.slug.current}`}>
               Learn more
-            </button>
+            </Link>
           </div>
         </section>
       </div>

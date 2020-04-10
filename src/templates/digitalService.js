@@ -5,13 +5,13 @@ import ContactHero from '../components/ContactHero';
 import Seo from '../components/Seo';
 import Portfolio from '../components/Portfolio';
 import Brand from '../components/Brand';
-// import Features from '../components/Features';
+import Features from '../components/Features';
 // import Slider from '../components/Slider';
 import ReachUs from '../components/ReachUs';
 import StrengthData from '../components/StrengthData';
 import ServiceItem from '../components/ServiceItem-old';
 import Faq from '../components/Faq';
-// import OurValue from '../components/OurValue';
+import OurValue from '../components/OurValue';
 import Layout from '../components/Layout';
 import TestimonailData from '../components/TestimonailData';
 
@@ -85,6 +85,7 @@ export default class LandingPage extends React.Component {
     const {
       data: { sanityDigitalService: digital },
     } = this.props;
+    console.log('data', digital);
     return (
       <Layout>
         <Seo
@@ -98,10 +99,10 @@ export default class LandingPage extends React.Component {
           subtitle={digital.herosubtitle}
           textarea={false}
         />
-        {/* <OurValue data={digital} /> */}
+        <OurValue data={digital.ourValues} />
         <ServiceItem data={digital} />
-        {/* <Features />
-        <Slider /> */}
+        <Features />
+        {/* <Slider /> */}
         <ReachUs data={digital} />
         <Portfolio data={digital.portfolio} />
         <StrengthData data={digital.features} />
