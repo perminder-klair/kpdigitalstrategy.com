@@ -1,6 +1,6 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import config from '../utils/config';
-
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import AboutHomeHero from '../components/AboutHomeHero';
@@ -47,35 +47,33 @@ export const aboutQuery = graphql`
     }
   }
 `;
-export default class AboutUs extends React.Component {
-  render() {
-    const {
-      data: { sanitySiteSettings: page },
-    } = this.props;
-    return (
-      <Layout>
-        <Seo
-          title="Manchester Digital Marketing Agency"
-          description="KP Digital Strategy"
-          url={config.siteUrl}
-          image={config.image}
+const AboutUs = ({ data }) => {
+  const page = data.sanitySiteSettings;
+  console.log('hello world', page);
+  return (
+    <Layout>
+      <Seo
+        title="Manchester Digital Marketing Agency"
+        description="KP Digital Strategy"
+        url={config.siteUrl}
+        image={config.image}
+      />
+      <AboutHomeHero data={page.aboutPage} />
+      <OurValue data={page.aboutPage.ourValues} />
+      {page.aboutPage.teamMembers.map(items => (
+        <InformationAbout
+          personImage={items.teamMemberImage.asset.url}
+          title={items.personName}
+          subtitle={items.designation}
+          DescriptionOne={items.firstParagraph}
+          DescriptionTwo={items.secondParagraph}
+          linkedImg={items.linkedInLink.asset.url}
         />
-        <AboutHomeHero data={page.aboutPage} />
-        <OurValue data={page.aboutPage.ourValues} />
-        {page.aboutPage.teamMembers.map(items => (
-          <InformationAbout
-            personImage={items.teamMemberImage.asset.url}
-            title={items.personName}
-            subtitle={items.designation}
-            DescriptionOne={items.firstParagraph}
-            DescriptionTwo={items.secondParagraph}
-            linkedImg={items.linkedInLink.asset.url}
-          />
-        ))}
-        <ReachUs data={page.aboutPage.reachUsText} />
-        <TestimonailData data={page.aboutPage.testimonialItem} />
-        <GetInTouch />
-      </Layout>
-    );
-  }
-}
+      ))}
+      <ReachUs data={page.aboutPage.reachUsText} />
+      <TestimonailData data={page.aboutPage.testimonialItem} />
+      <GetInTouch />
+    </Layout>
+  );
+};
+export default AboutUs;

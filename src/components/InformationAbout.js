@@ -18,20 +18,21 @@ const InformationAbout = ({
   DescriptionTwo,
   personImage,
   linkedImg,
+  alt,
 }) => (
   <div>
     <Section className="section">
       <div className="container">
         <div className="columns">
           <div className="column is-half">
-            <img src={personImage} alt="About Imformation" />
+            <img src={personImage} alt={alt} />
           </div>
           <div className="column">
             <h1 className="title is-size-5">{title}</h1>
             <h2 className="subtitle has-text-danger is-size-5">{subtitle}</h2>
             <p>{DescriptionOne}</p>
             <p>{DescriptionTwo}</p>
-            <img src={linkedImg} alt="icon-image" className="iconImage" />
+            <img src={linkedImg} alt={alt} className="iconImage" />
           </div>
         </div>
       </div>
