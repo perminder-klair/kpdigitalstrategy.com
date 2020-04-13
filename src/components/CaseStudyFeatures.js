@@ -17,12 +17,12 @@ const Border = styled.div`
   border-top: 1px solid;
 `;
 
-const CaseStudyFeatures = () => (
+const CaseStudyFeatures = ({ data }) => (
   <Section>
     <Border />
     <div className="columns is-multiline">
       <div className="column is-half">
-        <img src="/images/team/case-study-image@2x.png" alt="case-studies" />
+        <img src={data.thumbnail.asset.url} alt="case-studies" />
       </div>
       <div className="column is-half">
         <img src="/images/team/steven-shaw-website@2x.png" alt="case-studies" />
