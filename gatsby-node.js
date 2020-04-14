@@ -42,6 +42,15 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      allSanityCaseStudy {
+        edges {
+          node {
+            slug {
+              current
+            }
+          }
+        }
+      }
     }
   `);
 
@@ -81,6 +90,16 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: pagePath,
       component: path.resolve(`./src/templates/digitalService.js`),
+      context: {
+        slug: node.slug.current,
+      },
+    });
+  });
+  result.data.allSanityCaseStudy.edges.forEach(({ node }) => {
+
+    createPage({
+      path: ,
+      component: path.resolve(`./src/templates/individualCaseStudy.js`),
       context: {
         slug: node.slug.current,
       },

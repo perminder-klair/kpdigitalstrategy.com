@@ -10,41 +10,42 @@ import BrandIdentity from '../components/BrandIdentity';
 import Layout from '../components/Layout';
 
 export const caseStudyQuery = graphql`
-  query caseStudy {
-    sanityCaseStudy {
-      caseName
-      Subtitle
-      thumbnail {
-        asset {
-          url
+  query caseQuery {
+    allSanityCaseStudy {
+      edges {
+        node {
+          slug {
+            current
+          }
+          caseName
+          Subtitle
+          thumbnail {
+            asset {
+              url
+            }
+          }
         }
-      }
-      slug {
-        current
       }
     }
   }
 `;
-export default class CaseStudiesPage extends React.Component {
-  render() {
-    const {
-      data: { sanityCaseStudy: casePage },
-    } = this.props;
-    console.log('heloo', casePage);
-    return (
-      <Layout>
-        <PageHero title={casePage.caseName} subtitle={casePage.Subtitle} />
-        <CaseStudyFeatures data={casePage} />
-        <Seo
-          title="Manchester Digital Marketing Agency"
-          description="KP Digital Strategy"
-          url={config.siteUrl}
-          image={config.image}
-        />
-        {/* <OurValue /> */}
-        <BrandIdentity />
-        {/* <ContactUs /> */}
-      </Layout>
-    );
-  }
-}
+
+const CaseStudiesPage = ({ data }) => {
+  const casePage = data.allSanityCaseStudy.edges;
+  return (
+    <Layout>
+      <PageHero title="Our Case Studies" subtitle="Here is Some Of Our Latest Work" />
+      <CaseStudyFeatures data={casePage} />
+      <Seo
+        title="Manchester Digital Marketing Agency"
+        description="KP Digital Strategy"
+        url={config.siteUrl}
+        image={config.image}
+      />
+      {/* <OurValue /> */}
+      <BrandIdentity />
+      {/* <ContactUs /> */}
+    </Layout>
+  );
+};
+export default CaseStudiesPage;

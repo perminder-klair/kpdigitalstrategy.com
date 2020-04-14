@@ -21,9 +21,11 @@ const CaseStudyFeatures = ({ data }) => (
   <Section>
     <Border />
     <div className="columns is-multiline">
-      <div className="column is-half">
-        <img src={data.thumbnail.asset.url} alt="case-studies" />
-      </div>
+      {data.map(item => (
+        <div className="column is-half">
+          <img src={item.node.thumbnail.asset.url} alt="case-studies" />
+        </div>
+      ))}
       <div className="column is-half">
         <img src="/images/team/steven-shaw-website@2x.png" alt="case-studies" />
       </div>
