@@ -25,6 +25,7 @@ export const individualCaseQuery = graphql`
       }
       solutionParagraph
       gallery {
+        isLarge
         image {
           asset {
             url
@@ -41,7 +42,6 @@ export default class IndividualCaseStudy extends React.Component {
     const {
       data: { sanityCaseStudy: individual },
     } = this.props;
-    console.log('heloo world', individual);
     return (
       <Layout>
         <Seo
@@ -55,8 +55,8 @@ export default class IndividualCaseStudy extends React.Component {
           subtitle="EPIC Risk Management"
         />
         <BrandHeaderCase data={individual} />
-        <SectionCase data={individual.solutionParagraph} />
-        <PortfolioShowCase />
+        <SectionCase data={individual} />
+        <PortfolioShowCase data={individual} />
       </Layout>
     );
   }

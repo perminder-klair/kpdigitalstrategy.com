@@ -96,9 +96,9 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
   result.data.allSanityCaseStudy.edges.forEach(({ node }) => {
-
+    const pagePath = `case/${node.slug.current}`;
     createPage({
-      path: ,
+      path: pagePath,
       component: path.resolve(`./src/templates/individualCaseStudy.js`),
       context: {
         slug: node.slug.current,

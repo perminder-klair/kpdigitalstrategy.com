@@ -22,42 +22,21 @@ const Border = styled.div`
   border-bottom: 1px solid;
   margin-top: -1.6rem;
 `;
-const PortfolioShowCase = () => (
+const PortfolioShowCase = ({ data }) => (
   <Section>
-    <img
-      className="background-image"
-      src="/images/team/mock-up.png"
-      alt="Heroimage"
-    />
     <div className="columns is-multiline is-variable is-3">
-      <div className="column is-half">
-        <img
-          src="/images/team/epic-brand-guidelines-mockup-copy.png"
-          alt="daily mails logo"
-          title="kpdigital strategy Design"
-        />
-      </div>
-      <div className="column is-half">
-        <img
-          src="/images/team/epic-brand-guidelines-mockup-copy.png"
-          alt="daily mails logo"
-          title="kpdigital strategy Design"
-        />
-      </div>
-      <div className="column is-half">
-        <img
-          src="/images/team/website-epic-risk-management.png"
-          alt="daily mails logo"
-          title="kpdigital strategy Design"
-        />
-      </div>
+      {data.gallery.map(item => (
+        <div className={item.isLarge ? 'column is-12' : 'column is-half'}>
+          <img src={item.image.asset.url} alt="daily mails logo" />
+        </div>
+      ))}
       <div className="column is-half">
         <section className="hero">
           <div className="hero-body">
             <div className="container is-widescreen">
               <h1 className="title is-size-4 is-spaced is-size-4-mobile">
                 {' '}
-                Do you want to discuss your project with one of our expert team?
+                {data.ContactUsText}
               </h1>
               <button className="button is-black is-size-5" type="button">
                 Contact us

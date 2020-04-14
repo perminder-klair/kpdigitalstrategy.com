@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 const Section = styled.div`
   .columns {
@@ -22,22 +23,12 @@ const CaseStudyFeatures = ({ data }) => (
     <Border />
     <div className="columns is-multiline">
       {data.map(item => (
-        <div className="column is-half">
-          <img src={item.node.thumbnail.asset.url} alt="case-studies" />
-        </div>
+        <Link to={`/case/${item.node.slug.current}`}>
+          <div className="column is-half">
+            <img src={item.node.thumbnail.asset.url} alt="case-studies" />
+          </div>
+        </Link>
       ))}
-      <div className="column is-half">
-        <img src="/images/team/steven-shaw-website@2x.png" alt="case-studies" />
-      </div>
-      <div className="column is-half">
-        <img src="/images/team/case-study-image@2x.png" alt="case-studies" />
-      </div>
-      <div className="column is-half">
-        <img
-          src="/images/team/learn-realm-website-design.png"
-          alt="case-studies"
-        />
-      </div>
     </div>
   </Section>
 );

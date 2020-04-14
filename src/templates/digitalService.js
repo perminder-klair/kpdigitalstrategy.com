@@ -85,7 +85,6 @@ export default class LandingPage extends React.Component {
     const {
       data: { sanityDigitalService: digital },
     } = this.props;
-    console.log('data', digital);
     return (
       <Layout>
         <Seo
