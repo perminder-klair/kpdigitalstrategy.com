@@ -4,9 +4,9 @@ import config from '../utils/config';
 import Seo from '../components/Seo';
 import PageHero from '../components/PageHero';
 import CaseStudyFeatures from '../components/CaseStudyFeatures';
-// import OurValue from '../components/OurValue';
+import OurValue from '../components/OurValue';
 import BrandIdentity from '../components/BrandIdentity';
-// import ContactUs from '../components/ReachUs';
+import ContactUs from '../components/ReachUs';
 import Layout from '../components/Layout';
 
 export const caseStudyQuery = graphql`
@@ -24,6 +24,10 @@ export const caseStudyQuery = graphql`
               url
             }
           }
+          ourValue
+          brandTitle
+          brandSubtitle
+          reachUsText
         }
       }
     }
@@ -45,9 +49,9 @@ const CaseStudiesPage = ({ data }) => {
         url={config.siteUrl}
         image={config.image}
       />
-      {/* <OurValue /> */}
-      <BrandIdentity />
-      {/* <ContactUs /> */}
+      <OurValue data={casePage.node} />
+      <BrandIdentity data={casePage} />
+      <ContactUs data={casePage} />
     </Layout>
   );
 };
