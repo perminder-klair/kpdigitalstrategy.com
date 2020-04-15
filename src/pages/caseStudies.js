@@ -34,7 +34,10 @@ const CaseStudiesPage = ({ data }) => {
   const casePage = data.allSanityCaseStudy.edges;
   return (
     <Layout>
-      <PageHero title="Our Case Studies" subtitle="Here is Some Of Our Latest Work" />
+      <PageHero
+        title="Our Case Studies"
+        subtitle="Here is Some Of Our Latest Work"
+      />
       <CaseStudyFeatures data={casePage} />
       <Seo
         title="Manchester Digital Marketing Agency"

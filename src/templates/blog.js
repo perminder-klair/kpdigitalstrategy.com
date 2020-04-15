@@ -32,6 +32,10 @@ export const blogPageQuery = graphql`
         }
       }
       tags
+      ourValue
+      brandTitle
+      brandSubtitle
+      reachUsText
     }
   }
 `;
@@ -55,9 +59,9 @@ export default class IndividualBlog extends React.Component {
         />
         <BlogHeading data={blog} />
         <BlogContent data={blog} />
-        <OurValue />
-        <BrandIdentity />
-        <ContactUs />
+        <OurValue data={blog.ourValue} />
+        <BrandIdentity data={blog} />
+        <ContactUs data={blog} />
       </Layout>
     );
   }

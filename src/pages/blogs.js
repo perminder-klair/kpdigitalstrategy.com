@@ -5,12 +5,12 @@ import config from '../utils/config';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import PageHero from '../components/PageHero';
-import Faq from '../components/Faq';
+// import Faq from '../components/Faq';
 import SearchBar from '../components/SearchBar';
 import FeaturesArticles from '../components/FeaturesArticles';
-import BrandIdentity from '../components/BrandIdentity';
-import OurValue from '../components/OurValue';
-import ReachUs from '../components/ReachUs';
+// import BrandIdentity from '../components/BrandIdentity';
+// import OurValue from '../components/OurValue';
+// import ReachUs from '../components/ReachUs';
 
 export const blogQuery = graphql`
   query blogQuery {
@@ -60,10 +60,10 @@ export default class Blog extends React.Component {
         />
         <SearchBar onChange={value => this.setState({ searchQuery: value })} />
         <FeaturesArticles items={blog.edges} filter={searchQuery} />
-        <BrandIdentity />
+        {/* <BrandIdentity />
         <OurValue />
         <Faq />
-        <ReachUs />
+        <ReachUs /> */}
       </Layout>
     );
   }
