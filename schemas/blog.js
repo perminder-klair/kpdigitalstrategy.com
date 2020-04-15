@@ -63,6 +63,27 @@ export default {
         layout: 'tags',
       },
     },
+    {
+      name: 'ourValue',
+      title: 'Our Value',
+      type: 'array',
+      of: [{ title: 'Item', type: 'string' }],
+    },
+    {
+      name: 'brandTitle',
+      title: 'Brand Title',
+      type: 'string',
+    },
+    {
+      name: 'brandSubtitle',
+      title: 'Brand Subtitle',
+      type: 'string',
+    },
+    {
+      name: 'reachUsText',
+      title: 'ReachUs Text',
+      type: 'string',
+    },
   ],
 
   preview: {
