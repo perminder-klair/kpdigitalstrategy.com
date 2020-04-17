@@ -6,7 +6,7 @@ import ContactHero from '../components/ContactHero';
 import Seo from '../components/Seo';
 import Portfolio from '../components/Portfolio';
 import Brand from '../components/Brand';
-import Strengths from '../components/Strengths';
+import StrengthData from '../components/StrengthData';
 import ServiceItem from '../components/ServiceItem-old';
 import OurValue from '../components/OurValue';
 import ReachUs from '../components/ReachUs';
@@ -22,6 +22,47 @@ export const productQuery = graphql`
       }
       herotitle
       herosubtitle
+      ourValue
+      strengthTitle
+      strengthSubtitle
+      features {
+        featureHeading
+        featuresItems {
+          logo {
+            asset {
+              url
+            }
+          }
+          title
+          subtitle
+        }
+      }
+      reachUsText
+      portfolio {
+        portfolioTitle
+        portfolioSubtitle
+        items {
+          portfolioImage {
+            asset {
+              url
+            }
+          }
+        }
+      }
+      brandIcons {
+        asset {
+          url
+        }
+      }
+      testimonialItem {
+        logo {
+          asset {
+            url
+          }
+        }
+        title
+        subtitle
+      }
     }
   }
 `;
@@ -44,14 +85,13 @@ export default class ProductPage extends React.Component {
           subtitle={product.herosubtitle}
           textarea={false}
         />
-        <OurValue />
-        <ServiceItem />
-        <Strengths />
-        <ReachUs />
-        <Portfolio />
-        <Brand />
-        <TestimonailData />
-
+        <OurValue data={product.ourValue} />
+        <ServiceItem data={product} />
+        <StrengthData data={product.features} />
+        <ReachUs data={product} />
+        <Portfolio data={product.portfolio} />
+        <Brand data={product.brandIcons} />
+        <TestimonailData data={product.testimonialItem} />
         <GetInTouch />
       </Layout>
     );

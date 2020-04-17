@@ -103,7 +103,7 @@ export default class ServicePage extends React.Component {
         <OurValue data={service.ourValue} />
         <ServiceItem data={service} />
         <Products data={service.product} />
-        <ReachUs data={service.reachUsText} />
+        <ReachUs data={service} />
         <Portfolio data={service.portfolio} />
         <StrengthData data={service.features} />
         <TestimonailData data={service.testimonialItem} />
