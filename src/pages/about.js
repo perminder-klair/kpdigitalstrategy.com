@@ -49,7 +49,6 @@ export const aboutQuery = graphql`
 `;
 const AboutUs = ({ data }) => {
   const page = data.sanitySiteSettings;
-  console.log('hello world', page);
   return (
     <Layout>
       <Seo
@@ -70,7 +69,7 @@ const AboutUs = ({ data }) => {
           linkedImg={items.linkedInLink.asset.url}
         />
       ))}
-      <ReachUs data={page.aboutPage.reachUsText} />
+      <ReachUs data={page.aboutPage} />
       <TestimonailData data={page.aboutPage.testimonialItem} />
       <GetInTouch />
     </Layout>

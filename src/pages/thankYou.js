@@ -5,7 +5,7 @@ import Seo from '../components/Seo';
 
 import Layout from '../components/Layout';
 import Thanku from '../components/Thanku';
-import OurValue from '../components/OurValue';
+// import OurValue from '../components/OurValue';
 
 export default class ThankuPage extends React.Component {
   render() {
@@ -18,7 +18,7 @@ export default class ThankuPage extends React.Component {
           image={config.image}
         />
         <Thanku />
-        <OurValue />
+        {/* <OurValue /> */}
       </Layout>
     );
   }
