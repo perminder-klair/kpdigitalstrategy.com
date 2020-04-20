@@ -26,6 +26,7 @@ export const individualCaseQuery = graphql`
       solutionParagraph
       gallery {
         isLarge
+        alternativeText
         image {
           asset {
             url

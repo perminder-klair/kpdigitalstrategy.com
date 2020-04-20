@@ -27,7 +27,7 @@ const PortfolioShowCase = ({ data }) => (
     <div className="columns is-multiline is-variable is-3">
       {data.gallery.map(item => (
         <div className={item.isLarge ? 'column is-12' : 'column is-half'}>
-          <img src={item.image.asset.url} alt="daily mails logo" />
+          <img src={item.image.asset.url} alt={item.alternativeText} />
         </div>
       ))}
       <div className="column is-half">
