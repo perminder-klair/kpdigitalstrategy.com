@@ -21,7 +21,6 @@ export const homeQuery = graphql`
   query homepage {
     sanitySiteSettings {
       title
-      autoSubtitle
       redSubtitle
       brandTitle
       brandIcons {

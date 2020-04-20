@@ -6,7 +6,7 @@ const Section = styled.div``;
 const SectionCase = ({ data }) => (
   <Section className="section">
     <div className="container">
-      <h1 className="title is-size-5 is-spaced">Solution</h1>
+      {/* <h1 className="title is-size-5 is-spaced">Solution</h1> */}
       <div className="columns">
         {data.solutionParagraph.map(item => (
           <div className="column is-half">

@@ -14,18 +14,11 @@ const BrandHeaderCase = ({ data }) => (
     <Border />
     <div className="columns is-multiline is-variable is-3">
       <div className="column is-half">
-        <img
-          src="/images/team/website-epic-risk-management.png"
-          alt="daily mails logo"
-          title="kpdigital strategy Design"
-        />
-      </div>
-      <div className="column is-half">
         <section className="hero">
           <div className="hero-body">
             <div className="container">
               {data.adddetails.map(item => (
-                <div className="column is-half">
+                <div className="column">
                   <h1 className="title is-size-6 is-spaced">{item.title}</h1>
                   <p className="subtitle is-size-6 is-spaced">
                     {item.subtitle}
