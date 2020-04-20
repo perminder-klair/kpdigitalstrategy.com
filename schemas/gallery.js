@@ -13,5 +13,10 @@ export default {
       title: 'Image',
       type: 'image',
     },
+    {
+      name: 'alternativeText',
+      title: 'Alternative Text',
+      type: 'string',
+    },
   ],
 };
