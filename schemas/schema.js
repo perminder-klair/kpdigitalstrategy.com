@@ -23,7 +23,8 @@ import siteSettings from './siteSettings';
 import caseStudy from './caseStudy';
 import details from './details';
 import gallery from './gallery';
-
+import brandIdentity from './brandIdentity';
+import brandIdentityItem from './brandIdentityItem';
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -50,6 +51,8 @@ export default createSchema({
     siteSettings,
     details,
     gallery,
+    brandIdentity,
+    brandIdentityItem,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,

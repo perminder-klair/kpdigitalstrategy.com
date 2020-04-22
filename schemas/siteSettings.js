@@ -161,14 +161,9 @@ export default {
       type: 'string',
     },
     {
-      name: 'blogBrandIdentityTitle',
-      title: 'Blog Brand Identity Title',
-      type: 'string',
-    },
-    {
-      name: 'blogBrandIdentitySubtitle',
-      title: 'Blog Brand Identity Subtitle',
-      type: 'string',
+      name: 'blogBrandIdentity',
+      title: 'Blog Brand Identity',
+      type: 'brandIdentity',
     },
   ],
 };
