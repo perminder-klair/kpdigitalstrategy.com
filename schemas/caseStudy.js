@@ -34,13 +34,13 @@ export default {
       of: [{ title: 'Item', type: 'string' }],
     },
     {
-      name: 'brandTitle',
-      title: 'Brand Title',
+      name: 'brandIdentityTitle',
+      title: 'Brand Identity Title',
       type: 'string',
     },
     {
-      name: 'brandSubtitle',
-      title: 'Brand Subtitle',
+      name: 'brandIdentitySubtitle',
+      title: 'Brand Identity Subtitle',
       type: 'string',
     },
     {
