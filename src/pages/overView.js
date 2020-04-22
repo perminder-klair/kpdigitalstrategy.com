@@ -4,11 +4,16 @@ import config from '../utils/config';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import PageHero from '../components/PageHero';
-// import OurValue from '../components/OurValue';
+import OurValue from '../components/OurValue';
 import ServiceHero from '../components/ServiceHero';
 
 export const overViewQuery = graphql`
   query overView {
+    sanitySiteSettings {
+      digitalMainTitle
+      digitalMainSubtitle
+      digitalOurValue
+    }
     allSanityDigitalService {
       edges {
         node {
@@ -30,6 +35,7 @@ export const overViewQuery = graphql`
 `;
 
 const OverViewPage = ({ data }) => {
+  const digitalService = data.sanitySiteSettings;
   const page = data.allSanityDigitalService.edges;
   return (
     <Layout>
@@ -40,11 +46,11 @@ const OverViewPage = ({ data }) => {
         image={config.image}
       />
       <PageHero
-        title="Our digital marketing services"
-        subtitle="We align design, marketing and sales to make it easier than every to reach new business heights. "
+        title={digitalService.digitalMainTitle}
+        subtitle={digitalService.digitalMainSubtitle}
       />
       <ServiceHero data={page} />
-      {/* <OurValue /> */}
+      <OurValue data={digitalService.digitalOurValue} />
     </Layout>
   );
 };
