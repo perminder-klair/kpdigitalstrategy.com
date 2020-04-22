@@ -118,5 +118,21 @@ export default {
       title: 'About Page',
       type: 'aboutUs',
     },
+    {
+      name: 'digitalMainTitle',
+      title: 'Digital Main Title',
+      type: 'string',
+    },
+    {
+      name: 'digitalMainSubtitle',
+      title: 'Digital Main Subtitle',
+      type: 'string',
+    },
+    {
+      name: 'digitalOurValue',
+      title: 'Digital Our Value',
+      type: 'array',
+      of: [{ title: 'Item', type: 'string' }],
+    },
   ],
 };
