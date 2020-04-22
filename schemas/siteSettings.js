@@ -134,5 +134,31 @@ export default {
       type: 'array',
       of: [{ title: 'Item', type: 'string' }],
     },
+    {
+      name: 'blogMainTitle',
+      title: 'Blog Main Title',
+      type: 'string',
+    },
+    {
+      name: 'blogMainSubtitle',
+      title: 'Blog Main Subtitle',
+      type: 'string',
+    },
+    {
+      name: 'blogOurValue',
+      title: 'Blog Our Value',
+      type: 'array',
+      of: [{ title: 'Item', type: 'string' }],
+    },
+    {
+      name: 'blogFaq',
+      title: 'Blog Faq',
+      type: 'faq',
+    },
+    {
+      name: 'blogReachUsText',
+      title: 'Blog ReachUs Text',
+      type: 'string',
+    },
   ],
 };
