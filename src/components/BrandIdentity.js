@@ -10,16 +10,12 @@ const Container = styled.div`
   }
 `;
 
-const BrandIdentity = ({ data }) => (
+const BrandIdentity = ({ data, Title, Subtitle }) => (
   <Container className="section">
     <div className="container">
       <div className="has-text-centered HeadingWrapper">
-        <h2 className="title size-2 has-text-danger is-spaced">
-          {data.brandTitle}
-        </h2>
-        <h3 className="subtitle is-5 has-text-weight-light">
-          {data.brandSubtitle}
-        </h3>
+        <h2 className="title size-2 has-text-danger is-spaced">{Title}</h2>
+        <h3 className="subtitle is-5 has-text-weight-light">{Subtitle}</h3>
       </div>
       <div className="columns">
         <div className="column">

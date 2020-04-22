@@ -8,7 +8,7 @@ import PageHero from '../components/PageHero';
 import Faq from '../components/Faq';
 import SearchBar from '../components/SearchBar';
 import FeaturesArticles from '../components/FeaturesArticles';
-// import BrandIdentity from '../components/BrandIdentity';
+import BrandIdentity from '../components/BrandIdentity';
 import OurValue from '../components/OurValue';
 import ReachUs from '../components/ReachUs';
 
@@ -17,6 +17,8 @@ export const blogQuery = graphql`
     sanitySiteSettings {
       blogMainTitle
       blogMainSubtitle
+      blogBrandIdentityTitle
+      blogBrandIdentitySubtitle
       blogOurValue
       blogFaq {
         faqTitle
@@ -74,10 +76,14 @@ export default class Blog extends React.Component {
         <PageHero title={page.blogMainTitle} subtitle={page.blogMainSubtitle} />
         <SearchBar onChange={value => this.setState({ searchQuery: value })} />
         <FeaturesArticles items={blog.edges} filter={searchQuery} />
-        {/* <BrandIdentity /> */}
+        <BrandIdentity
+          data={page}
+          Title={page.blogBrandIdentityTitle}
+          Subtitle={page.blogBrandIdentitySubtitle}
+        />
         <OurValue data={page.blogOurValue} />
         <Faq data={page.blogFaq} />
-        <ReachUs data={page} />
+        <ReachUs data={page.blogReachUsText} />
       </Layout>
     );
   }

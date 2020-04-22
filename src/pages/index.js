@@ -118,7 +118,7 @@ export default class IndexPage extends React.Component {
         {/* ---------- */}
         <Services data={page.edges} />
         <ReactSlider data={home} />
-        <ReachUs data={home} />
+        <ReachUs data={home.reachUsText} />
         <Portfolio data={home.portfolio} />
         <StrengthData data={home.features} />
         <Faq data={home.faq} />

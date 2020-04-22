@@ -69,7 +69,7 @@ const AboutUs = ({ data }) => {
           linkedImg={items.linkedInLink.asset.url}
         />
       ))}
-      <ReachUs data={page.aboutPage} />
+      <ReachUs data={page.aboutPage.reachUsText} />
       <TestimonailData data={page.aboutPage.testimonialItem} />
       <GetInTouch />
     </Layout>

@@ -21,7 +21,7 @@ const ReachUs = ({ data }) => (
     <div className="container">
       <div className="columns">
         <div className="column is-8 has-text-centered">
-          <p className="is-size-5 has-text-weight-medium">{data.reachUsText}</p>
+          <p className="is-size-5 has-text-weight-medium">{data}</p>
         </div>
         <div className="column is-2 ">
           <LinkStyled
