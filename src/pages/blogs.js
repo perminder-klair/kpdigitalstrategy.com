@@ -17,8 +17,23 @@ export const blogQuery = graphql`
     sanitySiteSettings {
       blogMainTitle
       blogMainSubtitle
-      blogBrandIdentityTitle
-      blogBrandIdentitySubtitle
+      blogBrandIdentity {
+        brandIdentityTitle
+        brandIdentitySubtitle
+        brandIdentityItem {
+          logo {
+            asset {
+              url
+            }
+          }
+          hoverLogo {
+            asset {
+              url
+            }
+          }
+          title
+        }
+      }
       blogOurValue
       blogFaq {
         faqTitle
@@ -76,11 +91,7 @@ export default class Blog extends React.Component {
         <PageHero title={page.blogMainTitle} subtitle={page.blogMainSubtitle} />
         <SearchBar onChange={value => this.setState({ searchQuery: value })} />
         <FeaturesArticles items={blog.edges} filter={searchQuery} />
-        <BrandIdentity
-          data={page}
-          Title={page.blogBrandIdentityTitle}
-          Subtitle={page.blogBrandIdentitySubtitle}
-        />
+        <BrandIdentity data={page.blogBrandIdentity} />
         <OurValue data={page.blogOurValue} />
         <Faq data={page.blogFaq} />
         <ReachUs data={page.blogReachUsText} />

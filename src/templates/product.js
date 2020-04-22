@@ -88,7 +88,7 @@ export default class ProductPage extends React.Component {
         <OurValue data={product.ourValue} />
         <ServiceItem data={product} />
         <StrengthData data={product.features} />
-        <ReachUs data={product} />
+        <ReachUs data={product.reachUsText} />
         <Portfolio data={product.portfolio} />
         <Brand data={product.brandIcons} />
         <TestimonailData data={product.testimonialItem} />

@@ -10,56 +10,27 @@ const Container = styled.div`
   }
 `;
 
-const BrandIdentity = ({ data, Title, Subtitle }) => (
+const BrandIdentity = ({ data }) => (
   <Container className="section">
     <div className="container">
       <div className="has-text-centered HeadingWrapper">
-        <h2 className="title size-2 has-text-danger is-spaced">{Title}</h2>
-        <h3 className="subtitle is-5 has-text-weight-light">{Subtitle}</h3>
+        <h2 className="title size-2 has-text-danger is-spaced">
+          {data.brandIdentityTitle}
+        </h2>
+        <h3 className="subtitle is-5 has-text-weight-light">
+          {data.brandIdentitySubtitle}
+        </h3>
       </div>
       <div className="columns">
-        <div className="column">
-          <BrandIdentityItem
-            subtitle="logo"
-            icon="/images/icons/logo.png"
-            hovericon="/images/icons/logo-alt.png"
-          />
-        </div>
-        <div className="column">
-          <BrandIdentityItem
-            subtitle="Brochure & Leaflet"
-            icon="/images/icons/brochure.png"
-            hovericon="/images/icons/brochure-alt.png"
-          />
-        </div>
-        <div className="column">
-          <BrandIdentityItem
-            subtitle="website"
-            icon="/images/icons/website.png"
-            hovericon="/images/icons/website-alt.png"
-          />
-        </div>
-        <div className="column">
-          <BrandIdentityItem
-            subtitle="Email newsletter"
-            icon="/images/icons/email.png"
-            hovericon="/images/icons/email-alt.png"
-          />
-        </div>
-        <div className="column">
-          <BrandIdentityItem
-            subtitle="Social media"
-            icon="/images/icons/social.png"
-            hovericon="/images/icons/social-alt.png"
-          />
-        </div>
-        <div className="column">
-          <BrandIdentityItem
-            subtitle="Infographic"
-            icon="/images/icons/infographic.png"
-            hovericon="/images/icons/infographic-alt.png"
-          />
-        </div>
+        {data.brandIdentityItem.map(items => (
+          <div className="column">
+            <BrandIdentityItem
+              subtitle={items.title}
+              icon={items.logo.asset.url}
+              hovericon={items.hoverLogo.asset.url}
+            />
+          </div>
+        ))}
       </div>
     </div>
   </Container>
