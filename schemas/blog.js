@@ -70,14 +70,9 @@ export default {
       of: [{ title: 'Item', type: 'string' }],
     },
     {
-      name: 'brandTitle',
-      title: 'Brand Title',
-      type: 'string',
-    },
-    {
-      name: 'brandSubtitle',
-      title: 'Brand Subtitle',
-      type: 'string',
+      name: 'BrandIdentity',
+      title: 'Brand Identity',
+      type: 'brandIdentity',
     },
     {
       name: 'reachUsText',
