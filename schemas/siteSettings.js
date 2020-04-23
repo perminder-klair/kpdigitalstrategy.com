@@ -166,6 +166,16 @@ export default {
       type: 'brandIdentity',
     },
     {
+      name: 'caseMainTitle',
+      title: 'Case Main Title',
+      type: 'string',
+    },
+    {
+      name: 'caseMainSubtitle',
+      title: 'Case Main Subtitle',
+      type: 'string',
+    },
+    {
       name: 'caseOurValue',
       title: 'Case Our Value',
       type: 'array',
