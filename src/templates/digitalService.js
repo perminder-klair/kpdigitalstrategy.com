@@ -102,7 +102,7 @@ export default class LandingPage extends React.Component {
         <ServiceItem data={digital} />
         <Features />
         {/* <Slider /> */}
-        <ReachUs data={digital} />
+        <ReachUs data={digital.reachUsText} />
         <Portfolio data={digital.portfolio} />
         <StrengthData data={digital.features} />
         <Faq data={digital.faq} />
