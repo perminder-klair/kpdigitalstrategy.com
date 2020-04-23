@@ -28,27 +28,6 @@ export default {
       type: 'image',
     },
     {
-      name: 'ourValue',
-      title: 'Our Value',
-      type: 'array',
-      of: [{ title: 'Item', type: 'string' }],
-    },
-    {
-      name: 'brandIdentityTitle',
-      title: 'Brand Identity Title',
-      type: 'string',
-    },
-    {
-      name: 'brandIdentitySubtitle',
-      title: 'Brand Identity Subtitle',
-      type: 'string',
-    },
-    {
-      name: 'reachUsText',
-      title: 'ReachUs Text',
-      type: 'string',
-    },
-    {
       name: 'adddetails',
       title: 'Add Details',
       type: 'array',

@@ -165,5 +165,21 @@ export default {
       title: 'Blog Brand Identity',
       type: 'brandIdentity',
     },
+    {
+      name: 'caseOurValue',
+      title: 'Case Our Value',
+      type: 'array',
+      of: [{ title: 'Item', type: 'string' }],
+    },
+    {
+      name: 'CaseBrandIdentity',
+      title: 'Case Brand Identity',
+      type: 'brandIdentity',
+    },
+    {
+      name: 'CaseReachUsText',
+      title: 'Case ReachUs Text',
+      type: 'string',
+    },
   ],
 };
