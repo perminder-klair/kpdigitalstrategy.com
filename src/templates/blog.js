@@ -4,7 +4,7 @@ import config from '../utils/config';
 
 import Seo from '../components/Seo';
 import OurValue from '../components/OurValue';
-// import BrandIdentity from '../components/BrandIdentity';
+import BrandIdentity from '../components/BrandIdentity';
 import ContactUs from '../components/ReachUs';
 import Layout from '../components/Layout';
 import PageHero from '../components/PageHero';
@@ -33,8 +33,23 @@ export const blogPageQuery = graphql`
       }
       tags
       ourValue
-      brandTitle
-      brandSubtitle
+      BrandIdentity {
+        brandIdentityTitle
+        brandIdentitySubtitle
+        brandIdentityItem {
+          logo {
+            asset {
+              url
+            }
+          }
+          hoverLogo {
+            asset {
+              url
+            }
+          }
+          title
+        }
+      }
       reachUsText
     }
   }
@@ -60,7 +75,7 @@ export default class IndividualBlog extends React.Component {
         <BlogHeading data={blog} />
         <BlogContent data={blog} />
         <OurValue data={blog.ourValue} />
-        {/* <BrandIdentity data={blog} /> */}
+        <BrandIdentity data={blog.BrandIdentity} />
         <ContactUs data={blog.reachUsText} />
       </Layout>
     );
