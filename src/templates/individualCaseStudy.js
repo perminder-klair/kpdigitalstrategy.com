@@ -11,6 +11,8 @@ import PortfolioShowCase from '../components/PortfolioShowCase';
 export const individualCaseQuery = graphql`
   query individualPageQuery($slug: String) {
     sanityCaseStudy(slug: { current: { eq: $slug } }) {
+      caseName
+      Subtitle
       slug {
         current
       }
@@ -51,10 +53,7 @@ export default class IndividualCaseStudy extends React.Component {
           url={config.siteUrl}
           image={config.image}
         />
-        <PageHero
-          title="Branding.Web design.UX"
-          subtitle="EPIC Risk Management"
-        />
+        <PageHero title={individual.caseName} subtitle={individual.Subtitle} />
         <BrandHeaderCase data={individual} />
         <SectionCase data={individual} />
         <PortfolioShowCase data={individual} />

@@ -12,6 +12,8 @@ import Layout from '../components/Layout';
 export const caseStudyQuery = graphql`
   query caseQuery {
     sanitySiteSettings {
+      caseMainTitle
+      caseMainSubtitle
       caseOurValue
       CaseBrandIdentity {
         brandIdentityTitle
@@ -38,8 +40,6 @@ export const caseStudyQuery = graphql`
           slug {
             current
           }
-          caseName
-          Subtitle
           thumbnail {
             asset {
               url
@@ -57,8 +57,8 @@ const CaseStudiesPage = ({ data }) => {
   return (
     <Layout>
       <PageHero
-        title="Our Case Studies"
-        subtitle="Here is Some Of Our Latest Work"
+        title={CaseSetting.caseMainTitle}
+        subtitle={CaseSetting.caseMainSubtitle}
       />
       <CaseStudyFeatures data={casePage} />
       <Seo

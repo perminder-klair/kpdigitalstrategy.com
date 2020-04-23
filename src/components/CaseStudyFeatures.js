@@ -23,11 +23,11 @@ const CaseStudyFeatures = ({ data }) => (
     <Border />
     <div className="columns is-multiline">
       {data.map(item => (
-        <Link to={`/case/${item.node.slug.current}`}>
-          <div className="column is-half">
+        <div className="column is-half">
+          <Link to={`/case/${item.node.slug.current}`}>
             <img src={item.node.thumbnail.asset.url} alt="case-studies" />
-          </div>
-        </Link>
+          </Link>
+        </div>
       ))}
     </div>
   </Section>
