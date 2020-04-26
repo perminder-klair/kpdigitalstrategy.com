@@ -12,6 +12,9 @@ import Layout from '../components/Layout';
 export const caseStudyQuery = graphql`
   query caseQuery {
     sanitySiteSettings {
+      caseSeoTitle
+      caseSeoMetaDescription
+      caseSeoKeywords
       caseMainTitle
       caseMainSubtitle
       caseOurValue
@@ -56,17 +59,18 @@ const CaseStudiesPage = ({ data }) => {
   const casePage = data.allSanityCaseStudy.edges;
   return (
     <Layout>
+      <Seo
+        title={CaseSetting.caseSeoTitle}
+        description={CaseSetting.caseSeoMetaDescription}
+        keywords={CaseSetting.caseSeoKeywords}
+        url={config.siteUrl}
+        image={config.image}
+      />
       <PageHero
         title={CaseSetting.caseMainTitle}
         subtitle={CaseSetting.caseMainSubtitle}
       />
       <CaseStudyFeatures data={casePage} />
-      <Seo
-        title="Manchester Digital Marketing Agency"
-        description="KP Digital Strategy"
-        url={config.siteUrl}
-        image={config.image}
-      />
       <OurValue data={CaseSetting.caseOurValue} />
       <BrandIdentity data={CaseSetting.CaseBrandIdentity} />
       <ContactUs data={CaseSetting.CaseReachUsText} />

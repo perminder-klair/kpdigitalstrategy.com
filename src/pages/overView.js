@@ -10,6 +10,9 @@ import ServiceHero from '../components/ServiceHero';
 export const overViewQuery = graphql`
   query overView {
     sanitySiteSettings {
+      digitalSeoTitle
+      digitalSeoMetaDescription
+      digitalSeoKeywords
       digitalMainTitle
       digitalMainSubtitle
       digitalOurValue
@@ -40,8 +43,9 @@ const OverViewPage = ({ data }) => {
   return (
     <Layout>
       <Seo
-        title="Manchester Digital Marketing Agency"
-        description="KP Digital Strategy"
+        title={digitalService.digitalSeoTitle}
+        description={digitalService.digitalSeoMetaDescription}
+        keywords={digitalService.digitalSeoKeywords}
         url={config.siteUrl}
         image={config.image}
       />

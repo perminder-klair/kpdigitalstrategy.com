@@ -15,6 +15,9 @@ import ReachUs from '../components/ReachUs';
 export const blogQuery = graphql`
   query blogQuery {
     sanitySiteSettings {
+      blogSeoTitle
+      blogSeoMetaDescription
+      blogSeoKeywords
       blogMainTitle
       blogMainSubtitle
       blogBrandIdentity {
@@ -83,8 +86,9 @@ export default class Blog extends React.Component {
     return (
       <Layout>
         <Seo
-          title="Manchester Digital Marketing Agency"
-          description="KP Digital Strategy"
+          title={page.blogSeoTitle}
+          description={page.blogSeoMetaDescription}
+          keywords={page.blogSeoKeywords}
           url={config.siteUrl}
           image={config.image}
         />
