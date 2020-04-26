@@ -1,8 +1,23 @@
 export default {
   name: 'caseStudy',
-  title: 'Case',
+  title: 'Case Study',
   type: 'document',
   fields: [
+    {
+      name: 'individualCaseSeoTitle',
+      title: 'Individual Case Seo Title',
+      type: 'string',
+    },
+    {
+      name: 'individualCaseSeoKeywords',
+      title: 'Individual Case Seo Keywords',
+      type: 'string',
+    },
+    {
+      name: 'individualCaseSeoMetaDescription',
+      title: 'Individual Case Seo Meta Description',
+      type: 'text',
+    },
     {
       name: 'caseName',
       title: 'Case Name',
@@ -59,8 +74,9 @@ export default {
   ],
   preview: {
     select: {
-      title: 'title',
-      media: 'Thumbnail',
+      title: 'individualCaseSeoTitle',
+      subtitle: 'slug.current',
+      media: 'thumbnail',
     },
   },
 };

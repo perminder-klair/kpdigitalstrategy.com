@@ -4,6 +4,21 @@ export default {
   type: 'document',
   fields: [
     {
+      name: 'serviceSeoTitle',
+      title: 'Service Seo Title',
+      type: 'string',
+    },
+    {
+      name: 'serviceSeoKeywords',
+      title: 'Service Seo Keywords',
+      type: 'string',
+    },
+    {
+      name: 'serviceSeoMetaDescription',
+      title: 'Service Seo Meta Description',
+      type: 'text',
+    },
+    {
       title: 'order',
       name: 'Order',
       type: 'number',

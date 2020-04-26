@@ -4,6 +4,21 @@ export default {
   type: 'object',
   fields: [
     {
+      name: 'aboutSeoTitle',
+      title: 'About Seo Title',
+      type: 'string',
+    },
+    {
+      name: 'aboutSeoKeywords',
+      title: 'About Seo Keywords',
+      type: 'string',
+    },
+    {
+      name: 'aboutSeoMetaDescription',
+      title: 'About Seo Meta Description',
+      type: 'text',
+    },
+    {
       name: 'heroTitle',
       title: 'Hero title',
       type: 'string',

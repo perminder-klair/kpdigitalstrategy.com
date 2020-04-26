@@ -10,18 +10,33 @@ export default {
   ],
   fields: [
     {
-      name: 'title',
-      title: 'Title',
+      name: 'homeSeoTitle',
+      title: 'Home Seo Title',
       type: 'string',
     },
     {
-      name: 'autoSubtitle',
-      title: 'Auto Subtitle',
+      name: 'homeSeoKeywords',
+      title: 'Home Seo Keywords',
       type: 'string',
     },
     {
-      name: 'redSubtitle',
-      title: 'Red Subtitle',
+      name: 'homeSeoMetaDescription',
+      title: 'Home Seo Meta Description',
+      type: 'text',
+    },
+    {
+      name: 'homeTitle',
+      title: 'Home Title',
+      type: 'string',
+    },
+    {
+      name: 'homeAutoSubtitle',
+      title: 'Home Auto Subtitle',
+      type: 'string',
+    },
+    {
+      name: 'homeSubtitle',
+      title: 'Home Subtitle',
       type: 'string',
     },
     {
@@ -119,6 +134,21 @@ export default {
       type: 'aboutUs',
     },
     {
+      name: 'digitalSeoTitle',
+      title: 'Digital Seo Title',
+      type: 'string',
+    },
+    {
+      name: 'digitalSeoKeywords',
+      title: 'Digital Seo Keywords',
+      type: 'string',
+    },
+    {
+      name: 'digitalSeoMetaDescription',
+      title: 'Digital Seo Meta Description',
+      type: 'text',
+    },
+    {
       name: 'digitalMainTitle',
       title: 'Digital Main Title',
       type: 'string',
@@ -133,6 +163,21 @@ export default {
       title: 'Digital Our Value',
       type: 'array',
       of: [{ title: 'Item', type: 'string' }],
+    },
+    {
+      name: 'blogSeoTitle',
+      title: 'Blog Seo Title',
+      type: 'string',
+    },
+    {
+      name: 'blogSeoKeywords',
+      title: 'Blog Seo Keywords',
+      type: 'string',
+    },
+    {
+      name: 'blogSeoMetaDescription',
+      title: 'Blog Seo Meta Description',
+      type: 'text',
     },
     {
       name: 'blogMainTitle',
@@ -164,6 +209,21 @@ export default {
       name: 'blogBrandIdentity',
       title: 'Blog Brand Identity',
       type: 'brandIdentity',
+    },
+    {
+      name: 'caseSeoTitle',
+      title: 'Case Seo Title',
+      type: 'string',
+    },
+    {
+      name: 'caseSeoKeywords',
+      title: 'Case Seo Keywords',
+      type: 'string',
+    },
+    {
+      name: 'caseSeoMetaDescription',
+      title: 'Case Seo Meta Description',
+      type: 'text',
     },
     {
       name: 'caseMainTitle',

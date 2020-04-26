@@ -4,6 +4,21 @@ export default {
   type: 'document',
   fields: [
     {
+      name: 'individualDigitalSeoTitle',
+      title: 'Individual Digital Seo Title',
+      type: 'string',
+    },
+    {
+      name: 'individualDigitalSeoKeywords',
+      title: 'Individual Digital Seo Keywords',
+      type: 'string',
+    },
+    {
+      name: 'individualDigitalSeoMetaDescription',
+      title: 'Individual Digital Seo Meta Description',
+      type: 'text',
+    },
+    {
       name: 'category',
       title: 'Category',
       type: 'string',

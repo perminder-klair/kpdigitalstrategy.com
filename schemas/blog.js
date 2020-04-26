@@ -4,6 +4,21 @@ export default {
   type: 'document',
   fields: [
     {
+      name: 'individualBlogSeoTitle',
+      title: 'Individual Blog Seo Title',
+      type: 'string',
+    },
+    {
+      name: 'individualBlogSeoKeywords',
+      title: 'Individual Blog Seo Keywords',
+      type: 'string',
+    },
+    {
+      name: 'individualBlogSeoMetaDescription',
+      title: 'Individual Blog Seo Meta Description',
+      type: 'text',
+    },
+    {
       name: 'category',
       title: 'Category',
       type: 'string',

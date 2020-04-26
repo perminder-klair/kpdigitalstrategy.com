@@ -4,6 +4,21 @@ export default {
   type: 'document',
   fields: [
     {
+      name: 'productSeoTitle',
+      title: 'Product Seo Title',
+      type: 'string',
+    },
+    {
+      name: 'productSeoKeywords',
+      title: 'Product Seo Keywords',
+      type: 'string',
+    },
+    {
+      name: 'productSeoMetaDescription',
+      title: 'Product Seo Meta Description',
+      type: 'text',
+    },
+    {
       name: 'title',
       title: 'Title',
       type: 'string',
