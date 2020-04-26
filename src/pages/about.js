@@ -14,6 +14,9 @@ export const aboutQuery = graphql`
   query about {
     sanitySiteSettings {
       aboutPage {
+        aboutSeoTitle
+        aboutSeoKeywords
+        aboutSeoMetaDescription
         heroTitle
         heroSubtitle
         ourValues
@@ -52,8 +55,9 @@ const AboutUs = ({ data }) => {
   return (
     <Layout>
       <Seo
-        title="Manchester Digital Marketing Agency"
-        description="KP Digital Strategy"
+        title={page.aboutPage.aboutSeoTitle}
+        description={page.aboutPage.aboutSeoMetaDescription}
+        keywords={page.aboutPage.aboutSeoKeywords}
         url={config.siteUrl}
         image={config.image}
       />

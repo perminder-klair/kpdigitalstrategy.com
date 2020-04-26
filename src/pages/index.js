@@ -117,9 +117,7 @@ export default class IndexPage extends React.Component {
         <HomeHero data={home} />
         <Brand data={home.brandIcons} />
         <OurValue data={home.ourValue} />
-        {/* change Component  name */}
         <ServiceItem data={home} />
-        {/* ---------- */}
         <Services data={page.edges} />
         <ReactSlider data={home} />
         <ReachUs data={home.reachUsText} />
