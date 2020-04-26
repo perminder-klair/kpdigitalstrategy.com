@@ -20,8 +20,11 @@ import GetInTouch from '../components/GetInTouch';
 export const homeQuery = graphql`
   query homepage {
     sanitySiteSettings {
-      title
-      redSubtitle
+      homeSeoTitle
+      homeSeoKeywords
+      homeSeoMetaDescription
+      homeTitle
+      homeSubtitle
       brandTitle
       brandIcons {
         asset {
@@ -105,8 +108,9 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <Seo
-          title="Manchester Digital Marketing Agency"
-          description="KP Digital Strategy"
+          title={home.homeSeoTitle}
+          description={home.homeSeoMetaDescription}
+          keywords={home.homeSeoKeywords}
           url={config.siteUrl}
           image={config.image}
         />

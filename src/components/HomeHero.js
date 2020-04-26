@@ -38,13 +38,13 @@ const HomeHero = ({ data }) => (
           <section className="hero is-medium">
             <div className="hero-body">
               <h2 className="subtitle is-1 is-size-3-mobile has-text-weight-semibold">
-                {data.title}
+                {data.homeTitle}
               </h2>
               <div className="auto">
                 <Text />
               </div>
               <HelpText className="has-text-weight-semibold has-text-danger">
-                {data.redSubtitle}
+                {data.homeSubtitle}
               </HelpText>
               <button
                 className="button is-danger is-rounded has-text-weight-medium is-size-6"
