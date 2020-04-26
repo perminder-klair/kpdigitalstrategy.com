@@ -17,6 +17,9 @@ import TestimonailData from '../components/TestimonailData';
 export const productQuery = graphql`
   query product($slug: String) {
     sanityProduct(slug: { current: { eq: $slug } }) {
+      productSeoTitle
+      productSeoKeywords
+      productSeoMetaDescription
       slug {
         current
       }
@@ -75,8 +78,9 @@ export default class ProductPage extends React.Component {
     return (
       <Layout>
         <Seo
-          title="Manchester Digital Marketing Agency"
-          description="KP Digital Strategy"
+          title={product.productSeoTitle}
+          description={product.productSeoMetaDescription}
+          keywords={product.productSeoKeywords}
           url={config.siteUrl}
           image={config.image}
         />

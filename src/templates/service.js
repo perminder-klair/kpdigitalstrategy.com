@@ -18,6 +18,9 @@ import TestimonailData from '../components/TestimonailData';
 export const serviceQuery = graphql`
   query service($slug: String) {
     sanityService(slug: { current: { eq: $slug } }) {
+      serviceSeoTitle
+      serviceSeoKeywords
+      serviceSeoMetaDescription
       slug {
         current
       }
@@ -90,8 +93,9 @@ export default class ServicePage extends React.Component {
     return (
       <Layout>
         <Seo
-          title="Manchester Digital Marketing Agency"
-          description="KP Digital Strategy"
+          title={service.serviceSeoTitle}
+          description={service.serviceSeoMetaDescription}
+          keywords={service.serviceSeoKeywords}
           url={config.siteUrl}
           image={config.image}
         />

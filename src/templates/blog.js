@@ -14,6 +14,9 @@ import BlogContent from '../components/BlogContent';
 export const blogPageQuery = graphql`
   query blogPageQuery($slug: String) {
     sanityBlog(slug: { current: { eq: $slug } }) {
+      individualBlogSeoTitle
+      individualBlogSeoKeywords
+      individualBlogSeoMetaDescription
       slug {
         current
       }
@@ -63,8 +66,9 @@ export default class IndividualBlog extends React.Component {
     return (
       <Layout>
         <Seo
-          title="Manchester Digital Marketing Agency"
-          description="KP Digital Strategy"
+          title={blog.individualBlogSeoTitle}
+          description={blog.individualBlogSeoMetaDescription}
+          keywords={blog.individualBlogSeoKeywords}
           url={config.siteUrl}
           image={config.image}
         />

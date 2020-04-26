@@ -18,6 +18,9 @@ import TestimonailData from '../components/TestimonailData';
 export const digitalPageQuery = graphql`
   query digitalPageQuery($slug: String) {
     sanityDigitalService(slug: { current: { eq: $slug } }) {
+      individualDigitalSeoTitle
+      individualDigitalSeoKeywords
+      individualDigitalSeoMetaDescription
       slug {
         current
       }
@@ -88,8 +91,9 @@ export default class LandingPage extends React.Component {
     return (
       <Layout>
         <Seo
-          title="Manchester Digital Marketing Agency"
-          description="KP Digital Strategy"
+          title={digital.individualDigitalSeoTitle}
+          description={digital.individualDigitalSeoMetaDescription}
+          keywords={digital.individualDigitalSeoKeywords}
           url={config.siteUrl}
           image={config.image}
         />

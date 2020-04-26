@@ -11,6 +11,9 @@ import PortfolioShowCase from '../components/PortfolioShowCase';
 export const individualCaseQuery = graphql`
   query individualPageQuery($slug: String) {
     sanityCaseStudy(slug: { current: { eq: $slug } }) {
+      individualCaseSeoTitle
+      individualCaseSeoKeywords
+      individualCaseSeoMetaDescription
       caseName
       Subtitle
       slug {
@@ -48,8 +51,9 @@ export default class IndividualCaseStudy extends React.Component {
     return (
       <Layout>
         <Seo
-          title="Manchester Digital Marketing Agency"
-          description="KP Digital Strategy"
+          title={individual.individualCaseSeoTitle}
+          description={individual.individualCaseSeoMetaDescription}
+          keywords={individual.individualCaseSeoKeywords}
           url={config.siteUrl}
           image={config.image}
         />
