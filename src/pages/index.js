@@ -39,6 +39,9 @@ export const homeQuery = graphql`
       sliderTitle
       sliderSubtitle
       sliderItems {
+        slug {
+          current
+        }
         sliderItem {
           image {
             asset {
@@ -130,7 +133,7 @@ export default class IndexPage extends React.Component {
         <OurValue data={home.ourValue} />
         <ServiceItem data={home} />
         <Services data={page.edges} />
-        <ReactSlider data={home.sliderItems.sliderItem} />
+        <ReactSlider data={home.sliderItems} />
         <ReachUs data={home.reachUsText} />
         <Portfolio data={home.portfolio} />
         <StrengthData data={home.features} />

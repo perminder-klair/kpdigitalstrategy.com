@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 const Container = styled.div`
   .card {
@@ -23,24 +24,24 @@ const Container = styled.div`
   }
 `;
 
-const ProductSlider = ({ sliderTitle }) => (
+const ProductSlider = ({ data }) => (
   <Container>
     <div className="card">
       <div className="card-image">
         <img
-          src="/images/team/card-image.png"
+          src={data.sliderItem.image.asset.url}
           alt="daily mails logo"
           title="kpdigital strategy Design"
         />
       </div>
       <div className="media-content has-text-centered">
-        <h2 className="title is-6  has-text-white">{sliderTitle}</h2>
-        <button
+        <h2 className="title is-6  has-text-white">{data.sliderItem.title}</h2>
+        <Link
+          to={`product/${data.slug.current}`}
           className="button  is-danger has-text-weight-semibold"
-          type="button"
         >
           Explore this product
-        </button>
+        </Link>
       </div>
     </div>
   </Container>

@@ -67,24 +67,11 @@ const Responsive = ({ data }) => {
       <div className="container">
         <PageHero title="fdfg" paragraph="fdfdd" />
         <Slider {...settings}>
-          <div>
-            <ProductSlider sliderTitle={data.title} />{' '}
-          </div>
-          <div>
-            <ProductSlider />{' '}
-          </div>
-          <div>
-            <ProductSlider />{' '}
-          </div>
-          <div>
-            <ProductSlider />{' '}
-          </div>
-          <div>
-            <ProductSlider />{' '}
-          </div>
-          <div>
-            <ProductSlider />{' '}
-          </div>
+          {data.map(item => (
+            <div>
+              <ProductSlider data={item} />{' '}
+            </div>
+          ))}
         </Slider>
       </div>
     </Section>
