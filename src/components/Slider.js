@@ -65,10 +65,10 @@ const Responsive = ({ data }) => {
   return (
     <Section className="section">
       <div className="container">
-        <PageHero title={data.sliderTitle} paragraph={data.sliderSubtitle} />
+        <PageHero title="fdfg" paragraph="fdfdd" />
         <Slider {...settings}>
           <div>
-            <ProductSlider />{' '}
+            <ProductSlider sliderTitle={data.title} />{' '}
           </div>
           <div>
             <ProductSlider />{' '}

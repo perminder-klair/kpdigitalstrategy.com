@@ -23,7 +23,7 @@ const Container = styled.div`
   }
 `;
 
-const ProductSlider = () => (
+const ProductSlider = ({ sliderTitle }) => (
   <Container>
     <div className="card">
       <div className="card-image">
@@ -34,9 +34,7 @@ const ProductSlider = () => (
         />
       </div>
       <div className="media-content has-text-centered">
-        <h2 className="title is-6  has-text-white">
-          Website Design & Development
-        </h2>
+        <h2 className="title is-6  has-text-white">{sliderTitle}</h2>
         <button
           className="button  is-danger has-text-weight-semibold"
           type="button"

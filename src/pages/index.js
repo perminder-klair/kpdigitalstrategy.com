@@ -38,6 +38,16 @@ export const homeQuery = graphql`
       serviceSubtitle
       sliderTitle
       sliderSubtitle
+      sliderItems {
+        sliderItem {
+          image {
+            asset {
+              url
+            }
+          }
+          title
+        }
+      }
       reachUsText
       portfolio {
         portfolioTitle
@@ -105,6 +115,7 @@ export default class IndexPage extends React.Component {
     const {
       data: { allSanityService: page, sanitySiteSettings: home },
     } = this.props;
+    console.log('bir', home);
     return (
       <Layout>
         <Seo
@@ -119,7 +130,7 @@ export default class IndexPage extends React.Component {
         <OurValue data={home.ourValue} />
         <ServiceItem data={home} />
         <Services data={page.edges} />
-        <ReactSlider data={home} />
+        <ReactSlider data={home.sliderItems.sliderItem} />
         <ReachUs data={home.reachUsText} />
         <Portfolio data={home.portfolio} />
         <StrengthData data={home.features} />
