@@ -106,6 +106,11 @@ export default {
       ],
     },
     {
+      name: 'sliderItem',
+      title: 'Slider Item',
+      type: 'sliderItem',
+    },
+    {
       name: 'ourGrowthTitle',
       title: 'Our Growth Title',
       type: 'string',
