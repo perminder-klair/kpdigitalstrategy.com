@@ -65,7 +65,10 @@ const Responsive = ({ data }) => {
   return (
     <Section className="section">
       <div className="container">
-        <PageHero title="fdfg" paragraph="fdfdd" />
+        <PageHero
+          title="Products to suit your critical business needs"
+          paragraph="We reliably deliver the full suite of design and marketing services, on time and at the expected price."
+        />
         <Slider {...settings}>
           {data.map(item => (
             <div>
