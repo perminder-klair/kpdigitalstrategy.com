@@ -36,8 +36,6 @@ export const homeQuery = graphql`
       strengthSubtitle
       serviceTitle
       serviceSubtitle
-      sliderTitle
-      sliderSubtitle
       sliderItems {
         slug {
           current
@@ -118,7 +116,6 @@ export default class IndexPage extends React.Component {
     const {
       data: { allSanityService: page, sanitySiteSettings: home },
     } = this.props;
-    console.log('bir', home);
     return (
       <Layout>
         <Seo

@@ -31,8 +31,6 @@ export const digitalPageQuery = graphql`
       strengthSubtitle
       serviceTitle
       serviceSubtitle
-      sliderTitle
-      sliderSubtitle
       sliderItems {
         slug {
           current
