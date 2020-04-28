@@ -6,7 +6,7 @@ import Seo from '../components/Seo';
 import Portfolio from '../components/Portfolio';
 import Brand from '../components/Brand';
 import Features from '../components/Features';
-// import Slider from '../components/Slider';
+import Slider from '../components/Slider';
 import ReachUs from '../components/ReachUs';
 import StrengthData from '../components/StrengthData';
 import ServiceItem from '../components/ServiceItem-old';
@@ -33,6 +33,19 @@ export const digitalPageQuery = graphql`
       serviceSubtitle
       sliderTitle
       sliderSubtitle
+      sliderItems {
+        slug {
+          current
+        }
+        sliderItem {
+          image {
+            asset {
+              url
+            }
+          }
+          title
+        }
+      }
       reachUsText
       portfolio {
         portfolioTitle
@@ -105,7 +118,7 @@ export default class LandingPage extends React.Component {
         <OurValue data={digital.ourValues} />
         <ServiceItem data={digital} />
         <Features />
-        {/* <Slider /> */}
+        <Slider data={digital.sliderItems} />
         <ReachUs data={digital.reachUsText} />
         <Portfolio data={digital.portfolio} />
         <StrengthData data={digital.features} />
