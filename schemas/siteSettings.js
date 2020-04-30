@@ -30,11 +30,6 @@ export default {
       type: 'string',
     },
     {
-      name: 'homeAutoSubtitle',
-      title: 'Home Auto Subtitle',
-      type: 'string',
-    },
-    {
       name: 'homeSubtitle',
       title: 'Home Subtitle',
       type: 'string',
