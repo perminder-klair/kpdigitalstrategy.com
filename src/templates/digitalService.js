@@ -5,7 +5,7 @@ import ContactHero from '../components/ContactHero';
 import Seo from '../components/Seo';
 import Portfolio from '../components/Portfolio';
 import Brand from '../components/Brand';
-import Features from '../components/Features';
+import Services from '../components/ServiceItems';
 import Slider from '../components/Slider';
 import ReachUs from '../components/ReachUs';
 import StrengthData from '../components/StrengthData';
@@ -91,13 +91,30 @@ export const digitalPageQuery = graphql`
         }
       }
     }
+    allSanityService(sort: { fields: Order }) {
+      edges {
+        node {
+          Order
+          title
+          slug {
+            current
+          }
+          Logo {
+            asset {
+              url
+            }
+          }
+          description
+        }
+      }
+    }
   }
 `;
 
-export default class LandingPage extends React.Component {
+export default class digitalService extends React.Component {
   render() {
     const {
-      data: { sanityDigitalService: digital },
+      data: { allSanityService: page, sanityDigitalService: digital },
     } = this.props;
     return (
       <Layout>
@@ -115,7 +132,11 @@ export default class LandingPage extends React.Component {
         />
         <OurValue data={digital.ourValues} />
         <ServiceItem data={digital} />
-        <Features />
+        <Services
+          data={page.edges}
+          serviceHeading={digital.serviceTitle}
+          servicetitle={digital.serviceSubtitle}
+        />
         <Slider data={digital.sliderItems} />
         <ReachUs data={digital.reachUsText} />
         <Portfolio data={digital.portfolio} />

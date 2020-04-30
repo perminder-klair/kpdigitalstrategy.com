@@ -129,7 +129,11 @@ export default class IndexPage extends React.Component {
         <Brand data={home.brandIcons} />
         <OurValue data={home.ourValue} />
         <ServiceItem data={home} />
-        <Services data={page.edges} />
+        <Services
+          data={page.edges}
+          serviceHeading={home.serviceTitle}
+          servicetitle={home.serviceSubtitle}
+        />
         <ReactSlider data={home.sliderItems} />
         <ReachUs data={home.reachUsText} />
         <Portfolio data={home.portfolio} />
