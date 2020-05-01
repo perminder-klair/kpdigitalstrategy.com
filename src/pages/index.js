@@ -36,6 +36,8 @@ export const homeQuery = graphql`
       strengthSubtitle
       serviceTitle
       serviceSubtitle
+      sliderHeading
+      sliderTitle
       sliderItems {
         slug {
           current
@@ -134,7 +136,11 @@ export default class IndexPage extends React.Component {
           serviceHeading={home.serviceTitle}
           serviceTitle={home.serviceSubtitle}
         />
-        <ReactSlider data={home.sliderItems} />
+        <ReactSlider
+          data={home.sliderItems}
+          sliderHeading={home.sliderHeading}
+          sliderTitle={home.sliderTitle}
+        />
         <ReachUs data={home.reachUsText} />
         <Portfolio data={home.portfolio} />
         <StrengthData data={home.features} />

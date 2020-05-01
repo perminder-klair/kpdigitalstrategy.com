@@ -31,6 +31,8 @@ export const digitalPageQuery = graphql`
       strengthSubtitle
       serviceTitle
       serviceSubtitle
+      sliderHeading
+      sliderTitle
       sliderItems {
         slug {
           current
@@ -137,7 +139,11 @@ export default class digitalService extends React.Component {
           serviceHeading={digital.serviceTitle}
           serviceTitle={digital.serviceSubtitle}
         />
-        <Slider data={digital.sliderItems} />
+        <Slider
+          data={digital.sliderItems}
+          sliderHeading={digital.sliderHeading}
+          sliderTitle={digital.sliderTitle}
+        />
         <ReachUs data={digital.reachUsText} />
         <Portfolio data={digital.portfolio} />
         <StrengthData data={digital.features} />
