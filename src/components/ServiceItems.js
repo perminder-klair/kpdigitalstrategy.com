@@ -10,9 +10,9 @@ const Container = styled.section`
   padding: 5rem 1.5rem;
 `;
 
-const Services = ({ data, serviceHeading, servicetitle }) => (
+const Services = ({ data, serviceHeading, serviceTitle }) => (
   <Container className="section">
-    <PageHero title={serviceHeading} paragraph={servicetitle} />
+    <PageHero title={serviceHeading} paragraph={serviceTitle} />
     <div className="container">
       <div className="columns is-variable is-3">
         {data.map(item => (

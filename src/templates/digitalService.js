@@ -135,7 +135,7 @@ export default class digitalService extends React.Component {
         <Services
           data={page.edges}
           serviceHeading={digital.serviceTitle}
-          servicetitle={digital.serviceSubtitle}
+          serviceTitle={digital.serviceSubtitle}
         />
         <Slider data={digital.sliderItems} />
         <ReachUs data={digital.reachUsText} />

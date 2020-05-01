@@ -132,7 +132,7 @@ export default class IndexPage extends React.Component {
         <Services
           data={page.edges}
           serviceHeading={home.serviceTitle}
-          servicetitle={home.serviceSubtitle}
+          serviceTitle={home.serviceSubtitle}
         />
         <ReactSlider data={home.sliderItems} />
         <ReachUs data={home.reachUsText} />
