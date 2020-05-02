@@ -8,5 +8,10 @@ export default {
       title: 'Portfolio Image',
       type: 'image',
     },
+    {
+      name: 'alternativeText',
+      title: 'Alternative Text',
+      type: 'string',
+    },
   ],
 };
