@@ -24,7 +24,7 @@ const Portfolio = ({ data }) => (
             <div className="main">
               <img
                 src={items.portfolioImage.asset.url}
-                alt="daily mails logo"
+                alt={items.alternativeText}
               />
             </div>
           </div>

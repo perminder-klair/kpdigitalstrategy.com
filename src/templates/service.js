@@ -39,6 +39,7 @@ export const serviceQuery = graphql`
               url
             }
           }
+          alternativeText
         }
       }
       features {

@@ -50,6 +50,7 @@ export const productQuery = graphql`
               url
             }
           }
+          alternativeText
         }
       }
       brandIcons {

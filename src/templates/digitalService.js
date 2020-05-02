@@ -56,6 +56,7 @@ export const digitalPageQuery = graphql`
               url
             }
           }
+          alternativeText
         }
       }
       features {
