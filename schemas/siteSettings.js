@@ -72,6 +72,16 @@ export default {
       type: 'string',
     },
     {
+      name: 'productHeading',
+      title: 'Product Heading',
+      type: 'string',
+    },
+    {
+      name: 'productTitle',
+      title: 'Product Title',
+      type: 'string',
+    },
+    {
       name: 'sliderHeading',
       title: 'Slider Heading',
       type: 'string',
