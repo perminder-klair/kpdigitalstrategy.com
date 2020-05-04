@@ -9,16 +9,11 @@ const Container = styled.section`
   padding: 5rem 1.5rem;
 `;
 
-const Products = ({ data }) => (
+const Products = ({ data, heading, title }) => (
   <Container className="section">
     <div className="container">
-      <p className="title is-4 has-text-centered is-spaced">
-        Fully managed website solutions
-      </p>
-      <p className="subtitle is-6 has-text-centered">
-        One point of contact for design, development and on-going marketing for
-        your website.
-      </p>
+      <p className="title is-4 has-text-centered is-spaced">{heading}</p>
+      <p className="subtitle is-6 has-text-centered">{title}</p>
       <div className="columns is-multiline is-variable is-3">
         {data.map(item => (
           <FeatureItem

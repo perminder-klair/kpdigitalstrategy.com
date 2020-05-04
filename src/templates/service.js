@@ -17,6 +17,10 @@ import TestimonailData from '../components/TestimonailData';
 
 export const serviceQuery = graphql`
   query service($slug: String) {
+    sanitySiteSettings {
+      productHeading
+      productTitle
+    }
     sanityService(slug: { current: { eq: $slug } }) {
       serviceSeoTitle
       serviceSeoKeywords
@@ -90,7 +94,9 @@ export default class ServicePage extends React.Component {
     const {
       data: { sanityService: service },
     } = this.props;
-
+    const {
+      data: { sanitySiteSettings: page },
+    } = this.props;
     return (
       <Layout>
         <Seo
@@ -107,7 +113,11 @@ export default class ServicePage extends React.Component {
         />
         <OurValue data={service.ourValue} />
         <ServiceItem data={service} />
-        <Products data={service.product} />
+        <Products
+          data={service.product}
+          heading={page.productHeading}
+          title={page.productTitle}
+        />
         <ReachUs data={service.reachUsText} />
         <Portfolio data={service.portfolio} />
         <StrengthData data={service.features} />
