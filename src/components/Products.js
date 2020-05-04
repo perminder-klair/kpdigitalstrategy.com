@@ -19,7 +19,7 @@ const Products = ({ data }) => (
         One point of contact for design, development and on-going marketing for
         your website.
       </p>
-      <div className="columns is-variable is-3">
+      <div className="columns is-multiline is-variable is-3">
         {data.map(item => (
           <FeatureItem
             icon={item.Logo.asset.url}
