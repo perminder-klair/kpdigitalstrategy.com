@@ -8,7 +8,7 @@ import HomeHero from '../components/HomeHero';
 import ServiceItem from '../components/ServiceItem-old';
 import ReachUs from '../components/ReachUs';
 import Services from '../components/ServiceItems';
-import ReactSlider from '../components/Slider';
+import Slider from '../components/Slider';
 import Portfolio from '../components/Portfolio';
 import Brand from '../components/Brand';
 import StrengthData from '../components/StrengthData';
@@ -114,41 +114,39 @@ export const homeQuery = graphql`
   }
 `;
 
-export default class IndexPage extends React.Component {
-  render() {
-    const {
-      data: { allSanityService: page, sanitySiteSettings: home },
-    } = this.props;
-    return (
-      <Layout>
-        <Seo
-          title={home.homeSeoTitle}
-          description={home.homeSeoMetaDescription}
-          keywords={home.homeSeoKeywords}
-          url={config.siteUrl}
-          image={config.image}
-        />
-        <HomeHero data={home} />
-        <Brand data={home.brandIcons} />
-        <OurValue data={home.ourValue} />
-        <ServiceItem data={home} />
-        <Services
-          data={page.edges}
-          serviceHeading={home.serviceTitle}
-          serviceTitle={home.serviceSubtitle}
-        />
-        <ReactSlider
-          data={home.sliderItems}
-          sliderHeading={home.sliderHeading}
-          sliderTitle={home.sliderTitle}
-        />
-        <ReachUs data={home.reachUsText} />
-        <Portfolio data={home.portfolio} />
-        <StrengthData data={home.features} />
-        <Faq data={home.faq} />
-        <TestimonailData data={home.testimonialItem} backgroundColor />
-        <GetInTouch />
-      </Layout>
-    );
-  }
-}
+const Index = ({ data }) => {
+  const home = data.sanitySiteSettings;
+  const page = data.allSanityService;
+  return (
+    <Layout>
+      <Seo
+        title={home.homeSeoTitle}
+        description={home.homeSeoMetaDescription}
+        keywords={home.homeSeoKeywords}
+        url={config.siteUrl}
+        image={config.image}
+      />
+      <HomeHero data={home} />
+      <Brand data={home.brandIcons} />
+      <OurValue data={home.ourValue} />
+      <ServiceItem data={home} />
+      <Services
+        data={page.edges}
+        serviceHeading={home.serviceTitle}
+        serviceTitle={home.serviceSubtitle}
+      />
+      <Slider
+        data={home.sliderItems}
+        sliderHeading={home.sliderHeading}
+        sliderTitle={home.sliderTitle}
+      />
+      <ReachUs data={home.reachUsText} />
+      <Portfolio data={home.portfolio} />
+      <StrengthData data={home.features} />
+      <Faq data={home.faq} />
+      <TestimonailData data={home.testimonialItem} backgroundColor />
+      <GetInTouch />
+    </Layout>
+  );
+};
+export default Index;
