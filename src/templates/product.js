@@ -70,35 +70,31 @@ export const productQuery = graphql`
     }
   }
 `;
-
-export default class ProductPage extends React.Component {
-  render() {
-    const {
-      data: { sanityProduct: product },
-    } = this.props;
-    return (
-      <Layout>
-        <Seo
-          title={product.productSeoTitle}
-          description={product.productSeoMetaDescription}
-          keywords={product.productSeoKeywords}
-          url={config.siteUrl}
-          image={config.image}
-        />
-        <ContactHero
-          title={product.herotitle}
-          subtitle={product.herosubtitle}
-          textarea={false}
-        />
-        <OurValue data={product.ourValue} />
-        <ServiceItem data={product} />
-        <StrengthData data={product.features} />
-        <ReachUs data={product.reachUsText} />
-        <Portfolio data={product.portfolio} />
-        <Brand data={product.brandIcons} />
-        <TestimonailData data={product.testimonialItem} />
-        <GetInTouch />
-      </Layout>
-    );
-  }
-}
+const ProductPage = ({ data }) => {
+  const product = data.sanityProduct;
+  return (
+    <Layout>
+      <Seo
+        title={product.productSeoTitle}
+        description={product.productSeoMetaDescription}
+        keywords={product.productSeoKeywords}
+        url={config.siteUrl}
+        image={config.image}
+      />
+      <ContactHero
+        title={product.herotitle}
+        subtitle={product.herosubtitle}
+        textarea={false}
+      />
+      <OurValue data={product.ourValue} />
+      <ServiceItem data={product} />
+      <StrengthData data={product.features} />
+      <ReachUs data={product.reachUsText} />
+      <Portfolio data={product.portfolio} />
+      <Brand data={product.brandIcons} />
+      <TestimonailData data={product.testimonialItem} />
+      <GetInTouch />
+    </Layout>
+  );
+};
+export default ProductPage;
