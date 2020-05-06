@@ -114,44 +114,42 @@ export const digitalPageQuery = graphql`
   }
 `;
 
-export default class digitalService extends React.Component {
-  render() {
-    const {
-      data: { allSanityService: page, sanityDigitalService: digital },
-    } = this.props;
-    return (
-      <Layout>
-        <Seo
-          title={digital.individualDigitalSeoTitle}
-          description={digital.individualDigitalSeoMetaDescription}
-          keywords={digital.individualDigitalSeoKeywords}
-          url={config.siteUrl}
-          image={config.image}
-        />
-        <ContactHero
-          title={digital.herotitle}
-          subtitle={digital.herosubtitle}
-          textarea={false}
-        />
-        <OurValue data={digital.ourValues} />
-        <ServiceItem data={digital} />
-        <Services
-          data={page.edges}
-          serviceHeading={digital.serviceTitle}
-          serviceTitle={digital.serviceSubtitle}
-        />
-        <Slider
-          data={digital.sliderItems}
-          sliderHeading={digital.sliderHeading}
-          sliderTitle={digital.sliderTitle}
-        />
-        <ReachUs data={digital.reachUsText} />
-        <Portfolio data={digital.portfolio} />
-        <StrengthData data={digital.features} />
-        <Faq data={digital.faq} />
-        <TestimonailData data={digital.testimonialItem} />
-        <Brand data={digital.brandIcons} />
-      </Layout>
-    );
-  }
-}
+const digitalService = ({ data }) => {
+  const page = data.allSanityService;
+  const digital = data.sanityDigitalService;
+  return (
+    <Layout>
+      <Seo
+        title={digital.individualDigitalSeoTitle}
+        description={digital.individualDigitalSeoMetaDescription}
+        keywords={digital.individualDigitalSeoKeywords}
+        url={config.siteUrl}
+        image={config.image}
+      />
+      <ContactHero
+        title={digital.herotitle}
+        subtitle={digital.herosubtitle}
+        textarea={false}
+      />
+      <OurValue data={digital.ourValues} />
+      <ServiceItem data={digital} />
+      <Services
+        data={page.edges}
+        serviceHeading={digital.serviceTitle}
+        serviceTitle={digital.serviceSubtitle}
+      />
+      <Slider
+        data={digital.sliderItems}
+        sliderHeading={digital.sliderHeading}
+        sliderTitle={digital.sliderTitle}
+      />
+      <ReachUs data={digital.reachUsText} />
+      <Portfolio data={digital.portfolio} />
+      <StrengthData data={digital.features} />
+      <Faq data={digital.faq} />
+      <TestimonailData data={digital.testimonialItem} />
+      <Brand data={digital.brandIcons} />
+    </Layout>
+  );
+};
+export default digitalService;
