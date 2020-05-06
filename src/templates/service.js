@@ -89,42 +89,37 @@ export const serviceQuery = graphql`
   }
 `;
 
-export default class ServicePage extends React.Component {
-  render() {
-    const {
-      data: { sanityService: service },
-    } = this.props;
-    const {
-      data: { sanitySiteSettings: page },
-    } = this.props;
-    return (
-      <Layout>
-        <Seo
-          title={service.serviceSeoTitle}
-          description={service.serviceSeoMetaDescription}
-          keywords={service.serviceSeoKeywords}
-          url={config.siteUrl}
-          image={config.image}
-        />
-        <ContactHero
-          title={service.herotitle}
-          subtitle={service.herosubtitle}
-          textarea={false}
-        />
-        <OurValue data={service.ourValue} />
-        <ServiceItem data={service} />
-        <Products
-          data={service.product}
-          heading={page.productHeading}
-          title={page.productTitle}
-        />
-        <ReachUs data={service.reachUsText} />
-        <Portfolio data={service.portfolio} />
-        <StrengthData data={service.features} />
-        <TestimonailData data={service.testimonialItem} />
-        <Brand data={service.brandIcons} />
-        <GetInTouch />
-      </Layout>
-    );
-  }
-}
+const ServicePage = ({ data }) => {
+  const page = data.sanitySiteSettings;
+  const service = data.sanityService;
+  return (
+    <Layout>
+      <Seo
+        title={service.serviceSeoTitle}
+        description={service.serviceSeoMetaDescription}
+        keywords={service.serviceSeoKeywords}
+        url={config.siteUrl}
+        image={config.image}
+      />
+      <ContactHero
+        title={service.herotitle}
+        subtitle={service.herosubtitle}
+        textarea={false}
+      />
+      <OurValue data={service.ourValue} />
+      <ServiceItem data={service} />
+      <Products
+        data={service.product}
+        heading={page.productHeading}
+        title={page.productTitle}
+      />
+      <ReachUs data={service.reachUsText} />
+      <Portfolio data={service.portfolio} />
+      <StrengthData data={service.features} />
+      <TestimonailData data={service.testimonialItem} />
+      <Brand data={service.brandIcons} />
+      <GetInTouch />
+    </Layout>
+  );
+};
+export default ServicePage;
