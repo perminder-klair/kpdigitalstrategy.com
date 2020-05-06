@@ -58,30 +58,27 @@ export const blogPageQuery = graphql`
   }
 `;
 
-export default class IndividualBlog extends React.Component {
-  render() {
-    const {
-      data: { sanityBlog: blog },
-    } = this.props;
-    return (
-      <Layout>
-        <Seo
-          title={blog.individualBlogSeoTitle}
-          description={blog.individualBlogSeoMetaDescription}
-          keywords={blog.individualBlogSeoKeywords}
-          url={config.siteUrl}
-          image={config.image}
-        />
-        <PageHero
-          title="Our design & marketing advice centre"
-          subtitle="A collection of resources to support your business growth"
-        />
-        <BlogHeading data={blog} />
-        <BlogContent data={blog} />
-        <OurValue data={blog.ourValue} />
-        <BrandIdentity data={blog.BrandIdentity} />
-        <ContactUs data={blog.reachUsText} />
-      </Layout>
-    );
-  }
-}
+const IndividualBlog = ({ data }) => {
+  const blog = data.sanityBlog;
+  return (
+    <Layout>
+      <Seo
+        title={blog.individualBlogSeoTitle}
+        description={blog.individualBlogSeoMetaDescription}
+        keywords={blog.individualBlogSeoKeywords}
+        url={config.siteUrl}
+        image={config.image}
+      />
+      <PageHero
+        title="Our design & marketing advice centre"
+        subtitle="A collection of resources to support your business growth"
+      />
+      <BlogHeading data={blog} />
+      <BlogContent data={blog} />
+      <OurValue data={blog.ourValue} />
+      <BrandIdentity data={blog.BrandIdentity} />
+      <ContactUs data={blog.reachUsText} />
+    </Layout>
+  );
+};
+export default IndividualBlog;
