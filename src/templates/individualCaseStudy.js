@@ -43,25 +43,22 @@ export const individualCaseQuery = graphql`
   }
 `;
 
-export default class IndividualCaseStudy extends React.Component {
-  render() {
-    const {
-      data: { sanityCaseStudy: individual },
-    } = this.props;
-    return (
-      <Layout>
-        <Seo
-          title={individual.individualCaseSeoTitle}
-          description={individual.individualCaseSeoMetaDescription}
-          keywords={individual.individualCaseSeoKeywords}
-          url={config.siteUrl}
-          image={config.image}
-        />
-        <PageHero title={individual.caseName} subtitle={individual.Subtitle} />
-        <BrandHeaderCase data={individual} />
-        <SectionCase data={individual} />
-        <PortfolioShowCase data={individual} />
-      </Layout>
-    );
-  }
-}
+const IndividualCaseStudy = ({ data }) => {
+  const individual = data.sanityCaseStudy;
+  return (
+    <Layout>
+      <Seo
+        title={individual.individualCaseSeoTitle}
+        description={individual.individualCaseSeoMetaDescription}
+        keywords={individual.individualCaseSeoKeywords}
+        url={config.siteUrl}
+        image={config.image}
+      />
+      <PageHero title={individual.caseName} subtitle={individual.Subtitle} />
+      <BrandHeaderCase data={individual} />
+      <SectionCase data={individual} />
+      <PortfolioShowCase data={individual} />
+    </Layout>
+  );
+};
+export default IndividualCaseStudy;
