@@ -90,17 +90,26 @@ const Footer = () => (
           <h1 className="title is-size-6">Services</h1>
           <ul>
             <li>
-              <Link to="/about" className="subtitle is-size-6 is-block">
+              <Link
+                to="/service/branding"
+                className="subtitle is-size-6 is-block"
+              >
                 Branding design
               </Link>
             </li>
             <li>
-              <Link to="/news-updates" className="subtitle is-size-6 is-block">
+              <Link
+                to="/service/marketing"
+                className="subtitle is-size-6 is-block"
+              >
                 Digital marketing
               </Link>
             </li>
             <li>
-              <Link to="/news-updates" className="subtitle is-size-6 is-block">
+              <Link
+                to="/service/websites"
+                className="subtitle is-size-6 is-block"
+              >
                 Website design & development
               </Link>
             </li>
@@ -110,23 +119,17 @@ const Footer = () => (
           <h4 className="title is-size-6">Company</h4>
           <ul>
             <li>
-              <Link to="/faq" className="subtitle is-size-6 is-block">
+              <Link to="/about" className="subtitle is-size-6 is-block">
                 Meet the team
               </Link>
             </li>
             <li>
-              <Link
-                to="/privacy-policy"
-                className="subtitle is-size-6 is-block"
-              >
+              <Link to="/about" className="subtitle is-size-6 is-block">
                 About us
               </Link>
             </li>
             <li>
-              <Link
-                to="/terms-and-conditions"
-                className="subtitle is-size-6 is-block"
-              >
+              <Link to="" className="subtitle is-size-6 is-block">
                 Careers
               </Link>
             </li>
@@ -136,17 +139,17 @@ const Footer = () => (
           <h4 className="title is-size-6">Legal</h4>
           <ul>
             <li>
-              <Link to="/business" className="subtitle is-size-6 is-block">
+              <Link to="/generic" className="subtitle is-size-6 is-block">
                 Terms of use
               </Link>
             </li>
             <li>
-              <Link to="/partner" className="subtitle is-size-6 is-block">
+              <Link to="/generic" className="subtitle is-size-6 is-block">
                 Privacy policy
               </Link>
             </li>
             <li>
-              <Link to="/partner" className="subtitle is-size-6 is-block">
+              <Link to="/generic" className="subtitle is-size-6 is-block">
                 GDPR
               </Link>
             </li>
