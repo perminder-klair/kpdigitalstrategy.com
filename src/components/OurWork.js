@@ -13,7 +13,7 @@ const Section = styled.section`
   }
 `;
 
-const ServiceItem = ({ data }) => (
+const OurWork = ({ data }) => (
   <Section className="section">
     <div className="container">
       <div className="columns is-centered">
@@ -34,4 +34,4 @@ const ServiceItem = ({ data }) => (
   </Section>
 );
 
-export default ServiceItem;
+export default OurWork;

@@ -5,9 +5,9 @@ import config from '../utils/config';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import HomeHero from '../components/HomeHero';
-import ServiceItem from '../components/ServiceItem-old';
+import OurWork from '../components/OurWork';
 import ReachUs from '../components/ReachUs';
-import Services from '../components/ServiceItems';
+import Services from '../components/Services';
 import Slider from '../components/Slider';
 import Portfolio from '../components/Portfolio';
 import Brand from '../components/Brand';
@@ -129,7 +129,7 @@ const Index = ({ data }) => {
       <HomeHero data={home} />
       <Brand data={home.brandIcons} />
       <OurValue data={home.ourValue} />
-      <ServiceItem data={home} />
+      <OurWork data={home} />
       <Services
         data={page.edges}
         serviceHeading={home.serviceTitle}

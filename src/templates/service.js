@@ -8,7 +8,7 @@ import Portfolio from '../components/Portfolio';
 import Brand from '../components/Brand';
 import Products from '../components/Products';
 import StrengthData from '../components/StrengthData';
-import ServiceItem from '../components/ServiceItem-old';
+import OurWork from '../components/OurWork';
 import OurValue from '../components/OurValue';
 import ReachUs from '../components/ReachUs';
 import Layout from '../components/Layout';
@@ -107,7 +107,7 @@ const ServicePage = ({ data }) => {
         textarea={false}
       />
       <OurValue data={service.ourValue} />
-      <ServiceItem data={service} />
+      <OurWork data={service} />
       <Products
         data={service.product}
         heading={page.productHeading}

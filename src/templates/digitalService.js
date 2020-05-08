@@ -5,11 +5,11 @@ import ContactHero from '../components/ContactHero';
 import Seo from '../components/Seo';
 import Portfolio from '../components/Portfolio';
 import Brand from '../components/Brand';
-import Services from '../components/ServiceItems';
+import Services from '../components/Services';
 import Slider from '../components/Slider';
 import ReachUs from '../components/ReachUs';
 import StrengthData from '../components/StrengthData';
-import ServiceItem from '../components/ServiceItem-old';
+import OurWork from '../components/OurWork';
 import Faq from '../components/Faq';
 import OurValue from '../components/OurValue';
 import Layout from '../components/Layout';
@@ -132,7 +132,7 @@ const digitalService = ({ data }) => {
         textarea={false}
       />
       <OurValue data={digital.ourValues} />
-      <ServiceItem data={digital} />
+      <OurWork data={digital} />
       <Services
         data={page.edges}
         serviceHeading={digital.serviceTitle}

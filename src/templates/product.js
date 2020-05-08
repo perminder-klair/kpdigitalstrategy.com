@@ -7,7 +7,7 @@ import Seo from '../components/Seo';
 import Portfolio from '../components/Portfolio';
 import Brand from '../components/Brand';
 import StrengthData from '../components/StrengthData';
-import ServiceItem from '../components/ServiceItem-old';
+import OurWork from '../components/OurWork';
 import OurValue from '../components/OurValue';
 import ReachUs from '../components/ReachUs';
 import Layout from '../components/Layout';
@@ -87,7 +87,7 @@ const ProductPage = ({ data }) => {
         textarea={false}
       />
       <OurValue data={product.ourValue} />
-      <ServiceItem data={product} />
+      <OurWork data={product} />
       <StrengthData data={product.features} />
       <ReachUs data={product.reachUsText} />
       <Portfolio data={product.portfolio} />
