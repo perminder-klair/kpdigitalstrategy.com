@@ -7,7 +7,7 @@ import Seo from '../components/Seo';
 import Portfolio from '../components/Portfolio';
 import Brand from '../components/Brand';
 import Products from '../components/Products';
-import StrengthData from '../components/StrengthData';
+import Feature from '../components/Feature';
 import OurWork from '../components/OurWork';
 import OurValue from '../components/OurValue';
 import ReachUs from '../components/ReachUs';
@@ -115,7 +115,7 @@ const ServicePage = ({ data }) => {
       />
       <ReachUs data={service.reachUsText} />
       <Portfolio data={service.portfolio} />
-      <StrengthData data={service.features} />
+      <Feature data={service.features} />
       <TestimonailData data={service.testimonialItem} />
       <Brand data={service.brandIcons} />
       <GetInTouch />

@@ -6,7 +6,7 @@ import ContactHero from '../components/ContactHero';
 import Seo from '../components/Seo';
 import Portfolio from '../components/Portfolio';
 import Brand from '../components/Brand';
-import StrengthData from '../components/StrengthData';
+import Feature from '../components/Feature';
 import OurWork from '../components/OurWork';
 import OurValue from '../components/OurValue';
 import ReachUs from '../components/ReachUs';
@@ -88,7 +88,7 @@ const ProductPage = ({ data }) => {
       />
       <OurValue data={product.ourValue} />
       <OurWork data={product} />
-      <StrengthData data={product.features} />
+      <Feature data={product.features} />
       <ReachUs data={product.reachUsText} />
       <Portfolio data={product.portfolio} />
       <Brand data={product.brandIcons} />

@@ -8,7 +8,7 @@ import Brand from '../components/Brand';
 import Services from '../components/Services';
 import Slider from '../components/Slider';
 import ReachUs from '../components/ReachUs';
-import StrengthData from '../components/StrengthData';
+import Feature from '../components/Feature';
 import OurWork from '../components/OurWork';
 import Faq from '../components/Faq';
 import OurValue from '../components/OurValue';
@@ -145,7 +145,7 @@ const digitalService = ({ data }) => {
       />
       <ReachUs data={digital.reachUsText} />
       <Portfolio data={digital.portfolio} />
-      <StrengthData data={digital.features} />
+      <Feature data={digital.features} />
       <Faq data={digital.faq} />
       <TestimonailData data={digital.testimonialItem} />
       <Brand data={digital.brandIcons} />

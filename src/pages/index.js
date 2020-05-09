@@ -11,7 +11,7 @@ import Services from '../components/Services';
 import Slider from '../components/Slider';
 import Portfolio from '../components/Portfolio';
 import Brand from '../components/Brand';
-import StrengthData from '../components/StrengthData';
+import Feature from '../components/Feature';
 import Faq from '../components/Faq';
 import OurValue from '../components/OurValue';
 import TestimonailData from '../components/TestimonailData';
@@ -142,7 +142,7 @@ const Index = ({ data }) => {
       />
       <ReachUs data={home.reachUsText} />
       <Portfolio data={home.portfolio} />
-      <StrengthData data={home.features} />
+      <Feature data={home.features} />
       <Faq data={home.faq} />
       <TestimonailData data={home.testimonialItem} backgroundColor />
       <GetInTouch />

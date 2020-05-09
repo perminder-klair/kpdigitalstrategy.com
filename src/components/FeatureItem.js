@@ -8,7 +8,7 @@ const Section = styled.div`
   }
 `;
 
-const Strengths = ({ logo, title, subtitle }) => (
+const FeatureItem = ({ logo, title, subtitle }) => (
   <Section className="section">
     <div className="container">
       <img src={logo} title={title} alt={title} />
@@ -19,4 +19,4 @@ const Strengths = ({ logo, title, subtitle }) => (
     </div>
   </Section>
 );
-export default Strengths;
+export default FeatureItem;

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Strengths from './Strengths';
+import FeatureItem from './FeatureItem';
 
 const Section = styled.div`
   background-color: ${props => props.theme.mainBrandColor};
@@ -12,14 +12,14 @@ const Section = styled.div`
   }
 `;
 
-const StrengthData = ({ data }) => (
+const Feature = ({ data }) => (
   <Section className="section">
     <div className="container">
       <h3 className="title is-5 has-text-centered">{data.featureHeading}</h3>
       <div className="columns">
         <div className="column is-4 has-text-centered">
           {data.featuresItems.map(items => (
-            <Strengths
+            <FeatureItem
               logo={items.logo.asset.url}
               title={items.title}
               subtitle={items.subtitle}
@@ -30,4 +30,4 @@ const StrengthData = ({ data }) => (
     </div>
   </Section>
 );
-export default StrengthData;
+export default Feature;
