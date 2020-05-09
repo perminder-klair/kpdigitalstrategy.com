@@ -8,7 +8,7 @@ import OurValue from '../components/OurValue';
 import InformationAbout from '../components/InformationAbout';
 import ReachUs from '../components/ReachUs';
 import TestimonailData from '../components/TestimonailData';
-import GetInTouch from '../components/GetInTouch';
+import OurInformation from '../components/OurInformation';
 
 export const aboutQuery = graphql`
   query about {
@@ -75,7 +75,7 @@ const AboutUs = ({ data }) => {
       ))}
       <ReachUs data={page.aboutPage.reachUsText} />
       <TestimonailData data={page.aboutPage.testimonialItem} />
-      <GetInTouch />
+      <OurInformation />
     </Layout>
   );
 };

@@ -11,7 +11,7 @@ import OurWork from '../components/OurWork';
 import OurValue from '../components/OurValue';
 import ReachUs from '../components/ReachUs';
 import Layout from '../components/Layout';
-import GetInTouch from '../components/GetInTouch';
+import OurInformation from '../components/OurInformation';
 import TestimonailData from '../components/TestimonailData';
 
 export const productQuery = graphql`
@@ -93,7 +93,7 @@ const ProductPage = ({ data }) => {
       <Portfolio data={product.portfolio} />
       <Brand data={product.brandIcons} />
       <TestimonailData data={product.testimonialItem} />
-      <GetInTouch />
+      <OurInformation />
     </Layout>
   );
 };

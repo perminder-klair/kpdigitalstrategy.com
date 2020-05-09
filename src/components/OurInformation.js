@@ -32,7 +32,7 @@ const Section = styled.section`
   }
 `;
 
-const GetInTouch = () => (
+const OurInformation = () => (
   <Section className="section">
     <div className="container">
       <div className="columns">
@@ -116,5 +116,4 @@ const GetInTouch = () => (
     </div>
   </Section>
 );
-
-export default GetInTouch;
+export default OurInformation;

@@ -8,7 +8,7 @@ const Container = styled.div`
 }
 `;
 
-const ContactForm = ({ display }) => (
+const ContactFormHero = ({ display }) => (
   <Container>
     <section className="section">
       <h2 className="subtitle is-6 has-text-left is has-text-danger">
@@ -59,4 +59,4 @@ const ContactForm = ({ display }) => (
   </Container>
 );
 
-export default ContactForm;
+export default ContactFormHero;

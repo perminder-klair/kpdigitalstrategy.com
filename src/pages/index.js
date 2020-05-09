@@ -15,7 +15,7 @@ import Feature from '../components/Feature';
 import Faq from '../components/Faq';
 import OurValue from '../components/OurValue';
 import TestimonailData from '../components/TestimonailData';
-import GetInTouch from '../components/GetInTouch';
+import OurInformation from '../components/OurInformation';
 
 export const homeQuery = graphql`
   query homepage {
@@ -145,7 +145,7 @@ const Index = ({ data }) => {
       <Feature data={home.features} />
       <Faq data={home.faq} />
       <TestimonailData data={home.testimonialItem} backgroundColor />
-      <GetInTouch />
+      <OurInformation />
     </Layout>
   );
 };

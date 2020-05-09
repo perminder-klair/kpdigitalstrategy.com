@@ -2,7 +2,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import ContactForm from './ContactForm';
+import ContactFormHero from './ContactFormHero';
 
 const Container = styled.section`
   padding: 1rem 1.5rem;
@@ -53,7 +53,7 @@ const ContactHero = props => (
         </div>
         <div className="column is-5">
           <div className="container">
-            <ContactForm display={props.textareaay} />
+            <ContactFormHero display={props.textareaay} />
           </div>
         </div>
       </div>
