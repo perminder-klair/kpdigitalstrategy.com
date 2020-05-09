@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import FeatureItem from './FeatureItem';
+import ServiceItem from './ServiceItem';
 import PageHero from './PageHero';
 
 const Container = styled.section`
@@ -16,7 +16,7 @@ const Services = ({ data, serviceHeading, serviceTitle }) => (
     <div className="container">
       <div className="columns is-variable is-3">
         {data.map(item => (
-          <FeatureItem
+          <ServiceItem
             icon={item.node.Logo.asset.url}
             title={item.node.title}
             subtitle={item.node.description}

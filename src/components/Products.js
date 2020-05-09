@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import FeatureItem from './FeatureItem';
+import ServiceItem from './ServiceItem';
 
 const Container = styled.section`
   background-color: ${props => props.theme.darkShades};
@@ -16,7 +16,7 @@ const Products = ({ data, heading, title }) => (
       <p className="subtitle is-6 has-text-centered">{title}</p>
       <div className="columns is-multiline is-variable is-3">
         {data.map(item => (
-          <FeatureItem
+          <ServiceItem
             icon={item.Logo.asset.url}
             title={item.title}
             subtitle={item.description}

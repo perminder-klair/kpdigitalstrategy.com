@@ -24,7 +24,7 @@ const Container = styled.div`
   }
 `;
 
-const FeatureItem = ({ title, subtitle, button, icon, to }) => (
+const ServiceItem = ({ title, subtitle, button, icon, to }) => (
   <Container className="column is-4">
     <Link to={to}>
       <section className="section">
@@ -43,4 +43,4 @@ const FeatureItem = ({ title, subtitle, button, icon, to }) => (
   </Container>
 );
 
-export default FeatureItem;
+export default ServiceItem;
