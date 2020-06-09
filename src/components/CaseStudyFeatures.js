@@ -11,7 +11,7 @@ const Section = styled.div`
     margin: 0 auto;
   }
   img:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
 `;
 const Border = styled.div`
