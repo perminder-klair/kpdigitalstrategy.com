@@ -21,7 +21,7 @@ const Border = styled.div`
 const CaseStudyFeatures = ({ data }) => (
   <Section>
     <Border />
-    <div className="columns is-multiline">
+    <div className="columns is-multiline is-variable is-3 has-text-centered">
       {data.map(item => (
         <div className="column is-half">
           <Link to={`/case/${item.node.slug.current}`}>
