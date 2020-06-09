@@ -13,6 +13,9 @@ const Container = styled.div`
     @media only screen and (max-width: 600px) {
       margin: -38px 5px;
     }
+    @media only screen and (max-device-width: 768px) {
+      margin: -38px 5px;
+    }
   }
   h1 {
     font-size: 18px;
