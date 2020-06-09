@@ -5,6 +5,9 @@ const Section = styled.div`
   .mg-top {
     margin-top: -10px;
   }
+  img {
+    width: 568px;
+  }
 `;
 
 const Portfolio = ({ data }) => (
@@ -20,8 +23,8 @@ const Portfolio = ({ data }) => (
       </div>
       <div className="columns is-multiline is-variable is-2">
         {data.items.map(items => (
-          <div className="column is-half">
-            <div className="main">
+          <div className="column  is-half">
+            <div className="main is-half">
               <img
                 src={items.portfolioImage.asset.url}
                 alt={items.alternativeText}
