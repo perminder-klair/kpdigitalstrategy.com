@@ -7,10 +7,11 @@ const Container = styled.div`
   border-radius: 0rem;
   margin-bottom: 1rem;
   .Icon {
-    font-size: 27px;
+    width: 20.5px;
+    height: 20.5px;
     margin: 0rem 2rem;
     @media only screen and (max-width: 600px) {
-      margin: -2rem 7rem;
+      margin: -38px 5px;
     }
   }
   h1 {
