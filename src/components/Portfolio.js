@@ -23,8 +23,8 @@ const Portfolio = ({ data }) => (
       </div>
       <div className="columns is-multiline is-variable is-2">
         {data.items.map(items => (
-          <div className="column  is-half">
-            <div className="main is-half">
+          <div className="column  is-half has-text-centered">
+            <div className="main">
               <img
                 src={items.portfolioImage.asset.url}
                 alt={items.alternativeText}
